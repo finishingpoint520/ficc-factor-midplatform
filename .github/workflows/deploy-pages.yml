@@ -1,0 +1,62 @@
+name: 因果图谱看板自动部署
+
+on:
+  push:
+    branches: [master]
+    # 只在数据源文件或构建脚本发生变化时触发
+    paths:
+      - 'rates_analysis/factor_ontology.json'
+      - 'rates_analysis/factor_causal_edges_v2.json'
+      - 'rates_analysis/factor_cooccurrence.json'
+      - 'rates_analysis/_build_interactive_html.py'
+      - 'rates_analysis/_export_graph_data.py'
+      - '.github/workflows/deploy-pages.yml'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 设置 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 导出交互式数据
+        run: python rates_analysis/_export_graph_data.py
+
+      - name: 构建交互式 HTML 看板
+        run: python rates_analysis/_build_interactive_html.py
+
+      - name: 准备部署（复制到根目录作为 index.html）
+        run: |
+          mkdir -p _site
+          cp rates_analysis/causal_interactive.html _site/index.html
+          cp rates_analysis/causal_interactive.html _site/causal_interactive.html
+
+      - name: 上传 Pages 产物
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: 部署到 GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
