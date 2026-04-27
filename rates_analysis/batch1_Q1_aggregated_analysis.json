@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "title": "2025年Q1（3-4月）固收策略组周例会五因子聚合分析",
+    "period": "2025-03-10 至 2025-04-25",
+    "source_files": [
+      "batch1_20250310_speech_units.json",
+      "batch1_20250314_speech_units.json",
+      "batch1_20250321_speech_units.json",
+      "batch1_20250328_speech_units.json",
+      "batch1_20250403_speech_units.json",
+      "batch1_20250411_speech_units.json",
+      "batch1_20250418_speech_units.json",
+      "batch1_20250425_speech_units.json"
+    ],
+    "total_meetings": 8,
+    "total_speech_units": 78,
+    "unique_speakers": 18,
+    "analysis_date": "2026-04-09",
+    "analyzer": "5factor-analyzer-v1",
+    "schema_version": "1.0"
+  },
+
+  "primary_factor_distribution": {
+    "market_sentiment": {"count": 28, "pct": 35.9, "notes": "Q1核心因子，团队高度关注市场情绪变化和策略应对"},
+    "policy": {"count": 20, "pct": 25.6, "notes": "央行态度、降准降息预期是核心关注点"},
+    "liquidity": {"count": 15, "pct": 19.2, "notes": "存单利率、资金面判断是核心议题"},
+    "institutional_behavior": {"count": 12, "pct": 15.4, "notes": "季末增加，关注银行行为和久期管理"},
+    "fundamental": {"count": 3, "pct": 3.8, "notes": "占比最低，主要关注关税冲击和出口数据"}
+  },
+
+  "temporal_evolution": {
+    "phases": [
+      {"period": "3月上旬", "theme": "两会后政策明朗，资金面偏紧", "mood": "谨慎偏空"},
+      {"period": "3月中下旬", "theme": "资金面边际宽松，开始寻找买点", "mood": "中性偏多"},
+      {"period": "4月初", "theme": "关税冲击超预期，政策宽松预期", "mood": "震荡偏多"},
+      {"period": "4月中旬", "theme": "GDP超预期但市场定价不多，震荡格局", "mood": "中性震荡"},
+      {"period": "4月下旬", "theme": "MLF超量续作，积累小胜为大胜", "mood": "中性"}
+    ]
+  },
+
+  "key_insights": {
+    "五因子框架提出": "3月28日赵骥正式提出五因子分析框架（基本面、政策面、资金面、情绪面、机构行为）",
+    "核心共识": "震荡格局为主，短端信用债配置价值获认可，长端趋势性机会需等待",
+    "关键转折点": "4月3日关税冲击成为情绪转折点，市场重新定价政策宽松预期",
+    "利率区间": "10Y国债1.65%-1.9%区间震荡，中枢约1.75%-1.8%"
+  }
+}

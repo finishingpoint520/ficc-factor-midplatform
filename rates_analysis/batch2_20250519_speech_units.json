@@ -1,0 +1,15 @@
+{
+  "metadata": {"meeting_date": "2025-05-19", "filename": "固收策略组周例会议讨论纪要20250519.docx", "batch": "batch2_2025Q2", "analysis_date": "2026-04-09", "total_speech_units": 10},
+  "speech_units": [
+    {"speaker": "张迪", "unit_id": "batch2_0519_01", "primary_factor": "流动性因子", "secondary_factor": "资金面判断", "content_summary": "当前市场已基本完成双向定价，资金宽松逻辑初步交易完毕。短期内利率波动或有限，但6月存在上行至1.7以上的可能。", "key_quote": "当前市场已基本完成双向定价，资金宽松逻辑初步交易完毕", "sentiment": "中性", "time_phase": "会议前期"},
+    {"speaker": "杨义山", "unit_id": "batch2_0519_02", "primary_factor": "政策面因子", "secondary_factor": "政策预期", "content_summary": "十债在1.65-1.67区间运行平稳，对五年以内的国债类资产持相对乐观态度，主要受央行恢复国债购买预期的推动。", "key_quote": "对五年以内的国债类资产持相对乐观态度，主要受央行恢复国债购买预期的推动", "sentiment": "中性偏多", "time_phase": "会议前期"},
+    {"speaker": "杨义山", "unit_id": "batch2_0519_03", "primary_factor": "基本面因子", "secondary_factor": "经济评估", "content_summary": "从宏观角度看，上半年经济表现出一定韧性，但尚未显现显著弹性。消费品以旧换新已带动约1.1万亿元社会消费品零售总额增长。", "key_quote": "上半年经济表现出一定韧性，但尚未显现显著弹性", "sentiment": "中性", "time_phase": "会议前期"},
+    {"speaker": "李博良", "unit_id": "batch2_0519_04", "primary_factor": "市场情绪因子", "secondary_factor": "策略建议", "content_summary": "对当前市场持中性看法，预期利率在1.65-1.70之间波动。若出现窄幅震荡行情，可能会有小幅下行但幅度有限。", "key_quote": "预期利率在1.65-1.70之间波动", "sentiment": "中性", "time_phase": "会议中期"},
+    {"speaker": "武玥", "unit_id": "batch2_0519_05", "primary_factor": "市场情绪因子", "secondary_factor": "区间判断", "content_summary": "1.7%是一个配置盘较为合适的入场点位，若基础仓位不高，1.68%左右便可介入。考虑到市场波动性，将区间上限设定为1.75%。", "key_quote": "1.7%是一个配置盘较为合适的入场点位", "sentiment": "中性偏多", "time_phase": "会议中期"},
+    {"speaker": "姜之媛", "unit_id": "batch2_0519_06", "primary_factor": "市场情绪因子", "secondary_factor": "策略建议", "content_summary": "本周债市整体偏弱震荡，长端利率因贸易谈判预期升温及资金面扰动普遍上行，市场进入调仓和观望阶段。", "key_quote": "市场进入调仓和观望阶段", "sentiment": "中性偏空", "time_phase": "会议后期"},
+    {"speaker": "张帆", "unit_id": "batch2_0519_07", "primary_factor": "市场情绪因子", "secondary_factor": "策略建议", "content_summary": "6月债市博弈空间集中在短端利率与信用债调整机会，建议在资金面宽松预期下择机加仓存单，关注1.8以上点位配置价值。", "key_quote": "关注1.8以上点位配置价值", "sentiment": "中性偏多", "time_phase": "会议后期"},
+    {"speaker": "柴颖颖", "unit_id": "batch2_0519_08", "primary_factor": "市场情绪因子", "secondary_factor": "策略建议", "content_summary": "当前阶段对配置盘相对友好，但对交易盘而言操作难度较大，缺乏明确方向性机会。5月为信用供给小月，普信类通常表现较好。", "key_quote": "当前阶段对配置盘相对友好，但对交易盘而言操作难度较大", "sentiment": "中性", "time_phase": "会议后期"},
+    {"speaker": "孔祥雨", "unit_id": "batch2_0519_09", "primary_factor": "市场情绪因子", "secondary_factor": "策略建议", "content_summary": "当前整体宽松趋势已进入尾声，利率水平上下空间均有限，但仍建议保持一定的仓位。若继续增仓，建议优先考虑信用品种。", "key_quote": "当前整体宽松趋势已进入尾声，利率水平上下空间均有限", "sentiment": "中性", "time_phase": "会议后期"},
+    {"speaker": "张晶", "unit_id": "batch2_0519_10", "primary_factor": "基本面因子", "secondary_factor": "经济展望", "content_summary": "对于二季度经济展望，内需方面持偏悲观态度，预计能稳住现有水平已属不错。二季度GDP大概率保持基本稳定，维持之前预测在4.9%至5%左右。", "key_quote": "二季度GDP大概率保持基本稳定，维持之前预测在4.9%至5%左右", "sentiment": "中性偏弱", "time_phase": "会议后期"}
+  ]
+}

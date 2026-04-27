@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "title": "2025年Q2（5-6月）固收策略组周例会五因子聚合分析",
+    "period": "2025-05-05 至 2025-06-26",
+    "source_files": [
+      "batch2_20250505_speech_units.json",
+      "batch2_20250509_speech_units.json",
+      "batch2_20250519_speech_units.json",
+      "batch2_20250523_speech_units.json",
+      "batch2_20250530_speech_units.json",
+      "batch2_20250606_speech_units.json",
+      "batch2_20250613_speech_units.json",
+      "batch2_20250620_speech_units.json",
+      "batch2_20250626_speech_units.json"
+    ],
+    "total_meetings": 9,
+    "total_speech_units": 92,
+    "unique_speakers": 18,
+    "analysis_date": "2026-04-09",
+    "analyzer": "5factor-analyzer-v1",
+    "schema_version": "1.0"
+  },
+
+  "primary_factor_distribution": {
+    "market_sentiment": {"count": 35, "pct": 38.0, "notes": "Q2核心因子，震荡格局下策略应对成为焦点"},
+    "policy": {"count": 22, "pct": 23.9, "notes": "陆家嘴论坛、央行买债预期是核心议题"},
+    "liquidity": {"count": 20, "pct": 21.7, "notes": "资金面判断、存单配置是关注焦点"},
+    "institutional_behavior": {"count": 12, "pct": 13.0, "notes": "五因子框架正式提出并深化应用"},
+    "fundamental": {"count": 3, "pct": 3.3, "notes": "基本面讨论较少，主要关注出口和消费数据"}
+  },
+
+  "temporal_evolution": {
+    "phases": [
+      {"period": "5月上旬", "theme": "双降落地，政策利好兑现", "mood": "震荡偏多"},
+      {"period": "5月中下旬", "theme": "五因子框架正式提出，胜率赔率分析", "mood": "中性"},
+      {"period": "6月上旬", "theme": "陆家嘴论坛预期，央行买债博弈", "mood": "中性偏多"},
+      {"period": "6月中下旬", "theme": "超长端交易拥挤，信用债ETF行情", "mood": "中性"}
+    ]
+  },
+
+  "key_insights": {
+    "五因子框架深化": "5月23日杨义山系统阐述五因子框架，强调胜率与赔率分析，引入凯利公式思想",
+    "核心共识": "10Y国债1.60%-1.75%区间震荡，中枢约1.65%。短端存单1.7%以上有配置价值",
+    "关键转折点": "5月9日双降落地，市场从预期交易转向资金宽松逻辑",
+    "新现象": "信用债ETF规模激增带动超长信用债行情，机构行为成为重要驱动因素"
+  }
+}

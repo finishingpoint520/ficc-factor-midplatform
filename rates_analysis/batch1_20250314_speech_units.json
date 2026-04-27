@@ -1,0 +1,111 @@
+{
+  "metadata": {
+    "meeting_date": "2025-03-14",
+    "filename": "固收策略组周例会议讨论纪要20250314.docx",
+    "batch": "batch1_2025Q1",
+    "analysis_date": "2026-04-09",
+    "total_speech_units": 10
+  },
+  "speech_units": [
+    {
+      "speaker": "柴颖颖",
+      "unit_id": "batch1_0314_01",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": "市场分歧",
+      "content_summary": "市场对利率看法存在较大分歧，短端资金利率有所改善显示流动性轻微提升，但未延伸至中长端，反映市场对中长期经济前景谨慎。",
+      "key_quote": "当前市场对于利率的看法存在较大分歧...短端资金利率相比之前有所改善",
+      "sentiment": "中性",
+      "time_phase": "会议前期"
+    },
+    {
+      "speaker": "柴颖颖",
+      "unit_id": "batch1_0314_02",
+      "primary_factor": "政策面因子",
+      "secondary_factor": "央行态度",
+      "content_summary": "未来关注央行态度和政策动向，观察央行在不同利率水平上的反应以评估货币政策调整可能性。短端需求强劲反映机构避险策略。",
+      "key_quote": "未来市场的关注点主要集中在央行的态度和政策动向上",
+      "sentiment": "中性",
+      "time_phase": "会议前期"
+    },
+    {
+      "speaker": "武玥",
+      "unit_id": "batch1_0314_03",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": "趋势判断",
+      "content_summary": "长端利率尚未达到趋势性建仓时机，预计可能进一步调整至1.9左右形成完整调整周期。市场缺乏明确情绪推动因素。",
+      "key_quote": "预计长端利率可能会进一步调整至1.9左右的位置，以形成一个较为完整的调整周期",
+      "sentiment": "中性偏空",
+      "time_phase": "会议前期"
+    },
+    {
+      "speaker": "武玥",
+      "unit_id": "batch1_0314_04",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": "策略建议",
+      "content_summary": "建议在信用品种中寻找机会，当前信用利差处于历史较高水平。久期控制建议在一年左右，选择城投债等具有较好回报潜力的资产。",
+      "key_quote": "倾向于采取相对保守的态度，并建议在信用品种中寻找机会",
+      "sentiment": "谨慎偏多",
+      "time_phase": "会议前期"
+    },
+    {
+      "speaker": "张帆",
+      "unit_id": "batch1_0314_05",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": "右侧交易",
+      "content_summary": "7年期国开债调整到2%位置后已算充分调整，当前价位中性。建议优先选择7年以内利率债品种进行右侧交易，保持灵活性。",
+      "key_quote": "优先选择7年以内的利率债品种进行右侧交易，并保持灵活性，不恋战",
+      "sentiment": "中性偏多",
+      "time_phase": "会议中期"
+    },
+    {
+      "speaker": "张迪",
+      "unit_id": "batch1_0314_06",
+      "primary_factor": "流动性因子",
+      "secondary_factor": "存单利率",
+      "content_summary": "短端利率（一年期存单）从高位显著下降，当前约1.97%，相比最高2.04%下降约7BP。短端价值仍被广泛认可，但交易拥挤获取量困难。",
+      "key_quote": "短端利率（如一年期存单）已经从高位显著下降，当前价位约为1.97%",
+      "sentiment": "中性偏多",
+      "time_phase": "会议中期"
+    },
+    {
+      "speaker": "张迪",
+      "unit_id": "batch1_0314_07",
+      "primary_factor": "流动性因子",
+      "secondary_factor": "策略建议",
+      "content_summary": "从本周开始积极配置存单和存款，特别是考虑到有些存款反应较慢其相对价值更高。杠杆策略仍有盈利空间。",
+      "key_quote": "从本周开始，已经开始积极配置存单和存款",
+      "sentiment": "偏多",
+      "time_phase": "会议中期"
+    },
+    {
+      "speaker": "杨义山",
+      "unit_id": "batch1_0314_08",
+      "primary_factor": "政策面因子",
+      "secondary_factor": "货币政策预期",
+      "content_summary": "本周长端利率从支撑位转变为压力位，市场对适度宽松预期有所回补。当前曲线形态过于平坦，1.65%-1.7%可能成为长端利率敏感位置。",
+      "key_quote": "1.65%至1.7%这个区间可能成为长端利率敏感的位置",
+      "sentiment": "中性",
+      "time_phase": "会议后期"
+    },
+    {
+      "speaker": "李博良",
+      "unit_id": "batch1_0314_09",
+      "primary_factor": "流动性因子",
+      "secondary_factor": "资金面判断",
+      "content_summary": "短端利率确定性相对较高，随着季末临近场外资金可能逐步进场配置。长端利率中枢上移，要进一步突破下行需要降准等事件性催化。",
+      "key_quote": "短端利率的确定性相对较高...随着季末临近，场外观望资金可能逐步进场配置",
+      "sentiment": "中性偏多",
+      "time_phase": "会议后期"
+    },
+    {
+      "speaker": "姜之媛",
+      "unit_id": "batch1_0314_10",
+      "primary_factor": "政策面因子",
+      "secondary_factor": "政策博弈",
+      "content_summary": "维持震荡观点，中短端利率利差已显著压缩。从全球利率对比看中美日绝对利差有所缓解。关注4月变化，若二季度目标转向稳经济则对债市利好。",
+      "key_quote": "如果二季度的目标转向稳经济，则可能对债券市场形成利好或至少是保持一个较为友好的状态",
+      "sentiment": "中性偏多",
+      "time_phase": "会议后期"
+    }
+  ]
+}

@@ -1,0 +1,438 @@
+{
+  "metadata": {
+    "source_file": "batch3_20250718_speech_units.json",
+    "meeting_date": "2025-07-18",
+    "batch": "unknown",
+    "source_doc_id": "20250718_B00",
+    "migration_date": "2026-04-21",
+    "total_atoms": 7,
+    "format": "v2"
+  },
+  "claim_atoms": [
+    {
+      "atom_id": "20250718_B00_001",
+      "source_doc_id": "20250718_B00",
+      "speaker": "武玥",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-07-18",
+      "raw_text": "当前处于存量博弈阶段，操作难度极大。久期高位结构脆弱，技术性操作易失效。应降低操作精度要求，避免盲目止损或追高，等待央行宽松兑现。坚守债市底气来自中美博弈与稳就业对宽松货币环境的需要。",
+      "summary_text": "当前处于存量博弈阶段，操作难度极大。久期高位结构脆弱，技术性操作易失效。应降低操作精度要求，避免盲目止损或追高，等待央行宽松兑现。坚守债市底气来自中美博弈与稳就业对宽松货币环境的需要。",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": "MS_001",
+      "secondary_factor_label": "风险偏好变化",
+      "tertiary_factor": [
+        "当前处于存量博弈阶段",
+        "债券交易空间取决于央行政策波动与权益市场表现",
+        "低波环境下交易空间狭窄精细化操作易引发反噬",
+        "1.67%支撑位做多仅约1BP右侧空间",
+        "久期高企+结构脆弱+做多动能不足"
+      ],
+      "claim_type": "验证指标",
+      "direction": "利多",
+      "magnitude": "不明确",
+      "time_horizon": "短期(1M以内)",
+      "confidence_score": 0.85,
+      "causal_chain_text": "存量博弈阶段+降息预期消失导致操作难度极大 -> 久期高位+结构脆弱导致技术性操作易失效 -> 参考2014年债市上行阶段如规避将错过后续双牛 -> 但当前环境不同：久期高企结构脆弱 -> 降低操作精度+等待央行宽松兑现",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "基金久期",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "久期分歧度",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "10Y国债利率",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "权益市场点位",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "duration_strategy",
+        "分层次论述",
+        "框架构建型",
+        "long_end_rates",
+        "历史类比",
+        "条件句密集",
+        "长端"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.105034",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20250718_B00_002",
+      "source_doc_id": "20250718_B00",
+      "speaker": "张帆",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-07-18",
+      "raw_text": "坚持7月初减仓策略。核心矛盾：债市持仓拥挤且降息预期消失，权益超预期启动。利率箱体下限明确但上限弹性不足。利用8月存单季节性规律在反弹窗口减仓，四季度面临三重压力计划系统性降仓。",
+      "summary_text": "坚持7月初减仓策略。核心矛盾：债市持仓拥挤且降息预期消失，权益超预期启动。利率箱体下限明确但上限弹性不足。利用8月存单季节性规律在反弹窗口减仓，四季度面临三重压力计划系统性降仓。",
+      "primary_factor": "机构行为因子",
+      "secondary_factor": "LQ_002",
+      "secondary_factor_label": "央行投放节奏",
+      "tertiary_factor": [
+        "坚持7月初资金宽松时减仓策略",
+        "利率箱体下限明确：短端1.59%/10Y 1.62%-1.63%/30Y 1.84%-1.85%",
+        "上限弹性显著不足：央行单周回笼1.6万亿仅推升利率5BP",
+        "核心矛盾：债市持仓拥挤且降息预期消失",
+        "权益市场启动潜在目标3700点超出债市预期"
+      ],
+      "claim_type": "验证指标",
+      "direction": "不明确",
+      "magnitude": "不明确",
+      "time_horizon": "中期(1-3M)",
+      "confidence_score": 0.85,
+      "causal_chain_text": "持仓拥挤+降息预期消失=核心矛盾 -> 权益市场超预期启动 -> 利用8月存单季节性规律在反弹窗口减仓 -> 四季度三重压力下系统性降低债券仓位与杠杆",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "基金久期",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "存单利率",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "权益市场走势",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "央行操作节奏",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "duration_strategy",
+        "先结论后分析",
+        "short_end_rates",
+        "多时间维度",
+        "long_end_rates",
+        "反向操作逻辑",
+        "数据锚定清晰",
+        "短端"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.105034",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20250718_B00_003",
+      "source_doc_id": "20250718_B00",
+      "speaker": "姜之媛",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-07-18",
+      "raw_text": "债市最缺乏内生稳定性，走势完全依赖权益市场。超长债交易面临多重困境：换券频繁、期现背离、行情碎片化。基于五因子模型评估，基本面利多已被充分定价，风险偏好成核心风险点。需警惕居民理财行为变化，放弃股债双牛预期转向票息策略控制久期。",
+      "summary_text": "债市最缺乏内生稳定性，走势完全依赖权益市场。超长债交易面临多重困境：换券频繁、期现背离、行情碎片化。基于五因子模型评估，基本面利多已被充分定价，风险偏好成核心风险点。需警惕居民理财行为变化，放弃股债双",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": "MS_001",
+      "secondary_factor_label": "风险偏好变化",
+      "tertiary_factor": [
+        "债券市场最缺乏内生稳定性走势完全依赖权益市场",
+        "日内波动幅度可能超过月度波动",
+        "超长债交易面临多重困境：新发代码激增换券频繁/10Y利率被央行管控/50Y国债崛起分流30Y资金",
+        "现券与期货常现背离行情碎片化",
+        "基于五因子模型评估基本面利多已被充分定价"
+      ],
+      "claim_type": "验证指标",
+      "direction": "利空",
+      "magnitude": "不明确",
+      "time_horizon": "中期(1-3M)",
+      "confidence_score": 0.85,
+      "causal_chain_text": "债市缺乏内生稳定性完全依赖权益 -> 超长债交易困境加剧：换券频繁+期货背离+行情碎片化 -> 基本面利多已被充分定价 -> 风险偏好成为核心风险点 -> 居民理财行为变化可能构成重大利空 -> 放弃股债双牛预期转向票息策略控制久期",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "10Y国债利率",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "权益市场走势",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "理财规模增速",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "R3级产品推荐数据",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "duration_strategy",
+        "多层面论证",
+        "long_end_rates",
+        "结构化框架型",
+        "策略导向强",
+        "五因子模型自引用",
+        "长端"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.105034",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20250718_B00_004",
+      "source_doc_id": "20250718_B00",
+      "speaker": "柴颖颖",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-07-18",
+      "raw_text": "债市对基本面反应正在钝化，核心矛盾转向央行操作。央行不愿因股市走强导致债市大跌，但若无央行助力10Y难破1.6%。今年行情呈断点化特征，三季度相对友好但四季度争议增大。票息阶段性占优但性价比下降。",
+      "summary_text": "债市对基本面反应正在钝化，核心矛盾转向央行操作。央行不愿因股市走强导致债市大跌，但若无央行助力10Y难破1.6%。今年行情呈断点化特征，三季度相对友好但四季度争议增大。票息阶段性占优但性价比下降。",
+      "primary_factor": "政策面因子",
+      "secondary_factor": "PL_006",
+      "secondary_factor_label": "央行态度与信号",
+      "tertiary_factor": [
+        "债市对基本面反应正在钝化",
+        "若无央行助力10Y国债难破1.6%关键点位",
+        "央行不愿因股市走强导致债市大跌",
+        "债市核心矛盾转向央行操作",
+        "投资者保持偏长久期主要因期待央行后续对冲如降息"
+      ],
+      "claim_type": "验证指标",
+      "direction": "不明确",
+      "magnitude": "不明确",
+      "time_horizon": "不明确",
+      "confidence_score": 0.85,
+      "causal_chain_text": "基本面一致预期形成后影响力实际减弱 -> 债市核心矛盾转向央行操作 -> 行情断点化特征使窗口极为敏感 -> 三季度债市相对友好但四季度争议增大 -> 票息占优但性价比下降",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "央行操作力度",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "10Y国债关键点位",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "反内卷政策细则",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "断点化判断",
+        "政策敏感",
+        "时间维度清晰",
+        "long_end_rates",
+        "分层分析型",
+        "spreading",
+        "长端"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.105034",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20250718_B00_005",
+      "source_doc_id": "20250718_B00",
+      "speaker": "张迪",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-07-18",
+      "raw_text": "长端受权益主导操作难度高。央行操作矛盾但配合发债意图明确。8月存单季节性上行规律需警惕，避开8月中下旬。信用利差极端水平下削减信用债配置，转向存单及存款品种。重点提示建行可能重启高息定期存款机会。",
+      "summary_text": "长端受权益主导操作难度高。央行操作矛盾但配合发债意图明确。8月存单季节性上行规律需警惕，避开8月中下旬。信用利差极端水平下削减信用债配置，转向存单及存款品种。重点提示建行可能重启高息定期存款机会。",
+      "primary_factor": "流动性因子",
+      "secondary_factor": "LQ_005",
+      "secondary_factor_label": "资金价格中枢",
+      "tertiary_factor": [
+        "长端利率受权益市场主导操作难度较高",
+        "月初1.60%以下存单配置价值偏低",
+        "央行操作矛盾性：上半月未开展买断式回购但财政会议后迅速两次操作",
+        "税期前1.3万亿强力投放",
+        "政策重心倾向于配合发债需求与稳定偿债利率"
+      ],
+      "claim_type": "验证指标",
+      "direction": "利多",
+      "magnitude": "不明确",
+      "time_horizon": "短期(1M以内)",
+      "confidence_score": 0.85,
+      "causal_chain_text": "长端受权益主导操作难度高 -> 央行操作矛盾但配合发债意图明确 -> 8月存单季节性上行规律 -> 信用利差极端水平下削减信用债配置 -> 转向存单及存款品种捕捉结构性机会",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "存单利率",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "DR001/DR007",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "央行操作量",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "建行定期存款产品",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "short_end_rates",
+        "数据驱动型",
+        "边际变化敏感",
+        "季节性规律",
+        "spreading",
+        "品种挖掘",
+        "短端"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.105034",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20250718_B00_006",
+      "source_doc_id": "20250718_B00",
+      "speaker": "杨义山",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-07-18",
+      "raw_text": "债市核心策略保持观望等待方向性信号。变化取决于央行货币政策预期调整和股市风险偏好，两者本质反映环比下行压力增大但预期模糊化的矛盾。7-10月为关键政策窗口期。10Y国债1.62%下限/1.65%中枢/3-5BP波动。",
+      "summary_text": "债市核心策略保持观望等待方向性信号。变化取决于央行货币政策预期调整和股市风险偏好，两者本质反映环比下行压力增大但预期模糊化的矛盾。7-10月为关键政策窗口期。10Y国债1.62%下限/1.65%中枢/",
+      "primary_factor": "政策面因子",
+      "secondary_factor": "PL_003",
+      "secondary_factor_label": "政策目标函数",
+      "tertiary_factor": [
+        "债市核心策略保持观望等待方向性信号",
+        "变化取决于央行货币政策预期调整和股市风险偏好",
+        "两者本质反映宏观基本面矛盾：环比下行压力增大但预期模糊化",
+        "7-10月正值政治局会议至十五五规划关键窗口期",
+        "预计密集召开高规格专题会议"
+      ],
+      "claim_type": "验证指标",
+      "direction": "利多",
+      "magnitude": "不明确",
+      "time_horizon": "不明确",
+      "confidence_score": 0.85,
+      "causal_chain_text": "核心策略观望等待方向性信号 -> 两大增量因素：央行政策预期+股市风险偏好 -> 两者均反映基本面矛盾：环比下行+预期模糊 -> 7-10月为关键政策窗口期 -> 10Y国债1.62%下限/1.65%中枢/3-5BP波动",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "10Y国债利率",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "政治局会议表述",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "十五五规划相关信号",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "区间判断",
+        "信号监测型",
+        "long_end_rates",
+        "政策周期型",
+        "时间窗口框架",
+        "长端"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.105034",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20250718_B00_007",
+      "source_doc_id": "20250718_B00",
+      "speaker": "张晶",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-07-18",
+      "raw_text": "市场主线趋同：股债跷跷板+权益市场走向。关注供给侧框架下反内卷政策效果。居民超额储蓄47万亿但未大规模流入股市，对比2014-2015年增量空间有限。长期债市受支撑但短期风偏压制显著，维持震荡偏空，股债双牛难现主因增量资金不足。",
+      "summary_text": "市场主线趋同：股债跷跷板+权益市场走向。关注供给侧框架下反内卷政策效果。居民超额储蓄47万亿但未大规模流入股市，对比2014-2015年增量空间有限。长期债市受支撑但短期风偏压制显著，维持震荡偏空，股",
+      "primary_factor": "基本面因子",
+      "secondary_factor": "FD_003",
+      "secondary_factor_label": "经济修复斜率",
+      "tertiary_factor": [
+        "市场主线趋同核心矛盾在股债跷跷板",
+        "宏观研究应关注供给侧分析框架",
+        "反内卷政策驱动的生产效率提升与新产业崛起",
+        "全球央行协同宽松推升海外风险偏好",
+        "居民部门存贷差值疫情三年激增47万亿凸显消费投资意愿疲软"
+      ],
+      "claim_type": "验证指标",
+      "direction": "不明确",
+      "magnitude": "不明确",
+      "time_horizon": "中期(1-3M)",
+      "confidence_score": 0.6,
+      "causal_chain_text": "市场主线趋同：股债跷跷板+权益市场走向 -> 供给侧分析框架：反内卷提升效率+新产业崛起 -> 居民超额储蓄47万亿但未大规模流入股市 -> 对比2014-2015年增量空间有限 -> 长期债市受支撑但短期风偏压制 -> 维持震荡偏空股债双牛难现",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "居民存贷差",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "理财权益配置规模",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "权益市场资金流向",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "海外风险偏好指标",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "宏大叙事型",
+        "long_end_rates",
+        "多部门资金流向分析",
+        "历史类比",
+        "全球视角",
+        "长端"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.105034",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    }
+  ],
+  "stats": {
+    "total": 7,
+    "matched": 7,
+    "unmatched": [],
+    "skipped": 0,
+    "format": "v2"
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "metadata": {
+    "meeting_date": "2025-04-18",
+    "filename": "固收策略组周例会议讨论纪要20250418.docx",
+    "batch": "batch1_2025Q1",
+    "analysis_date": "2026-04-09",
+    "total_speech_units": 12
+  },
+  "speech_units": [
+    {
+      "speaker": "张迪",
+      "unit_id": "batch1_0418_01",
+      "primary_factor": "流动性因子",
+      "secondary_factor": "资金面判断",
+      "content_summary": "这周市场表现平稳，尤其是以资金利率和存单利率为代表的货币市场利率波动不大。尽管本周迎来了4月份的缴税期，但资金面未出现显著波动，存单利率维持在1.75%-1.76%之间震荡。",
+      "key_quote": "尽管本周迎来了4月份的缴税期，但资金面未出现显著波动",
+      "sentiment": "中性偏多",
+      "time_phase": "会议前期"
+    },
+    {
+      "speaker": "张迪",
+      "unit_id": "batch1_0418_02",
+      "primary_factor": "基本面因子",
+      "secondary_factor": "经济评估",
+      "content_summary": "一季度GDP及3月份经济数据显示基本面较强，但4月以来资金面明显宽松，可能反映出基本面有所下滑。",
+      "key_quote": "一季度GDP及3月份经济数据显示基本面较强",
+      "sentiment": "中性",
+      "time_phase": "会议前期"
+    },
+    {
+      "speaker": "杨义山",
+      "unit_id": "batch1_0418_03",
+      "primary_factor": "政策面因子",
+      "secondary_factor": "政策预期",
+      "content_summary": "二季度政策重点在于稳经济，并通过财税和货币政策组合提升企业和居民收入，稳定资产端预期。资金面将维持相对平稳，市场需关注政策时机和力度的变化。",
+      "key_quote": "二季度政策重点在于稳经济，并通过财税和货币政策组合提升企业和居民收入",
+      "sentiment": "中性偏多",
+      "time_phase": "会议前期"
+    },
+    {
+      "speaker": "李博良",
+      "unit_id": "batch1_0418_04",
+      "primary_factor": "政策面因子",
+      "secondary_factor": "政策博弈",
+      "content_summary": "一季度数据表现良好，GDP达到5.4%，超出市场预期，但市场对过去的数据定价较少。中美贸易摩擦中长期存在不确定性，尽管双方有意谈判，但前置条件未达成，短期内难以有实质性进展。",
+      "key_quote": "一季度数据表现良好，GDP达到5.4%，超出市场预期",
+      "sentiment": "中性",
+      "time_phase": "会议中期"
+    },
+    {
+      "speaker": "李博良",
+      "unit_id": "batch1_0418_05",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": "策略建议",
+      "content_summary": "短期内市场方向不明，政策性因素可能成为关键变量，选择流动性较高的资产进行波段交易。",
+      "key_quote": "短期内市场方向不明，政策性因素可能成为关键变量",
+      "sentiment": "中性",
+      "time_phase": "会议中期"
+    },
+    {
+      "speaker": "武玥",
+      "unit_id": "batch1_0418_06",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": "区间判断",
+      "content_summary": "资金利率有所回落但幅度有限，短端利差已压缩至较低水平。市场短期内进入激烈交易阶段，信息可测性较差，10年国债预计在1.65至1.7区间波动，30年国债则在1.85至1.9区间波动。",
+      "key_quote": "10年国债预计在1.65至1.7区间波动，30年国债则在1.85至1.9区间波动",
+      "sentiment": "中性",
+      "time_phase": "会议中期"
+    },
+    {
+      "speaker": "武玥",
+      "unit_id": "batch1_0418_07",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": "策略建议",
+      "content_summary": "进一步有效突破需依赖央行破局，策略上建议适度杠杆，围绕中位数久期进行波段操作，并逆市场情绪交易。",
+      "key_quote": "策略上建议适度杠杆，围绕中位数久期进行波段操作",
+      "sentiment": "中性",
+      "time_phase": "会议中期"
+    },
+    {
+      "speaker": "张帆",
+      "unit_id": "batch1_0418_08",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": "策略建议",
+      "content_summary": "当前长端和超长端利率预计将呈现震荡态势，短期内挑战前期低点难度较大；中短端方面，鉴于资金面宽松，1-3年期信用债具有较高配置价值，建议加大配置力度。",
+      "key_quote": "1-3年期信用债具有较高配置价值，正套空间约为30-40bp，建议加大配置力度",
+      "sentiment": "中性偏多",
+      "time_phase": "会议后期"
+    },
+    {
+      "speaker": "柴颖颖",
+      "unit_id": "batch1_0418_09",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": "策略建议",
+      "content_summary": "当前市场处于一个相对中性的位置，基本面、政策面预期、机构行为和市场情绪都显示出这种中性状态。中期来看政策仍需以现实为基础进行调整。",
+      "key_quote": "当前市场处于一个相对中性的位置",
+      "sentiment": "中性",
+      "time_phase": "会议后期"
+    },
+    {
+      "speaker": "孔祥雨",
+      "unit_id": "batch1_0418_10",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": "信用策略",
+      "content_summary": "当下信用债相较于利率债具有更强的赚钱效应。而从中长期看，破1.6%的长端利率水平可能在三四季度实现，仍维持二季度震荡的观点。",
+      "key_quote": "当下信用债相较于利率债具有更强的赚钱效应",
+      "sentiment": "中性偏多",
+      "time_phase": "会议后期"
+    },
+    {
+      "speaker": "姜之媛",
+      "unit_id": "batch1_0418_11",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": "策略建议",
+      "content_summary": "当前债市胜率与赔率均一般，长端利率或呈现震荡略偏强走势，不建议过度拉长久期，需保持波段操作思路。",
+      "key_quote": "不建议过度拉长久期，需保持波段操作思路",
+      "sentiment": "中性",
+      "time_phase": "会议后期"
+    },
+    {
+      "speaker": "赵骥",
+      "unit_id": "batch1_0418_12",
+      "primary_factor": "机构行为因子",
+      "secondary_factor": "绝对收益理念",
+      "content_summary": "绝对收益理念的核心在于设定止盈和止损的目标。当达到预设的目标点位时，如年均提到的1.65为中心、上下浮动10个基点，到达中枢下方时应考虑止盈，接近上限时则考虑止损。",
+      "key_quote": "绝对收益理念的核心在于设定止盈和止损的目标",
+      "sentiment": "中性",
+      "time_phase": "会议后期"
+    }
+  ]
+}

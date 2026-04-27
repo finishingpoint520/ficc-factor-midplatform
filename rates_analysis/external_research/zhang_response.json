@@ -1,0 +1,189 @@
+{
+  "report_meta": {
+    "title": "外部研报聚合 - 华泰证券研究所 张继强 团队",
+    "institution": "华泰证券研究所",
+    "author": "张继强团队",
+    "date": "2026-04-22",
+    "core_thesis": "短期债市乐观情绪有望延续但空间有限，建议以中短端信用债为底仓，挖掘结构性机会，对长端利率债保持谨慎并关注止盈时机。"
+  },
+  "claim_atoms": [
+    {
+      "source_type": "外部研报",
+      "speaker_or_author": "华泰张继强",
+      "date": "2026-04-14",
+      "claim": "中长贷同比少增幅度较大，表明实体投资意愿尚待巩固。",
+      "factor_chain": [
+        {
+          "level_1": "FD",
+          "level_2": "经济增长动能",
+          "factor_id": "FD_005(FDL2)"
+        },
+        {
+          "level_1": "FD",
+          "level_2": "经济评估",
+          "factor_id": "FD_001(FDL2)"
+        }
+      ],
+      "polarity": "negative",
+      "confidence": "high",
+      "evidence": "3月社融数据中，中长贷同比少增幅度较大。"
+    },
+    {
+      "source_type": "外部研报",
+      "speaker_or_author": "华泰张继强",
+      "date": "2026-04-14",
+      "claim": "短期债市乐观情绪有望延续但更多是交易性机会，空间有限。",
+      "factor_chain": [
+        {
+          "level_1": "MS",
+          "level_2": "赔率与胜率判断",
+          "factor_id": "MS_005(MSL2)"
+        },
+        {
+          "level_1": "MS",
+          "level_2": "区间判断",
+          "factor_id": "MS_010(MSL2)"
+        }
+      ],
+      "polarity": "neutral",
+      "confidence": "medium",
+      "evidence": "基于对社融数据的解读和市场情绪的判断。"
+    },
+    {
+      "source_type": "外部研报",
+      "speaker_or_author": "华泰张继强",
+      "date": "2026-04-14",
+      "claim": "继续沿曲线和利差挖掘结构性机会，票息品种仍是重点，长久期二永债地方债等可能有补涨。",
+      "factor_chain": [
+        {
+          "level_1": "MS",
+          "level_2": "信用策略",
+          "factor_id": "MS_006(MSL2)"
+        },
+        {
+          "level_1": "IB",
+          "level_2": "信用利差机会",
+          "factor_id": "IB_002(IBL2)"
+        }
+      ],
+      "polarity": "positive",
+      "confidence": "medium",
+      "evidence": "对市场策略和品种机会的判断。"
+    },
+    {
+      "source_type": "外部研报",
+      "speaker_or_author": "华泰固收",
+      "date": "2026-04-20",
+      "claim": "短期1-2周资金面收紧风险不大，中期1-2个月可能略有收敛。",
+      "factor_chain": [
+        {
+          "level_1": "LQ",
+          "level_2": "资金面判断",
+          "factor_id": "LQ_001(LQL2)"
+        }
+      ],
+      "polarity": "neutral",
+      "confidence": "medium",
+      "evidence": "对短期和中期资金面的预判。"
+    },
+    {
+      "source_type": "外部研报",
+      "speaker_or_author": "华泰固收",
+      "date": "2026-04-20",
+      "claim": "重点关注监管对杠杆交易态度和供给高峰期央行配合度。",
+      "factor_chain": [
+        {
+          "level_1": "PL",
+          "level_2": "政策博弈",
+          "factor_id": "PL_002(PLL2)"
+        },
+        {
+          "level_1": "LQ",
+          "level_2": "央行投放节奏",
+          "factor_id": "LQ_002(LQL2)"
+        }
+      ],
+      "polarity": "neutral",
+      "confidence": "medium",
+      "evidence": "提示未来资金面的关键观察变量。"
+    },
+    {
+      "source_type": "外部研报",
+      "speaker_or_author": "华泰固收",
+      "date": "2026-04-20",
+      "claim": "组合继续以中短端普信债二永债为底仓。久期逐步向中性回归，10Y国债逢高适度止盈，30Y国债不再追涨，利差达45BP以下可考虑止盈。",
+      "factor_chain": [
+        {
+          "level_1": "IB",
+          "level_2": "久期管理",
+          "factor_id": "IB_005(IBL2)"
+        },
+        {
+          "level_1": "MS",
+          "level_2": "止盈/止损行为",
+          "factor_id": "MS_012(MSL2)"
+        },
+        {
+          "level_1": "MS",
+          "level_2": "信用策略",
+          "factor_id": "MS_006(MSL2)"
+        }
+      ],
+      "polarity": "neutral",
+      "confidence": "high",
+      "evidence": "明确的久期管理和交易操作建议。"
+    },
+    {
+      "source_type": "外部研报",
+      "speaker_or_author": "华泰固收",
+      "date": "2026-03-23",
+      "claim": "债市略偏弱但调整空间有限，十年国债核心波动区间1.75-1.9%。",
+      "factor_chain": [
+        {
+          "level_1": "MS",
+          "level_2": "区间判断",
+          "factor_id": "MS_010(MSL2)"
+        }
+      ],
+      "polarity": "neutral",
+      "confidence": "medium",
+      "evidence": "对债市整体走势和核心利率区间的判断。"
+    },
+    {
+      "source_type": "外部研报",
+      "speaker_or_author": "华泰固收",
+      "date": "2026-03-23",
+      "claim": "建议中短端信用债作底仓，长端利率依托赔率交易，关注曲线走陡、税收利差压缩等结构性机会，转债保持低配。",
+      "factor_chain": [
+        {
+          "level_1": "MS",
+          "level_2": "信用策略",
+          "factor_id": "MS_006(MSL2)"
+        },
+        {
+          "level_1": "IB",
+          "level_2": "赔率评估",
+          "factor_id": "IB_007(IBL2)"
+        },
+        {
+          "level_1": "MS",
+          "level_2": "股债关系",
+          "factor_id": "MS_008(MSL2)"
+        }
+      ],
+      "polarity": "neutral",
+      "confidence": "medium",
+      "evidence": "综合性的资产配置和交易策略建议。"
+    }
+  ],
+  "alignment_summary": {
+    "new_factor_candidates": [],
+    "reinforced_chains": [
+      "经济增长动能 -> 经济评估 (FD_005 -> FD_001): 研报通过社融中长贷数据，强化了实体投资意愿不足对经济基本面的负面评估。",
+      "资金面判断 (LQ_001): 研报对短期资金面风险不大的判断，与内部框架中对资金面稳定性的关注点一致，提供了外部验证。",
+      "久期管理 -> 止盈/止损行为 (IB_005 -> MS_012): 研报明确给出了久期回归中性及具体止盈点位（如30Y国债利差45BP），强化了机构行为中久期管理与市场交易行为之间的因果链。",
+      "信用策略 -> 信用利差机会 (MS_006 -> IB_002): 研报多次强调挖掘结构性机会（曲线、利差），强化了市场策略与具体投资机会之间的关联。"
+    ],
+    "conflicting_views": []
+  }
+}

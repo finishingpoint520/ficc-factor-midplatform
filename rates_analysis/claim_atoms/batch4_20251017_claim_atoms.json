@@ -1,0 +1,470 @@
+{
+  "metadata": {
+    "source_file": "batch4_20251017_speech_units.json",
+    "meeting_date": "2025-10-17",
+    "batch": "unknown",
+    "source_doc_id": "20251017_B00",
+    "migration_date": "2026-04-21",
+    "total_atoms": 8,
+    "format": "v2"
+  },
+  "claim_atoms": [
+    {
+      "atom_id": "20251017_B00_001",
+      "source_doc_id": "20251017_B00",
+      "speaker": "武玥",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-10-17",
+      "raw_text": "短期修复条件具备（贸易战+供需改善+资金宽松），中期偏谨慎。信用中短端票息策略。",
+      "summary_text": "短期修复条件具备（贸易战+供需改善+资金宽松），中期偏谨慎。信用中短端票息策略。",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": "PL_004",
+      "secondary_factor_label": "贸易战避险效应",
+      "tertiary_factor": [
+        "10月可能先下行之后整体偏谨慎",
+        "债基赎回费影响被搁置但未定价完毕",
+        "基本面不佳时股市胜率存疑",
+        "贸易战重启中国处于偏主动态势",
+        "四季度债券供需有边际改善政府债发行高峰过去"
+      ],
+      "claim_type": "验证指标",
+      "direction": "利多",
+      "magnitude": "不明确",
+      "time_horizon": "不明确",
+      "confidence_score": 0.6,
+      "causal_chain_text": "短期修复条件具备 -> 贸易战+供需改善+资金宽松支撑 -> 但中期偏谨慎 -> 信用中短端票息策略",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "10Y利率突破压力位",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "贸易战进展",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "政府债供给",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "信用策略导向",
+        "先短期后中期",
+        "多因素框架",
+        "long_end_rates",
+        "credit_bonds",
+        "利率+信用"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.124595",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20251017_B00_002",
+      "source_doc_id": "20251017_B00",
+      "speaker": "姜之媛",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-10-17",
+      "raw_text": "观点从谨慎调至中性，贸易战带来边际改善。短期仍谨慎，短信用债套息有效。",
+      "summary_text": "观点从谨慎调至中性，贸易战带来边际改善。短期仍谨慎，短信用债套息有效。",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": "MS_001",
+      "secondary_factor_label": "风险偏好变化",
+      "tertiary_factor": [
+        "四季度观点从谨慎调整为中性",
+        "贸易战突发因素带来边际改善",
+        "债券连续上涨未快速反弹A股也未强劲反弹",
+        "美国停摆纳指高位盘整比特比波动风险偏好下降",
+        "债券绝对点位较高边际变化有利"
+      ],
+      "claim_type": "验证指标",
+      "direction": "不明确",
+      "magnitude": "不明确",
+      "time_horizon": "不明确",
+      "confidence_score": 0.6,
+      "causal_chain_text": "贸易战带来边际改善调至中性 -> 全球risk off环境 -> 短期仍谨慎以配置为主 -> 短信用债套息有效",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "风险偏好指标",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "短信用利差",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "贸易战动态",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "观点调整说明",
+        "风险事件分析",
+        "配置导向",
+        "credit_bonds",
+        "spreading",
+        "信用"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.124595",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20251017_B00_003",
+      "source_doc_id": "20251017_B00",
+      "speaker": "张帆",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-10-17",
+      "raw_text": "权益主升浪结束，债市从悲观转震荡偏多。地产坍塌偏多。30年债3-4bp空间，两年内信用明确。",
+      "summary_text": "权益主升浪结束，债市从悲观转震荡偏多。地产坍塌偏多。30年债3-4bp空间，两年内信用明确。",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": "PL_004",
+      "secondary_factor_label": "贸易战避险",
+      "tertiary_factor": [
+        "权益主升浪已结束",
+        "指数稳在3800-3900结构失衡科技下跌显著",
+        "对债市观点从悲观转为震荡偏多",
+        "已进行5年30年交易",
+        "基本面偏多地产数据坍塌式下滑"
+      ],
+      "claim_type": "验证指标",
+      "direction": "不明确",
+      "magnitude": "不明确",
+      "time_horizon": "短期(1M以内)",
+      "confidence_score": 0.6,
+      "causal_chain_text": "权益主升浪结束对债转为震荡偏多 -> 基本面偏多（地产坍塌） -> 央行宽松流动性支撑 -> 30年债3-4bp空间两年内信用明确",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "地产销售数据",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "30Y利率下行",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "央行资金投放",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "多因子框架",
+        "定量空间判断",
+        "ultra_long_rates",
+        "观点转向说明",
+        "credit_bonds",
+        "超长端+信用"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.124595",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20251017_B00_004",
+      "source_doc_id": "20251017_B00",
+      "speaker": "孔祥雨",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-10-17",
+      "raw_text": "转向偏多，长端5-7bp下行空间。10Y目标1.7%、30Y目标2.9%。3-5年信用适度拉长久期。",
+      "summary_text": "转向偏多，长端5-7bp下行空间。10Y目标1.7%、30Y目标2.9%。3-5年信用适度拉长久期。",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": "MS_009",
+      "secondary_factor_label": "利差收窄机会",
+      "tertiary_factor": [
+        "观点震荡但10年和30年有机会",
+        "利差处于历史较高水平",
+        "基金新规和股债跷跷板边际影响减弱",
+        "矛盾重心回归基本面",
+        "预计10年国债震荡下行至1.7%"
+      ],
+      "claim_type": "验证指标",
+      "direction": "利多",
+      "magnitude": "不明确",
+      "time_horizon": "不明确",
+      "confidence_score": 0.6,
+      "causal_chain_text": "利差高位矛盾回归基本面 -> 贸易战和新规边际影响减弱 -> 长端5-7bp下行空间 -> 3-5年信用适度拉长久期",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "10Y目标1.7%",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "30Y目标2.9%",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "信用利差",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "主动看多",
+        "ultra_long_rates",
+        "利差分析",
+        "定量目标",
+        "long_end_rates",
+        "credit_bonds",
+        "长端+超长端+信用"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.124595",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20251017_B00_005",
+      "source_doc_id": "20251017_B00",
+      "speaker": "张迪",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-10-17",
+      "raw_text": "短端低波延续，降息概率低。1.68%存单适合套息配置但资本利得难。",
+      "summary_text": "短端低波延续，降息概率低。1.68%存单适合套息配置但资本利得难。",
+      "primary_factor": "流动性因子",
+      "secondary_factor": "LQ_003",
+      "secondary_factor_label": "存单利率",
+      "tertiary_factor": [
+        "三季度短端稳定收益率1.64%至1.67%波动仅4bp",
+        "四季度低波动属性可能延续",
+        "存单到期量较大银行融资意愿增强",
+        "降息概率较低四季度降息较少",
+        "降准或国债买卖优先度更高"
+      ],
+      "claim_type": "验证指标",
+      "direction": "不明确",
+      "magnitude": "不明确",
+      "time_horizon": "不明确",
+      "confidence_score": 0.85,
+      "causal_chain_text": "短端低波延续 -> 存单供给压力大 -> 降息概率低 -> 套息配置为主资本利得难",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "1Y存单利率",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "存单到期量",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "降息落地",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "短端视角",
+        "short_end_rates",
+        "数据驱动",
+        "降息概率分析",
+        "spreading",
+        "短端"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.124595",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20251017_B00_006",
+      "source_doc_id": "20251017_B00",
+      "speaker": "杨义山",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-10-17",
+      "raw_text": "未来两周政策事件密集（四中全会+中美会晤），可能产生预期差。保持灵活仓位。",
+      "summary_text": "未来两周政策事件密集（四中全会+中美会晤），可能产生预期差。保持灵活仓位。",
+      "primary_factor": "政策面因子",
+      "secondary_factor": null,
+      "secondary_factor_label": "政策事件密集",
+      "tertiary_factor": [
+        "四季度关键驱动在未来两周政策事件",
+        "四中全会10月20-23日公报和决定稿",
+        "人大常委会议金融工作汇报",
+        "中美领导人会晤可能10月30日或11月1日",
+        "四中全会预计总结十四五定性十五五"
+      ],
+      "claim_type": "验证指标",
+      "direction": "不明确",
+      "magnitude": "不明确",
+      "time_horizon": "不明确",
+      "confidence_score": 0.85,
+      "causal_chain_text": "未来两周政策事件密集 -> 四中全会+中美会晤是关键 -> 可能产生预期差和高波动 -> 保持灵活仓位",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "四中全会公报",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "中美会晤安排",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "市场波动率",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "风险事件评估",
+        "灵活仓位建议",
+        "政策窗口密集期",
+        "cross_asset",
+        "long_end_rates",
+        "全谱"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.124595",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20251017_B00_007",
+      "source_doc_id": "20251017_B00",
+      "speaker": "沈文思",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-10-17",
+      "raw_text": "Q4 GDP约4.5%，增量政策必要性不高。三季度调整已修复透支预期，四季度利多略增。",
+      "summary_text": "Q4 GDP约4.5%，增量政策必要性不高。三季度调整已修复透支预期，四季度利多略增。",
+      "primary_factor": "基本面因子",
+      "secondary_factor": "FD_005",
+      "secondary_factor_label": "经济增长动能",
+      "tertiary_factor": [
+        "四季度GDP预计4.5%附近",
+        "经济动能受高基数制造业投资拖累及贸易争端影响",
+        "CPI预计回升至零附近PPI在-2.2%至-2.3%",
+        "政策端增量刺激必要性不高",
+        "若数据压力超预期降准可能性大于降息"
+      ],
+      "claim_type": "验证指标",
+      "direction": "不明确",
+      "magnitude": "不明确",
+      "time_horizon": "不明确",
+      "confidence_score": 0.85,
+      "causal_chain_text": "基本面偏弱GDP约4.5% -> 增量政策必要性不高 -> 三季度调整已修复透支预期 -> 四季度利多因素略增",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "Q4 GDP",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "CPI/PPI",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "政策增量",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "边际变化分析",
+        "宏观框架",
+        "long_end_rates",
+        "数据驱动",
+        "长端利率"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.124595",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20251017_B00_008",
+      "source_doc_id": "20251017_B00",
+      "speaker": "赵骥",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-10-17",
+      "raw_text": "贸易战常态化，利率中枢较Q3小幅回落但赔率不高。配置盘进场+利差高位推动波段。短端防守确定性更强。",
+      "summary_text": "贸易战常态化，利率中枢较Q3小幅回落但赔率不高。配置盘进场+利差高位推动波段。短端防守确定性更强。",
+      "primary_factor": "机构行为因子",
+      "secondary_factor": "PL_004",
+      "secondary_factor_label": "贸易战常态化",
+      "tertiary_factor": [
+        "贸易摩擦从打为主转向打谈结合常态化",
+        "国内外对中方策略分歧加剧波动",
+        "四季度赔率不高严监管和负债不稳定制约",
+        "利率中枢可能较三季度小幅回落",
+        "30-10年利差处于历史高位"
+      ],
+      "claim_type": "验证指标",
+      "direction": "利多",
+      "magnitude": "不明确",
+      "time_horizon": "不明确",
+      "confidence_score": 0.85,
+      "causal_chain_text": "贸易战常态化 -> 利率中枢小幅回落但赔率不高 -> 配置盘进场+利差高位推动波段 -> 灵活操作短端防守",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "30-10Y利差",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "银行配置行为",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "利率中枢变化",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "贸易战框架",
+        "波段操作建议",
+        "ultra_long_rates",
+        "long_end_rates",
+        "赔率评估",
+        "全谱"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.124595",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    }
+  ],
+  "stats": {
+    "total": 8,
+    "matched": 7,
+    "unmatched": [
+      "政策事件密集"
+    ],
+    "skipped": 0,
+    "format": "v2"
+  }
+}

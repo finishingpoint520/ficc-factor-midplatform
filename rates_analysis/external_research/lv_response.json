@@ -1,0 +1,134 @@
+{
+  "report_meta": {
+    "title": "外部研报聚合 - 中泰证券研究所 吕品 团队",
+    "institution": "中泰证券研究所",
+    "author": "吕品",
+    "date": "2026-04-22",
+    "core_thesis": "通胀交易告一段落，风险偏好交易占主导，债券牛市轮廓清晰，布局久期策略是赔率和胜率较高的方向。"
+  },
+  "claim_atoms": [
+    {
+      "source_type": "外部研报",
+      "speaker_or_author": "吕品",
+      "date": "2026-04-13",
+      "claim": "3月债市经历波澜壮阔，超长债在输入性通胀担忧下快速上行，短端在资金宽松预期下持续强势。",
+      "factor_1": "MSL2",
+      "factor_1_name": "风险偏好变化",
+      "factor_2": "FDL2",
+      "factor_2_name": "通胀走势",
+      "relationship": "负向影响",
+      "reasoning": "输入性通胀担忧导致超长债利率上行（风险偏好下降），而资金宽松预期支撑短端强势。",
+      "confidence": "高",
+      "time_horizon": "短期"
+    },
+    {
+      "source_type": "外部研报",
+      "speaker_or_author": "吕品",
+      "date": "2026-04-13",
+      "claim": "在30年利差走扩至50BP以上后行情有了变化，3月下旬超长债走出比较流畅的上涨曲线，通胀数据和供给计划推动下迎来大幅反弹。",
+      "factor_1": "MSL2",
+      "factor_1_name": "赔率与胜率判断",
+      "factor_2": "FDL2",
+      "factor_2_name": "通胀走势",
+      "relationship": "负向影响",
+      "reasoning": "利差走扩至高位后，通胀数据（可能不及预期或见顶）和供给计划共同推动超长债反弹，显示赔率改善。",
+      "confidence": "高",
+      "time_horizon": "短期"
+    },
+    {
+      "source_type": "外部研报",
+      "speaker_or_author": "吕品",
+      "date": "2026-04-13",
+      "claim": "通胀交易基本告一段落。",
+      "factor_1": "FDL2",
+      "factor_1_name": "通胀走势",
+      "factor_2": "MSL2",
+      "factor_2_name": "风险偏好变化",
+      "relationship": "影响减弱",
+      "reasoning": "明确判断通胀作为市场核心交易逻辑的阶段已经结束。",
+      "confidence": "高",
+      "time_horizon": "中期"
+    },
+    {
+      "source_type": "外部研报",
+      "speaker_or_author": "吕品",
+      "date": "2026-04-13",
+      "claim": "当前布局久期策略依然是赔率和胜率较高的方向。",
+      "factor_1": "MSL2",
+      "factor_1_name": "久期策略",
+      "factor_2": "MSL2",
+      "factor_2_name": "赔率与胜率判断",
+      "relationship": "正向影响",
+      "reasoning": "直接建议采取拉长久期的策略，并认为该策略兼具高赔率与高胜率。",
+      "confidence": "高",
+      "time_horizon": "中期"
+    },
+    {
+      "source_type": "外部研报",
+      "speaker_or_author": "吕品",
+      "date": "2026-04-08",
+      "claim": "3月后半月风险偏好交易逐步压倒了通胀交易。",
+      "factor_1": "MSL2",
+      "factor_1_name": "风险偏好变化",
+      "factor_2": "FDL2",
+      "factor_2_name": "通胀走势",
+      "relationship": "主导性增强",
+      "reasoning": "风险偏好成为市场的主导逻辑，影响力超过通胀逻辑。",
+      "confidence": "高",
+      "time_horizon": "短期"
+    },
+    {
+      "source_type": "外部研报",
+      "speaker_or_author": "吕品",
+      "date": "2026-04-08",
+      "claim": "以外生战争与油价推动，风险偏好和通胀交替共振，短端更强长端更弱。",
+      "factor_1": "PLL2",
+      "factor_1_name": "关税影响",
+      "factor_2": "MSL2",
+      "factor_2_name": "风险偏好变化",
+      "relationship": "正向影响",
+      "reasoning": "将地缘冲突（战争）和油价作为外生冲击，指出其共同影响了风险偏好和通胀预期，导致收益率曲线陡峭化（短强长弱）。",
+      "confidence": "中",
+      "time_horizon": "短期"
+    },
+    {
+      "source_type": "外部研报",
+      "speaker_or_author": "吕品",
+      "date": "2026-04-08",
+      "claim": "10年-OMO/MLF利差会收窄，债券利率定价中枢下移。",
+      "factor_1": "LQL2",
+      "factor_1_name": "资金价格中枢",
+      "factor_2": "MSL2",
+      "factor_2_name": "区间判断",
+      "relationship": "正向影响",
+      "reasoning": "预测政策利率与市场利率的利差将缩窄，意味着整体利率水平（定价中枢）将下降。",
+      "confidence": "高",
+      "time_horizon": "中期"
+    },
+    {
+      "source_type": "外部研报",
+      "speaker_or_author": "吕品",
+      "date": "2026-04-08",
+      "claim": "降息交易概率不高但赔率较高。",
+      "factor_1": "PLL2",
+      "factor_1_name": "降息预期",
+      "factor_2": "MSL2",
+      "factor_2_name": "赔率与胜率判断",
+      "relationship": "高赔率",
+      "reasoning": "认为央行降息的可能性（胜率）不大，但一旦发生，潜在的获利空间（赔率）很大。",
+      "confidence": "中",
+      "time_horizon": "中期"
+    }
+  ],
+  "alignment_summary": {
+    "new_factor_candidates": [
+      "输入性通胀",
+      "外生战争冲击"
+    ],
+    "reinforced_chains": [
+      "通胀走势 (FDL2) -> 风险偏好变化 (MSL2) -> 久期策略 (MSL4)：研报描述了通胀担忧如何影响市场风险偏好和超长债表现，并最终导向对久期策略的判断，强化了‘基本面变化影响情绪，进而影响策略选择’的因果链。",
+      "赔率与胜率判断 (MSL2) -> 久期策略 (MSL4)：研报明确将‘高赔率与高胜率’作为支持‘布局久期策略’的核心论据，强化了赔率评估对策略选择的指导作用。"
+    ],
+    "conflicting_views": []
+  }
+}

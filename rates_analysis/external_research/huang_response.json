@@ -1,0 +1,89 @@
+{
+  "report_meta": {
+    "title": "申银万国研究所2026年4月债市观点聚合",
+    "institution": "申银万国研究所",
+    "author": "黄伟平团队",
+    "date": "2026-04-10至2026-04-21",
+    "core_thesis": "债市运行逻辑转向资金和负债端，在资金宽松与基本面改善的权衡中，当前资金面因素更为关键；同时，负久期策略作为方向性工具，其价值依赖于择时判断。"
+  },
+  "claim_atoms": [
+    {
+      "source_type": "外部研报",
+      "speaker_or_author": "黄伟平",
+      "claim": "当前债市运行的核心逻辑是看资金和负债端。",
+      "factor_1": "LQ",
+      "factor_2": "资金面判断",
+      "factor_2_id": "LQ_001",
+      "factor_3": null,
+      "factor_3_id": null,
+      "relation": "是",
+      "timestamp": "2026-04-21",
+      "confidence": "高",
+      "evidence": "黄伟平2026年Q2债市策略主题：债市运行新逻辑，看资金和负债做债。"
+    },
+    {
+      "source_type": "外部研报",
+      "speaker_or_author": "黄伟平",
+      "claim": "在资金宽松与基本面改善的权衡中，资金面因素更为重要。",
+      "factor_1": "LQ",
+      "factor_2": "资金面判断",
+      "factor_2_id": "LQ_001",
+      "factor_3": "FD",
+      "factor_3_id": "FD_001",
+      "relation": "比...更重要",
+      "timestamp": "2026-04-21",
+      "confidence": "中",
+      "evidence": "核心议题：资金松vs基本面改善，哪个更重要。"
+    },
+    {
+      "source_type": "外部研报",
+      "speaker_or_author": "黄伟平",
+      "claim": "负久期策略是一种方向性策略，其价值依赖于择时判断。",
+      "factor_1": "MS",
+      "factor_2": "久期策略",
+      "factor_2_id": "MS_004",
+      "factor_3": null,
+      "factor_3_id": null,
+      "relation": "是",
+      "timestamp": "2026-04-10",
+      "confidence": "高",
+      "evidence": "负久期本身是方向性策略，依赖择时判断。"
+    },
+    {
+      "source_type": "外部研报",
+      "speaker_or_author": "黄伟平",
+      "claim": "负久期利率债ETF作为表达利率上行观点的工具，可能具有独特价值。",
+      "factor_1": "MS",
+      "factor_2": "久期策略",
+      "factor_2_id": "MS_004",
+      "factor_3": "IB",
+      "factor_3_id": "IB_004",
+      "relation": "可能产生",
+      "timestamp": "2026-04-10",
+      "confidence": "中",
+      "evidence": "如果定位为表达利率上行观点的投资工具，类似负久期利率债ETF，可能会有独特价值。"
+    },
+    {
+      "source_type": "外部研报",
+      "speaker_or_author": "黄伟平",
+      "claim": "通胀预期是当前债市的分歧点之一。",
+      "factor_1": "FD",
+      "factor_2": "通胀走势",
+      "factor_2_id": "FD_002",
+      "factor_3": "MS",
+      "factor_3_id": "MS_001",
+      "relation": "影响",
+      "timestamp": "2026-04-11",
+      "confidence": "中",
+      "evidence": "钱多，通胀预期与债市分歧点。"
+    }
+  ],
+  "alignment_summary": {
+    "new_factor_candidates": [],
+    "reinforced_chains": [
+      "资金面判断(LQ_001) 比...更重要 经济评估(FD_001)：强化了资金面在短期市场逻辑中的主导地位。",
+      "久期策略(MS_004) 是 方向性策略：强化了久期策略的择时属性。"
+    ],
+    "conflicting_views": []
+  }
+}

@@ -1,0 +1,497 @@
+{
+  "metadata": {
+    "source_file": "batch3_20250704_speech_units.json",
+    "meeting_date": "2025-07-04",
+    "batch": "unknown",
+    "source_doc_id": "20250704_B00",
+    "migration_date": "2026-04-21",
+    "total_atoms": 8,
+    "format": "v2"
+  },
+  "claim_atoms": [
+    {
+      "atom_id": "20250704_B00_001",
+      "source_doc_id": "20250704_B00",
+      "speaker": "张迪",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-07-04",
+      "raw_text": "后续资金预计不会进一步下行，1.6%以下的存单性价比不高。从季节性、央行回笼、政府债供给、套利空间四方面论证资金进一步下行概率低。存单从绝对点位和比价角度均不具优势，操作上建议观望。",
+      "summary_text": "后续资金预计不会进一步下行，1.6%以下的存单性价比不高。从季节性、央行回笼、政府债供给、套利空间四方面论证资金进一步下行概率低。存单从绝对点位和比价角度均不具优势，操作上建议观望。",
+      "primary_factor": "流动性因子",
+      "secondary_factor": "LQ_005",
+      "secondary_factor_label": "资金价格中枢",
+      "tertiary_factor": [
+        "DR001下行至1.315%季节性偏低",
+        "央行跨季后回笼反映对资金偏松关注",
+        "政府债发行对资金影响",
+        "借钱放活期套利抑制资金进一步下行",
+        "存单-OMO利差约20bp处于中性水平"
+      ],
+      "claim_type": "验证指标",
+      "direction": "利多",
+      "magnitude": "不明确",
+      "time_horizon": "短期(1M以内)",
+      "confidence_score": 0.85,
+      "causal_chain_text": "季初季节性宽松但央行回笼 -> 资金进一步下行概率低 -> 套利操作抑制资金价格 -> 存单绝对点位和比价均无优势 -> 先观望OMO回笼和税期扰动",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "DR001",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "DR007",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "OMO利率",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "同业存单利率",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "活期存款利率",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "多角度比价",
+        "short_end_rates",
+        "先列论据",
+        "条件判断为主",
+        "分点论述",
+        "spreading",
+        "短端"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.103032",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20250704_B00_002",
+      "source_doc_id": "20250704_B00",
+      "speaker": "杨义山",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-07-04",
+      "raw_text": "货政报告删除择机双降是正常表述，不代表取向变化。央行年内恢复国债买卖概率较高。当前形势不需增量政策明显加力。基本面和政策面温和压力，七八月份自上而下保持偏多，长端1.65%窄幅波动给其他资产利差压缩提供了空间。",
+      "summary_text": "货政报告删除择机双降是正常表述，不代表取向变化。央行年内恢复国债买卖概率较高。当前形势不需增量政策明显加力。基本面和政策面温和压力，七八月份自上而下保持偏多，长端1.65%窄幅波动给其他资产利差压缩提",
+      "primary_factor": "政策面因子",
+      "secondary_factor": "PL_003",
+      "secondary_factor_label": "政策目标函数",
+      "tertiary_factor": [
+        "货政报告删除择机双降是正常表述不代表取向变化",
+        "逆周期和跨周期回到十五五规划口径",
+        "央行年内恢复国债买卖概率较高",
+        "增量政策明显加力阶段尚未达到",
+        "中央财经委关注反内卷和物价"
+      ],
+      "claim_type": "验证指标",
+      "direction": "不明确",
+      "magnitude": "不明确",
+      "time_horizon": "不明确",
+      "confidence_score": 0.85,
+      "causal_chain_text": "货政报告删除择机双降为正常表述 -> 年内恢复国债买卖概率高 -> 当前形势不需增量政策明显加力 -> 基本面和政策面温和压力 -> 七八月份自上而下保持偏多",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "货政报告措辞",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "国债买卖操作",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "财政政策力度",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "PPI走势",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "yield_curve",
+        "先讲政策",
+        "再讲财政",
+        "多段链条型",
+        "long_end_rates",
+        "最后落到宏观判断",
+        "spreading",
+        "长端"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.103032",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20250704_B00_003",
+      "source_doc_id": "20250704_B00",
+      "speaker": "李博良",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-07-04",
+      "raw_text": "整体偏多，资产上关注前期涨幅较小品种的补涨机会，信用短期内性价比高于利率。存单当前价格合理，R001若稳定在1.4%附近短端预计平稳。赎回压力不大，银行配置需求仍在。维持较高久期，看好3-5Y中等资质信用和ETF长端信用债。",
+      "summary_text": "整体偏多，资产上关注前期涨幅较小品种的补涨机会，信用短期内性价比高于利率。存单当前价格合理，R001若稳定在1.4%附近短端预计平稳。赎回压力不大，银行配置需求仍在。维持较高久期，看好3-5Y中等资质",
+      "primary_factor": "机构行为因子",
+      "secondary_factor": "IB_012",
+      "secondary_factor_label": "银行配置行为",
+      "tertiary_factor": [
+        "二季末冲量资金三季初回流有限",
+        "大行持续买短债反映配置需求",
+        "银行配置力量起到市场稳定器作用",
+        "存单当前价格合理取决于银行负债和资金利率",
+        "7月信用性价比预计高于利率"
+      ],
+      "claim_type": "验证指标",
+      "direction": "利多",
+      "magnitude": "不明确",
+      "time_horizon": "短期(1M以内)",
+      "confidence_score": 0.85,
+      "causal_chain_text": "基本面增量信息少 -> 存单当前价格合理 -> R001若稳定短端平稳 -> 赎回压力不大+银行配置需求在 -> 维持较高久期，信用优于利率",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "赎回数据",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "大行买入行为",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "R001",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "信用利差",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "duration_strategy",
+        "short_end_rates",
+        "最后落策略",
+        "简洁直接",
+        "再分模块分析",
+        "spreading",
+        "先讲整体观点",
+        "信用"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.103032",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20250704_B00_004",
+      "source_doc_id": "20250704_B00",
+      "speaker": "武玥",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-07-04",
+      "raw_text": "利差压缩后各品类价值均处低位，市场到去α保留β阶段。有胜率没赔率，交易盘抢跑后止盈压力需关注。维持区间1.6%-1.65%判断，信用二永考虑哑铃策略。",
+      "summary_text": "利差压缩后各品类价值均处低位，市场到去α保留β阶段。有胜率没赔率，交易盘抢跑后止盈压力需关注。维持区间1.6%-1.65%判断，信用二永考虑哑铃策略。",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": "MS_003",
+      "secondary_factor_label": "拥挤交易程度",
+      "tertiary_factor": [
+        "利差压缩后各品类价值均处低位",
+        "去α保留β阶段",
+        "市场有胜率没赔率",
+        "久期高位+机构未离场导致绝对收益更难做",
+        "交易盘抢跑后止盈压力"
+      ],
+      "claim_type": "验证指标",
+      "direction": "不明确",
+      "magnitude": "不明确",
+      "time_horizon": "不明确",
+      "confidence_score": 0.85,
+      "causal_chain_text": "利差压缩后赔率进一步下降 -> 去α保留β -> 久期高位但资金松下调整风险不大 -> 没有总量宽松预期则空间有限 -> 区间操作+结构调整",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "信用利差分位数",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "基金久期",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "久期分歧度",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "最后落具体操作",
+        "先讲整体判断",
+        "条件句为主",
+        "short_end_rates",
+        "再讲赔率视角",
+        "long_end_rates",
+        "spreading",
+        "曲线"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.103032",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20250704_B00_005",
+      "source_doc_id": "20250704_B00",
+      "speaker": "姜之媛",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-07-04",
+      "raw_text": "7月行情整体偏乐观但赔率不足。1.6%为短期市场底难突破。跨季后银行配置力量回归。操作更考验择券细节和交易心态。已从防守调整到积极，从短久期高杠杆转向长久期低杠杆。小仓位高频次交易无法避免，需管理好交易心态。",
+      "summary_text": "7月行情整体偏乐观但赔率不足。1.6%为短期市场底难突破。跨季后银行配置力量回归。操作更考验择券细节和交易心态。已从防守调整到积极，从短久期高杠杆转向长久期低杠杆。小仓位高频次交易无法避免，需管理好交",
+      "primary_factor": "机构行为因子",
+      "secondary_factor": "IB_012",
+      "secondary_factor_label": "银行配置行为",
+      "tertiary_factor": [
+        "非银主导过去一段时间行情",
+        "十债几度冲击均未有效突破1.6%",
+        "1.6%为短期市场底预计难突破",
+        "重启国债买卖可能性仍存",
+        "三季度政府债融资可能放缓"
+      ],
+      "claim_type": "验证指标",
+      "direction": "不明确",
+      "magnitude": "不明确",
+      "time_horizon": "不明确",
+      "confidence_score": 0.85,
+      "causal_chain_text": "利多利空都有但整体偏多 -> 非银主导下1.6%难突破 -> 银行配置力量回归提供支撑 -> 操作更考验择券细节和交易心态 -> 6月底已从防守调整为积极",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "10Y国债是否突破1.6%",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "银行配置行为",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "国债发行计划",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "duration_strategy",
+        "先讲整体判断",
+        "最后落交易心态",
+        "long_end_rates",
+        "强调细节和心态管理",
+        "spreading",
+        "再分品种",
+        "长端"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.103032",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20250704_B00_006",
+      "source_doc_id": "20250704_B00",
+      "speaker": "孔祥雨",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-07-04",
+      "raw_text": "当前没有转向的边际信号，维持看多但程度低于上周。品种偏好信用，3-5Y二永和1-3Y普信可继续配置。择券重要性上升，优质主体可低估值2-3bp参与，流动性偏弱主体不建议。",
+      "summary_text": "当前没有转向的边际信号，维持看多但程度低于上周。品种偏好信用，3-5Y二永和1-3Y普信可继续配置。择券重要性上升，优质主体可低估值2-3bp参与，流动性偏弱主体不建议。",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": null,
+      "secondary_factor_label": "边际信号监测",
+      "tertiary_factor": [
+        "没有转向的边际信号维持看多",
+        "看多程度低于上周",
+        "倾向3-5Y二永债和1-3Y普通信用债",
+        "7Y以上长期限品种加仓需要技巧",
+        "超长和科创债利差均较薄"
+      ],
+      "claim_type": "验证指标",
+      "direction": "不明确",
+      "magnitude": "不明确",
+      "time_horizon": "短期(1M以内)",
+      "confidence_score": 0.6,
+      "causal_chain_text": "无转向边际信号 -> 久期已抬高维持当前 -> 品种偏好信用 -> 择券重要性上升",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "利差水平",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "久期位置",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "duration_strategy",
+        "强调择券",
+        "先结论后分析",
+        "简洁直接",
+        "spreading",
+        "信用"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.103032",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20250704_B00_007",
+      "source_doc_id": "20250704_B00",
+      "speaker": "张帆",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-07-04",
+      "raw_text": "信用债维持看多，理财规模增加背景下资产荒未变，有正套空间。央行7月以来持续回收流动性，存单和超长债性价比降低，存单和超长债选择减仓。信用债维持正套杠杆操作，信用拉久期性价比较高。",
+      "summary_text": "信用债维持看多，理财规模增加背景下资产荒未变，有正套空间。央行7月以来持续回收流动性，存单和超长债性价比降低，存单和超长债选择减仓。信用债维持正套杠杆操作，信用拉久期性价比较高。",
+      "primary_factor": "机构行为因子",
+      "secondary_factor": "IB_012",
+      "secondary_factor_label": "银行配置行为",
+      "tertiary_factor": [
+        "理财规模增加背景下资产荒格局未变",
+        "信用债有正套空间",
+        "央行7月以来持续回收流动性",
+        "存单减仓窗口期",
+        "DR001均价1.31%更宽松格局较难"
+      ],
+      "claim_type": "验证指标",
+      "direction": "不明确",
+      "magnitude": "不明确",
+      "time_horizon": "短期(1M以内)",
+      "confidence_score": 0.85,
+      "causal_chain_text": "信用维持配置 -> 理财规模增加+正套空间支撑信用 -> 央行边际回收流动性 -> 存单和超长债性价比低 -> 存单和超长债减仓，信用维持杠杆",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "理财规模",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "存单利率",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "DR001/DR007",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "信用利差",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "duration_strategy",
+        "short_end_rates",
+        "再分资产讨论",
+        "最后落策略",
+        "边际变化敏感",
+        "spreading",
+        "先讲整体观点",
+        "信用"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.103032",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20250704_B00_008",
+      "source_doc_id": "20250704_B00",
+      "speaker": "张晶",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-07-04",
+      "raw_text": "上半年事件驱动性主导，下半年周期本身力量重要性提升。全球逐步确认经济见底。反内卷与供给侧改革有可比性但涉及面更广难度更大。短期情绪驱动不宜过度炒作。低波动率下季节性效应关注度提高，下半年研究环境更好。",
+      "summary_text": "上半年事件驱动性主导，下半年周期本身力量重要性提升。全球逐步确认经济见底。反内卷与供给侧改革有可比性但涉及面更广难度更大。短期情绪驱动不宜过度炒作。低波动率下季节性效应关注度提高，下半年研究环境更好。",
+      "primary_factor": "基本面因子",
+      "secondary_factor": "FD_003",
+      "secondary_factor_label": "经济修复斜率",
+      "tertiary_factor": [
+        "上半年事件驱动性主导",
+        "下半年周期本身力量重要性提升",
+        "全球逐步确认经济见底",
+        "反内卷与16-17年供给侧改革有可比性但不同",
+        "反内卷涉及面更广难度更大"
+      ],
+      "claim_type": "验证指标",
+      "direction": "不明确",
+      "magnitude": "不明确",
+      "time_horizon": "中期(1-3M)",
+      "confidence_score": 0.6,
+      "causal_chain_text": "上半年事件驱动为主 -> 下半年周期力量重回核心 -> 反内卷政策涉及面广见效慢 -> 短期情绪驱动不宜过度炒作 -> 低波动率下季节性效应关注度提高",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "全球PMI",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "PPI",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "反内卷政策落地进展",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "先讲趋势再讲细节",
+        "宏大叙事型",
+        "历史类比为主",
+        "long_end_rates",
+        "spreading",
+        "长端"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.103032",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    }
+  ],
+  "stats": {
+    "total": 8,
+    "matched": 7,
+    "unmatched": [
+      "边际信号监测"
+    ],
+    "skipped": 0,
+    "format": "v2"
+  }
+}

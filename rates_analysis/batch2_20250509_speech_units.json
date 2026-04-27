@@ -1,0 +1,131 @@
+{
+  "metadata": {
+    "meeting_date": "2025-05-09",
+    "filename": "固收策略组周例会议讨论纪要20250509.docx",
+    "batch": "batch2_2025Q2",
+    "analysis_date": "2026-04-09",
+    "total_speech_units": 12
+  },
+  "speech_units": [
+    {
+      "speaker": "武玥",
+      "unit_id": "batch2_0509_01",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": "策略建议",
+      "content_summary": "整体上行风险不大，曲线可能先陡后平，信用继续补充票息资产。长端利率短期可能面临止盈干扰，但中期关税缓和可期、反复难免，5-6月出口大概率会继续承压。",
+      "key_quote": "整体上行风险不大，曲线可能先陡后平，信用继续补充票息资产",
+      "sentiment": "中性偏多",
+      "time_phase": "会议前期"
+    },
+    {
+      "speaker": "武玥",
+      "unit_id": "batch2_0509_02",
+      "primary_factor": "基本面因子",
+      "secondary_factor": "经济评估",
+      "content_summary": "基本面恶化成为一致预期，高额关税或是未来1-2个季度难以避免的挑战。4月数据或呈现出口表观不弱、内需迟迟难增的格局，或对债市形成利好。",
+      "key_quote": "4月数据或呈现出口表观不弱，内需迟迟难增的格局",
+      "sentiment": "中性偏多",
+      "time_phase": "会议前期"
+    },
+    {
+      "speaker": "高喆",
+      "unit_id": "batch2_0509_03",
+      "primary_factor": "流动性因子",
+      "secondary_factor": "资金面判断",
+      "content_summary": "当前测算的超储率仍处于中性水平。自4月中旬以来央行在资金投放细节上的关注度明显提升，资金补充操作及时有效，大型银行融资规模也有所增加。",
+      "key_quote": "自4月中旬以来，央行在资金投放细节上的关注度明显提升",
+      "sentiment": "偏多",
+      "time_phase": "会议前期"
+    },
+    {
+      "speaker": "姜之媛",
+      "unit_id": "batch2_0509_04",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": "策略建议",
+      "content_summary": "当前债券市场整体处于政策宽松与基本面走弱的支撑之下，牛市基础尚存。但短期内受制于宽幅震荡格局，交易难度有所上升。",
+      "key_quote": "牛市基础尚存，但短期内受制于宽幅震荡格局，交易难度有所上升",
+      "sentiment": "中性偏多",
+      "time_phase": "会议中期"
+    },
+    {
+      "speaker": "张帆",
+      "unit_id": "batch2_0509_05",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": "策略建议",
+      "content_summary": "上周对利率债整体持中性偏多态度，认为中长端利率具备一定配置价值，同时更看好同业存单的表现。当前对债券资产看法进行了适度调整，总体上认同后续利率下行过程可能不会一蹴而就。",
+      "key_quote": "当前对债券资产的看法进行了适度调整，总体上认同后续利率下行过程可能不会一蹴而就",
+      "sentiment": "中性",
+      "time_phase": "会议中期"
+    },
+    {
+      "speaker": "张迪",
+      "unit_id": "batch2_0509_06",
+      "primary_factor": "流动性因子",
+      "secondary_factor": "存单分析",
+      "content_summary": "上周对短端利率整体持震荡偏多观点，但本次降息在节奏和幅度上仍略超预期。短端利率可细分为证金债与同业存单两类资产，短端政金债定价主要参考OMO利率已基本合理。",
+      "key_quote": "短端政金债作为现金替代券种，其定价主要参考OMO利率，在当前环境下已基本合理",
+      "sentiment": "中性偏多",
+      "time_phase": "会议中期"
+    },
+    {
+      "speaker": "李博良",
+      "unit_id": "batch2_0509_07",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": "策略建议",
+      "content_summary": "当前市场可能处于震荡略偏多的状态，收益率曲线预计将经历先陡峭后平坦的过程。当前市场焦点集中于中美谈判进展，短期内达成协议的概率较低。",
+      "key_quote": "当前市场可能处于震荡略偏多的状态，收益率曲线预计将经历先陡峭后平坦的过程",
+      "sentiment": "中性偏多",
+      "time_phase": "会议后期"
+    },
+    {
+      "speaker": "张晶",
+      "unit_id": "batch2_0509_08",
+      "primary_factor": "政策面因子",
+      "secondary_factor": "政策分析",
+      "content_summary": "延续上周看法，10Y利率1.6-1.65%之间窄幅震荡。财政资金捉襟见肘，用好存量是更为现实的期待。货币政策的状态已经是处于适度宽松之中，且已经择机。",
+      "key_quote": "10Y利率1.6-1.65%之间窄幅震荡",
+      "sentiment": "中性",
+      "time_phase": "会议后期"
+    },
+    {
+      "speaker": "赵骥",
+      "unit_id": "batch2_0509_09",
+      "primary_factor": "机构行为因子",
+      "secondary_factor": "平台建设",
+      "content_summary": "近期市场策略讨论密集，本周已召开晨会、研究月会及公募产品策略研讨会。会议围绕资金中枢定价是否充分展开讨论，强调通过系统留痕实现观点与操作的对应性管理。",
+      "key_quote": "强调通过系统留痕实现观点与操作的对应性管理，避免言行不一",
+      "sentiment": "中性",
+      "time_phase": "会议后期"
+    },
+    {
+      "speaker": "赵骥",
+      "unit_id": "batch2_0509_10",
+      "primary_factor": "政策面因子",
+      "secondary_factor": "政策情景分析",
+      "content_summary": "5月初时投资策略的摆布比市场观点本身更加关键。将可能情景归纳为四种：无进一步降准降息、降准不降息、既不降息也不降准、双降且降息一步到位。",
+      "key_quote": "5月初时投资策略的摆布比市场观点本身更加关键",
+      "sentiment": "中性",
+      "time_phase": "会议后期"
+    },
+    {
+      "speaker": "朱年军",
+      "unit_id": "batch2_0509_11",
+      "primary_factor": "机构行为因子",
+      "secondary_factor": "平台建设",
+      "content_summary": "固收平台一体化建设已被视为一项重要任务。平台建设的核心目标并非由管理层或技术人员单方面决定，而是需要结合一线实际需求共同推进。",
+      "key_quote": "平台建设的首要目标是实现先有观点、再有投资，确保投资行为与市场观点保持一致",
+      "sentiment": "中性",
+      "time_phase": "会议后期"
+    },
+    {
+      "speaker": "李云增",
+      "unit_id": "batch2_0509_12",
+      "primary_factor": "机构行为因子",
+      "secondary_factor": "交易管理",
+      "content_summary": "当前市场环境复杂，交易行为面临诸多挑战。第一阶段的重点是如何在低利率环境下通过系统建设落实绝对收益诉求下的风险预算机制。",
+      "key_quote": "核心路径为从行为记录出发，逐步实现行为分析、风险控制、关键行为拆解与指标管理",
+      "sentiment": "中性",
+      "time_phase": "会议后期"
+    }
+  ]
+}

@@ -1,0 +1,418 @@
+{
+  "metadata": {
+    "source_file": "batch4_20251114_speech_units.json",
+    "meeting_date": "2025-11-14",
+    "batch": "unknown",
+    "source_doc_id": "20251114_B00",
+    "migration_date": "2026-04-21",
+    "total_atoms": 7,
+    "format": "v2"
+  },
+  "claim_atoms": [
+    {
+      "atom_id": "20251114_B00_001",
+      "source_doc_id": "20251114_B00",
+      "speaker": "沈文思",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-11-14",
+      "raw_text": "内需疲软投资下滑，Q4 GDP约4.5%。央行锁定利率上下限，窄幅波动等新规落地。",
+      "summary_text": "内需疲软投资下滑，Q4 GDP约4.5%。央行锁定利率上下限，窄幅波动等新规落地。",
+      "primary_factor": "基本面因子",
+      "secondary_factor": null,
+      "secondary_factor_label": "内需疲软",
+      "tertiary_factor": [
+        "10月经济数据同比如期回落",
+        "内需疲软是不可忽视的现实",
+        "房地产开发投资占比从37%降至18%",
+        "基建因项目青黄不接制造业因反内卷投资减弱",
+        "四季度GDP预计4.5%"
+      ],
+      "claim_type": "验证指标",
+      "direction": "不明确",
+      "magnitude": "不明确",
+      "time_horizon": "不明确",
+      "confidence_score": 0.85,
+      "causal_chain_text": "内需疲软投资下滑 -> Q4 GDP约4.5% -> 央行锁定上下限 -> 窄幅波动等新规落地",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "Q4 GDP",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "房地产开发投资占比",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "10Y利率1.8%",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "数据密集型",
+        "long_end_rates",
+        "政策约束分析",
+        "GDP预测",
+        "长端利率"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.129596",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20251114_B00_002",
+      "source_doc_id": "20251114_B00",
+      "speaker": "杨义山",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-11-14",
+      "raw_text": "货币政策报告强化利率区间管理，从总体定价转向精细化管理。等待销售新规落地。",
+      "summary_text": "货币政策报告强化利率区间管理，从总体定价转向精细化管理。等待销售新规落地。",
+      "primary_factor": "政策面因子",
+      "secondary_factor": "PL_005",
+      "secondary_factor_label": "利率区间管理",
+      "tertiary_factor": [
+        "市场主线延续货币政策报告发布后态势",
+        "专栏明确利率波动区间",
+        "报告未提资金空转转为提高资金使用效率",
+        "政策从总体定价转向数据驱动精细化区间管理",
+        "5年期摊余成本法产品第二次建仓期"
+      ],
+      "claim_type": "验证指标",
+      "direction": "不明确",
+      "magnitude": "不明确",
+      "time_horizon": "不明确",
+      "confidence_score": 0.85,
+      "causal_chain_text": "货币政策报告强化利率区间管理 -> 从总体定价转向精细化管理 -> 销售新规是下一个关注点 -> 震荡等待政策与行为共振",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "货币政策报告专栏",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "销售新规落地",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "利率区间",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "yield_curve",
+        "节奏预判",
+        "long_end_rates",
+        "制度分析",
+        "政策解读型",
+        "全谱"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.129596",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20251114_B00_003",
+      "source_doc_id": "20251114_B00",
+      "speaker": "张迪",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-11-14",
+      "raw_text": "存单稳定但存款提价。到期量大致供给压力大。12月配置需求释放上行空间有限。",
+      "summary_text": "存单稳定但存款提价。到期量大致供给压力大。12月配置需求释放上行空间有限。",
+      "primary_factor": "流动性因子",
+      "secondary_factor": "LQ_004",
+      "secondary_factor_label": "存单供需",
+      "tertiary_factor": [
+        "存单价格稳定大行1Y维持1.63%-1.64%波动极小",
+        "存款端出现明显提价国股行半年期2.60%-2.65%",
+        "理财子是本月存单主要买入方",
+        "本月存单到期2.84万亿下月增至3.6万亿",
+        "农行微调发行利率至1.645%"
+      ],
+      "claim_type": "验证指标",
+      "direction": "利空",
+      "magnitude": "不明确",
+      "time_horizon": "不明确",
+      "confidence_score": 0.85,
+      "causal_chain_text": "存单稳定但存款提价 -> 到期量大供给压力 -> 12月配置需求释放 -> 上行空间有限",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "1Y存单利率",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "存款利率",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "存单到期量",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "短端视角",
+        "数据密集型",
+        "short_end_rates",
+        "供需分析",
+        "spreading",
+        "短端"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.129596",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20251114_B00_004",
+      "source_doc_id": "20251114_B00",
+      "speaker": "李博良",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-11-14",
+      "raw_text": "缺乏主线波动有限。调整加仓不追涨。5Y利率债和30Y有相对价值。信用利差低位。",
+      "summary_text": "缺乏主线波动有限。调整加仓不追涨。5Y利率债和30Y有相对价值。信用利差低位。",
+      "primary_factor": "机构行为因子",
+      "secondary_factor": null,
+      "secondary_factor_label": "缺乏主线",
+      "tertiary_factor": [
+        "市场缺乏明确主线",
+        "关注点转向货币政策宽松时点后移",
+        "走势纠结波动空间有限",
+        "建议调整加仓而非追涨",
+        "5年期利率债受益于国债买卖预期及摊余债基建仓"
+      ],
+      "claim_type": "验证指标",
+      "direction": "不明确",
+      "magnitude": "不明确",
+      "time_horizon": "不明确",
+      "confidence_score": 0.6,
+      "causal_chain_text": "缺乏主线波动空间有限 -> 调整加仓而非追涨 -> 5Y利率债和30Y有相对价值 -> 信用利差低位空间有限",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "5Y利率债表现",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "信用利差分位",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "调整加仓效果",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "品种选择",
+        "精细化管理",
+        "ultra_long_rates",
+        "medium_rates",
+        "操作纪律",
+        "credit_bonds",
+        "中端+超长端+信用"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.129596",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20251114_B00_005",
+      "source_doc_id": "20251114_B00",
+      "speaker": "武玥",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-11-14",
+      "raw_text": "数据不交易，降息预期消失。信用债强势但进入尾部。逆情绪交易但空间有限。",
+      "summary_text": "数据不交易，降息预期消失。信用债强势但进入尾部。逆情绪交易但空间有限。",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": null,
+      "secondary_factor_label": "三无市场",
+      "tertiary_factor": [
+        "密集公布CPI金融数据经济数据但市场均未交易",
+        "经济疲弱但无法引发降息预期",
+        "缺乏主线可能持续至12月会议前",
+        "收益率被央行框定在特定区间",
+        "四季度降息预期基本消失"
+      ],
+      "claim_type": "验证指标",
+      "direction": "不明确",
+      "magnitude": "不明确",
+      "time_horizon": "不明确",
+      "confidence_score": 0.6,
+      "causal_chain_text": "数据密集但不交易 -> 降息预期消失 -> 信用债强势但进入尾部 -> 逆情绪交易但空间有限",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "降息预期指标",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "信用利差分位",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "3-5Y信用行情",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "市场定性",
+        "long_end_rates",
+        "降息预期分析",
+        "credit_bonds",
+        "信用行情阶段判断",
+        "信用+长端"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.129596",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20251114_B00_006",
+      "source_doc_id": "20251114_B00",
+      "speaker": "孔祥雨",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-11-14",
+      "raw_text": "三无格局，削减利率债久期转信用债。根据组合风险偏好选1-3或3-5年信用。",
+      "summary_text": "三无格局，削减利率债久期转信用债。根据组合风险偏好选1-3或3-5年信用。",
+      "primary_factor": "机构行为因子",
+      "secondary_factor": null,
+      "secondary_factor_label": "三无格局",
+      "tertiary_factor": [
+        "市场三无特征：无主线无波动无趋势",
+        "尝试增持30年利率债效果不佳",
+        "央行报告明确利率区间后长端估值收紧",
+        "削减利率债久期转向信用债",
+        "1-3年或3-5年信用债依据组合需求选择"
+      ],
+      "claim_type": "验证指标",
+      "direction": "利空",
+      "magnitude": "不明确",
+      "time_horizon": "不明确",
+      "confidence_score": 0.6,
+      "causal_chain_text": "三无格局久期策略需审慎 -> 削减利率债久期转信用 -> 根据组合风险偏好选择信用期限 -> 平稳收官优先短信用",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "30Y交易效果",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "信用替代效果",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "组合风险偏好",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "组合适配",
+        "久期调整",
+        "三无定性",
+        "long_end_rates",
+        "credit_bonds",
+        "信用+利率"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.129596",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20251114_B00_007",
+      "source_doc_id": "20251114_B00",
+      "speaker": "赵骥",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-11-14",
+      "raw_text": "Q4 GDP 4.5%偏弱但明年有修复可能。分配结构制约消费。债市未必走向熊市。",
+      "summary_text": "Q4 GDP 4.5%偏弱但明年有修复可能。分配结构制约消费。债市未必走向熊市。",
+      "primary_factor": "基本面因子",
+      "secondary_factor": null,
+      "secondary_factor_label": "经济恶化速度",
+      "tertiary_factor": [
+        "Q4 GDP预计4.5%数据偏弱",
+        "11月至12月项目新开工可能反弹",
+        "PPI修复难度较大",
+        "反内卷政策可能带来价格回升预期",
+        "出口部门承压但仍弱正增长"
+      ],
+      "claim_type": "验证指标",
+      "direction": "不明确",
+      "magnitude": "不明确",
+      "time_horizon": "不明确",
+      "confidence_score": 0.85,
+      "causal_chain_text": "Q4数据偏弱但明年有修复可能 -> PPI修复慢但反内卷助推 -> 分配结构制约消费 -> 债市未必走向熊市",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "Q4 GDP",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "PPI修复",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "消费分配结构",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "明年展望",
+        "结构分析",
+        "cross_asset",
+        "long_end_rates",
+        "宏观框架",
+        "全谱"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.129596",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    }
+  ],
+  "stats": {
+    "total": 7,
+    "matched": 2,
+    "unmatched": [
+      "内需疲软",
+      "缺乏主线",
+      "三无市场",
+      "三无格局",
+      "经济恶化速度"
+    ],
+    "skipped": 0,
+    "format": "v2"
+  }
+}

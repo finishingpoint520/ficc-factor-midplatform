@@ -1,0 +1,315 @@
+{
+  "metadata": {
+    "source_file": "固收策略组周例会议讨论纪要20250704(3).docx",
+    "meeting_date": "2025-07-04",
+    "total_speakers": 8,
+    "total_speech_units": 8,
+    "analysis_date": "2026-04-08",
+    "analyzer": "5factor-analyzer-v1",
+    "schema_version": "1.0"
+  },
+  "secondary_factor_frequency": {
+    "流动性因子": {
+      "资金价格中枢": 2,
+      "央行投放节奏": 2,
+      "同业存单利率": 2,
+      "杠杆套息环境": 1
+    },
+    "政策面因子": {
+      "政策目标函数": 1,
+      "央行态度与信号": 1,
+      "财政节奏": 1,
+      "基本面边际变化": 1
+    },
+    "机构行为因子": {
+      "银行配置行为": 3,
+      "赎回与资金流向": 1,
+      "信用利差机会": 2,
+      "择券精细化": 2,
+      "交易心态管理": 1,
+      "政策预期管理": 1
+    },
+    "市场情绪因子": {
+      "拥挤交易程度": 1,
+      "止盈/止损行为": 1,
+      "多空情绪分布": 1,
+      "赔率与胜率判断": 1,
+      "边际信号监测": 1
+    },
+    "基本面因子": {
+      "经济修复斜率": 1,
+      "通胀走势": 1,
+      "反内卷政策影响": 1
+    }
+  },
+  "primary_factor_distribution": {
+    "流动性因子": 1,
+    "政策面因子": 1,
+    "机构行为因子": 3,
+    "市场情绪因子": 2,
+    "基本面因子": 1
+  },
+  "claim_type_distribution": {
+    "judgment": 5,
+    "strategy_mapping": 3,
+    "interpretation": 0,
+    "observation": 0,
+    "risk_warning": 0,
+    "counter_argument": 0,
+    "summary": 0
+  },
+  "time_horizon_distribution": {
+    "intra_week": 1,
+    "short_term": 4,
+    "one_to_three_months": 2,
+    "medium_term": 1,
+    "long_term": 0
+  },
+  "evidence_type_frequency": {
+    "market_price": 6,
+    "policy_signal": 4,
+    "institutional_behavior": 3,
+    "macro_data": 2,
+    "positioning": 1,
+    "historical_analogy": 1
+  },
+  "speaker_personas": {
+    "张迪": {
+      "entry_preference": ["数据", "价格"],
+      "factor_bias": ["流动性因子"],
+      "reasoning_style": "多段链条型",
+      "evidence_preference": ["市场数据", "资金面观察"],
+      "time_horizon_bias": "短-term",
+      "conclusion_style": "先证据后结论",
+      "risk_expression_style": "条件句",
+      "market_mapping_preference": ["短端"],
+      "distinctive_features": [
+        "从资金面数据切入",
+        "多角度比价分析（绝对点位、利差、季节性）",
+        "强调套利逻辑",
+        "操作建议具体明确（观望OMO回笼和税期）"
+      ],
+      "statistical_summary": {
+        "speeches": 1,
+        "primary_factors": {"流动性因子": "100%"},
+        "avg_logic_chain_length": 5,
+        "claim_types": {"判断": "100%"}
+      }
+    },
+    "杨义山": {
+      "entry_preference": ["政策", "数据"],
+      "factor_bias": ["政策面因子"],
+      "reasoning_style": "多段链条型",
+      "evidence_preference": ["政策表述", "历史类比", "宏观数据"],
+      "time_horizon_bias": "中短期",
+      "conclusion_style": "先证据后结论",
+      "risk_expression_style": "条件句",
+      "market_mapping_preference": ["长端", "曲线"],
+      "distinctive_features": [
+        "从政策文件措辞变化切入分析",
+        "区分正常表述和信号变化（如删除择机双降是正常的）",
+        "关注十五五规划等中长期政策框架",
+        "将政策分析和基本面温和压力结合判断"
+      ],
+      "statistical_summary": {
+        "speeches": 1,
+        "primary_factors": {"政策面因子": "100%"},
+        "avg_logic_chain_length": 5,
+        "claim_types": {"判断": "100%"}
+      }
+    },
+    "李博良": {
+      "entry_preference": ["机构行为", "数据"],
+      "factor_bias": ["机构行为因子"],
+      "reasoning_style": "双段传导型",
+      "evidence_preference": ["机构行为", "盘面反馈"],
+      "time_horizon_bias": "短期",
+      "conclusion_style": "先结论后解释",
+      "risk_expression_style": "强判断",
+      "market_mapping_preference": ["信用", "久期"],
+      "distinctive_features": [
+        "直接给出策略方向（偏多、信用优于利率）",
+        "关注赎回数据和银行配置行为验证",
+        "简洁直接，少废话",
+        "看好具体品种（3-5Y中等资质信用、ETF长端信用）"
+      ],
+      "statistical_summary": {
+        "speeches": 1,
+        "primary_factors": {"机构行为因子": "100%"},
+        "avg_logic_chain_length": 5,
+        "claim_types": {"策略映射": "100%"}
+      }
+    },
+    "武玥": {
+      "entry_preference": ["价格", "数据"],
+      "factor_bias": ["市场情绪因子"],
+      "reasoning_style": "双段传导型",
+      "evidence_preference": ["市场数据", "仓位数据"],
+      "time_horizon_bias": "超短期",
+      "conclusion_style": "先证据后结论",
+      "risk_expression_style": "条件句",
+      "market_mapping_preference": ["曲线", "短端", "长端"],
+      "distinctive_features": [
+        "从赔率视角切入分析",
+        "用α/β框架评价市场阶段",
+        "强调'有胜率没赔率'",
+        "区间操作思维明确（1.6%-1.65%）",
+        "结构化策略建议（哑铃策略）"
+      ],
+      "statistical_summary": {
+        "speeches": 1,
+        "primary_factors": {"市场情绪因子": "100%"},
+        "avg_logic_chain_length": 5,
+        "claim_types": {"判断": "100%"}
+      }
+    },
+    "姜之媛": {
+      "entry_preference": ["机构行为", "政策"],
+      "factor_bias": ["机构行为因子"],
+      "reasoning_style": "多段链条型",
+      "evidence_preference": ["机构行为", "政策信号", "盘面反馈"],
+      "time_horizon_bias": "中短期",
+      "conclusion_style": "先条件后判断",
+      "risk_expression_style": "概率句",
+      "market_mapping_preference": ["长端", "利差"],
+      "distinctive_features": [
+        "关注交易心态和择券细节",
+        "区分配置盘（银行）和交易盘（非银）的力量",
+        "强调'操作更考验细节'",
+        "明确仓位调整动作（从防守转积极）",
+        "关注具体交易机制（如国债发行换券行情）"
+      ],
+      "statistical_summary": {
+        "speeches": 1,
+        "primary_factors": {"机构行为因子": "100%"},
+        "avg_logic_chain_length": 5,
+        "claim_types": {"策略映射": "100%"}
+      }
+    },
+    "孔祥雨": {
+      "entry_preference": ["数据", "价格"],
+      "factor_bias": ["市场情绪因子"],
+      "reasoning_style": "单点判断型",
+      "evidence_preference": ["市场数据"],
+      "time_horizon_bias": "短期",
+      "conclusion_style": "先结论后解释",
+      "risk_expression_style": "条件句",
+      "market_mapping_preference": ["利差", "久期"],
+      "distinctive_features": [
+        "发言简洁直接",
+        "关注边际信号变化",
+        "区分优质主体和流动性偏弱主体",
+        "给出具体利差参与标准（低估值2-3bp）"
+      ],
+      "statistical_summary": {
+        "speeches": 1,
+        "primary_factors": {"市场情绪因子": "100%"},
+        "avg_logic_chain_length": 4,
+        "claim_types": {"判断": "100%"}
+      }
+    },
+    "张帆": {
+      "entry_preference": ["机构行为", "价格"],
+      "factor_bias": ["机构行为因子"],
+      "reasoning_style": "双段传导型",
+      "evidence_preference": ["机构行为", "政策信号", "盘面反馈"],
+      "time_horizon_bias": "短期",
+      "conclusion_style": "先证据后结论",
+      "risk_expression_style": "强判断",
+      "market_mapping_preference": ["短端", "利差"],
+      "distinctive_features": [
+        "对央行边际变化高度敏感",
+        "用理财规模解释资产荒逻辑",
+        "明确加减仓动作（存单减仓、信用维持杠杆）",
+        "关注资金比价（正套空间）"
+      ],
+      "statistical_summary": {
+        "speeches": 1,
+        "primary_factors": {"机构行为因子": "100%"},
+        "avg_logic_chain_length": 5,
+        "claim_types": {"策略映射": "100%"}
+      }
+    },
+    "张晶": {
+      "entry_preference": ["数据", "历史类比"],
+      "factor_bias": ["基本面因子"],
+      "reasoning_style": "多段链条型",
+      "evidence_preference": ["宏观数据", "历史类比", "政策信号"],
+      "time_horizon_bias": "中期",
+      "conclusion_style": "先证据后结论",
+      "risk_expression_style": "试探性观察",
+      "market_mapping_preference": ["长端", "利差"],
+      "distinctive_features": [
+        "宏大叙事视角",
+        "用历史类比解释政策（供给侧改革vs反内卷）",
+        "关注全球周期而非单边市场",
+        "偏观察而非交易",
+        "强调研究环境变化（事件冲击减少后季节性更重要）"
+      ],
+      "statistical_summary": {
+        "speeches": 1,
+        "primary_factors": {"基本面因子": "100%"},
+        "avg_logic_chain_length": 5,
+        "claim_types": {"解释": "100%"}
+      }
+    }
+  },
+  "team_framework_snapshot": {
+    "common_judgment_sequence": [
+      "先判断资金面/流动性环境",
+      "再评估央行/政策态度边际变化",
+      "然后观察机构行为和配置力量",
+      "最后用利差/赔率做策略映射"
+    ],
+    "shared_language": [
+      "赔率不足",
+      "资产荒",
+      "正套空间",
+      "择券精细化",
+      "去α保留β",
+      "配置力量起到稳定器作用"
+    ],
+    "dominant_narrative": "偏多但空间有限，信用优于利率，机构配置力量提供底部支撑",
+    "key_debates": [
+      {
+        "topic": "存单性价比",
+        "position_a": "张迪：1.6%以下性价比不高，观望",
+        "position_b": "张帆：7月初是减仓窗口",
+        "position_c": "李博良：当前价格合理"
+      },
+      {
+        "topic": "久期管理",
+        "position_a": "李博良：维持较高久期",
+        "position_b": "武玥：久期高位需控制",
+        "position_c": "姜之媛：已从短久期高杠杆转向长久期低杠杆"
+      }
+    ],
+    "speaker_clusters": [
+      {
+        "cluster_name": "流动性分析型",
+        "members": ["张迪"],
+        "description": "从资金价格数据和央行操作切入，擅长多角度比价分析"
+      },
+      {
+        "cluster_name": "政策目标函数型",
+        "members": ["杨义山"],
+        "description": "从政策文件措辞和框架切入，关注中长期政策方向"
+      },
+      {
+        "cluster_name": "机构行为验证型",
+        "members": ["李博良", "姜之媛", "张帆"],
+        "description": "从机构配置行为、赎回数据、资金流向切入，强调行为验证"
+      },
+      {
+        "cluster_name": "赔率择券型",
+        "members": ["武玥", "孔祥雨"],
+        "description": "从赔率和利差视角切入，强调择券精度和风险控制"
+      },
+      {
+        "cluster_name": "宏观周期观察型",
+        "members": ["张晶"],
+        "description": "从全球周期和历史类比切入，偏观察而非交易"
+      }
+    ]
+  }
+}

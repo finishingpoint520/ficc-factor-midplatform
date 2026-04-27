@@ -1,0 +1,121 @@
+{
+  "metadata": {
+    "meeting_date": "2025-04-11",
+    "filename": "固收策略组周例会议讨论纪要20250411(1).docx",
+    "batch": "batch1_2025Q1",
+    "analysis_date": "2026-04-09",
+    "total_speech_units": 11
+  },
+  "speech_units": [
+    {
+      "speaker": "武玥",
+      "unit_id": "batch1_0411_01",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": "策略建议",
+      "content_summary": "当前宏观经济面临中美脱钩带来的外部风险和内部增长压力，债市已迅速反映了这些情绪冲击。二季度可能的降准措施预计会缓解流动性压力，但经济下行风险依旧存在。",
+      "key_quote": "债市已迅速反映了这些情绪冲击。二季度可能的降准措施预计会缓解流动性压力",
+      "sentiment": "中性偏多",
+      "time_phase": "会议前期"
+    },
+    {
+      "speaker": "孔祥雨",
+      "unit_id": "batch1_0411_02",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": "交易反思",
+      "content_summary": "过去一个月的市场表现主要由三个关键因素决定：3月初的防守是否及时、3月底反应是否迅速以及4月初加仓是否果断。今年市场的复杂性和多变性使得依赖去年的趋势交易策略变得困难。",
+      "key_quote": "今年市场的复杂性和多变性使得依赖去年的趋势交易策略变得困难",
+      "sentiment": "中性",
+      "time_phase": "会议前期"
+    },
+    {
+      "speaker": "柴颖颖",
+      "unit_id": "batch1_0411_03",
+      "primary_factor": "机构行为因子",
+      "secondary_factor": "地方债分析",
+      "content_summary": "地方债利差有可能与发行量存在关联。地方债相对于国债的高利差使得其成为具有吸引力的投资选项，尤其是在中期（如5年期）的位置上。",
+      "key_quote": "地方债相对于国债的高利差使得其成为具有吸引力的投资选项",
+      "sentiment": "偏多",
+      "time_phase": "会议前期"
+    },
+    {
+      "speaker": "张迪",
+      "unit_id": "batch1_0411_04",
+      "primary_factor": "流动性因子",
+      "secondary_factor": "策略建议",
+      "content_summary": "当前倾向于保持震荡观察的策略，并维持中性久期配置，特别是在一年期存单利率为1.75%的情况下，不考虑卖出现有持仓。尽管中期看好降息预期带来的配置机会，但短期内由于利差较低和大规模存单到期，配置较为困难。",
+      "key_quote": "维持中性久期配置，特别是在一年期存单利率为1.75%的情况下，不考虑卖出现有持仓",
+      "sentiment": "中性",
+      "time_phase": "会议中期"
+    },
+    {
+      "speaker": "杨义山",
+      "unit_id": "batch1_0411_05",
+      "primary_factor": "政策面因子",
+      "secondary_factor": "政策预期",
+      "content_summary": "在经历了中美关税应对措施的第一波超预期反应后，更重要的是观察后续的基本面、政策面及市场的进一步反应。明确的是经济下行压力加大，但内需一季度景气环比回升的持续性及抢出口行为的效果尚不明确。",
+      "key_quote": "明确的是经济下行压力加大，但内需一季度景气环比回升的持续性及抢出口行为的效果尚不明确",
+      "sentiment": "中性",
+      "time_phase": "会议中期"
+    },
+    {
+      "speaker": "刘曼沁",
+      "unit_id": "batch1_0411_06",
+      "primary_factor": "基本面因子",
+      "secondary_factor": "经济评估",
+      "content_summary": "当前需关注美国需求及对中国出口价格弹性的影响，二季度美国基本面回落不明显，主要看价格接受度。国内传统高频数据弹性减弱，需寻找新指标评估经济状况。",
+      "key_quote": "国内传统高频数据弹性减弱，需寻找新指标评估经济状况",
+      "sentiment": "中性偏弱",
+      "time_phase": "会议中期"
+    },
+    {
+      "speaker": "张晶",
+      "unit_id": "batch1_0411_07",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": "市场观察",
+      "content_summary": "高频数据的跟踪维度需要调整，尤其是港口货物和集装箱吞吐量等按周公布的指标，这些数据在未来一个月内将成为重要观察点。",
+      "key_quote": "高频数据的跟踪维度需要调整...这些数据在未来一个月内将成为重要观察点",
+      "sentiment": "中性",
+      "time_phase": "会议后期"
+    },
+    {
+      "speaker": "赵骥",
+      "unit_id": "batch1_0411_08",
+      "primary_factor": "机构行为因子",
+      "secondary_factor": "风险管理",
+      "content_summary": "预测大国间博弈的宏观走向颇具挑战性，因为这最终取决于基本面和政策响应的变化。对于那些难以预见和捉摸不定的地方，只能依赖于观察拐点信号。",
+      "key_quote": "对于那些难以预见和捉摸不定的地方，只能依赖于观察拐点信号",
+      "sentiment": "中性",
+      "time_phase": "会议后期"
+    },
+    {
+      "speaker": "赵骥",
+      "unit_id": "batch1_0411_09",
+      "primary_factor": "机构行为因子",
+      "secondary_factor": "策略建议",
+      "content_summary": "关于第二季度的操作策略，在投资决策会议后，央行货币政策的表述显示其采取的是择机调整的方式。若三个条件中已有一个显现（财政开始放量），则需观察其余两个条件是否会进一步兑现。",
+      "key_quote": "央行货币政策的表述显示其采取的是择机调整的方式",
+      "sentiment": "中性",
+      "time_phase": "会议后期"
+    },
+    {
+      "speaker": "研究员-宏观",
+      "unit_id": "batch1_0411_10",
+      "primary_factor": "基本面因子",
+      "secondary_factor": "经济评估",
+      "content_summary": "当前经济面临通缩压力，核心问题在于通胀预期未能改善且需求端疲软，信贷需求减弱伴随票据利率下行，显示出银行信贷投放的压力。面对这样的经济基本面，政策面上4月降准的可能性较大。",
+      "key_quote": "当前经济面临通缩压力，核心问题在于通胀预期未能改善且需求端疲软",
+      "sentiment": "中性偏弱",
+      "time_phase": "会议后期"
+    },
+    {
+      "speaker": "研究员-流动性",
+      "unit_id": "batch1_0411_11",
+      "primary_factor": "流动性因子",
+      "secondary_factor": "资金面判断",
+      "content_summary": "跨期后大行融出规模有所恢复，预计二季度银行负债端压力将缓解。展望二季度，政府债发行规模预计在3.2~3.7万亿之间，尽管政府债发行会对资金面产生阶段性扰动，但央行可通过多种工具精准投放流动性。",
+      "key_quote": "预计二季度银行负债端压力将缓解，融出规模将继续回升",
+      "sentiment": "中性偏多",
+      "time_phase": "会议后期"
+    }
+  ]
+}

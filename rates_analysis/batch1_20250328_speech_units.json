@@ -1,0 +1,131 @@
+{
+  "metadata": {
+    "meeting_date": "2025-03-28",
+    "filename": "固收策略组周例会议讨论纪要20250328V2(1).docx",
+    "batch": "batch1_2025Q1",
+    "analysis_date": "2026-04-09",
+    "total_speech_units": 12
+  },
+  "speech_units": [
+    {
+      "speaker": "武玥",
+      "unit_id": "batch1_0328_01",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": "策略建议",
+      "content_summary": "短期来看利率债市场预计将呈现震荡态势。在3月份保持谨慎态度的基础上，4月份应寻找合适的买入点，因为活跃券的收益率存在上有顶下有底的特点。",
+      "key_quote": "在3月份保持谨慎态度的基础上，4月份应寻找合适的买入点",
+      "sentiment": "中性偏多",
+      "time_phase": "会议前期"
+    },
+    {
+      "speaker": "姜之媛",
+      "unit_id": "batch1_0328_02",
+      "primary_factor": "政策面因子",
+      "secondary_factor": "政策博弈",
+      "content_summary": "预计4月份10年期和30年期国债收益率运行区间可能与3月份相似，整体市场将维持震荡态势。当前货币政策呈现出一种与市场和经济实体间的僵持状态。",
+      "key_quote": "当前货币政策呈现出一种与市场和经济实体间的僵持状态",
+      "sentiment": "中性",
+      "time_phase": "会议前期"
+    },
+    {
+      "speaker": "张帆",
+      "unit_id": "batch1_0328_03",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": "策略建议",
+      "content_summary": "在当前市场点位上，对于二季度债券利率市场的看法是不宜过度看空，预计整体市场将呈现震荡态势。建议1-2年期信用品种仍具配置价值，7年期以内利率品种可进行择机交易。",
+      "key_quote": "对于二季度债券利率市场的看法是不宜过度看空，预计整体市场将呈现震荡态势",
+      "sentiment": "中性偏多",
+      "time_phase": "会议前期"
+    },
+    {
+      "speaker": "张迪",
+      "unit_id": "batch1_0328_04",
+      "primary_factor": "流动性因子",
+      "secondary_factor": "策略建议",
+      "content_summary": "对于长端债券持谨慎态度，认为其受到央行较为严格的管控。整体市场预计将维持震荡态势，但对短端特别是存单市场持偏多观点。",
+      "key_quote": "整体市场预计将维持震荡态势，但对短端特别是存单市场持偏多观点",
+      "sentiment": "中性偏多",
+      "time_phase": "会议前期"
+    },
+    {
+      "speaker": "杨义山",
+      "unit_id": "batch1_0328_05",
+      "primary_factor": "政策面因子",
+      "secondary_factor": "政策预期",
+      "content_summary": "在二季度，短端资产（5年以内）预计将表现较强，而长端资产则需要保持关注。央行对资金利率的控制将决定中短端资产的双向波动胜率，并可能推动资金利率中枢向1.7%以下修正。",
+      "key_quote": "央行对资金利率的控制将决定中短端资产的双向波动胜率",
+      "sentiment": "中性偏多",
+      "time_phase": "会议中期"
+    },
+    {
+      "speaker": "李博良",
+      "unit_id": "batch1_0328_06",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": "策略建议",
+      "content_summary": "4月份债券市场虽呈震荡态势但不必悲观，建议逢调整买入。利率策略上关注新老券利差压缩机会，信用策略则推荐选择中期信用资产以平衡组合久期和获取票息收益。",
+      "key_quote": "4月份债券市场虽呈震荡态势但不必悲观，建议逢调整买入",
+      "sentiment": "偏多",
+      "time_phase": "会议中期"
+    },
+    {
+      "speaker": "刘曼沁",
+      "unit_id": "batch1_0328_07",
+      "primary_factor": "基本面因子",
+      "secondary_factor": "经济评估",
+      "content_summary": "一季度经济表现良好，特别是3月信贷数据强劲，不过地产有边际回落，新消费和新科技板块有所好转，形成对冲。央行会综合考虑内外经济及资本市场运行情况。",
+      "key_quote": "一季度经济表现良好，特别是3月信贷数据强劲",
+      "sentiment": "中性",
+      "time_phase": "会议中期"
+    },
+    {
+      "speaker": "张晶",
+      "unit_id": "batch1_0328_08",
+      "primary_factor": "政策面因子",
+      "secondary_factor": "政策预期",
+      "content_summary": "市场预期短期内将呈现较大震荡但不悲观，主要基于央行对流动性的掌控以及基本面的边际变化。预计3月和4月的经济数据有望环比走高，PMI数据可能维持在51左右。",
+      "key_quote": "预计3月和4月的经济数据有望环比走高，PMI数据可能维持在51左右",
+      "sentiment": "中性偏多",
+      "time_phase": "会议后期"
+    },
+    {
+      "speaker": "赵骥",
+      "unit_id": "batch1_0328_09",
+      "primary_factor": "机构行为因子",
+      "secondary_factor": "五因子框架",
+      "content_summary": "在当前市场环境下，固收业务的胜率不高，因此确定方向比关注细节更为重要。通过五因子模型（基本面、政策面、资金面、情绪面和机构行为）分析市场有助于更准确地预测未来走势。",
+      "key_quote": "通过五因子模型（基本面、政策面、资金面、情绪面和机构行为）分析市场有助于更准确地预测未来走势",
+      "sentiment": "中性",
+      "time_phase": "会议后期"
+    },
+    {
+      "speaker": "赵骥",
+      "unit_id": "batch1_0328_10",
+      "primary_factor": "基本面因子",
+      "secondary_factor": "经济评估",
+      "content_summary": "基本面方面尽管存在分歧且卖方观点模糊，但高频数据和历史季节性调整显示二季度环比表现不错，具体改善程度仍需观察。",
+      "key_quote": "高频数据和历史季节性调整显示二季度环比表现不错",
+      "sentiment": "中性偏多",
+      "time_phase": "会议后期"
+    },
+    {
+      "speaker": "江晓阳",
+      "unit_id": "batch1_0328_11",
+      "primary_factor": "机构行为因子",
+      "secondary_factor": "投资框架",
+      "content_summary": "在投资领域无论是固定收益投资还是权益类投资，都需要建立在一个全面的分析框架之上。这包括自下而上的细致研究和自上而下的宏观判断相结合的方法论。",
+      "key_quote": "需要建立在一个全面的分析框架之上...自下而上的细致研究和自上而下的宏观判断相结合",
+      "sentiment": "中性",
+      "time_phase": "会议后期"
+    },
+    {
+      "speaker": "江晓阳",
+      "unit_id": "batch1_0328_12",
+      "primary_factor": "机构行为因子",
+      "secondary_factor": "团队建设",
+      "content_summary": "展望未来特别是进入第二季度后，面对可能的市场挑战，我们需要加强投研体系建设，确保每一项决策都是基于深入的研究和充分讨论的结果。",
+      "key_quote": "我们需要加强投研体系建设，确保每一项决策都是基于深入的研究和充分讨论的结果",
+      "sentiment": "中性",
+      "time_phase": "会议后期"
+    }
+  ]
+}

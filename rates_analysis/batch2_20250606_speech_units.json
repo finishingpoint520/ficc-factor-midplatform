@@ -1,0 +1,15 @@
+{
+  "metadata": {"meeting_date": "2025-06-06", "filename": "固收策略组周例会议讨论纪要20250606.docx", "batch": "batch2_2025Q2", "analysis_date": "2026-04-09", "total_speech_units": 10},
+  "speech_units": [
+    {"speaker": "杨义山", "unit_id": "batch2_0606_01", "primary_factor": "政策面因子", "secondary_factor": "央行态度", "content_summary": "当前市场环境下，整体走势仍维持在窄幅震荡区间。前期主要波动范围位于1.65至1.7之间，对五年以内的国债类资产持相对乐观态度，主要受央行恢复国债购买预期的推动。", "key_quote": "对五年以内的国债类资产持相对乐观态度", "sentiment": "中性偏多", "time_phase": "会议前期"},
+    {"speaker": "张迪", "unit_id": "batch2_0606_02", "primary_factor": "流动性因子", "secondary_factor": "资金面判断", "content_summary": "当前市场整体观点较前期变化不大。1.7以上的存单仍具备配置价值这一判断至今未变。本周央行的操作态度也有所体现，显示出政策支持和透明度的提升。", "key_quote": "1.7以上的存单仍具备配置价值", "sentiment": "中性偏多", "time_phase": "会议前期"},
+    {"speaker": "武玥", "unit_id": "batch2_0606_03", "primary_factor": "市场情绪因子", "secondary_factor": "策略建议", "content_summary": "随着5月信用利差快速压缩，6月利率品种或将优于信用品种。利率端受到多重因素支撑，包括央行购债预期、大行对三年期国债的配置行为。", "key_quote": "6月利率品种或将优于信用品种", "sentiment": "中性偏多", "time_phase": "会议前期"},
+    {"speaker": "柴颖颖", "unit_id": "batch2_0606_04", "primary_factor": "市场情绪因子", "secondary_factor": "策略建议", "content_summary": "长端利率仍面临一定潜在压力。尽管央行主要调控短端利率，但长端走势更依赖市场预期。当前阶段尚未考虑大幅增加久期敞口，整体策略仍以稳健为主。", "key_quote": "整体策略仍以稳健为主", "sentiment": "中性偏空", "time_phase": "会议中期"},
+    {"speaker": "姜之媛", "unit_id": "batch2_0606_05", "primary_factor": "市场情绪因子", "secondary_factor": "策略建议", "content_summary": "当前市场对关税情绪交易已逐步退潮，整体仍维持震荡走势。上涨时不宜过度恐慌卖出，下跌时也应敢于参与。", "key_quote": "上涨时不宜过度恐慌卖出，下跌时也应敢于参与", "sentiment": "中性", "time_phase": "会议中期"},
+    {"speaker": "张晶", "unit_id": "batch2_0606_06", "primary_factor": "基本面因子", "secondary_factor": "经济评估", "content_summary": "通胀、地产与企业投资意愿等核心问题若无法扭转，市场情绪难言根本改善。当前债市虽仍处于牛市基础之上，但利率已处低位，央行可用工具有限。", "key_quote": "当前债市虽仍处于牛市基础之上，但利率已处低位", "sentiment": "中性", "time_phase": "会议后期"},
+    {"speaker": "赵骥", "unit_id": "batch2_0606_07", "primary_factor": "机构行为因子", "secondary_factor": "策略建议", "content_summary": "当前市场对利率趋势判断较为一致，宏观层面也缺乏新信号，各类预期已被充分交易，呈现出明显的抢跑现象。", "key_quote": "各类预期已被充分交易，呈现出明显的抢跑现象", "sentiment": "中性", "time_phase": "会议后期"},
+    {"speaker": "杨义山", "unit_id": "batch2_0606_08", "primary_factor": "机构行为因子", "secondary_factor": "换券逻辑", "content_summary": "当前市场交投最活跃的国债期限集中在30年、10年和7年。交易型资金更关注流动性较好的25特2，若高票息券种价差突破历史高位区间，也可考虑参与。", "key_quote": "交易型资金更关注流动性较好的25特2", "sentiment": "中性", "time_phase": "会议后期"},
+    {"speaker": "张帆", "unit_id": "batch2_0606_09", "primary_factor": "市场情绪因子", "secondary_factor": "策略建议", "content_summary": "当前长端和超长端利率预计将呈现震荡态势，短期内挑战前期低点难度较大；中短端方面，鉴于资金面宽松，1-3年期信用债具有较高配置价值。", "key_quote": "1-3年期信用债具有较高配置价值", "sentiment": "中性偏多", "time_phase": "会议后期"},
+    {"speaker": "张迪", "unit_id": "batch2_0606_10", "primary_factor": "流动性因子", "secondary_factor": "存单分析", "content_summary": "下周是观察资金面和存单走势的一个关键窗口。下周一将有一批买断式回购到期，叠加3000多亿的缴税因素，资金面可能面临一定收敛压力。", "key_quote": "下周是观察资金面和存单走势的一个关键窗口", "sentiment": "中性", "time_phase": "会议后期"}
+  ]
+}

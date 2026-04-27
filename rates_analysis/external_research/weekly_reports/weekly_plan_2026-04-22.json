@@ -1,0 +1,82 @@
+{
+  "weekly_date": "2026-04-22",
+  "generated_at": "2026-04-22T09:04:56.489421",
+  "summary": "本周采集 3 个团队的研报数据",
+  "workflow_steps": [
+    {
+      "step": 3,
+      "action": "LLM 标注",
+      "description": "将每个格式化文本送入 research_learner_prompt，让 LLM 抽取 claim_atoms",
+      "teams": [
+        {
+          "team_id": "huatai_zhang",
+          "institution": "华泰证券研究所",
+          "author": "张继强",
+          "input_file": "c:\\Users\\123cy\\WorkBuddy\\20260408090957\\rates_analysis\\external_research\\formatted\\2026-04-22_huatai_zhang.txt",
+          "cmd_prepare": "python \"C:\\Users\\123cy\\.workbuddy\\skills\\ficc-factor-midplatform\\scripts\\agents\\research_learner.py\" prepare --input \"c:\\Users\\123cy\\WorkBuddy\\20260408090957\\rates_analysis\\external_research\\formatted\\2026-04-22_huatai_zhang.txt\""
+        },
+        {
+          "team_id": "swhy_huang",
+          "institution": "申银万国研究所",
+          "author": "黄伟平",
+          "input_file": "c:\\Users\\123cy\\WorkBuddy\\20260408090957\\rates_analysis\\external_research\\formatted\\2026-04-22_swhy_huang.txt",
+          "cmd_prepare": "python \"C:\\Users\\123cy\\.workbuddy\\skills\\ficc-factor-midplatform\\scripts\\agents\\research_learner.py\" prepare --input \"c:\\Users\\123cy\\WorkBuddy\\20260408090957\\rates_analysis\\external_research\\formatted\\2026-04-22_swhy_huang.txt\""
+        },
+        {
+          "team_id": "zhongtai_lv",
+          "institution": "中泰证券研究所",
+          "author": "吕品",
+          "input_file": "c:\\Users\\123cy\\WorkBuddy\\20260408090957\\rates_analysis\\external_research\\formatted\\2026-04-22_zhongtai_lv.txt",
+          "cmd_prepare": "python \"C:\\Users\\123cy\\.workbuddy\\skills\\ficc-factor-midplatform\\scripts\\agents\\research_learner.py\" prepare --input \"c:\\Users\\123cy\\WorkBuddy\\20260408090957\\rates_analysis\\external_research\\formatted\\2026-04-22_zhongtai_lv.txt\""
+        }
+      ]
+    },
+    {
+      "step": 4,
+      "action": "LLM 执行",
+      "description": "Agent 读取 _pending_research_learn_prompt.json 中的 full_prompt，调用 LLM，保存返回 JSON",
+      "note": "每个团队消耗约 1000-3000 token，6 个团队合计约 1-2 万 token"
+    },
+    {
+      "step": 5,
+      "action": "写入原子库",
+      "description": "对每个团队的 LLM 返回结果执行 save 命令",
+      "cmd_template": "python \"C:\\Users\\123cy\\.workbuddy\\skills\\ficc-factor-midplatform\\scripts\\agents\\research_learner.py\" save --input <llm_response.json> --institution \"<机构名>\""
+    },
+    {
+      "step": 6,
+      "action": "更新因果图谱",
+      "description": "重新计算 support_count，更新 factor_causal_edges_v2.json",
+      "cmd": "python \"c:\\Users\\123cy\\WorkBuddy\\20260408090957\\rates_analysis\\enrich_causal_edges.py\""
+    },
+    {
+      "step": 7,
+      "action": "生成本周决策摘要",
+      "description": "运行 decision_engine render，输出本周五因子决策摘要",
+      "cmd": "python \"C:\\Users\\123cy\\.workbuddy\\skills\\ficc-factor-midplatform\\scripts\\agents\\decision_engine.py\" render --date 2026-04-22"
+    }
+  ],
+  "formatted_files": [
+    {
+      "team_id": "huatai_zhang",
+      "institution": "华泰证券研究所",
+      "author": "张继强",
+      "file": "c:\\Users\\123cy\\WorkBuddy\\20260408090957\\rates_analysis\\external_research\\formatted\\2026-04-22_huatai_zhang.txt",
+      "item_count": 3
+    },
+    {
+      "team_id": "swhy_huang",
+      "institution": "申银万国研究所",
+      "author": "黄伟平",
+      "file": "c:\\Users\\123cy\\WorkBuddy\\20260408090957\\rates_analysis\\external_research\\formatted\\2026-04-22_swhy_huang.txt",
+      "item_count": 3
+    },
+    {
+      "team_id": "zhongtai_lv",
+      "institution": "中泰证券研究所",
+      "author": "吕品",
+      "file": "c:\\Users\\123cy\\WorkBuddy\\20260408090957\\rates_analysis\\external_research\\formatted\\2026-04-22_zhongtai_lv.txt",
+      "item_count": 2
+    }
+  ]
+}

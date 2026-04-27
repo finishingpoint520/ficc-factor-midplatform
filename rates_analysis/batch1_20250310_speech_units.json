@@ -1,0 +1,121 @@
+{
+  "metadata": {
+    "meeting_date": "2025-03-10",
+    "filename": "固收策略组周例会议讨论纪要20250310.docx",
+    "batch": "batch1_2025Q1",
+    "analysis_date": "2026-04-09",
+    "total_speech_units": 11
+  },
+  "speech_units": [
+    {
+      "speaker": "杨义山",
+      "unit_id": "batch1_0310_01",
+      "primary_factor": "政策面因子",
+      "secondary_factor": "货币政策预期",
+      "content_summary": "两会后政策信息明确，债市情绪疲弱，降准降息取决于经济运行。短端已回吐宽松预期，当前位置上下空间有限，市场寻找平衡点。",
+      "key_quote": "5年以内的资产并未再交易所谓的适度宽松货币政策，国债曲线短端价格已经高于去年12月初水平",
+      "sentiment": "中性偏空",
+      "time_phase": "会议前期"
+    },
+    {
+      "speaker": "杨义山",
+      "unit_id": "batch1_0310_02",
+      "primary_factor": "政策面因子",
+      "secondary_factor": "政策窗口观察",
+      "content_summary": "未来关注央行货币政策执行情况及对实体经济影响，对比2023-2024年政治局会议决策，无风险利率处于下降趋势。",
+      "key_quote": "通过对比2023年至2024年间的政治局会议决策，可以发现无风险利率处于下降趋势",
+      "sentiment": "中性",
+      "time_phase": "会议前期"
+    },
+    {
+      "speaker": "杨义山",
+      "unit_id": "batch1_0310_03",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": "策略应对",
+      "content_summary": "建议维持现有持仓观察，重点关注1-3年期国债，长端债券需谨慎评估，保持流动性寻找机会。",
+      "key_quote": "建议维持现有持仓并观察市场动向...重点关注1-3年期国债",
+      "sentiment": "谨慎观望",
+      "time_phase": "会议前期"
+    },
+    {
+      "speaker": "张迪",
+      "unit_id": "batch1_0310_04",
+      "primary_factor": "流动性因子",
+      "secondary_factor": "资金面分析",
+      "content_summary": "短端变化不大，银行负债短缺推高存单收益率。央行继续净回笼，下周税期+MLF到期资金缺口约1.5万亿，资金价格稳定在1.8附近。",
+      "key_quote": "下周面临税期和中期借贷便利（MLF）到期的双重压力，可能导致资金缺口约1.5万亿",
+      "sentiment": "中性偏紧",
+      "time_phase": "会议中期"
+    },
+    {
+      "speaker": "张迪",
+      "unit_id": "batch1_0310_05",
+      "primary_factor": "流动性因子",
+      "secondary_factor": "存单供需",
+      "content_summary": "关注下周资金面，若平稳则短端存单可能已完成大部分调整。3月货币政策预期较低，存单发行需求强劲，单周发行量超9000亿。",
+      "key_quote": "近期单周发行量高达9,000多亿，显示市场配置需求逐渐恢复",
+      "sentiment": "中性",
+      "time_phase": "会议中期"
+    },
+    {
+      "speaker": "张迪",
+      "unit_id": "batch1_0310_06",
+      "primary_factor": "机构行为因子",
+      "secondary_factor": "银行负债行为",
+      "content_summary": "银行存单发行需求超到期需求，定期存款难以续上。大行提价发行存单，城商行积极，当前位置得到市场一定认可，仍在筑顶过程中。",
+      "key_quote": "农行和中信等大行近期提价发行存单，城商行发行情况也较为积极",
+      "sentiment": "中性",
+      "time_phase": "会议中期"
+    },
+    {
+      "speaker": "李博良",
+      "unit_id": "batch1_0310_07",
+      "primary_factor": "基本面因子",
+      "secondary_factor": "经济基本面评估",
+      "content_summary": "财政和货币政策显示收紧趋势，出口数据和通胀显示经济基本面不强。2-3月大行仍在购买票据，信贷投放未必理想，市场需逐步纠正。",
+      "key_quote": "出口数据和通胀情况显示经济基本面并不强劲",
+      "sentiment": "中性偏弱",
+      "time_phase": "会议中期"
+    },
+    {
+      "speaker": "李博良",
+      "unit_id": "batch1_0310_08",
+      "primary_factor": "机构行为因子",
+      "secondary_factor": "基金行为",
+      "content_summary": "短端资产仍受认可，基金倾向于买入短期信用债卖出长期利率债。短端配置价值认可度高，但存单部分仍有不确定性。",
+      "key_quote": "基金倾向于买入短期信用债并卖出长期利率债",
+      "sentiment": "中性偏多",
+      "time_phase": "会议中期"
+    },
+    {
+      "speaker": "李博良",
+      "unit_id": "batch1_0310_09",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": "策略应对",
+      "content_summary": "若存单压力较大继续提价，叠加税期扰动，短端仍有波动。建议先观望，关注存单能否企稳，企稳后可逐步尝试机会。",
+      "key_quote": "在当前位置建议先观望，特别是关注下周存单能否企稳",
+      "sentiment": "谨慎观望",
+      "time_phase": "会议中期"
+    },
+    {
+      "speaker": "武玥",
+      "unit_id": "batch1_0310_10",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": "赔率胜率分析",
+      "content_summary": "长端利率胜率较低，中短端有配置价值。7年以内品种已回到2023年12月9日前水平，长端活跃券尚未完全回到该水平，可能面临进一步下跌。",
+      "key_quote": "整体而言，长端利率的胜率较低，而中短端具有一定的配置价值",
+      "sentiment": "中性偏空",
+      "time_phase": "会议后期"
+    },
+    {
+      "speaker": "武玥",
+      "unit_id": "batch1_0310_11",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": "策略建议",
+      "content_summary": "建议持有能够算得过账的品种如下沉的两年期信用债。激进策略可持有1.5年期信用债，保守策略选择2-3年期。长端利率品种应尽量规避。",
+      "key_quote": "建议倾向于持有能够算得过账的品种，例如下沉一些的两年期信用债",
+      "sentiment": "谨慎偏多",
+      "time_phase": "会议后期"
+    }
+  ]
+}

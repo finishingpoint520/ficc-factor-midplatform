@@ -1,0 +1,121 @@
+{
+  "metadata": {
+    "meeting_date": "2025-03-21",
+    "filename": "固收策略组周例会议讨论纪要20250321.docx",
+    "batch": "batch1_2025Q1",
+    "analysis_date": "2026-04-09",
+    "total_speech_units": 11
+  },
+  "speech_units": [
+    {
+      "speaker": "张迪",
+      "unit_id": "batch1_0321_01",
+      "primary_factor": "流动性因子",
+      "secondary_factor": "资金面分析",
+      "content_summary": "本周资金面逐渐宽松，隔夜利率降至1.8%以下。同业存单发行量持续放量，两周净发行接近七八千亿，银行积极通过发行同业存单补充负债。",
+      "key_quote": "本周资金面逐渐宽松，隔夜利率降至1.8%以下",
+      "sentiment": "偏多",
+      "time_phase": "会议前期"
+    },
+    {
+      "speaker": "张迪",
+      "unit_id": "batch1_0321_02",
+      "primary_factor": "流动性因子",
+      "secondary_factor": "策略建议",
+      "content_summary": "建议短期内积极配置短端资产，当前价位相对合理。线下定期存款如果额度允许值得推荐。银行负债仍存在分化，季末部分银行会提供较高活期利率。",
+      "key_quote": "建议短期内积极配置短端资产，认为当前价位相对合理",
+      "sentiment": "偏多",
+      "time_phase": "会议前期"
+    },
+    {
+      "speaker": "杨义山",
+      "unit_id": "batch1_0321_03",
+      "primary_factor": "政策面因子",
+      "secondary_factor": "央行态度",
+      "content_summary": "急跌后长端利率出现约10BP修复，整体呈现宽幅震荡。央行态度是影响动态的核心因素，最近通过连续三天大额净投放稳定市场情绪。",
+      "key_quote": "央行的态度是影响这一动态的核心因素之一，最近通过连续三天的大额净投放来稳定市场情绪",
+      "sentiment": "中性偏多",
+      "time_phase": "会议前期"
+    },
+    {
+      "speaker": "杨义山",
+      "unit_id": "batch1_0321_04",
+      "primary_factor": "政策面因子",
+      "secondary_factor": "政策窗口",
+      "content_summary": "未来关注国内外货币政策变化及重要会议。内部关注国研中心论坛和央行领导人讲话，外部关注美联储政策走向。二季度中美货币政策可能有共振空间。",
+      "key_quote": "二季度中美两国货币政策可能会有一些共振的空间",
+      "sentiment": "中性偏多",
+      "time_phase": "会议前期"
+    },
+    {
+      "speaker": "李博良",
+      "unit_id": "batch1_0321_05",
+      "primary_factor": "政策面因子",
+      "secondary_factor": "央行态度",
+      "content_summary": "央行态度相比之前有所缓和，体现在大行融出数据上升及税基资金相对平稳。但态度边际恢复并不意味着长端利率会显著下行，反而可能限制利率下限。",
+      "key_quote": "央行态度的边际恢复并不意味着长端利率会显著下行，反而可能会限制利率的下限",
+      "sentiment": "中性",
+      "time_phase": "会议中期"
+    },
+    {
+      "speaker": "李博良",
+      "unit_id": "batch1_0321_06",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": "策略建议",
+      "content_summary": "长端利率产品在1.8%附近可能是较好的进场时机，可寻找压力差机会如活跃券与非活跃券之间的利差扩大现象。中短端资产可根据市场情况适时配置。",
+      "key_quote": "对于长端利率产品，在1.8%附近可能是较好的进场时机",
+      "sentiment": "中性偏多",
+      "time_phase": "会议中期"
+    },
+    {
+      "speaker": "姜之媛",
+      "unit_id": "batch1_0321_07",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": "震荡观点",
+      "content_summary": "对当前市场维持震荡观点，自3月17日央行开始净投放以来利率表现并不如预期强劲。中短端利率利差已显著压缩，进一步下行空间有限。",
+      "key_quote": "对当前市场维持震荡观点，自3月17日央行开始净投放以来，利率表现并不如预期强劲",
+      "sentiment": "中性",
+      "time_phase": "会议中期"
+    },
+    {
+      "speaker": "张帆",
+      "unit_id": "batch1_0321_08",
+      "primary_factor": "机构行为因子",
+      "secondary_factor": "信用策略",
+      "content_summary": "推荐三年以内的信用产品作为当前市场环境下最佳投资选择，认为这些产品胜率较高且收益可观。存单是一个值得关注的投资工具。",
+      "key_quote": "推荐三年以内的信用产品作为当前市场环境下最佳的投资选择",
+      "sentiment": "偏多",
+      "time_phase": "会议后期"
+    },
+    {
+      "speaker": "武玥",
+      "unit_id": "batch1_0321_09",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": "买点寻找",
+      "content_summary": "3月末之前债券市场机会不大，长端不做趋势性建仓。但当前有边际变化即开始寻找长端买点，主要由于接近二季度初时间窗口且市场经历重定价后基金降久期重新找到锚点。",
+      "key_quote": "当前有一个边际变化，即开始寻找长端的买点",
+      "sentiment": "中性偏多",
+      "time_phase": "会议后期"
+    },
+    {
+      "speaker": "张晶",
+      "unit_id": "batch1_0321_10",
+      "primary_factor": "政策面因子",
+      "secondary_factor": "政策风险",
+      "content_summary": "央行对降息持非常谨慎态度，银行净息差过低限制降息空间。2023年底中央金融工作会议强调防风险、强监管和促发展顺序不可颠倒。中国银行业现状使其难以在低利率环境下有效应对系统性风险。",
+      "key_quote": "中国的银行体系结构复杂且市场化程度不足...难以在低利率环境下有效应对系统性风险",
+      "sentiment": "中性偏空",
+      "time_phase": "会议后期"
+    },
+    {
+      "speaker": "赵骥",
+      "unit_id": "batch1_0321_11",
+      "primary_factor": "机构行为因子",
+      "secondary_factor": "风险管理",
+      "content_summary": "年初以来市场普遍预期今年将是低利率高波动的一年。在这种背景下债券市场无需过于悲观但仍需谨慎对待。未来需要重点关注经济基本面变化及低利率高波动环境下的策略调整。",
+      "key_quote": "在这样的背景下，债券市场无需过于悲观，但仍需谨慎对待",
+      "sentiment": "中性",
+      "time_phase": "会议后期"
+    }
+  ]
+}

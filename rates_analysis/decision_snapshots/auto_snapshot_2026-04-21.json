@@ -1,0 +1,671 @@
+{
+  "snapshot_id": "DS_2026-04-21",
+  "analysis_date": "2026-04-21",
+  "generated_at": "2026-04-21T19:53:25.494933",
+  "factor_scores": {
+    "基本面因子": {
+      "score": 0.3,
+      "direction": "中性",
+      "key_signals": [
+        "[赵骥 2025-03-28] 基本面方面尽管存在分歧且卖方观点模糊，但高频数据和历史季节性调整显示二季度环比表现不错，具体改善程度...",
+        "[张晶 2025-04-03] 维持对债市偏多的观点。关税冲击对中国这样的生产国而言其冲击并非一次性而是一个持续的过程，若关税以当前...",
+        "[武玥 2025-05-09] 基本面恶化成为一致预期，高额关税或是未来1-2个季度难以避免的挑战。4月数据或呈现出口表观不弱、内需...",
+        "[张晶 2025-07-04] 上半年事件驱动性主导，下半年周期本身力量重要性提升。全球逐步确认经济见底。反内卷与供给侧改革有可比性...",
+        "[张晶 2025-07-18] 市场主线趋同：股债跷跷板+权益市场走向。关注供给侧框架下反内卷政策效果。居民超额储蓄47万亿但未大规..."
+      ],
+      "supporting_atom_count": 34,
+      "supporting_atom_ids": [
+        "20250328_B01_010",
+        "20250403_B01_006",
+        "20250509_B02_002",
+        "20250704_B00_008",
+        "20250718_B00_007"
+      ],
+      "priority_score": 0.0
+    },
+    "政策面因子": {
+      "score": 0.5,
+      "direction": "弱利多",
+      "key_signals": [
+        "[杨义山 2025-03-10] 两会后政策信息明确，债市情绪疲弱，降准降息取决于经济运行。短端已回吐宽松预期，当前位置上下空间有限，...",
+        "[姜之媛 2025-03-14] 维持震荡观点，中短端利率利差已显著压缩。从全球利率对比看中美日绝对利差有所缓解。关注4月变化，若二季...",
+        "[杨义山 2025-03-21] 急跌后长端利率出现约10BP修复，整体呈现宽幅震荡。央行态度是影响动态的核心因素，最近通过连续三天大...",
+        "[杨义山 2025-03-21] 未来关注国内外货币政策变化及重要会议。内部关注国研中心论坛和央行领导人讲话，外部关注美联储政策走向。...",
+        "[张晶 2025-03-21] 央行对降息持非常谨慎态度，银行净息差过低限制降息空间。2023年底中央金融工作会议强调防风险、强监管..."
+      ],
+      "supporting_atom_count": 62,
+      "supporting_atom_ids": [
+        "20250310_B01_001",
+        "20250314_B01_010",
+        "20250321_B01_003",
+        "20250321_B01_004",
+        "20250321_B01_010"
+      ],
+      "priority_score": 0.0139
+    },
+    "流动性因子": {
+      "score": 0.9,
+      "direction": "弱利多",
+      "key_signals": [
+        "[张迪 2025-03-14] 短端利率（一年期存单）从高位显著下降，当前约1.97%，相比最高2.04%下降约7BP。短端价值仍被...",
+        "[张迪 2025-03-14] 从本周开始积极配置存单和存款，特别是考虑到有些存款反应较慢其相对价值更高。杠杆策略仍有盈利空间。...",
+        "[李博良 2025-03-14] 短端利率确定性相对较高，随着季末临近场外资金可能逐步进场配置。长端利率中枢上移，要进一步突破下行需要...",
+        "[张迪 2025-03-21] 本周资金面逐渐宽松，隔夜利率降至1.8%以下。同业存单发行量持续放量，两周净发行接近七八千亿，银行积...",
+        "[张迪 2025-03-21] 建议短期内积极配置短端资产，当前价位相对合理。线下定期存款如果额度允许值得推荐。银行负债仍存在分化，..."
+      ],
+      "supporting_atom_count": 42,
+      "supporting_atom_ids": [
+        "20250314_B01_006",
+        "20250314_B01_007",
+        "20250314_B01_009",
+        "20250321_B01_001",
+        "20250321_B01_002"
+      ],
+      "priority_score": 0.0104
+    },
+    "市场情绪因子": {
+      "score": 0.5,
+      "direction": "弱利多",
+      "key_signals": [
+        "[杨义山 2025-03-10] 建议维持现有持仓观察，重点关注1-3年期国债，长端债券需谨慎评估，保持流动性寻找机会。...",
+        "[李博良 2025-03-10] 若存单压力较大继续提价，叠加税期扰动，短端仍有波动。建议先观望，关注存单能否企稳，企稳后可逐步尝试机...",
+        "[武玥 2025-03-10] 长端利率胜率较低，中短端有配置价值。7年以内品种已回到2023年12月9日前水平，长端活跃券尚未完全...",
+        "[武玥 2025-03-10] 建议持有能够算得过账的品种如下沉的两年期信用债。激进策略可持有1.5年期信用债，保守策略选择2-3年...",
+        "[武玥 2025-03-14] 长端利率尚未达到趋势性建仓时机，预计可能进一步调整至1.9左右形成完整调整周期。市场缺乏明确情绪推动..."
+      ],
+      "supporting_atom_count": 105,
+      "supporting_atom_ids": [
+        "20250310_B01_003",
+        "20250310_B01_009",
+        "20250310_B01_010",
+        "20250310_B01_011",
+        "20250314_B01_003"
+      ],
+      "priority_score": 0.0052
+    },
+    "机构行为因子": {
+      "score": 0.3,
+      "direction": "中性",
+      "key_signals": [
+        "[李博良 2025-03-10] 短端资产仍受认可，基金倾向于买入短期信用债卖出长期利率债。短端配置价值认可度高，但存单部分仍有不确定...",
+        "[张帆 2025-03-21] 推荐三年以内的信用产品作为当前市场环境下最佳投资选择，认为这些产品胜率较高且收益可观。存单是一个值得...",
+        "[柴颖颖 2025-04-11] 地方债利差有可能与发行量存在关联。地方债相对于国债的高利差使得其成为具有吸引力的投资选项，尤其是在中...",
+        "[赵骥 2025-05-05] 今年上半年市场波动较大，一季度已有账户展现良好攻防节奏控制能力。进入二季度，对于已有安全垫的账户可在...",
+        "[赵骥 2025-06-13] 如果6月份平稳度过，7月份在未见明显利空的情况下，银行可能会选择获利了结一些FTP倒挂的资产，包括部..."
+      ],
+      "supporting_atom_count": 54,
+      "supporting_atom_ids": [
+        "20250310_B01_008",
+        "20250321_B01_008",
+        "20250411_B01_003",
+        "20250505_B02_008",
+        "20250613_B02_008"
+      ],
+      "priority_score": 0.0
+    }
+  },
+  "overall_assessment": {
+    "direction": "弱利多",
+    "score": 0.5,
+    "confidence": "高",
+    "trade_implication": ""
+  },
+  "priority_ranking": [
+    {
+      "factor_id": "PL_002",
+      "factor_label": "政策博弈",
+      "priority_score": 0.0625,
+      "chain_strength": 0.25,
+      "momentum": 1.0,
+      "verifiability": 0.0909,
+      "pricing_misalignment": 0.5,
+      "rank": 1
+    },
+    {
+      "factor_id": "PL_001",
+      "factor_label": "基本面边际变化",
+      "priority_score": 0.0625,
+      "chain_strength": 0.25,
+      "momentum": 1.0,
+      "verifiability": 0.0,
+      "pricing_misalignment": 0.5,
+      "rank": 2
+    },
+    {
+      "factor_id": "LQ_001",
+      "factor_label": "资金面判断",
+      "priority_score": 0.0625,
+      "chain_strength": 0.25,
+      "momentum": 1.0,
+      "verifiability": 0.0357,
+      "pricing_misalignment": 0.5,
+      "rank": 3
+    },
+    {
+      "factor_id": "MS_001",
+      "factor_label": "风险偏好变化",
+      "priority_score": 0.0625,
+      "chain_strength": 0.25,
+      "momentum": 1.0,
+      "verifiability": 0.1324,
+      "pricing_misalignment": 0.5,
+      "rank": 4
+    },
+    {
+      "factor_id": "MS_005",
+      "factor_label": "赔率与胜率判断",
+      "priority_score": 0.0,
+      "chain_strength": 0.25,
+      "momentum": 0.0,
+      "verifiability": 0.0476,
+      "pricing_misalignment": 0.5,
+      "rank": 5
+    },
+    {
+      "factor_id": "FD_006",
+      "factor_label": "出口数据",
+      "priority_score": 0.0,
+      "chain_strength": 0.2,
+      "momentum": 0.0,
+      "verifiability": 0.3333,
+      "pricing_misalignment": 0.5,
+      "rank": 6
+    },
+    {
+      "factor_id": "IB_002",
+      "factor_label": "信用利差机会",
+      "priority_score": 0.0,
+      "chain_strength": 0.2125,
+      "momentum": 0.0,
+      "verifiability": 1.0,
+      "pricing_misalignment": 0.5,
+      "rank": 7
+    },
+    {
+      "factor_id": "FD_003",
+      "factor_label": "经济修复斜率",
+      "priority_score": 0.0,
+      "chain_strength": 0.2687,
+      "momentum": 0.0,
+      "verifiability": 1.0,
+      "pricing_misalignment": 0.5,
+      "rank": 8
+    },
+    {
+      "factor_id": "PL_009",
+      "factor_label": "财政节奏",
+      "priority_score": 0.0,
+      "chain_strength": 0.0,
+      "momentum": 0.0,
+      "verifiability": 1.0,
+      "pricing_misalignment": 0.5,
+      "rank": 9
+    },
+    {
+      "factor_id": "MS_006",
+      "factor_label": "信用策略",
+      "priority_score": 0.0,
+      "chain_strength": 0.25,
+      "momentum": 0.0,
+      "verifiability": 0.0,
+      "pricing_misalignment": 0.5,
+      "rank": 10
+    },
+    {
+      "factor_id": "PL_011",
+      "factor_label": "货币政策预期",
+      "priority_score": 0.0,
+      "chain_strength": 0.0,
+      "momentum": 0.0,
+      "verifiability": 1.0,
+      "pricing_misalignment": 0.5,
+      "rank": 11
+    },
+    {
+      "factor_id": "MS_009",
+      "factor_label": "信用利差",
+      "priority_score": 0.0,
+      "chain_strength": 0.0,
+      "momentum": 0.0,
+      "verifiability": 1.0,
+      "pricing_misalignment": 0.5,
+      "rank": 12
+    },
+    {
+      "factor_id": "MS_008",
+      "factor_label": "股债关系",
+      "priority_score": 0.0,
+      "chain_strength": 0.1625,
+      "momentum": 0.0,
+      "verifiability": 0.3333,
+      "pricing_misalignment": 0.5,
+      "rank": 13
+    },
+    {
+      "factor_id": "PL_004",
+      "factor_label": "关税影响",
+      "priority_score": 0.0,
+      "chain_strength": 0.2,
+      "momentum": 0.0,
+      "verifiability": 0.375,
+      "pricing_misalignment": 0.5,
+      "rank": 14
+    },
+    {
+      "factor_id": "PL_006",
+      "factor_label": "央行态度与信号",
+      "priority_score": 0.0,
+      "chain_strength": 0.2875,
+      "momentum": 0.0,
+      "verifiability": 0.5455,
+      "pricing_misalignment": 0.5,
+      "rank": 15
+    },
+    {
+      "factor_id": "MS_013",
+      "factor_label": "费率新规预期",
+      "priority_score": 0.0,
+      "chain_strength": 0.0,
+      "momentum": 0.0,
+      "verifiability": 1.0,
+      "pricing_misalignment": 0.5,
+      "rank": 16
+    },
+    {
+      "factor_id": "IB_005",
+      "factor_label": "久期管理",
+      "priority_score": 0.0,
+      "chain_strength": 0.25,
+      "momentum": 0.0,
+      "verifiability": 0.0,
+      "pricing_misalignment": 0.5,
+      "rank": 17
+    },
+    {
+      "factor_id": "IB_003",
+      "factor_label": "赎回与资金流向",
+      "priority_score": 0.0,
+      "chain_strength": 0.25,
+      "momentum": 0.0,
+      "verifiability": 1.0,
+      "pricing_misalignment": 0.5,
+      "rank": 18
+    },
+    {
+      "factor_id": "LQ_007",
+      "factor_label": "杠杆策略",
+      "priority_score": 0.0,
+      "chain_strength": 0.1,
+      "momentum": 0.0,
+      "verifiability": 0.0,
+      "pricing_misalignment": 0.5,
+      "rank": 19
+    },
+    {
+      "factor_id": "MS_007",
+      "factor_label": "机构行为分析",
+      "priority_score": 0.0,
+      "chain_strength": 0.0,
+      "momentum": 1.0,
+      "verifiability": 0.0,
+      "pricing_misalignment": 0.5,
+      "rank": 20
+    },
+    {
+      "factor_id": "PL_010",
+      "factor_label": "政策预期",
+      "priority_score": 0.0,
+      "chain_strength": 0.2833,
+      "momentum": 0.0,
+      "verifiability": 0.0,
+      "pricing_misalignment": 0.5,
+      "rank": 21
+    },
+    {
+      "factor_id": "MS_012",
+      "factor_label": "止盈/止损行为",
+      "priority_score": 0.0,
+      "chain_strength": 0.0,
+      "momentum": 0.0,
+      "verifiability": 1.0,
+      "pricing_misalignment": 0.5,
+      "rank": 22
+    },
+    {
+      "factor_id": "LQ_005",
+      "factor_label": "资金价格中枢",
+      "priority_score": 0.0,
+      "chain_strength": 0.2364,
+      "momentum": 0.0,
+      "verifiability": 1.0,
+      "pricing_misalignment": 0.5,
+      "rank": 23
+    },
+    {
+      "factor_id": "FD_005",
+      "factor_label": "经济增长动能",
+      "priority_score": 0.0,
+      "chain_strength": 0.3,
+      "momentum": 0.0,
+      "verifiability": 1.0,
+      "pricing_misalignment": 0.5,
+      "rank": 24
+    },
+    {
+      "factor_id": "MS_003",
+      "factor_label": "拥挤交易程度",
+      "priority_score": 0.0,
+      "chain_strength": 0.19,
+      "momentum": 0.0,
+      "verifiability": 1.0,
+      "pricing_misalignment": 0.5,
+      "rank": 25
+    },
+    {
+      "factor_id": "MS_010",
+      "factor_label": "区间判断",
+      "priority_score": 0.0,
+      "chain_strength": 0.0,
+      "momentum": 0.0,
+      "verifiability": 0.0,
+      "pricing_misalignment": 0.5,
+      "rank": 26
+    },
+    {
+      "factor_id": "LQ_004",
+      "factor_label": "存单供需",
+      "priority_score": 0.0,
+      "chain_strength": 0.25,
+      "momentum": 0.0,
+      "verifiability": 0.6667,
+      "pricing_misalignment": 0.5,
+      "rank": 27
+    },
+    {
+      "factor_id": "LQ_003",
+      "factor_label": "同业存单利率",
+      "priority_score": 0.0,
+      "chain_strength": 0.275,
+      "momentum": 0.0,
+      "verifiability": 0.25,
+      "pricing_misalignment": 0.5,
+      "rank": 28
+    },
+    {
+      "factor_id": "PL_005",
+      "factor_label": "利率区间管理",
+      "priority_score": 0.0,
+      "chain_strength": 0.175,
+      "momentum": 0.0,
+      "verifiability": 1.0,
+      "pricing_misalignment": 0.5,
+      "rank": 29
+    },
+    {
+      "factor_id": "IB_012",
+      "factor_label": "配置盘行为",
+      "priority_score": 0.0,
+      "chain_strength": 0.2071,
+      "momentum": 0.0,
+      "verifiability": 0.7778,
+      "pricing_misalignment": 0.5,
+      "rank": 30
+    },
+    {
+      "factor_id": "IB_010",
+      "factor_label": "费率新规定价",
+      "priority_score": 0.0,
+      "chain_strength": 0.0,
+      "momentum": 0.0,
+      "verifiability": 1.0,
+      "pricing_misalignment": 0.5,
+      "rank": 31
+    },
+    {
+      "factor_id": "MS_002",
+      "factor_label": "资金面",
+      "priority_score": 0.0,
+      "chain_strength": 0.0,
+      "momentum": 1.0,
+      "verifiability": 0.0526,
+      "pricing_misalignment": 0.5,
+      "rank": 32
+    },
+    {
+      "factor_id": "IB_009",
+      "factor_label": "绝对收益约束",
+      "priority_score": 0.0,
+      "chain_strength": 0.0,
+      "momentum": 0.0,
+      "verifiability": 0.0,
+      "pricing_misalignment": 0.5,
+      "rank": 33
+    },
+    {
+      "factor_id": "LQ_002",
+      "factor_label": "央行投放节奏",
+      "priority_score": 0.0,
+      "chain_strength": 0.2846,
+      "momentum": 0.0,
+      "verifiability": 0.8571,
+      "pricing_misalignment": 0.5,
+      "rank": 34
+    },
+    {
+      "factor_id": "FD_007",
+      "factor_label": "通胀",
+      "priority_score": 0.0,
+      "chain_strength": 0.175,
+      "momentum": 0.0,
+      "verifiability": 0.5,
+      "pricing_misalignment": 0.5,
+      "rank": 35
+    },
+    {
+      "factor_id": "PL_003",
+      "factor_label": "政策目标函数",
+      "priority_score": 0.0,
+      "chain_strength": 0.2875,
+      "momentum": 0.0,
+      "verifiability": 1.0,
+      "pricing_misalignment": 0.5,
+      "rank": 36
+    },
+    {
+      "factor_id": "FD_001",
+      "factor_label": "经济评估",
+      "priority_score": 0.0,
+      "chain_strength": 0.2667,
+      "momentum": 0.0,
+      "verifiability": 0.0,
+      "pricing_misalignment": 0.5,
+      "rank": 37
+    },
+    {
+      "factor_id": "MS_004",
+      "factor_label": "久期策略",
+      "priority_score": 0.0,
+      "chain_strength": 0.28,
+      "momentum": 0.0,
+      "verifiability": 0.0,
+      "pricing_misalignment": 0.5,
+      "rank": 38
+    },
+    {
+      "factor_id": "FD_002",
+      "factor_label": "通胀走势",
+      "priority_score": 0.0,
+      "chain_strength": 0.2875,
+      "momentum": 0.0,
+      "verifiability": 1.0,
+      "pricing_misalignment": 0.5,
+      "rank": 39
+    },
+    {
+      "factor_id": "IB_001",
+      "factor_label": "基金久期偏好",
+      "priority_score": 0.0,
+      "chain_strength": 0.2393,
+      "momentum": 0.0,
+      "verifiability": 0.8,
+      "pricing_misalignment": 0.5,
+      "rank": 40
+    },
+    {
+      "factor_id": "IB_004",
+      "factor_label": "ETF申赎行为",
+      "priority_score": 0.0,
+      "chain_strength": 0.175,
+      "momentum": 0.0,
+      "verifiability": 0.0,
+      "pricing_misalignment": 0.5,
+      "rank": 41
+    }
+  ],
+  "top_causal_chains": [],
+  "marginal_changes": [
+    {
+      "factor_id": "MS_007",
+      "factor_label": "机构行为分析",
+      "change_type": "强化",
+      "momentum_delta": 1.0,
+      "recent_atom_count": 38,
+      "prior_atom_count": 0
+    },
+    {
+      "factor_id": "PL_002",
+      "factor_label": "政策博弈",
+      "change_type": "强化",
+      "momentum_delta": 1.0,
+      "recent_atom_count": 30,
+      "prior_atom_count": 0
+    },
+    {
+      "factor_id": "PL_001",
+      "factor_label": "基本面边际变化",
+      "change_type": "强化",
+      "momentum_delta": 1.0,
+      "recent_atom_count": 8,
+      "prior_atom_count": 0
+    },
+    {
+      "factor_id": "LQ_001",
+      "factor_label": "资金面判断",
+      "change_type": "强化",
+      "momentum_delta": 1.0,
+      "recent_atom_count": 12,
+      "prior_atom_count": 0
+    },
+    {
+      "factor_id": "MS_001",
+      "factor_label": "风险偏好变化",
+      "change_type": "强化",
+      "momentum_delta": 1.0,
+      "recent_atom_count": 52,
+      "prior_atom_count": 0
+    }
+  ],
+  "verification_indicators": [
+    {
+      "indicator": "DR001",
+      "linked_factor": "资金价格中枢",
+      "linked_factor_id": "LQ_005",
+      "current_signal": "后续资金预计不会进一步下行，1.6%以下的存单性价比不高。从季节性、央行回笼、政府债供给、套利空间四方面论证资金进一步下行概率低。存单从绝对点位和比价角度均不具",
+      "source_atom": "20250704_B00_001"
+    },
+    {
+      "indicator": "DR007",
+      "linked_factor": "资金价格中枢",
+      "linked_factor_id": "LQ_005",
+      "current_signal": "后续资金预计不会进一步下行，1.6%以下的存单性价比不高。从季节性、央行回笼、政府债供给、套利空间四方面论证资金进一步下行概率低。存单从绝对点位和比价角度均不具",
+      "source_atom": "20250704_B00_001"
+    },
+    {
+      "indicator": "OMO利率",
+      "linked_factor": "资金价格中枢",
+      "linked_factor_id": "LQ_005",
+      "current_signal": "后续资金预计不会进一步下行，1.6%以下的存单性价比不高。从季节性、央行回笼、政府债供给、套利空间四方面论证资金进一步下行概率低。存单从绝对点位和比价角度均不具",
+      "source_atom": "20250704_B00_001"
+    },
+    {
+      "indicator": "同业存单利率",
+      "linked_factor": "资金价格中枢",
+      "linked_factor_id": "LQ_005",
+      "current_signal": "后续资金预计不会进一步下行，1.6%以下的存单性价比不高。从季节性、央行回笼、政府债供给、套利空间四方面论证资金进一步下行概率低。存单从绝对点位和比价角度均不具",
+      "source_atom": "20250704_B00_001"
+    },
+    {
+      "indicator": "活期存款利率",
+      "linked_factor": "资金价格中枢",
+      "linked_factor_id": "LQ_005",
+      "current_signal": "后续资金预计不会进一步下行，1.6%以下的存单性价比不高。从季节性、央行回笼、政府债供给、套利空间四方面论证资金进一步下行概率低。存单从绝对点位和比价角度均不具",
+      "source_atom": "20250704_B00_001"
+    },
+    {
+      "indicator": "货政报告措辞",
+      "linked_factor": "政策目标函数",
+      "linked_factor_id": "PL_003",
+      "current_signal": "货政报告删除择机双降是正常表述，不代表取向变化。央行年内恢复国债买卖概率较高。当前形势不需增量政策明显加力。基本面和政策面温和压力，七八月份自上而下保持偏多，长",
+      "source_atom": "20250704_B00_002"
+    },
+    {
+      "indicator": "国债买卖操作",
+      "linked_factor": "政策目标函数",
+      "linked_factor_id": "PL_003",
+      "current_signal": "货政报告删除择机双降是正常表述，不代表取向变化。央行年内恢复国债买卖概率较高。当前形势不需增量政策明显加力。基本面和政策面温和压力，七八月份自上而下保持偏多，长",
+      "source_atom": "20250704_B00_002"
+    },
+    {
+      "indicator": "财政政策力度",
+      "linked_factor": "政策目标函数",
+      "linked_factor_id": "PL_003",
+      "current_signal": "货政报告删除择机双降是正常表述，不代表取向变化。央行年内恢复国债买卖概率较高。当前形势不需增量政策明显加力。基本面和政策面温和压力，七八月份自上而下保持偏多，长",
+      "source_atom": "20250704_B00_002"
+    },
+    {
+      "indicator": "PPI走势",
+      "linked_factor": "政策目标函数",
+      "linked_factor_id": "PL_003",
+      "current_signal": "货政报告删除择机双降是正常表述，不代表取向变化。央行年内恢复国债买卖概率较高。当前形势不需增量政策明显加力。基本面和政策面温和压力，七八月份自上而下保持偏多，长",
+      "source_atom": "20250704_B00_002"
+    },
+    {
+      "indicator": "赎回数据",
+      "linked_factor": "银行配置行为",
+      "linked_factor_id": "IB_012",
+      "current_signal": "整体偏多，资产上关注前期涨幅较小品种的补涨机会，信用短期内性价比高于利率。存单当前价格合理，R001若稳定在1.4%附近短端预计平稳。赎回压力不大，银行配置需求",
+      "source_atom": "20250704_B00_003"
+    }
+  ],
+  "key_risks": [],
+  "tracking_items": [],
+  "data_coverage": {
+    "atoms_used": 455,
+    "edges_used": 96,
+    "date_range": "2025-03-10 ~ 2025-11-27",
+    "speakers_covered": [
+      "研究员-流动性",
+      "柴颖颖",
+      "吴晖",
+      "武玥",
+      "张晶",
+      "朱柳",
+      "李云增",
+      "石君哲",
+      "刘曼沁",
+      "朱年军",
+      "张迪",
+      "孔祥雨",
+      "高喆",
+      "杨义山",
+      "徐天彤",
+      "谢秋平",
+      "黄婳婳",
+      "沈文思",
+      "吴舒扬",
+      "刘鹏飞"
+    ]
+  },
+  "engine_version": "1.0.0",
+  "note": "纯脚本计算部分。trade_implication/key_risks/tracking_items/readable_summary 需 LLM 补充。"
+}

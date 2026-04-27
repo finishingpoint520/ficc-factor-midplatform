@@ -1,0 +1,658 @@
+{
+  "metadata": {
+    "source_file": "batch3_20250729_speech_units.json",
+    "meeting_date": "2025-07-29",
+    "batch": "unknown",
+    "source_doc_id": "20250729_B00",
+    "migration_date": "2026-04-21",
+    "total_atoms": 11,
+    "format": "v2"
+  },
+  "claim_atoms": [
+    {
+      "atom_id": "20250729_B00_001",
+      "source_doc_id": "20250729_B00",
+      "speaker": "姜之媛",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-07-29",
+      "raw_text": "今天市场非理性下跌由未经证实的消息引发黑色系暴涨所致。市场情绪过度聚焦政治局会议预期。固收+底层逻辑未动摇，但若有效需求刺激超预期将果断降久期。ETF大额净流入提供缓冲，但需警惕场内ETF被当作提款机。",
+      "summary_text": "今天市场非理性下跌由未经证实的消息引发黑色系暴涨所致。市场情绪过度聚焦政治局会议预期。固收+底层逻辑未动摇，但若有效需求刺激超预期将果断降久期。ETF大额净流入提供缓冲，但需警惕场内ETF被当作提款机",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": "MS_003",
+      "secondary_factor_label": "情绪化抛售",
+      "tertiary_factor": [
+        "今天市场出现非理性下跌",
+        "核心矛盾：央行大额净投放+资金宽松下权益未呈现预期强势",
+        "一则未经证实的消息引发黑色系商品暴涨导致债券无抵抗下跌",
+        "市场情绪过度聚焦政治局会议预期",
+        "对前期通缩叙事持续性产生根本质疑"
+      ],
+      "claim_type": "验证指标",
+      "direction": "不明确",
+      "magnitude": "不明确",
+      "time_horizon": "短期(1M以内)",
+      "confidence_score": 0.85,
+      "causal_chain_text": "非理性下跌由商品暴涨引发而非基本面变化 -> 政治局会议预期过度聚焦 -> 固收+底层逻辑未动摇 -> ETF大额净流入提供缓冲 -> 维持现有策略等待会议结果",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "10Y国债利率",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "ETF净流入数据",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "政治局会议表述",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "商品价格",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "ETF监测",
+        "情绪诊断型",
+        "条件应对策略",
+        "long_end_rates",
+        "风险提示",
+        "长端"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.107032",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20250729_B00_002",
+      "source_doc_id": "20250729_B00",
+      "speaker": "张晶",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-07-29",
+      "raw_text": "当前波动源于对终局化叙事的反思。产能过剩与通缩环境未根本改变。PPI维持-2%左右但幅度收窄。育儿政策可能对消费形成支撑。全球PMI共振回升叙事更值得警惕，可能对债市底层逻辑构成挑战。",
+      "summary_text": "当前波动源于对终局化叙事的反思。产能过剩与通缩环境未根本改变。PPI维持-2%左右但幅度收窄。育儿政策可能对消费形成支撑。全球PMI共振回升叙事更值得警惕，可能对债市底层逻辑构成挑战。",
+      "primary_factor": "基本面因子",
+      "secondary_factor": "FD_003",
+      "secondary_factor_label": "经济修复斜率",
+      "tertiary_factor": [
+        "市场波动的核心源于对一元化思维和终局化叙事的反思",
+        "产能过剩与通缩环境未发生根本改变",
+        "头寸极端化倾向导致波动加剧",
+        "今年日历效应显著弱化",
+        "PPI同比仍将维持-2%左右但负增长幅度可能逐步收窄"
+      ],
+      "claim_type": "验证指标",
+      "direction": "不明确",
+      "magnitude": "不明确",
+      "time_horizon": "中期(1-3M)",
+      "confidence_score": 0.6,
+      "causal_chain_text": "当前波动源于对终局化叙事的反思 -> 产能过剩与通缩环境未根本改变 -> PPI负增长幅度可能收窄但维持-2% -> 育儿政策系统性设计可能对消费形成支撑 -> 全球PMI共振回升叙事可能对债市底层逻辑构成挑战",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "PPI走势",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "中美欧PMI",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "关税谈判进展",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "育儿政策落地",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "宏大视角",
+        "叙事分析型",
+        "long_end_rates",
+        "条件论证",
+        "全球联动",
+        "长端"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.107032",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20250729_B00_003",
+      "source_doc_id": "20250729_B00",
+      "speaker": "柴颖颖",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-07-29",
+      "raw_text": "跌幅已基本到位但反弹空间受权益压制。终局思维在债市表现远不及股商。当前行情与2023年初类似。若商品验证需求回升则调整加剧。根据产品特性适度减仓控制风险暴露。",
+      "summary_text": "跌幅已基本到位但反弹空间受权益压制。终局思维在债市表现远不及股商。当前行情与2023年初类似。若商品验证需求回升则调整加剧。根据产品特性适度减仓控制风险暴露。",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": "MS_003",
+      "secondary_factor_label": "情绪化抛售",
+      "tertiary_factor": [
+        "跌幅已基本到位短期内进一步下行空间有限",
+        "市场隐含对地产与通缩周期结束的双重预期",
+        "这种终局思维在债市中的表现远不及股票和商品市场",
+        "资金配置偏向权益资产限制债券反弹空间",
+        "若商品市场验证需求回升债市调整可能加剧"
+      ],
+      "claim_type": "验证指标",
+      "direction": "利空",
+      "magnitude": "不明确",
+      "time_horizon": "短期(1M以内)",
+      "confidence_score": 0.6,
+      "causal_chain_text": "跌幅基本到位但反弹空间受权益压制 -> 终局思维在债市表现远不及股商 -> 若商品验证需求回升则调整加剧 -> 当前与2023年初类似：仓位滞后 -> 根据产品特性适度减仓",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "30Y国债利率",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "商品价格",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "权益市场资金流向",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "duration_strategy",
+        "条件应对",
+        "谨慎判断型",
+        "long_end_rates",
+        "历史类比",
+        "风险提示",
+        "长端"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.107032",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20250729_B00_004",
+      "source_doc_id": "20250729_B00",
+      "speaker": "张帆",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-07-29",
+      "raw_text": "策略维持原有框架不变。对今日反弹力度失望。8月持谨慎态度，中长久期配置条件不充分。信用资产控制久期基础上储备特定资产，赎回扭转后通过20Y品种捕捉机会。保持防御性策略。",
+      "summary_text": "策略维持原有框架不变。对今日反弹力度失望。8月持谨慎态度，中长久期配置条件不充分。信用资产控制久期基础上储备特定资产，赎回扭转后通过20Y品种捕捉机会。保持防御性策略。",
+      "primary_factor": "机构行为因子",
+      "secondary_factor": "IB_012",
+      "secondary_factor_label": "配置盘行为",
+      "tertiary_factor": [
+        "策略维持原有框架未观察到需调整的明确信号",
+        "利率债券配置以控制成本为主",
+        "对今日市场反弹力度表示失望",
+        "信用资产配置建议控制久期基础上储备二级商品及特定费用类资产",
+        "赎回趋势扭转后通过20年期品种捕捉机会"
+      ],
+      "claim_type": "验证指标",
+      "direction": "利多",
+      "magnitude": "不明确",
+      "time_horizon": "不明确",
+      "confidence_score": 0.6,
+      "causal_chain_text": "策略框架不变无明确调整信号 -> 对反弹力度失望 -> 8月谨慎中长久期条件不充分 -> 信用控制久期储备特定资产 -> 保持防御性策略",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "信用利差",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "国债利率",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "权益市场走势",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "duration_strategy",
+        "边际观察",
+        "谨慎保守",
+        "long_end_rates",
+        "框架稳定型",
+        "防御导向",
+        "spreading",
+        "信用"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.107032",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20250729_B00_005",
+      "source_doc_id": "20250729_B00",
+      "speaker": "武玥",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-07-29",
+      "raw_text": "市场延续上周逻辑但波动性显著加剧。机构分化：匀速卖出vs集中处理高税负品种。技术面关键位突破可能引发整体震荡。加仓时机需结合政策预期与资金面动态。",
+      "summary_text": "市场延续上周逻辑但波动性显著加剧。机构分化：匀速卖出vs集中处理高税负品种。技术面关键位突破可能引发整体震荡。加仓时机需结合政策预期与资金面动态。",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": "MS_003",
+      "secondary_factor_label": "拥挤交易程度",
+      "tertiary_factor": [
+        "当前市场延续上周交易逻辑但波动性显著加剧",
+        "部分机构采取匀速卖出策略控制仓位节奏",
+        "市场对股市与债市的认知存在明显分歧",
+        "近期下跌虽被解读为经济压力测试但实际跌幅控制在20%区间",
+        "优质产品稀缺性导致仓位配置向头部资产集中"
+      ],
+      "claim_type": "验证指标",
+      "direction": "不明确",
+      "magnitude": "不明确",
+      "time_horizon": "短期(1M以内)",
+      "confidence_score": 0.6,
+      "causal_chain_text": "波动加剧但核心逻辑未变 -> 机构分化：匀速卖出vs集中处理 -> 技术面关键位需关注 -> 等待政策预期与资金面信号",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "信用利差",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "基金久期",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "市场成交量",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "duration_strategy",
+        "技术面关注型",
+        "操作节奏型",
+        "分歧分析",
+        "spreading",
+        "曲线"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.107032",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20250729_B00_006",
+      "source_doc_id": "20250729_B00",
+      "speaker": "杨义山",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-07-29",
+      "raw_text": "1.75可能成为年内政策锚点。生育补贴边际提振有限（测算仅贡献0.4%消费增长）。财政按年度节奏推进支撑力度温和。反内卷创新力度不足。市场处于政策预期到基本面验证的过渡期。",
+      "summary_text": "1.75可能成为年内政策锚点。生育补贴边际提振有限（测算仅贡献0.4%消费增长）。财政按年度节奏推进支撑力度温和。反内卷创新力度不足。市场处于政策预期到基本面验证的过渡期。",
+      "primary_factor": "政策面因子",
+      "secondary_factor": "PL_003",
+      "secondary_factor_label": "政策目标函数",
+      "tertiary_factor": [
+        "1.75位置的利率水平可能成为年内政策工具箱的重要锚点",
+        "生育补贴边际提振消费作用有限：年覆盖2700万人口仅贡献0.4%消费增长",
+        "财政政策执行层面显现年度管理特征",
+        "24年额度已基本耗尽25年额度使用过半",
+        "政策对经济基本面支撑力度相对温和"
+      ],
+      "claim_type": "验证指标",
+      "direction": "不明确",
+      "magnitude": "不明确",
+      "time_horizon": "中期(1-3M)",
+      "confidence_score": 0.85,
+      "causal_chain_text": "1.75可能成为年内政策锚点 -> 生育补贴对消费提振有限（量化测算） -> 财政按年度节奏推进支撑力度温和 -> 反内卷创新力度不足 -> 市场处于政策预期到基本面验证的过渡期",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "10Y国债利率",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "财政支出进度",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "生育政策落地",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "政策评估型",
+        "量化测算",
+        "锚点判断",
+        "long_end_rates",
+        "过渡期框架",
+        "长端"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.107032",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20250729_B00_007",
+      "source_doc_id": "20250729_B00",
+      "speaker": "李博良",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-07-29",
+      "raw_text": "市场脆弱平衡情绪过度反应，修复不可持续。利率反复震荡需等待通胀叙事验证。采取高频波段策略：高位加仓配合止盈。资产配置向高等级倾斜以规避零售端资金异动。",
+      "summary_text": "市场脆弱平衡情绪过度反应，修复不可持续。利率反复震荡需等待通胀叙事验证。采取高频波段策略：高位加仓配合止盈。资产配置向高等级倾斜以规避零售端资金异动。",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": "MS_003",
+      "secondary_factor_label": "拥挤交易程度",
+      "tertiary_factor": [
+        "市场情绪显著波动反映对利差抬升与通胀预期的过度反应",
+        "市场处于脆弱平衡状态",
+        "昨日短暂修复但今日已完全回吐涨幅",
+        "卖方观点：10Y利率在1.75-1.8区间仍具配置价值",
+        "利率走势预计呈现反复震荡特征"
+      ],
+      "claim_type": "验证指标",
+      "direction": "不明确",
+      "magnitude": "不明确",
+      "time_horizon": "短期(1M以内)",
+      "confidence_score": 0.6,
+      "causal_chain_text": "市场脆弱平衡情绪过度反应 -> 修复不可持续涨幅完全回吐 -> 利率反复震荡需等待通胀验证 -> 高频波段策略+高等级资产倾斜",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "10Y国债利率",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "信用利差",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "赎回数据",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "高频操作型",
+        "duration_strategy",
+        "long_end_rates",
+        "风险敏感",
+        "波段策略",
+        "高等级偏好",
+        "spreading",
+        "信用"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.107032",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20250729_B00_008",
+      "source_doc_id": "20250729_B00",
+      "speaker": "徐天彤",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-07-29",
+      "raw_text": "政府债融资回落至1.3万亿，供给压力可控。央行配合财政意图明确，OMO快速完成配置显示预期一致。流动性环境与一季度不同更宽松。银行负债端压力可控，票据利率下降。",
+      "summary_text": "政府债融资回落至1.3万亿，供给压力可控。央行配合财政意图明确，OMO快速完成配置显示预期一致。流动性环境与一季度不同更宽松。银行负债端压力可控，票据利率下降。",
+      "primary_factor": "流动性因子",
+      "secondary_factor": "LQ_002",
+      "secondary_factor_label": "央行投放节奏",
+      "tertiary_factor": [
+        "政府债券融资规模维持1.3万亿低于5-6月峰值",
+        "7-8月供给压力相对可控",
+        "央行配合财政政策意图未改变",
+        "OMO快速完成配置显示资金面预期一致性较高",
+        "当前流动性环境与一季度存在显著差异"
+      ],
+      "claim_type": "验证指标",
+      "direction": "利多",
+      "magnitude": "不明确",
+      "time_horizon": "短期(1M以内)",
+      "confidence_score": 0.85,
+      "causal_chain_text": "政府债融资回落供给压力可控 -> 央行配合财政意图明确 -> 流动性环境与一季度不同更宽松 -> 银行负债端压力可控 -> 资金面短期不会收紧",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "政府债发行量",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "OMO操作量",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "票据利率",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "存单利率",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "short_end_rates",
+        "结构稳定",
+        "供给分析",
+        "数据驱动型",
+        "银行视角",
+        "短端"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.107032",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20250729_B00_009",
+      "source_doc_id": "20250729_B00",
+      "speaker": "项敦伟",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-07-29",
+      "raw_text": "1.75-1.8为配置盘加仓窗口。赎回压力边际缓解，配置盘力量增强。30Y国债1.98和地方债2.1-2.2具备配置价值。情绪驱动仍为波动主因，需警惕脉冲扰动。",
+      "summary_text": "1.75-1.8为配置盘加仓窗口。赎回压力边际缓解，配置盘力量增强。30Y国债1.98和地方债2.1-2.2具备配置价值。情绪驱动仍为波动主因，需警惕脉冲扰动。",
+      "primary_factor": "机构行为因子",
+      "secondary_factor": "IB_012",
+      "secondary_factor_label": "配置盘行为",
+      "tertiary_factor": [
+        "1.75-1.8区间被视为配置盘加仓窗口",
+        "基本面数据尚未出现实质转向",
+        "8月重新出台总量政策概率较低",
+        "央行态度倾向于维持中性",
+        "北交所新股冻结6000亿资金现象值得中期跟踪"
+      ],
+      "claim_type": "验证指标",
+      "direction": "不明确",
+      "magnitude": "不明确",
+      "time_horizon": "短期(1M以内)",
+      "confidence_score": 0.85,
+      "causal_chain_text": "1.75-1.8为配置盘加仓窗口 -> 赎回压力边际缓解+配置盘力量增强 -> 30Y国债1.98和地方债2.1-2.2具备配置价值 -> 等待基本面验证期",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "30Y国债利率",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "地方债利率",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "保险购债数据",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "银行购债行为",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "价值判断",
+        "配置盘视角",
+        "边际变化跟踪",
+        "long_end_rates",
+        "数据锚定",
+        "spreading",
+        "长端"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.107032",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20250729_B00_010",
+      "source_doc_id": "20250729_B00",
+      "speaker": "沈文思",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-07-29",
+      "raw_text": "8月预计维持震荡。今年调整因素与往年不同：无降息预期也无资金收紧。出口阶段性企稳，PPI回弹显示基本面韧性。生育补贴象征意义可能超越实际效果，预期差与数据共振可能推动修复。",
+      "summary_text": "8月预计维持震荡。今年调整因素与往年不同：无降息预期也无资金收紧。出口阶段性企稳，PPI回弹显示基本面韧性。生育补贴象征意义可能超越实际效果，预期差与数据共振可能推动修复。",
+      "primary_factor": "基本面因子",
+      "secondary_factor": "FD_003",
+      "secondary_factor_label": "经济修复斜率",
+      "tertiary_factor": [
+        "8月市场预计维持震荡格局",
+        "今年调整因素与过往两年存在显著差异：既无降息预期亦未资金收紧",
+        "出口数据呈现阶段性企稳特征",
+        "PPI小幅回弹叠加前期通缩压力边际缓解",
+        "基本面仍具一定韧性"
+      ],
+      "claim_type": "验证指标",
+      "direction": "利空",
+      "magnitude": "不明确",
+      "time_horizon": "短期(1M以内)",
+      "confidence_score": 0.6,
+      "causal_chain_text": "今年调整因素与往年不同 -> 出口企稳+PPI回弹=基本面韧性 -> 生育补贴象征意义>实际效果 -> 预期差与数据共振可能推动修复",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "出口数据",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "PPI走势",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "权益市场走势",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "预期差框架",
+        "对比分析型",
+        "long_end_rates",
+        "边际变化敏感",
+        "长端"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.107032",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20250729_B00_011",
+      "source_doc_id": "20250729_B00",
+      "speaker": "赵骥",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-07-29",
+      "raw_text": "公募久期快速下降反映谨慎。基本面无实质改善则估值回归。应注重固收+策略设计，探索多元化投资方式。避免过度追涨，等待跌出来的配置机会。",
+      "summary_text": "公募久期快速下降反映谨慎。基本面无实质改善则估值回归。应注重固收+策略设计，探索多元化投资方式。避免过度追涨，等待跌出来的配置机会。",
+      "primary_factor": "机构行为因子",
+      "secondary_factor": "IB_001",
+      "secondary_factor_label": "基金久期偏好",
+      "tertiary_factor": [
+        "公募基金久期快速下降反映市场情绪谨慎",
+        "缺乏实质性基本面改善股票估值最终将回归现实",
+        "应建立辩证讨论平台补充信息盲点",
+        "低利率环境下应注重固收+策略设计",
+        "探索中性策略对冲策略等多元化投资方式"
+      ],
+      "claim_type": "验证指标",
+      "direction": "利多",
+      "magnitude": "不明确",
+      "time_horizon": "中期(1-3M)",
+      "confidence_score": 0.6,
+      "causal_chain_text": "公募久期快速下降反映谨慎情绪 -> 基本面无实质改善则估值回归 -> 注重固收+策略设计应对赎回风险 -> 避免追涨等待配置机会",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "公募基金久期",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "权益市场估值",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "赎回数据",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "duration_strategy",
+        "辩证框架",
+        "long_end_rates",
+        "风险提示",
+        "平台建设型",
+        "策略设计",
+        "长端"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.107032",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    }
+  ],
+  "stats": {
+    "total": 11,
+    "matched": 11,
+    "unmatched": [],
+    "skipped": 0,
+    "format": "v2"
+  }
+}

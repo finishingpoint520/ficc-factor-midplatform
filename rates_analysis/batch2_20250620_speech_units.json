@@ -1,0 +1,15 @@
+{
+  "metadata": {"meeting_date": "2025-06-20", "filename": "固收策略组周例会议讨论纪要20250620.docx", "batch": "batch2_2025Q2", "analysis_date": "2026-04-09", "total_speech_units": 10},
+  "speech_units": [
+    {"speaker": "杨义山", "unit_id": "batch2_0620_01", "primary_factor": "政策面因子", "secondary_factor": "政策预期", "content_summary": "本周债券市场呈现明显分化走势，长短端利率同步下行。核心驱动因素是前期市场对6月中下旬流动性和机构行为的担忧已完全消退，以及对7月政策预期与经济下行压力的提前交易。", "key_quote": "对7月政策预期与经济下行压力的提前交易", "sentiment": "偏多", "time_phase": "会议前期"},
+    {"speaker": "李博良", "unit_id": "batch2_0620_02", "primary_factor": "市场情绪因子", "secondary_factor": "策略建议", "content_summary": "建议在定价合理位置择机退出超长端持仓，维持中性偏高久期策略。短期可关注滞涨品种补涨机会，优先选择高等级、配置盘可承接的资产。", "key_quote": "建议在定价合理位置择机退出超长端持仓", "sentiment": "中性", "time_phase": "会议前期"},
+    {"speaker": "武玥", "unit_id": "batch2_0620_03", "primary_factor": "市场情绪因子", "secondary_factor": "市场分析", "content_summary": "当前债券市场在缺乏实质性利空的背景下，由机构行为主导形成超长端资产的极致配置行情，反映出市场对三季度经济触底和政策转向的强预期。", "key_quote": "反映出市场对三季度经济触底和政策转向的强预期", "sentiment": "偏多", "time_phase": "会议前期"},
+    {"speaker": "柴颖颖", "unit_id": "batch2_0620_04", "primary_factor": "市场情绪因子", "secondary_factor": "策略建议", "content_summary": "当前市场在长端债券配置盘阶段性缺席、供需矛盾缓解及央行流动性呵护背景下，呈现震荡偏多态势。尽管短期交易盘拥挤度上升，但缺乏实质性利空支撑下，市场更倾向于跟随趋势。", "key_quote": "市场更倾向于跟随趋势", "sentiment": "中性偏多", "time_phase": "会议中期"},
+    {"speaker": "张晶", "unit_id": "batch2_0620_05", "primary_factor": "基本面因子", "secondary_factor": "经济评估", "content_summary": "近期团队观点趋于一致看多，但实际操作中因缺乏明确增量信息而维持震荡判断。短期焦点集中于MLF操作和工信部反内卷式竞争政策效果待评估。", "key_quote": "团队观点趋于一致看多，但实际操作中因缺乏明确增量信息而维持震荡判断", "sentiment": "中性", "time_phase": "会议中期"},
+    {"speaker": "张帆", "unit_id": "batch2_0620_06", "primary_factor": "市场情绪因子", "secondary_factor": "策略建议", "content_summary": "7月初央行宽松力度可能边际收敛，建议关注资产配置节奏调整。预计7月初为半年度自发性宽松周期的终点，计划在该时点前逐步减仓。", "key_quote": "预计7月初为半年度自发性宽松周期的终点", "sentiment": "中性偏空", "time_phase": "会议中期"},
+    {"speaker": "赵骥", "unit_id": "batch2_0620_07", "primary_factor": "机构行为因子", "secondary_factor": "策略建议", "content_summary": "当前市场参与度极高，竞争异常激烈。信用债期限结构持续拉长，三年以内品种已被充分交易，当前机构配置焦点逐步向5年、10年乃至20年期高等级信用债迁移。", "key_quote": "当前机构配置焦点逐步向5年、10年乃至20年期高等级信用债迁移", "sentiment": "中性", "time_phase": "会议后期"},
+    {"speaker": "赵骥", "unit_id": "batch2_0620_08", "primary_factor": "机构行为因子", "secondary_factor": "风险管理", "content_summary": "若市场已提前透支7月宽松预期，则应前瞻性布局7月初退出计划，对已拉久期产品明确退出节奏，对欠配产品把握反弹加仓窗口。", "key_quote": "应前瞻性布局7月初退出计划", "sentiment": "中性", "time_phase": "会议后期"},
+    {"speaker": "谢秋平", "unit_id": "batch2_0620_09", "primary_factor": "机构行为因子", "secondary_factor": "ETF分析", "content_summary": "从数据回溯分析可见，7年以上信用债行情启动于5月16日左右，期间信用利差快速下行约17-20个基点。此轮行情突破原有逻辑的核心在于信用债ETF规模激增和保险机构预定利率下调。", "key_quote": "信用债ETF规模激增和保险机构预定利率下调", "sentiment": "中性偏多", "time_phase": "会议后期"},
+    {"speaker": "朱年军", "unit_id": "batch2_0620_10", "primary_factor": "机构行为因子", "secondary_factor": "策略建议", "content_summary": "4月7日以来市场表现略显疲软，但整体仍偏向乐观。5年以下品种表现优异，而10年及30年品种则持续小幅调整，交易难度较大。", "key_quote": "5年以下品种表现优异，而10年及30年品种则持续小幅调整", "sentiment": "中性", "time_phase": "会议后期"}
+  ]
+}

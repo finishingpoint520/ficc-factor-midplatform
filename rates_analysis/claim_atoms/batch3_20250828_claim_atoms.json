@@ -1,0 +1,254 @@
+{
+  "metadata": {
+    "source_file": "batch3_20250828_speech_units.json",
+    "meeting_date": "2025-08-28",
+    "batch": "unknown",
+    "source_doc_id": "20250828_B00",
+    "migration_date": "2026-04-21",
+    "total_atoms": 4,
+    "format": "v2"
+  },
+  "claim_atoms": [
+    {
+      "atom_id": "20250828_B00_001",
+      "source_doc_id": "20250828_B00",
+      "speaker": "武玥",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-08-28",
+      "raw_text": "维持1.8关键点位判断。看似脱敏实为节奏博弈。1.85可直接博弈，1.85-1.9需边走边看。93阅兵为节奏关键节点。仓位不宜过重需快速反应。",
+      "summary_text": "维持1.8关键点位判断。看似脱敏实为节奏博弈。1.85可直接博弈，1.85-1.9需边走边看。93阅兵为节奏关键节点。仓位不宜过重需快速反应。",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": "MS_005",
+      "secondary_factor_label": "赔率与胜率判断",
+      "tertiary_factor": [
+        "维持与上周相同观点1.8是关键点位",
+        "若93阅兵后企稳于1.8需保持高度敏感性",
+        "看似脱敏实为节奏博弈",
+        "若1.8有异动需快速反应仓位不宜过重",
+        "1.85可直接博弈后续可加仓"
+      ],
+      "claim_type": "验证指标",
+      "direction": "不明确",
+      "magnitude": "不明确",
+      "time_horizon": "短期(1M以内)",
+      "confidence_score": 0.85,
+      "causal_chain_text": "1.8关键点位高度敏感 -> 看似脱敏实为节奏博弈 -> 1.85可直接博弈1.85-1.9需边走边看 -> 93阅兵为节奏关键节点 -> 仓位不宜过重需快速反应",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "10Y国债利率",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "权益市场走势",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "93阅兵时间节点",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "事件节点框架",
+        "边走边看",
+        "关键点位敏感",
+        "节奏博弈型",
+        "long_end_rates",
+        "长端"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.113595",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20250828_B00_002",
+      "source_doc_id": "20250828_B00",
+      "speaker": "张帆",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-08-28",
+      "raw_text": "不对抗趋势严控久期。短端套息空间罕见（存单1.66%-1.67%信用1.8%资金1.4%-1.5%），与2017年相似。长久期利率难获利，信用以短端套息为主。",
+      "summary_text": "不对抗趋势严控久期。短端套息空间罕见（存单1.66%-1.67%信用1.8%资金1.4%-1.5%），与2017年相似。长久期利率难获利，信用以短端套息为主。",
+      "primary_factor": "机构行为因子",
+      "secondary_factor": "IB_002",
+      "secondary_factor_label": "信用利差机会",
+      "tertiary_factor": [
+        "维持谨慎观点不建议对抗市场趋势",
+        "短端套息策略仍具操作空间",
+        "存单利率1.66%-1.67%半年至一年信用债1.8%资金成本1.4%-1.5%",
+        "形成今年罕见的二三十基点套息空间",
+        "与2017年市场情形相似"
+      ],
+      "claim_type": "验证指标",
+      "direction": "不明确",
+      "magnitude": "不明确",
+      "time_horizon": "短期(1M以内)",
+      "confidence_score": 0.85,
+      "causal_chain_text": "不对抗趋势严控久期 -> 短端套息空间罕见（2-30bp）与2017年相似 -> 长久期利率难以获利 -> 信用以短端套息为主 -> 中期看好权益",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "存单利率",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "信用利差",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "资金成本",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "央行操作",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "short_end_rates",
+        "短端导向",
+        "趋势判断型",
+        "2017类比",
+        "spreading",
+        "套息策略",
+        "短端"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.113595",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20250828_B00_003",
+      "source_doc_id": "20250828_B00",
+      "speaker": "杨义山",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-08-28",
+      "raw_text": "93阅兵后股市风险偏好是关键变量。十五五规划窗口期增量表述有限，增长下有底线。预计不会低于预期但超预期可能性小，前期股热或过渡至修复。",
+      "summary_text": "93阅兵后股市风险偏好是关键变量。十五五规划窗口期增量表述有限，增长下有底线。预计不会低于预期但超预期可能性小，前期股热或过渡至修复。",
+      "primary_factor": "政策面因子",
+      "secondary_factor": "PL_003",
+      "secondary_factor_label": "政策目标函数",
+      "tertiary_factor": [
+        "需关注93阅兵后股市风险偏好变化",
+        "9月可能对十五五规划展开新一轮政策预期",
+        "本次会议与去年三中全会相隔较近",
+        "预计增量政策表述有限更多延续已有口径",
+        "十五五规划建议稿全会定调明年两会才出台正式稿"
+      ],
+      "claim_type": "验证指标",
+      "direction": "利空",
+      "magnitude": "不明确",
+      "time_horizon": "不明确",
+      "confidence_score": 0.85,
+      "causal_chain_text": "93后股市风险偏好是关键变量 -> 十五五规划窗口期增量表述有限 -> 增长下有底线不会低于预期 -> 超预期可能性小 -> 前期股热或过渡至修复",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "93后股市走势",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "十五五规划表述",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "经济数据",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "底线思维",
+        "long_end_rates",
+        "过渡期判断",
+        "预期差评估",
+        "政策窗口框架",
+        "长端"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.113595",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20250828_B00_004",
+      "source_doc_id": "20250828_B00",
+      "speaker": "赵骥",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-08-28",
+      "raw_text": "银行自营为完成KPI涌入可转债导致泡沫化。债市核心在估值过高。存款搬家第一阶段机构外流第二阶段居民滞后。债市需跌出价值。信用优于利率，严控含权仓位。年底机构求稳。",
+      "summary_text": "银行自营为完成KPI涌入可转债导致泡沫化。债市核心在估值过高。存款搬家第一阶段机构外流第二阶段居民滞后。债市需跌出价值。信用优于利率，严控含权仓位。年底机构求稳。",
+      "primary_factor": "机构行为因子",
+      "secondary_factor": "IB_001",
+      "secondary_factor_label": "基金久期偏好",
+      "tertiary_factor": [
+        "本轮可转债行情除常规参与者外不少国有股份制银行自营积极参与",
+        "主因持有债券类资产普遍亏损为完成全年KPI",
+        "可转债市场容量不大机构涌入下估值已明显泡沫化",
+        "债市核心问题不在股债跷跷板而在债券估值过高缺乏配置吸引力",
+        "存款搬家第一阶段是机构资金由固收转向含权资产"
+      ],
+      "claim_type": "验证指标",
+      "direction": "不明确",
+      "magnitude": "不明确",
+      "time_horizon": "中期(1-3M)",
+      "confidence_score": 0.85,
+      "causal_chain_text": "银行自营为完成KPI涌入可转债市场导致泡沫化 -> 债市核心问题在估值过高非跷跷板 -> 存款搬家第一阶段机构资金外流第二阶段居民滞后 -> 债市需跌出价值吸引回流 -> 信用优于利率严控含权仓位 -> 年底机构求稳绝对收益型产品控回撤",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "可转债估值",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "万得可转债指数",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "银行自营持仓",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "保险KPI完成度",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "duration_strategy",
+        "KPI驱动分析",
+        "绝对收益导向",
+        "存款搬家两阶段",
+        "spreading",
+        "泡沫化判断",
+        "长端"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.113595",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "matched": 4,
+    "unmatched": [],
+    "skipped": 0,
+    "format": "v2"
+  }
+}

@@ -1,0 +1,592 @@
+{
+  "metadata": {
+    "source_file": "batch4_20251010_speech_units.json",
+    "meeting_date": "2025-10-10",
+    "batch": "unknown",
+    "source_doc_id": "20251010_B00",
+    "migration_date": "2026-04-21",
+    "total_atoms": 10,
+    "format": "v2"
+  },
+  "claim_atoms": [
+    {
+      "atom_id": "20251010_B00_001",
+      "source_doc_id": "20251010_B00",
+      "speaker": "张迪",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-10-10",
+      "raw_text": "季初资金宽松，跨年存单性价比高。四季度波动上升但央行托底。长端不参与。",
+      "summary_text": "季初资金宽松，跨年存单性价比高。四季度波动上升但央行托底。长端不参与。",
+      "primary_factor": "流动性因子",
+      "secondary_factor": "MS_002",
+      "secondary_factor_label": "资金面",
+      "tertiary_factor": [
+        "月初季初资金常规性宽松短端略下行",
+        "三个月存单因跨年下行显著约10bp以上",
+        "当前资金并非特别宽松利率已处低位",
+        "四季度资金波动可能稍大但央行维持支持",
+        "长期存单波动空间有限短期品种性价比较高"
+      ],
+      "claim_type": "验证指标",
+      "direction": "利多",
+      "magnitude": "不明确",
+      "time_horizon": "不明确",
+      "confidence_score": 0.85,
+      "causal_chain_text": "季初资金常规宽松 -> 跨年存单性价比高 -> 四季度波动可能上升但央行托底 -> 长端不参与",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "资金价格",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "3M存单利率",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "央行投放",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "短端视角",
+        "short_end_rates",
+        "数据驱动",
+        "操作建议明确",
+        "spreading",
+        "短端"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.121592",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20251010_B00_002",
+      "source_doc_id": "20251010_B00",
+      "speaker": "黄婳婳",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-10-10",
+      "raw_text": "节后股债脱敏债市走强。基金新规悬而未决。区间交易1.75-1.80。",
+      "summary_text": "节后股债脱敏债市走强。基金新规悬而未决。区间交易1.75-1.80。",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": null,
+      "secondary_factor_label": "股债脱敏",
+      "tertiary_factor": [
+        "节后债市走强忽略同样走强的股市",
+        "10年国债收益率一度下探至1.76%",
+        "资金自然回流+买断式超额操作+央行积极态度",
+        "基金赎回费新规暂无新进展正式稿未定",
+        "人民日报八篇文章强调经济向好降低超预期刺激概率"
+      ],
+      "claim_type": "验证指标",
+      "direction": "不明确",
+      "magnitude": "不明确",
+      "time_horizon": "不明确",
+      "confidence_score": 0.85,
+      "causal_chain_text": "股债脱敏债市走强 -> 资金面宽松+政策温和支撑 -> 基金新规悬而未决 -> 区间交易1.75-1.80",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "10Y利率1.76%",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "股债脱敏程度",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "基金新规进展",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "cross_asset",
+        "区间交易框架",
+        "股债对比",
+        "long_end_rates",
+        "事件驱动分析",
+        "长端利率"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.121592",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20251010_B00_003",
+      "source_doc_id": "20251010_B00",
+      "speaker": "蒋苑",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-10-10",
+      "raw_text": "费率新规已被多次反应冲击有限。1.80%以上有交易价值。关注3-5年期配置机会。",
+      "summary_text": "费率新规已被多次反应冲击有限。1.80%以上有交易价值。关注3-5年期配置机会。",
+      "primary_factor": "政策面因子",
+      "secondary_factor": "MS_013",
+      "secondary_factor_label": "费率新规预期",
+      "tertiary_factor": [
+        "10月债市关注三方面：费率新规、货币政策、重要会议",
+        "当前10Y国债约1.77%震荡中性",
+        "收益率升至1.80%以上具备交易价值",
+        "全球货币宽松我国难以收紧后续仍有降息空间",
+        "今年完成GDP压力不大短期以我为主"
+      ],
+      "claim_type": "验证指标",
+      "direction": "利多",
+      "magnitude": "不明确",
+      "time_horizon": "不明确",
+      "confidence_score": 0.6,
+      "causal_chain_text": "费率新规已被多次反应冲击有限 -> 全球宽松国内难以收紧 -> 1.80%以上有交易价值 -> 关注3-5年期配置机会",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "费率新规落地",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "10Y利率1.77%",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "3-5Y配置需求",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "配置建议",
+        "medium_long_rates",
+        "政策解读",
+        "三点框架",
+        "credit_bonds",
+        "中端利率+信用"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.121592",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20251010_B00_004",
+      "source_doc_id": "20251010_B00",
+      "speaker": "张帆",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-10-10",
+      "raw_text": "股债脱敏确认。1.84%为顶部。套息策略确定性高。",
+      "summary_text": "股债脱敏确认。1.84%为顶部。套息策略确定性高。",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": null,
+      "secondary_factor_label": "股债脱敏确认",
+      "tertiary_factor": [
+        "债市已对权益上涨脱敏",
+        "10Y与30Y利差较7月初拉阔约15bp",
+        "央行态度尚可修正此前四季度大幅上行预期",
+        "收益率上行有顶顶部可能位于前高1.84%",
+        "去年四季度基数高今年基本面偏弱"
+      ],
+      "claim_type": "验证指标",
+      "direction": "不明确",
+      "magnitude": "不明确",
+      "time_horizon": "不明确",
+      "confidence_score": 0.85,
+      "causal_chain_text": "股债脱敏确认利差拉阔 -> 央行态度修正上行预期 -> 1.84%为顶部 -> 套息策略确定性高",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "30-10Y利差",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "10Y利率1.84%",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "套息空间",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "策略推荐",
+        "顶部判断",
+        "short_end_rates",
+        "credit_bonds",
+        "spreading",
+        "对比分析",
+        "信用+存单"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.121592",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20251010_B00_005",
+      "source_doc_id": "20251010_B00",
+      "speaker": "孔祥雨",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-10-10",
+      "raw_text": "偏空收敛但费率新规仍碾压。30-10Y利差36bp性价比显著。告别低利率时代为时过早。",
+      "summary_text": "偏空收敛但费率新规仍碾压。30-10Y利差36bp性价比显著。告别低利率时代为时过早。",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": null,
+      "secondary_factor_label": "告别低利率时代争论",
+      "tertiary_factor": [
+        "偏空程度较节前有所收敛",
+        "政策面从中性偏空调至中性",
+        "基本面四季度可能中性偏多",
+        "费率新规对行为和情绪影响仍是碾压性因素",
+        "30年国债与10年利差从12bp扩至约36bp性价比显著提升"
+      ],
+      "claim_type": "验证指标",
+      "direction": "不明确",
+      "magnitude": "不明确",
+      "time_horizon": "不明确",
+      "confidence_score": 0.6,
+      "causal_chain_text": "偏空收敛政策面和基本面边际改善 -> 费率新规仍是碾压因素 -> 30-10Y利差36bp性价比高 -> 告别低利率时代为时过早",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "30-10Y利差",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "费率新规影响",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "经济新动能数据",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "观点博弈",
+        "ultra_long_rates",
+        "利差分析",
+        "long_end_rates",
+        "赔率框架",
+        "超长端利率"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.121592",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20251010_B00_006",
+      "source_doc_id": "20251010_B00",
+      "speaker": "柴颖颖",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-10-10",
+      "raw_text": "四季度基本面边际友好，权益分流减弱。利率债1.85%以上有配置机会，信用债利差极低需谨慎。",
+      "summary_text": "四季度基本面边际友好，权益分流减弱。利率债1.85%以上有配置机会，信用债利差极低需谨慎。",
+      "primary_factor": "基本面因子",
+      "secondary_factor": "LQ_004",
+      "secondary_factor_label": "供需矛盾缓解",
+      "tertiary_factor": [
+        "三季度供需矛盾急剧变化成主要压力",
+        "利率低位配置力量减弱",
+        "四季度宏观数据可能平缓对债市边际友好",
+        "股市大幅上涨后四季度不再加速则分流影响减弱",
+        "利率债调整较早且与基本面关联更紧"
+      ],
+      "claim_type": "验证指标",
+      "direction": "利多",
+      "magnitude": "不明确",
+      "time_horizon": "不明确",
+      "confidence_score": 0.6,
+      "causal_chain_text": "四季度基本面边际友好 -> 权益分流影响减弱 -> 利率债1.85%以上有配置机会 -> 信用债利差极低需谨慎",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "10Y利率1.85%",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "信用利差分位",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "配置盘入场",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "配置机会判断",
+        "基本面驱动",
+        "供需框架",
+        "long_end_rates",
+        "credit_bonds",
+        "利率债"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.121592",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20251010_B00_007",
+      "source_doc_id": "20251010_B00",
+      "speaker": "杨义山",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-10-10",
+      "raw_text": "10月政策事件密集但力度温和。央行偏宽松。利率上行风险可控关注交易机会。",
+      "summary_text": "10月政策事件密集但力度温和。央行偏宽松。利率上行风险可控关注交易机会。",
+      "primary_factor": "政策面因子",
+      "secondary_factor": null,
+      "secondary_factor_label": "政策事件密集期",
+      "tertiary_factor": [
+        "10月市场关注四中全会和政治局会议",
+        "政策力度整体温和按需展开预留空间",
+        "消费补贴10月下拨第四批后不再增量",
+        "央行近期偏宽松跨节假日投放及结构性工具支持",
+        "逆回购存续金额从2.7万亿回落至1万亿出头"
+      ],
+      "claim_type": "验证指标",
+      "direction": "利多",
+      "magnitude": "不明确",
+      "time_horizon": "不明确",
+      "confidence_score": 0.85,
+      "causal_chain_text": "10月政策事件密集但力度温和 -> 央行偏宽松但买债需触发因素 -> 公募负债不稳定需关注 -> 利率上行风险可控把握交易机会",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "四中全会公报",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "央行买债",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "基金久期",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "事件驱动",
+        "灵活仓位建议",
+        "政策窗口分析",
+        "cross_asset",
+        "long_end_rates",
+        "全谱"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.121592",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20251010_B00_008",
+      "source_doc_id": "20251010_B00",
+      "speaker": "沈文思",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-10-10",
+      "raw_text": "基本面偏弱政策温和，低利率环境维持较长时间。10Y波动1.75%-1.85%难现系统性熊市。",
+      "summary_text": "基本面偏弱政策温和，低利率环境维持较长时间。10Y波动1.75%-1.85%难现系统性熊市。",
+      "primary_factor": "基本面因子",
+      "secondary_factor": "FD_005",
+      "secondary_factor_label": "经济增长动能",
+      "tertiary_factor": [
+        "9月PMI需求复苏动能偏弱",
+        "社零受以旧换新退坡增速放缓",
+        "CPI和PPI继续负增长但降幅收窄",
+        "人民日报系列文章强调高质量发展无大规模财政意图",
+        "政策延续拖而不举基调"
+      ],
+      "claim_type": "验证指标",
+      "direction": "不明确",
+      "magnitude": "不明确",
+      "time_horizon": "不明确",
+      "confidence_score": 0.85,
+      "causal_chain_text": "基本面偏弱政策温和 -> 低利率环境维持较长时间 -> 难现系统性熊市 -> 利率1.75%-1.85%区间",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "PMI",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "CPI/PPI",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "政府债供给",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "10Y利率区间",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "上下限框架",
+        "数据密集型",
+        "long_end_rates",
+        "政策基调分析",
+        "长端利率"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.121592",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20251010_B00_009",
+      "source_doc_id": "20251010_B00",
+      "speaker": "张晶",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-10-10",
+      "raw_text": "股债脱敏成共识。关注经济恶化二阶导变化。增量政策不确定，市场震荡为主。",
+      "summary_text": "股债脱敏成共识。关注经济恶化二阶导变化。增量政策不确定，市场震荡为主。",
+      "primary_factor": "基本面因子",
+      "secondary_factor": null,
+      "secondary_factor_label": "经济二阶导",
+      "tertiary_factor": [
+        "市场对股债脱敏已形成共识",
+        "四季度增量货币政策存在不确定性",
+        "基本面四季度偏弱但关注恶化的二阶导变化",
+        "经济下滑速度减缓或带来风险偏好修复",
+        "当前权益市场属上升途中高点牛市后半程"
+      ],
+      "claim_type": "验证指标",
+      "direction": "不明确",
+      "magnitude": "不明确",
+      "time_horizon": "不明确",
+      "confidence_score": 0.6,
+      "causal_chain_text": "股债脱敏成为共识 -> 增量政策不确定 -> 关注经济恶化二阶导而非绝对水平 -> 震荡为主仅小幅波段机会",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "经济环比变化",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "增量政策信号",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "风险偏好指标",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "共识判断",
+        "cross_asset",
+        "不确定性框架",
+        "long_end_rates",
+        "二阶导分析",
+        "全谱"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.121592",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20251010_B00_010",
+      "source_doc_id": "20251010_B00",
+      "speaker": "赵骥",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-10-10",
+      "raw_text": "固收史无前例艰难77%利率基金亏损。明年股债复杂化利率或震荡2-3年。防守为主摸排信用风险。",
+      "summary_text": "固收史无前例艰难77%利率基金亏损。明年股债复杂化利率或震荡2-3年。防守为主摸排信用风险。",
+      "primary_factor": "机构行为因子",
+      "secondary_factor": null,
+      "secondary_factor_label": "基金亏损现状",
+      "tertiary_factor": [
+        "今年固收市场史无前例艰难",
+        "利率主题基金约77%亏损中长存近20%亏损",
+        "远超2017年熊市水平",
+        "明年股债关系复杂化涨跌横盘均可能引发债基赎回",
+        "利率可能震荡2-3年至城投化债政策尾声"
+      ],
+      "claim_type": "验证指标",
+      "direction": "利空",
+      "magnitude": "不明确",
+      "time_horizon": "不明确",
+      "confidence_score": 0.85,
+      "causal_chain_text": "固收市场史无前例艰难 -> 明年股债复杂化赎回压力持续 -> 利率震荡2-3年 -> 防守为主+信用风险前瞻",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "基金亏损比例",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "利率波动周期",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "城投化债进度",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "长期周期判断",
+        "防守导向",
+        "cross_asset",
+        "long_end_rates",
+        "credit_bonds",
+        "风险警示",
+        "全谱"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.121592",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    }
+  ],
+  "stats": {
+    "total": 10,
+    "matched": 4,
+    "unmatched": [
+      "股债脱敏",
+      "股债脱敏确认",
+      "告别低利率时代争论",
+      "政策事件密集期",
+      "经济二阶导",
+      "基金亏损现状"
+    ],
+    "skipped": 0,
+    "format": "v2"
+  }
+}

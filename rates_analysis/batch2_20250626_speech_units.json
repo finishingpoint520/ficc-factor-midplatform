@@ -1,0 +1,15 @@
+{
+  "metadata": {"meeting_date": "2025-06-26", "filename": "固收策略组周例会议讨论纪要20250626(1).docx", "batch": "batch2_2025Q2", "analysis_date": "2026-04-09", "total_speech_units": 10},
+  "speech_units": [
+    {"speaker": "孔祥雨", "unit_id": "batch2_0626_01", "primary_factor": "市场情绪因子", "secondary_factor": "策略建议", "content_summary": "7月份观点整体偏多，7月资金面预计不会明显恶化，同时结合基本面偏悲观的预期支撑偏多的结论。但若没有大的货币政策配合，多的空间确实不大，10债下限维持1.6%的观点。", "key_quote": "7月份观点整体偏多", "sentiment": "中性偏多", "time_phase": "会议前期"},
+    {"speaker": "柴颖颖", "unit_id": "batch2_0626_02", "primary_factor": "流动性因子", "secondary_factor": "资金面判断", "content_summary": "资金不一定整体偏紧，但是非银的分层现象有可能继续存在。债市整体观点从中性偏多转为中性，主要原因在于认为市场赔率不足，在没有新的推动因素下难以形成趋势性突破。", "key_quote": "债市整体观点从中性偏多转为中性", "sentiment": "中性", "time_phase": "会议前期"},
+    {"speaker": "李博良", "unit_id": "batch2_0626_03", "primary_factor": "流动性因子", "secondary_factor": "资金面判断", "content_summary": "7月份目前没有观察到让资金收紧的情况，大行融出目前接近5万亿。央行态度方面，现在十债在1.65%附近符合央行合意水平，汇率同样压力不大，央行主动收流动性的可能性不高。", "key_quote": "央行主动收流动性的可能性不高", "sentiment": "中性偏多", "time_phase": "会议前期"},
+    {"speaker": "杨义山", "unit_id": "batch2_0626_04", "primary_factor": "流动性因子", "secondary_factor": "资金面判断", "content_summary": "资金面预计跨季后中性偏松，市场整体处于流动性自发性充裕的状态，需关注大行融出资金的稳定性和央行买断式逆回购的公告。", "key_quote": "资金面预计跨季后中性偏松", "sentiment": "中性偏多", "time_phase": "会议中期"},
+    {"speaker": "武玥", "unit_id": "batch2_0626_05", "primary_factor": "市场情绪因子", "secondary_factor": "股债关系", "content_summary": "权益连续上涨短期内会导致跷跷板现象，但不足以对债券造成太大的负面影响。债市的波动可能取决于权益，但在基本面和政策面没有强预期的背景下，预计权益的持续性有限。", "key_quote": "预计权益的持续性有限，不足以触发债市大的调整", "sentiment": "中性偏多", "time_phase": "会议中期"},
+    {"speaker": "刘曼沁", "unit_id": "batch2_0626_06", "primary_factor": "市场情绪因子", "secondary_factor": "股债关系", "content_summary": "权益下探风险不大，但持续全局性大幅上攻概率不高，仍以景气度高的结构性方向为主。股债跷跷板效应拉长时间维度会减弱，风偏回升导致的跷跷板效应很难保持较长时间。", "key_quote": "股债跷跷板效应拉长时间维度会减弱", "sentiment": "中性", "time_phase": "会议中期"},
+    {"speaker": "赵骥", "unit_id": "batch2_0626_07", "primary_factor": "机构行为因子", "secondary_factor": "会议总结", "content_summary": "本次月会和周度例会是一个宝贵的时间窗口，梳理复盘二季度包括6月份发生的脉络和主线。当市场没有额外主线时，季节性效应胜率就会较高。", "key_quote": "当市场没有额外主线时，季节性效应胜率就会较高", "sentiment": "中性", "time_phase": "会议后期"},
+    {"speaker": "朱年军", "unit_id": "batch2_0626_08", "primary_factor": "机构行为因子", "secondary_factor": "工作要求", "content_summary": "短期结论还是在1.65%±5bp，中长期看利率下行。个人操作上在接近上沿加仓，接近下沿减仓；策略方面坚持了久期方向。", "key_quote": "短期结论还是在1.65%±5bp，中长期看利率下行", "sentiment": "中性偏多", "time_phase": "会议后期"},
+    {"speaker": "朱年军", "unit_id": "batch2_0626_09", "primary_factor": "机构行为因子", "secondary_factor": "工作要求", "content_summary": "在研究和表述中观点要表达得更明确一点。先判断方向，其次才是结构和品种。投资团队一定要表明方向，分歧越大越好，将分析的论据、逻辑和观点进行碰撞讨论。", "key_quote": "投资团队一定要表明方向，分歧越大越好", "sentiment": "中性", "time_phase": "会议后期"},
+    {"speaker": "赵骥", "unit_id": "batch2_0626_10", "primary_factor": "机构行为因子", "secondary_factor": "会议总结", "content_summary": "会议的核心在于收获，而收获感源于充分准备与深度讨论。希望大家都能敢于亮出清晰的观点，不要害怕多空对错，有投入有讨论有思考才会有收获。", "key_quote": "希望大家都能敢于亮出清晰的观点，不要害怕多空对错", "sentiment": "中性", "time_phase": "会议后期"}
+  ]
+}

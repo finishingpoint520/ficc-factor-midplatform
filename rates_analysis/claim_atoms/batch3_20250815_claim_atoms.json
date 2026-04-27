@@ -1,0 +1,432 @@
+{
+  "metadata": {
+    "source_file": "batch3_20250815_speech_units.json",
+    "meeting_date": "2025-08-15",
+    "batch": "unknown",
+    "source_doc_id": "20250815_B00",
+    "migration_date": "2026-04-21",
+    "total_atoms": 7,
+    "format": "v2"
+  },
+  "claim_atoms": [
+    {
+      "atom_id": "20250815_B00_001",
+      "source_doc_id": "20250815_B00",
+      "speaker": "孔祥雨",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-08-15",
+      "raw_text": "资金面净回笼但短端信用仍有40-50bp利差。资本利得有限，多头抱团已瓦解，利率债偏空。银行提价发存单预示价格可能上行。计划8月下旬至9月逐步布局。",
+      "summary_text": "资金面净回笼但短端信用仍有40-50bp利差。资本利得有限，多头抱团已瓦解，利率债偏空。银行提价发存单预示价格可能上行。计划8月下旬至9月逐步布局。",
+      "primary_factor": "流动性因子",
+      "secondary_factor": "LQ_005",
+      "secondary_factor_label": "资金价格中枢",
+      "tertiary_factor": [
+        "资金面净回笼仅少量投放",
+        "一年以下存单及1-3年信用债存在40-50bp利差",
+        "杠杆息差收益贡献显著但资本利得空间有限",
+        "债市情绪受股市分流冲击明显",
+        "前期多头抱团已瓦解"
+      ],
+      "claim_type": "验证指标",
+      "direction": "利空",
+      "magnitude": "不明确",
+      "time_horizon": "短期(1M以内)",
+      "confidence_score": 0.85,
+      "causal_chain_text": "资金面净回笼但短端信用仍有40-50bp利差 -> 资本利得有限情绪受股市压制 -> 多头抱团瓦解利率债偏空 -> 银行提价发存单预示价格可能上行 -> 8月下旬至9月逐步布局",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "存单利率",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "信用利差",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "DR001/DR007",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "基金久期",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "short_end_rates",
+        "谨慎偏空",
+        "利差锚定型",
+        "逐步布局",
+        "spreading",
+        "品种挖掘",
+        "短端"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.111298",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20250815_B00_002",
+      "source_doc_id": "20250815_B00",
+      "speaker": "张帆",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-08-15",
+      "raw_text": "大类资产轮动处于极致位置。股市风偏顶峰+债市临近脱敏。股债两侧均面临左侧考验，短期债市可能存在下行修复机会。",
+      "summary_text": "大类资产轮动处于极致位置。股市风偏顶峰+债市临近脱敏。股债两侧均面临左侧考验，短期债市可能存在下行修复机会。",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": "MS_001",
+      "secondary_factor_label": "风险偏好变化",
+      "tertiary_factor": [
+        "当前大类资产轮动处于相对极致位置",
+        "股市情绪风偏已达顶峰",
+        "债市临近脱敏阶段",
+        "股债两侧均面临左侧考验",
+        "短期债券市场存在下行修复机会"
+      ],
+      "claim_type": "验证指标",
+      "direction": "利多",
+      "magnitude": "不明确",
+      "time_horizon": "短期(1M以内)",
+      "confidence_score": 0.6,
+      "causal_chain_text": "大类资产轮动处于极致位置 -> 股市风偏顶峰+债市临近脱敏 -> 两侧均面临左侧考验 -> 短期债市可能存在修复机会",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "权益市场风偏指标",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "10Y国债利率",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "股债相关性",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "大类资产视角",
+        "左侧信号",
+        "简洁判断型",
+        "long_end_rates",
+        "轮动分析",
+        "长端"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.111298",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20250815_B00_003",
+      "source_doc_id": "20250815_B00",
+      "speaker": "杨义山",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-08-15",
+      "raw_text": "核心驱动已从基本面转向市场预期变化。股市好Beta挤压债市坏Beta。脆弱性来源：情绪冲击+PPI向CPI传导。债市最大支撑仍是央行资金面操作。后续锯齿状波动需警惕事件催化。",
+      "summary_text": "核心驱动已从基本面转向市场预期变化。股市好Beta挤压债市坏Beta。脆弱性来源：情绪冲击+PPI向CPI传导。债市最大支撑仍是央行资金面操作。后续锯齿状波动需警惕事件催化。",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": "MS_001",
+      "secondary_factor_label": "风险偏好变化",
+      "tertiary_factor": [
+        "核心驱动因素已从基本面环比压力转向市场预期变化",
+        "股市风险偏好持续改善形成跷跷板效应",
+        "股市作为好Beta挤压债市坏Beta致使长端更脆弱",
+        "曲线形态与收益率水平尚未恢复至具备较强carry价值的阶段",
+        "脆弱性主因：股市情绪冲击+PPI向CPI传导受制约"
+      ],
+      "claim_type": "验证指标",
+      "direction": "不明确",
+      "magnitude": "不明确",
+      "time_horizon": "不明确",
+      "confidence_score": 0.85,
+      "causal_chain_text": "核心驱动从基本面转向市场预期 -> 股市好Beta挤压债市坏Beta -> 脆弱性来源：情绪冲击+PPI向CPI传导 -> 最大支撑仍是资金面央行操作 -> 后续锯齿状波动需警惕事件催化",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "10Y国债利率",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "权益市场走势",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "PPI/CPI",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "央行操作",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "统计口径变化",
+        "yield_curve",
+        "long_end_rates",
+        "驱动因素转换分析",
+        "Beta框架",
+        "锯齿波动判断",
+        "长端"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.111298",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20250815_B00_004",
+      "source_doc_id": "20250815_B00",
+      "speaker": "李博良",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-08-15",
+      "raw_text": "逆风但不过度悲观。数据弱+央行配合支撑。配置盘vs交易盘定价逻辑分化。把握曲线陡峭化3-5年中短端可配置，信用防御集中于短端。",
+      "summary_text": "逆风但不过度悲观。数据弱+央行配合支撑。配置盘vs交易盘定价逻辑分化。把握曲线陡峭化3-5年中短端可配置，信用防御集中于短端。",
+      "primary_factor": "机构行为因子",
+      "secondary_factor": "IB_012",
+      "secondary_factor_label": "配置盘行为",
+      "tertiary_factor": [
+        "债市仍处逆风环境受股市强势压制但无需过度悲观",
+        "7月金融及经济数据均弱于预期",
+        "央行与财政配合度较高长券发行窗口料维持流动性支持",
+        "非银降杠杆后资金需求减弱",
+        "微观层面市场分歧加剧"
+      ],
+      "claim_type": "验证指标",
+      "direction": "不明确",
+      "magnitude": "不明确",
+      "time_horizon": "短期(1M以内)",
+      "confidence_score": 0.85,
+      "causal_chain_text": "逆风但不过度悲观 -> 数据弱+央行配合支撑 -> 配置盘vs交易盘定价逻辑分化 -> 把握曲线陡峭化3-5年中短端可配置 -> 信用防御集中于短端",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "10Y/30Y国债利率",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "基金久期",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "央行操作",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "配置盘vs交易盘分析",
+        "duration_strategy",
+        "yield_curve",
+        "曲线操作型",
+        "分化框架",
+        "防御导向",
+        "spreading",
+        "曲线"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.111298",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20250815_B00_005",
+      "source_doc_id": "20250815_B00",
+      "speaker": "沈文思",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-08-15",
+      "raw_text": "7月数据全面不及预期但债市钝化。地产拖累减弱、出口未证伪、PPI触底。流动性宽松+情绪支撑利好股市风险偏好。股债跷跷板逻辑未变，利率易上难下。",
+      "summary_text": "7月数据全面不及预期但债市钝化。地产拖累减弱、出口未证伪、PPI触底。流动性宽松+情绪支撑利好股市风险偏好。股债跷跷板逻辑未变，利率易上难下。",
+      "primary_factor": "基本面因子",
+      "secondary_factor": "FD_003",
+      "secondary_factor_label": "经济修复斜率",
+      "tertiary_factor": [
+        "7月经济数据全面不及预期但债市收益率反应平淡",
+        "房地产拖累减弱对GDP负面影响呈收敛趋势",
+        "出口回落未证伪下行趋势尚未出现实质性扭转",
+        "PPI触底反弹确认后或开启小幅回升通道",
+        "流动性宽松+市场情绪支撑利好股市风险偏好"
+      ],
+      "claim_type": "验证指标",
+      "direction": "利多",
+      "magnitude": "不明确",
+      "time_horizon": "中期(1-3M)",
+      "confidence_score": 0.85,
+      "causal_chain_text": "7月数据全面不及预期但债市钝化 -> 地产拖累减弱+出口未证伪+PPI触底 -> 流动性宽松+情绪支撑利好股市 -> 股债跷跷板逻辑未变利率易上难下",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "7月经济数据",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "PPI走势",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "房地产数据",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "权益市场走势",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "股债跷跷板",
+        "数据钝化分析",
+        "long_end_rates",
+        "边际变化框架",
+        "长端"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.111298",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20250815_B00_006",
+      "source_doc_id": "20250815_B00",
+      "speaker": "徐天彤",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-08-15",
+      "raw_text": "回购连续超8万亿触发防空转诉求。央行维稳精准应对。市场呈现三不交易特征：不交易基本面/不交易流动性/不交易政策。风险偏好抬升成为唯一有效变量。",
+      "summary_text": "回购连续超8万亿触发防空转诉求。央行维稳精准应对。市场呈现三不交易特征：不交易基本面/不交易流动性/不交易政策。风险偏好抬升成为唯一有效变量。",
+      "primary_factor": "流动性因子",
+      "secondary_factor": "LQ_002",
+      "secondary_factor_label": "央行投放节奏",
+      "tertiary_factor": [
+        "质押式回购成交量连续8个交易日超8万亿隔夜占比达90%",
+        "触发央行防空转诉求",
+        "资金价格难再突破下限",
+        "8-9月财政配合后或存在潜在收紧操作",
+        "央行维稳意图明确：两次买断式投放均精准应对"
+      ],
+      "claim_type": "验证指标",
+      "direction": "利空",
+      "magnitude": "不明确",
+      "time_horizon": "短期(1M以内)",
+      "confidence_score": 0.85,
+      "causal_chain_text": "回购成交连续超8万亿触发防空转 -> 资金难再下行8-9月或潜在收紧 -> 央行维稳意图明确精准应对 -> 市场三不交易：基本面/流动性/政策均钝化 -> 风险偏好抬升成为唯一有效变量",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "回购成交量",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "隔夜占比",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "央行操作",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "基金久期",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "三不交易框架",
+        "防空转监测",
+        "精准应对分析",
+        "short_end_rates",
+        "情绪主导判断",
+        "long_end_rates",
+        "曲线"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.111298",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20250815_B00_007",
+      "source_doc_id": "20250815_B00",
+      "speaker": "赵骥",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-08-15",
+      "raw_text": "理财子回避拉久期公募降久期。安全垫消耗严重基本面定价失效。低利率环境下5bp波动即显著冲击净值。严守安全垫积累原则，通过定制化周报心理按摩，待企稳后重启基本面定价。",
+      "summary_text": "理财子回避拉久期公募降久期。安全垫消耗严重基本面定价失效。低利率环境下5bp波动即显著冲击净值。严守安全垫积累原则，通过定制化周报心理按摩，待企稳后重启基本面定价。",
+      "primary_factor": "机构行为因子",
+      "secondary_factor": "IB_001",
+      "secondary_factor_label": "基金久期偏好",
+      "tertiary_factor": [
+        "理财子全年回避拉久期操作",
+        "去年至今市场持续颠簸消耗估值平滑安全垫",
+        "公募基金同步降久期防御",
+        "华泰保兴基金久期从近20年缩至11-12年",
+        "基本面定价逻辑暂时失效"
+      ],
+      "claim_type": "验证指标",
+      "direction": "不明确",
+      "magnitude": "不明确",
+      "time_horizon": "中期(1-3M)",
+      "confidence_score": 0.85,
+      "causal_chain_text": "理财子回避拉久期公募降久期 -> 安全垫消耗严重基本面定价失效 -> 5bp波动即显著冲击净值 -> 严守安全垫+心理按摩 -> 待企稳后重启基本面定价",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "公募基金久期",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "理财产品久期",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "净值波动",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "duration_strategy",
+        "降久期共识",
+        "心理按摩",
+        "委托人管理",
+        "安全垫框架",
+        "长端"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.111298",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    }
+  ],
+  "stats": {
+    "total": 7,
+    "matched": 7,
+    "unmatched": [],
+    "skipped": 0,
+    "format": "v2"
+  }
+}

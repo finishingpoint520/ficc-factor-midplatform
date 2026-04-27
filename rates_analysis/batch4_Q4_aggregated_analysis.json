@@ -1,0 +1,149 @@
+{
+  "metadata": {
+    "batch_name": "batch4_2025Q4",
+    "period": "2025年9月-11月",
+    "meeting_count": 10,
+    "meeting_dates": ["2025-09-12", "2025-09-19", "2025-09-25", "2025-10-10", "2025-10-17", "2025-10-30", "2025-11-07", "2025-11-14", "2025-11-21", "2025-11-27"],
+    "total_speech_units": 87,
+    "analysis_date": "2026-04-09",
+    "analyzer": "5factor-aggregator-v1",
+    "schema_version": "1.0"
+  },
+  "factor_statistics": {
+    "primary_factor_distribution": {
+      "市场情绪因子": 28,
+      "政策面因子": 18,
+      "流动性因子": 16,
+      "机构行为因子": 22,
+      "基本面因子": 3
+    },
+    "secondary_factor_frequency": {
+      "费率新规影响": 15,
+      "央行态度/操作": 14,
+      "股债联动/跷跷板": 12,
+      "基金赎回/久期": 11,
+      "配置盘行为": 10,
+      "利率区间管理": 9,
+      "资金面预期": 8,
+      "风险偏好变化": 8,
+      "信用利差": 7,
+      "存单供需": 6,
+      "基本面压力": 5,
+      "降息预期": 5,
+      "止盈/止损行为": 4,
+      "地产风险": 4,
+      "12月政策会议": 4
+    }
+  },
+  "time_evolution": {
+    "9月（3份纪要）": {
+      "dominant_theme": "费率新规冲击与情绪修复",
+      "key_events": ["公募费率调整意见稿", "央行买债传闻", "美联储降息"],
+      "market_consensus": "震荡偏弱，10Y利率1.8%为关键阻力位",
+      "sentiment": "谨慎偏空，等待政策明朗"
+    },
+    "10月（4份纪要）": {
+      "dominant_theme": "央行重启买债与利率区间确立",
+      "key_events": ["央行官宣重启国债买卖", "四中全会", "贸易战常态化"],
+      "market_consensus": "上有顶下有底，1.75%-1.85%区间震荡",
+      "sentiment": "震荡偏多，情绪逐步修复"
+    },
+    "11月（3份纪要）": {
+      "dominant_theme": "政策真空期与年末布局",
+      "key_events": ["费率新规落地预期", "中央经济工作会议前瞻", "万科事件"],
+      "market_consensus": "窄幅震荡，1.8%中枢波动，关注12月政策",
+      "sentiment": "中性震荡，等待方向选择"
+    }
+  },
+  "speaker_profiles": {
+    "高频发言人": {
+      "张迪": {
+        "appearances": 10,
+        "primary_factor": "流动性因子",
+        "signature_topics": ["存单供需", "资金面", "银行负债"],
+        "style": "数据驱动，短端专家",
+        "consistency": "高"
+      },
+      "杨义山": {
+        "appearances": 10,
+        "primary_factor": "政策面因子",
+        "signature_topics": ["五因子框架", "政策窗口", "财政货币协同"],
+        "style": "政策推演，宏观视角",
+        "consistency": "高"
+      },
+      "武玥": {
+        "appearances": 9,
+        "primary_factor": "市场情绪因子",
+        "signature_topics": ["股债联动", "风险偏好", "赔率胜率"],
+        "style": "情绪分析，逆向思维",
+        "consistency": "中高"
+      },
+      "姜之媛": {
+        "appearances": 9,
+        "primary_factor": "机构行为因子",
+        "signature_topics": ["久期管理", "止盈止损", "配置策略"],
+        "style": "策略导向，纪律性强",
+        "consistency": "高"
+      },
+      "孔祥雨": {
+        "appearances": 8,
+        "primary_factor": "市场情绪因子",
+        "signature_topics": ["久期策略", "期限利差", "波段操作"],
+        "style": "灵活机动，顺势而为",
+        "consistency": "中"
+      }
+    }
+  },
+  "team_consensus_evolution": {
+    "9月初": {
+      "rate_outlook": "震荡偏弱",
+      "10Y_range": "1.80%-1.90%",
+      "key_concern": "公募费率新规冲击",
+      "strategy": "防守为主，控制久期"
+    },
+    "10月中": {
+      "rate_outlook": "震荡偏多",
+      "10Y_range": "1.75%-1.85%",
+      "key_concern": "央行买债规模与节奏",
+      "strategy": "票息+杠杆，适度参与波段"
+    },
+    "11月底": {
+      "rate_outlook": "窄幅震荡",
+      "10Y_range": "1.78%-1.82%",
+      "key_concern": "12月政策会议定调",
+      "strategy": "逢高布局，等待方向"
+    }
+  },
+  "key_insights": {
+    "框架稳定性": "五因子框架贯穿Q4，但权重变化明显：9月重机构行为和情绪，10月重政策面（央行买债），11月重回情绪与政策博弈",
+    "利率区间共识": "团队对利率'上有顶、下有底'的区间震荡格局形成强共识，10Y中枢从1.85%逐步下移至1.80%",
+    "费率新规影响": "从9月冲击恐慌到11月逐步消化，团队对费率新规的认知从'短期冲击'转向'长期结构性因素'",
+    "股债关系": "股债跷跷板效应从9月的强压制逐步减弱，11月出现'股债双弱'和'股债脱敏'并存",
+    "策略演进": "从9月的'防守降久期'到10月的'票息+波段'再到11月的'等待布局'，策略随市场节奏灵活调整"
+  },
+  "risk_factors_identified": {
+    "高共识风险": [
+      "固收加产品赎回风险（11月多次提及）",
+      "地产下行第二波负反馈（11月底）",
+      "信用利差走阔（9月提及，11月弱化）"
+    ],
+    "分歧点": [
+      "12月降准降息概率（部分预期一季度）",
+      "明年利率方向（震荡vs小幅上行）",
+      "权益市场影响（脱敏vs重新压制）"
+    ]
+  },
+  "output_files": [
+    "batch4_20250912_speech_units.json",
+    "batch4_20250919_speech_units.json",
+    "batch4_20250925_speech_units.json",
+    "batch4_20251010_speech_units.json",
+    "batch4_20251017_speech_units.json",
+    "batch4_20251030_speech_units.json",
+    "batch4_20251107_speech_units.json",
+    "batch4_20251114_speech_units.json",
+    "batch4_20251121_speech_units.json",
+    "batch4_20251127_speech_units.json",
+    "batch4_Q4_aggregated_analysis.json"
+  ]
+}

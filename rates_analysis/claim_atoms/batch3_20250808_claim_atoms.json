@@ -1,0 +1,374 @@
+{
+  "metadata": {
+    "source_file": "batch3_20250808_speech_units.json",
+    "meeting_date": "2025-08-08",
+    "batch": "unknown",
+    "source_doc_id": "20250808_B00",
+    "migration_date": "2026-04-21",
+    "total_atoms": 6,
+    "format": "v2"
+  },
+  "claim_atoms": [
+    {
+      "atom_id": "20250808_B00_001",
+      "source_doc_id": "20250808_B00",
+      "speaker": "张迪",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-08-08",
+      "raw_text": "资金极度宽松引发套利循环，银行降活期利率促使资金转向现金管理理财。央行呵护意愿强烈但波动可能加大。短期资金利率突破至1.66%，预计低波窄幅震荡持续。长端下行空间小需等待催化剂。",
+      "summary_text": "资金极度宽松引发套利循环，银行降活期利率促使资金转向现金管理理财。央行呵护意愿强烈但波动可能加大。短期资金利率突破至1.66%，预计低波窄幅震荡持续。长端下行空间小需等待催化剂。",
+      "primary_factor": "流动性因子",
+      "secondary_factor": "LQ_005",
+      "secondary_factor_label": "资金价格中枢",
+      "tertiary_factor": [
+        "资金非常宽松：招行存单利率低至1.25%-1.28%",
+        "隔夜资金最低至1.35%",
+        "套利循环：机构低成本借款后存放银行或套利",
+        "已有银行显现降活期利率趋势",
+        "资金转向现金管理类理财产品（收益1.48%-1.49%）"
+      ],
+      "claim_type": "验证指标",
+      "direction": "利多",
+      "magnitude": "不明确",
+      "time_horizon": "短期(1M以内)",
+      "confidence_score": 0.85,
+      "causal_chain_text": "资金极度宽松引发套利循环 -> 银行降活期利率促使资金转向理财 -> 央行呵护但波动可能加大 -> 与资金关联度高资产表现偏好但空间有限 -> 长端震荡无趋势需等待催化剂",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "DR001",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "存单利率",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "活期存款利率",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "央行买断式回购量",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "数据密集型",
+        "short_end_rates",
+        "微观机制分析",
+        "long_end_rates",
+        "边际变化敏感",
+        "套利逻辑",
+        "短端"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.110032",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20250808_B00_002",
+      "source_doc_id": "20250808_B00",
+      "speaker": "杨义山",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-08-08",
+      "raw_text": "10Y国债中枢约1.70%，交易下限从1.62%抬升至1.65%-1.70%。基本面环比下行但斜率平缓，政策对冲温和。央行配合发债意图明确。8月区间1.60%-1.80%，需关注反内卷落实、基本面环比幅度、与股市共振三因素。",
+      "summary_text": "10Y国债中枢约1.70%，交易下限从1.62%抬升至1.65%-1.70%。基本面环比下行但斜率平缓，政策对冲温和。央行配合发债意图明确。8月区间1.60%-1.80%，需关注反内卷落实、基本面环比",
+      "primary_factor": "政策面因子",
+      "secondary_factor": "PL_006",
+      "secondary_factor_label": "央行态度与信号",
+      "tertiary_factor": [
+        "10Y国债利率维持窄幅波动中枢约1.70%",
+        "7月中下旬税期资金趋紧但7月30日后负循环被阻断",
+        "基本面环比下行压力增大但斜率平缓",
+        "政策对冲温和：财政/货币及产业政策均具应对余量",
+        "央行下半年工作会议强调用好政策工具加强财金配合"
+      ],
+      "claim_type": "验证指标",
+      "direction": "利多",
+      "magnitude": "不明确",
+      "time_horizon": "短期(1M以内)",
+      "confidence_score": 0.85,
+      "causal_chain_text": "资金面+政策预期为核心扰动因素 -> 基本面环比下行但斜率平缓+政策对冲温和 -> 央行配合发债意图明确（买断式回购3000亿超额） -> 国债交易下限抬升至1.65%-1.70% -> 8月区间1.60%-1.80%需关注反内卷/基本面/共振三因素",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "10Y国债利率",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "央行买断式回购量",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "反内卷政策落地情况",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "PPI走势",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "区间判断",
+        "政策解读",
+        "五因子分析框架自引用",
+        "long_end_rates",
+        "数据锚定",
+        "长端"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.110032",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20250808_B00_003",
+      "source_doc_id": "20250808_B00",
+      "speaker": "李博良",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-08-08",
+      "raw_text": "10Y国债1.70%中性偏鸡肋。8月上旬顺风窗口但利率下行不及预期，窗口可能关闭。核心矛盾是长端赔率不足。以赔率为导向波段操作：低时降久期，赔率打开再加仓。",
+      "summary_text": "10Y国债1.70%中性偏鸡肋。8月上旬顺风窗口但利率下行不及预期，窗口可能关闭。核心矛盾是长端赔率不足。以赔率为导向波段操作：低时降久期，赔率打开再加仓。",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": "MS_005",
+      "secondary_factor_label": "赔率与胜率判断",
+      "tertiary_factor": [
+        "10Y国债1.70%处于中性偏鸡肋水平上下行空间均有限",
+        "8月上旬顺风窗口（资金平稳/政策空窗/关税暂缓）但利率下行不及预期",
+        "最低仅至1.68%",
+        "顺风窗口可能关闭：中美关税或延长90天/月中流动性难进一步宽松",
+        "核心矛盾是长端赔率不足"
+      ],
+      "claim_type": "验证指标",
+      "direction": "利多",
+      "magnitude": "不明确",
+      "time_horizon": "短期(1M以内)",
+      "confidence_score": 0.85,
+      "causal_chain_text": "1.70%中性偏鸡肋上下空间有限 -> 顺风窗口未有效推动利率下行 -> 窗口可能关闭：关税延长/流动性难更松 -> 核心矛盾赔率不足 -> 赔率导向波段：低时降久期赔率打开再加仓",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "10Y国债利率",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "中美关税进展",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "基金久期",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "duration_strategy",
+        "赔率导向型",
+        "窗口期判断",
+        "long_end_rates",
+        "波段策略",
+        "谨慎操作",
+        "长端"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.110032",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20250808_B00_004",
+      "source_doc_id": "20250808_B00",
+      "speaker": "刘曼沁",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-08-08",
+      "raw_text": "债市弱势震荡趋势偏弱。短端强于长端反映配置资金充裕。政策不会缺席但非传统模式。出口韧性对债市偏不利。参考日本走出通缩经验：长期宽松+供给冲击。",
+      "summary_text": "债市弱势震荡趋势偏弱。短端强于长端反映配置资金充裕。政策不会缺席但非传统模式。出口韧性对债市偏不利。参考日本走出通缩经验：长期宽松+供给冲击。",
+      "primary_factor": "基本面因子",
+      "secondary_factor": "FD_006",
+      "secondary_factor_label": "出口数据",
+      "tertiary_factor": [
+        "债市呈弱势震荡日内波动约1bp趋势偏弱",
+        "短端表现较强（尤其信用债）反映配置资金充裕",
+        "短端利差已压至低位推动曲线被动小幅陡峭化",
+        "此前对需求端政策预期较低现在倾向于认为政策不会缺席",
+        "钢铁数据显示海外或因担忧反内卷政策推升价格而提前采购"
+      ],
+      "claim_type": "验证指标",
+      "direction": "利多",
+      "magnitude": "不明确",
+      "time_horizon": "短期(1M以内)",
+      "confidence_score": 0.6,
+      "causal_chain_text": "弱势震荡趋势偏弱需等待赔率改善 -> 短端强于长端反映配置资金充裕 -> 政策不会缺席但非传统模式 -> 出口韧性对债市偏不利 -> 参考日本经验：长期宽松+供给冲击",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "钢材出口数据",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "信用利差",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "收益率曲线形态",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "国际类比",
+        "yield_curve",
+        "出口视角",
+        "边际变化型",
+        "spreading",
+        "曲线分析",
+        "曲线"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.110032",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20250808_B00_005",
+      "source_doc_id": "20250808_B00",
+      "speaker": "张帆",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-08-08",
+      "raw_text": "债市进入高难度交易阶段，权益更占优。理财规模仅增2000亿反映固收吸引力下降。存单交易空间持续收窄。以中性久期+票息策略为主严守安全边际。",
+      "summary_text": "债市进入高难度交易阶段，权益更占优。理财规模仅增2000亿反映固收吸引力下降。存单交易空间持续收窄。以中性久期+票息策略为主严守安全边际。",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": "MS_001",
+      "secondary_factor_label": "风险偏好变化",
+      "tertiary_factor": [
+        "当前债市进入高难度交易阶段",
+        "10Y国债在1.66%-1.68%区间下行阻力增大",
+        "权益市场相对更占优",
+        "利率债博弈剧烈波动加大1.68%价格保护不足",
+        "7月理财规模仅增2000亿（往年约1万亿）反映固收产品发行疲弱"
+      ],
+      "claim_type": "验证指标",
+      "direction": "不明确",
+      "magnitude": "不明确",
+      "time_horizon": "短期(1M以内)",
+      "confidence_score": 0.85,
+      "causal_chain_text": "高难度交易阶段+价格保护不足 -> 权益更占优但股债同涨可能性认可 -> 理财规模增长疲弱反映固收产品吸引力下降 -> 存单空间收窄但仍有2-3bp波段 -> 中性久期+票息策略严守安全边际",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "10Y国债利率",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "理财规模",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "存单利率",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "信用利差",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "duration_strategy",
+        "策略务实",
+        "short_end_rates",
+        "long_end_rates",
+        "边际变化敏感",
+        "安全边际导向",
+        "趋势判断型",
+        "曲线"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.110032",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20250808_B00_006",
+      "source_doc_id": "20250808_B00",
+      "speaker": "张晶",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-08-08",
+      "raw_text": "聚焦三大关键：PPI触底回升（6月-3.6%或为底）、CPI或转负、8月12日关税节点。宏观组合为PPI触底回升+流动性宽松，历史经验支持股债商阶段性同涨。共识区间1.65%-1.74%，需警惕事件冲击。",
+      "summary_text": "聚焦三大关键：PPI触底回升（6月-3.6%或为底）、CPI或转负、8月12日关税节点。宏观组合为PPI触底回升+流动性宽松，历史经验支持股债商阶段性同涨。共识区间1.65%-1.74%，需警惕事件冲",
+      "primary_factor": "基本面因子",
+      "secondary_factor": "FD_002",
+      "secondary_factor_label": "通胀走势",
+      "tertiary_factor": [
+        "短期聚焦三大关键点",
+        "PPI同比负增长收敛6月-3.6%或为全年底后续缓升",
+        "CPI同比或转负受高基数拖累8-10月可能持续负值",
+        "社融信贷分化：信贷新增或低于去年社融增量或高于去年",
+        "8月12日为10%基础关税保留截止日"
+      ],
+      "claim_type": "验证指标",
+      "direction": "利多",
+      "magnitude": "不明确",
+      "time_horizon": "短期(1M以内)",
+      "confidence_score": 0.6,
+      "causal_chain_text": "三大焦点：PPI触底/CPI转负/关税节点 -> 宏观组合：PPI触底回升+流动性宽松 -> 历史经验支持股债商阶段性同涨 -> 共识区间1.65%-1.74% -> 需警惕事件冲击",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "PPI/CPI",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "社融信贷数据",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "8月12日关税进展",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "yield_curve",
+        "三因子聚焦型",
+        "long_end_rates",
+        "宏观组合判断",
+        "历史经验类比",
+        "事件风险评估",
+        "长端"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.110032",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "matched": 6,
+    "unmatched": [],
+    "skipped": 0,
+    "format": "v2"
+  }
+}

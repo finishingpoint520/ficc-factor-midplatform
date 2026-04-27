@@ -1,0 +1,369 @@
+{
+  "metadata": {
+    "title": "2025年Q3（7-8月）固收策略组周例会五因子聚合分析",
+    "period": "2025-07-04 至 2025-08-28",
+    "source_files": [
+      "batch3_20250704_speech_units.json",
+      "batch3_20250718_speech_units.json",
+      "batch3_20250729_speech_units.json",
+      "batch3_20250808_speech_units.json",
+      "batch3_20250815_speech_units.json",
+      "batch3_20250822_speech_units.json",
+      "batch3_20250828_speech_units.json"
+    ],
+    "total_meetings": 7,
+    "total_speech_units": 49,
+    "unique_speakers": 16,
+    "analysis_date": "2026-04-08",
+    "analyzer": "5factor-analyzer-v1",
+    "schema_version": "1.0"
+  },
+
+  "primary_factor_distribution": {
+    "description": "一级因子在49个发言单元中的分布",
+    "market_sentiment": {
+      "count": 18,
+      "pct": 36.7,
+      "trend": "7月初占25%逐步上升至8月占50%+，反映权益市场走强后市场情绪因子成为绝对主导",
+      "notes": "Q3最大的特征是市场情绪因子从配角升级为主角"
+    },
+    "institutional_behavior": {
+      "count": 13,
+      "pct": 26.5,
+      "trend": "稳定占比，贯穿全季度",
+      "notes": "配置盘vs交易盘分歧是全季度核心叙事之一"
+    },
+    "policy": {
+      "count": 8,
+      "pct": 16.3,
+      "trend": "7月集中（政治局会议前后），8月后减少",
+      "notes": "杨义山是政策面因子的主要贡献者"
+    },
+    "liquidity": {
+      "count": 6,
+      "pct": 12.2,
+      "trend": "稳定但占比不高，张迪为主要贡献者",
+      "notes": "7月初资金宽松是讨论热点，但后续被情绪因子掩盖"
+    },
+    "fundamental": {
+      "count": 4,
+      "pct": 8.2,
+      "trend": "占比最低且持续下降",
+      "notes": "张晶是基本面因子的主要贡献者，但全季度团队对基本面讨论明显弱化"
+    }
+  },
+
+  "secondary_factor_ranking": {
+    "description": "高频二级因子排名（出现5次及以上）",
+    "factors": [
+      {"name": "风险偏好变化", "count": 16, "primary": "市场情绪", "notes": "Q3最核心的二级因子，从7月中旬开始贯穿至8月底"},
+      {"name": "央行投放节奏", "count": 10, "primary": "流动性/政策", "notes": "央行买断式回购、OMO操作、配合财政发债"},
+      {"name": "基金久期偏好", "count": 8, "primary": "机构行为", "notes": "久期高位→降久期→企稳的完整周期"},
+      {"name": "配置盘行为", "count": 7, "primary": "机构行为", "notes": "银行/保险配置力量提供底部支撑的叙事"},
+      {"name": "拥挤交易程度", "count": 7, "primary": "市场情绪", "notes": "持仓拥挤→赎回压力→机构脆弱性"},
+      {"name": "赔率与胜率判断", "count": 7, "primary": "市场情绪", "notes": "李博良/武玥核心框架：赔率导向波段操作"},
+      {"name": "信用利差机会", "count": 6, "primary": "机构行为", "notes": "信用套息策略从7月看多→8月防御"},
+      {"name": "股债跷跷板效应", "count": 6, "primary": "市场情绪", "notes": "从隐性因素到显性主线的演变"},
+      {"name": "同业存单利率", "count": 6, "primary": "流动性", "notes": "张迪/张帆核心品种关注"},
+      {"name": "赎回与资金流向", "count": 6, "primary": "机构行为", "notes": "存款搬家叙事在8月强化"},
+      {"name": "资金价格中枢", "count": 5, "primary": "流动性", "notes": "DR001/DR007中枢判断"},
+      {"name": "基本面边际变化", "count": 5, "primary": "政策/基本面", "notes": "经济数据钝化→关注度下降"},
+      {"name": "久期策略", "count": 5, "primary": "市场情绪/机构行为", "notes": "从维持高久期→降久期→中性久期的完整转向"}
+    ]
+  },
+
+  "temporal_evolution": {
+    "description": "Q3因子权重的时间演变",
+    "phases": [
+      {
+        "period": "7月上旬（0704）",
+        "dominant_factor": "机构行为（37.5%）+市场情绪（25%）",
+        "narrative": "偏多但空间有限，信用优于利率，机构配置力量提供底部支撑",
+        "key_secondary": ["银行配置行为", "信用利差机会", "择券精细化"],
+        "mood": "温和偏多"
+      },
+      {
+        "period": "7月中旬（0718）",
+        "dominant_factor": "市场情绪（43%）+机构行为（29%）",
+        "narrative": "风险偏好上升成核心矛盾，权益站上3500点压制债市",
+        "key_secondary": ["风险偏好变化", "拥挤交易程度", "央行投放节奏"],
+        "mood": "谨慎偏空"
+      },
+      {
+        "period": "7月下旬（0729）",
+        "dominant_factor": "市场情绪（36%）+机构行为（27%）",
+        "narrative": "急跌后下行空间有限，政治局会议预期博弈",
+        "key_secondary": ["情绪化抛售", "配置盘行为", "政策预期博弈"],
+        "mood": "谨慎观望"
+      },
+      {
+        "period": "8月上旬（0808）",
+        "dominant_factor": "流动性（25%）+政策（20%）+市场情绪（23%）",
+        "narrative": "窄幅震荡，趋势性机会缺失，中性久期+票息防御",
+        "key_secondary": ["资金价格中枢", "央行投放节奏", "赔率与胜率判断"],
+        "mood": "中性"
+      },
+      {
+        "period": "8月中旬（0815）",
+        "dominant_factor": "市场情绪（43%）+机构行为（29%）",
+        "narrative": "看股做债，利多钝化利空敏感，三不交易",
+        "key_secondary": ["风险偏好变化", "基金久期偏好", "央行投放节奏"],
+        "mood": "谨慎偏空"
+      },
+      {
+        "period": "8月下旬（0822-0828）",
+        "dominant_factor": "市场情绪（50%+）+机构行为（25%）",
+        "narrative": "风偏情绪浓，1.8%关键点位，短端套息为主",
+        "key_secondary": ["风险偏好变化", "赔率与胜率判断", "信用利差机会"],
+        "mood": "谨慎偏空"
+      }
+    ]
+  },
+
+  "speaker_personas": {
+    "description": "出现3次及以上的发言人画像",
+    "personas": [
+      {
+        "speaker": "张迪",
+        "appearance_count": 6,
+        "primary_factor_affinity": ["流动性因子（3次）", "市场情绪因子（2次）"],
+        "secondary_factor_signature": ["资金价格中枢", "央行投放节奏", "同业存单利率", "存款品种机会", "套利行为监测"],
+        "reasoning_style": "数据驱动型，微观机制分析，边际变化敏感",
+        "evidence_preference": "market_price > policy_signal > historical_analogy",
+        "typical_conclusion": "conditional_judgment（条件判断为主）",
+        "asset_focus_tendency": "短端 > 曲线",
+        "key_insights": [
+          "7月初：资金不会进一步下行，1.6%以下存单性价比不高",
+          "7月中：央行操作矛盾但配合发债意图明确，8月存单季节性上行规律",
+          "8月：资金极度宽松引发套利循环，银行降活期利率促使资金转向理财",
+          "8月中下旬：半年及一年期品种进入配置区间"
+        ],
+        "evolution": "从流动性分析逐步向配置价值评估延伸"
+      },
+      {
+        "speaker": "杨义山",
+        "appearance_count": 7,
+        "primary_factor_affinity": ["政策面因子（4次）", "市场情绪因子（2次）"],
+        "secondary_factor_signature": ["政策目标函数", "央行态度与信号", "基本面边际变化", "十五五规划预期"],
+        "reasoning_style": "政策周期型，信号监测型，时间窗口框架",
+        "evidence_preference": "policy_signal > macro_data > market_price",
+        "typical_conclusion": "conditional_judgment（区间判断为主）",
+        "asset_focus_tendency": "长端 > 曲线",
+        "key_insights": [
+          "7月初：货政报告删除择机双降为正常表述，1.65%窄幅波动",
+          "7月中：10Y国债1.62%下限1.65%中枢3-5BP波动",
+          "7月底：1.75可能成为年内政策锚点",
+          "8月初：10Y交易下限从1.62%抬升至1.65%-1.70%",
+          "8月底：十五五规划窗口期增量表述有限，增长下有底线"
+        ],
+        "evolution": "从政策解读逐步向预期管理框架延伸，始终是团队的利率区间锚定者"
+      },
+      {
+        "speaker": "李博良",
+        "appearance_count": 7,
+        "primary_factor_affinity": ["市场情绪因子（3次）", "机构行为因子（3次）"],
+        "secondary_factor_signature": ["赔率与胜率判断", "拥挤交易程度", "基金久期偏好", "信用利差机会"],
+        "reasoning_style": "赔率导向型，波段策略，确定性分层",
+        "evidence_preference": "market_price > positioning > institutional_behavior",
+        "typical_conclusion": "conditional_judgment / strong_assertion（交替）",
+        "asset_focus_tendency": "信用 > 长端 > 曲线",
+        "key_insights": [
+          "7月初：整体偏多，维持较高久期，信用性价比高于利率",
+          "7月底：市场脆弱平衡，高频波段策略+高等级资产倾斜",
+          "8月初：1.70%中性偏鸡肋，以赔率为导向波段操作",
+          "8月中：逆风但不过度悲观，把握曲线陡峭化3-5年可配置",
+          "8月下旬：长端看不清维持观望，多看少动"
+        ],
+        "evolution": "从偏多到赔率导向波段，从信用推荐到防御性观望"
+      },
+      {
+        "speaker": "张帆",
+        "appearance_count": 7,
+        "primary_factor_affinity": ["机构行为因子（3次）", "市场情绪因子（3次）"],
+        "secondary_factor_signature": ["信用利差机会", "同业存单利率", "央行投放节奏", "大类资产轮动"],
+        "reasoning_style": "趋势判断型，安全边际导向，边际变化敏感",
+        "evidence_preference": "market_price > institutional_behavior > historical_analogy",
+        "typical_conclusion": "strong_assertion（强判断为主）",
+        "asset_focus_tendency": "短端 > 信用 > 曲线",
+        "key_insights": [
+          "7月初：存单和超长债减仓，信用维持正套杠杆",
+          "7月中：利用8月存单季节性规律在反弹窗口减仓，四季度三重压力",
+          "8月初：高难度交易阶段，中性久期+票息策略严守安全边际",
+          "8月中：大类资产轮动极致位置，短期债市可能存在修复机会",
+          "8月底：短端套息空间罕见（2-30bp）与2017年相似"
+        ],
+        "evolution": "从边际变化敏感的减仓者→套息策略的坚定执行者，始终强调安全边际"
+      },
+      {
+        "speaker": "武玥",
+        "appearance_count": 6,
+        "primary_factor_affinity": ["市场情绪因子（5次）"],
+        "secondary_factor_signature": ["赔率与胜率判断", "拥挤交易程度", "止盈/止损行为", "配置价值评估"],
+        "reasoning_style": "框架构建型，赔率视角，条件句密集",
+        "evidence_preference": "positioning > market_price > sentiment_indicator",
+        "typical_conclusion": "conditional_judgment（条件判断为主）",
+        "asset_focus_tendency": "长端 > 曲线",
+        "key_insights": [
+          "7月初：去α保留β，有胜率没赔率，区间1.6%-1.65%",
+          "7月中：久期高企结构脆弱，技术性操作易失效",
+          "7月底：波动加剧，机构分化",
+          "8月中：1.8%共识配置价值，1.85%更理想",
+          "8月底：1.8关键点位节奏博弈，93阅兵为节点"
+        ],
+        "evolution": "从赔率视角到关键点位敏感性，始终是团队最精细化的交易框架构建者"
+      },
+      {
+        "speaker": "姜之媛",
+        "appearance_count": 3,
+        "primary_factor_affinity": ["市场情绪因子（2次）", "机构行为因子（1次）"],
+        "secondary_factor_signature": ["择券精细化", "交易心态管理", "ETF申赎行为", "居民理财行为"],
+        "reasoning_style": "操作实务型，细节导向，心理按摩",
+        "evidence_preference": "institutional_behavior > market_price",
+        "typical_conclusion": "probabilistic_judgment / strategy_mapping",
+        "asset_focus_tendency": "长端 > 信用",
+        "key_insights": [
+          "7月初：操作更考验择券细节和交易心态，资本利得来源于久期回撤无法避免",
+          "7月中：债市缺乏内生稳定性完全依赖权益，超长债交易多重困境",
+          "7月底：非理性下跌由商品暴涨引发，ETF大额净流入提供缓冲"
+        ],
+        "evolution": "从择券精细化→ETF监测→流动性风险预警，始终强调交易心理和实务操作"
+      },
+      {
+        "speaker": "张晶",
+        "appearance_count": 5,
+        "primary_factor_affinity": ["基本面因子（4次）"],
+        "secondary_factor_signature": ["经济修复斜率", "通胀走势", "反内卷政策影响", "全球需求叙事"],
+        "reasoning_style": "宏大叙事型，全球视角，历史类比，框架构建",
+        "evidence_preference": "macro_data > historical_analogy > policy_signal",
+        "typical_conclusion": "tentative_observation（试探性观察为主）",
+        "asset_focus_tendency": "长端",
+        "key_insights": [
+          "7月初：下半年周期力量重回核心，反内卷涉及面广见效慢",
+          "7月中：居民超额储蓄47万亿但未流入股市，股债双牛难现",
+          "7月底：对终局化叙事的反思，全球PMI共振回升叙事需警惕",
+          "8月初：PPI触底回升+流动性宽松组合，聚焦三大关键点",
+          "8月中：名义GDP修复预期动摇债市多头心态"
+        ],
+        "evolution": "始终提供宏观大图景，从事件驱动→周期力量→终局叙事反思，是团队的宏观框架锚"
+      },
+      {
+        "speaker": "赵骥",
+        "appearance_count": 3,
+        "primary_factor_affinity": ["机构行为因子（3次）"],
+        "secondary_factor_signature": ["安全垫管理", "绝对收益约束", "存款搬家", "ETF泡沫化"],
+        "reasoning_style": "平台建设型，委托人管理，辩证框架",
+        "evidence_preference": "institutional_behavior > market_price",
+        "typical_conclusion": "probabilistic_judgment",
+        "asset_focus_tendency": "长端",
+        "key_insights": [
+          "7月底：避免追涨等待跌出来的配置机会",
+          "8月中：理财子回避拉久期公募降久期，安全垫消耗严重",
+          "8月底：银行自营为KPI涌入可转债导致泡沫化，年底机构求稳"
+        ],
+        "evolution": "从安全垫管理→存款搬家框架→KPI驱动行为分析，始终从机构整体角度提供元视角"
+      }
+    ]
+  },
+
+  "team_consensus_framework": {
+    "description": "团队在Q3形成的共识性判断框架",
+    "core_narrative_evolution": {
+      "early_q3": "偏多但空间有限，信用优于利率，机构配置力量提供底部支撑",
+      "mid_q3_transition": "风险偏好上升成核心矛盾，权益压制债市，利多钝化利空敏感",
+      "late_q3": "风偏情绪浓，1.8%关键点位，短端套息为主，多看少动"
+    },
+    "shared_judgment_sequence": [
+      "1. 先看权益市场风偏（从隐性背景到显性主线）",
+      "2. 再看央行操作态度（配合财政/呵护意愿边际变化）",
+      "3. 然后评估机构行为状态（配置盘vs交易盘/久期/赎回压力）",
+      "4. 最后考虑基本面数据（从核心位置退居背景噪音）"
+    ],
+    "shared_language": [
+      "赔率与胜率（核心分析框架）",
+      "多看少动（全季度后期的统一策略建议）",
+      "降久期/控久期（全季度的操作主旋律）",
+      "信用优于利率（7月共识，8月退化为短端信用优先）",
+      "套息策略（8月后期的策略共识）",
+      "配置价值（1.8%关键点位共识）",
+      "三不交易（8月中旬徐天彤提出后被广泛引用）",
+      "看股做债（8月中旬-8月底的会议关键词）"
+    ],
+    "core_divergences": [
+      {
+        "topic": "1.8%点位应对策略",
+        "camp_a": "武玥/李博良：1.8%有配置价值但不宜重仓，等1.85%更好",
+        "camp_b": "张迪/项敦伟：短端已进入配置区间可逐步建仓",
+        "camp_c": "赵骥/张帆：多看少动债市需跌出价值",
+        "resolution": "无统一结论，取决于各账户负债端稳定性"
+      },
+      {
+        "topic": "9月债市是否有机会",
+        "camp_a": "张帆：9月为关键窗口，宽松+股市回调=机会",
+        "camp_b": "李博良/杨义山：9月供给压力大+政策空窗偏悲观",
+        "resolution": "未决，成为Q3→Q4过渡的核心悬念"
+      },
+      {
+        "topic": "基本面数据是否还有参考价值",
+        "camp_a": "张晶/沈文思：基本面仍有关注价值（PPI触底、出口企稳）",
+        "camp_b": "徐天彤/项敦伟：三不交易，基本面钝化",
+        "resolution": "团队共识倾向于基本面已钝化但张晶坚持提供宏观框架"
+      }
+    ],
+    "implicit_rules": [
+      "不再用单一因子做方向性判断，至少需要2个因子共振",
+      "提及'央行配合财政'是多头最后的安全垫",
+      "提及'三不交易'意味着市场处于最无效状态",
+      "赵骥发言通常定调讨论的结束方向",
+      "张晶发言通常在宏观层面给出远期视角",
+      "张帆和李博良的发言方向如果一致则形成较强策略共识"
+    ]
+  },
+
+  "key_analytical_shifts": {
+    "description": "Q3期间团队分析框架的重大转变",
+    "shifts": [
+      {
+        "shift": "基本面从核心退居背景",
+        "timing": "7月中旬至8月中旬逐步完成",
+        "evidence": "张晶发言中基本面因子虽始终存在但关注度下降；7月会议关键词从'资金利率'→'风险偏好上升'→'看股做债'",
+        "implication": "团队判断框架从自上而下的基本面驱动转向自下而上的行为/情绪驱动"
+      },
+      {
+        "shift": "配置盘vs交易盘叙事成型",
+        "timing": "8月中旬徐天彤'三不交易'提出后加速",
+        "evidence": "项墩伟/李博良/杨义山均在8月会议中明确区分配置盘和交易盘行为",
+        "implication": "分析框架从'市场整体方向'转向'不同类型机构的差异化行为'"
+      },
+      {
+        "shift": "信用策略从看多到防御",
+        "timing": "7月底至8月中旬",
+        "evidence": "7月4日共识'信用优于利率'→8月22日'信用优于利率'退化为'能参与信用就不碰利率'",
+        "implication": "信用债从alpha来源退化为防御工具"
+      },
+      {
+        "shift": "存款搬家叙事引入",
+        "timing": "8月下旬赵骥提出后团队广泛接受",
+        "evidence": "赵骥提出'存款搬家两阶段'框架后被多项讨论引用",
+        "implication": "从纯债券市场分析扩展到跨资产/跨部门资金流向分析"
+      }
+    ]
+  },
+
+  "comparison_with_0704": {
+    "description": "与7月4日首份纪要的对比，展示Q3内部演变",
+    "factor_ranking_change": {
+      "0704": ["机构行为(37.5%)", "市场情绪(25%)", "流动性(12.5%)", "政策(12.5%)", "基本面(12.5%)"],
+      "0828": ["市场情绪(50%+)", "机构行为(25%)", "政策(12.5%)", "流动性(12.5%)", "基本面(0%)"],
+      "comment": "市场情绪因子从配角（25%）升级为绝对主角（50%+），基本面因子从均等参与降至消失"
+    },
+    "strategy_consensus_change": {
+      "0704": "偏多，信用优于利率，维持较高久期，择券精细化",
+      "0828": "谨慎偏空，短端套息为主，严控久期，多看少动",
+      "comment": "方向完全反转，从进攻转向防御"
+    },
+    "shared_language_change": {
+      "0704": ["偏多", "空间有限", "信用优于利率", "补涨机会", "择券精细化"],
+      "0828": ["多看少动", "看股做债", "三不交易", "套息策略", "赔率导向"]
+    }
+  }
+}

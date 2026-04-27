@@ -1,0 +1,442 @@
+{
+  "metadata": {
+    "source_file": "batch4_20251127_speech_units.json",
+    "meeting_date": "2025-11-27",
+    "batch": "unknown",
+    "source_doc_id": "20251127_B00",
+    "migration_date": "2026-04-21",
+    "total_atoms": 7,
+    "format": "v2"
+  },
+  "claim_atoms": [
+    {
+      "atom_id": "20251127_B00_001",
+      "source_doc_id": "20251127_B00",
+      "speaker": "张迪",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-11-27",
+      "raw_text": "本周存单市场整体呈现价格稳定但结构分化的特点，存款端出现短期提价现象，理财成为主要配置力量，预计后续存单利率将维持高位震荡。",
+      "summary_text": "本周存单市场整体呈现价格稳定但结构分化的特点，存款端出现短期提价现象，理财成为主要配置力量，预计后续存单利率将维持高位震荡。",
+      "primary_factor": "流动性因子",
+      "secondary_factor": "LQ_004",
+      "secondary_factor_label": "存单供需",
+      "tertiary_factor": [
+        "存单市场表现稳定",
+        "利率波动幅度有限",
+        "存款端出现短期提价",
+        "理财成为主要配置力量",
+        "本月存单到期2.84万亿"
+      ],
+      "claim_type": "验证指标",
+      "direction": "不明确",
+      "magnitude": "不明确",
+      "time_horizon": "短期(1M以内)",
+      "confidence_score": 0.6,
+      "causal_chain_text": "存单价格稳定 -> 存款提价反映负债诉求 -> 理财是主要买入方 -> 到期压力大 -> 年底配置需求逐步释放",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "存单利率",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "存款价格",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "理财规模",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "到期量",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "short_end_rates",
+        "节奏把握",
+        "策略导向",
+        "供需分析",
+        "短端"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.134668",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20251127_B00_002",
+      "source_doc_id": "20251127_B00",
+      "speaker": "杨义山",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-11-27",
+      "raw_text": "基于对政策窗口期财政与货币政策协同的预期，我对12月债市持震荡偏多观点，认为利率在1.85%-1.90%区间具备配置价值。",
+      "summary_text": "基于对政策窗口期财政与货币政策协同的预期，我对12月债市持震荡偏多观点，认为利率在1.85%-1.90%区间具备配置价值。",
+      "primary_factor": "政策面因子",
+      "secondary_factor": "PL_002",
+      "secondary_factor_label": "政策窗口",
+      "tertiary_factor": [
+        "12月6-9日政治局会议",
+        "12月11-12日中央经济工作会议",
+        "财政结构向国债迁移",
+        "货币政策工具转向国债买卖",
+        "明年一季度政策出台较早"
+      ],
+      "claim_type": "验证指标",
+      "direction": "不明确",
+      "magnitude": "不明确",
+      "time_horizon": "短期(1M以内)",
+      "confidence_score": 0.6,
+      "causal_chain_text": "12月政策窗口敏感期 -> 财政结构向国债迁移 -> 明年一季度政策支撑 -> 销售新规预计温和 -> 1.85%-1.90%有配置价值",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "会议时间",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "政策表述",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "费率新规版本",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "利率点位",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "政策推演",
+        "long_end_rates",
+        "窗口期把握",
+        "策略导向",
+        "长端"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.134668",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20251127_B00_003",
+      "source_doc_id": "20251127_B00",
+      "speaker": "吴舒扬",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-11-27",
+      "raw_text": "我对当前长端利率预计维持震荡格局，需关注增量政策信号打破平衡，同时在信用债投资中应规避尾部风险、注重利差保护。",
+      "summary_text": "我对当前长端利率预计维持震荡格局，需关注增量政策信号打破平衡，同时在信用债投资中应规避尾部风险、注重利差保护。",
+      "primary_factor": "机构行为因子",
+      "secondary_factor": null,
+      "secondary_factor_label": "增量信号",
+      "tertiary_factor": [
+        "长端利率维持震荡",
+        "30年国债2.2%有支撑",
+        "费率新规是关键因素",
+        "市场流传友好版本",
+        "规避尾部风险"
+      ],
+      "claim_type": "验证指标",
+      "direction": "利空",
+      "magnitude": "不明确",
+      "time_horizon": "短期(1M以内)",
+      "confidence_score": 0.6,
+      "causal_chain_text": "长端震荡待信号 -> 30年有支撑 -> 费率新规是关键 -> 信用规避尾部 -> 地产风险传导",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "30Y国债收益率",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "费率新规进展",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "地产债价格",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "信用利差",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "credit_spreads",
+        "信号等待",
+        "long_end_rates",
+        "风险警示",
+        "策略导向",
+        "长端"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.134668",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20251127_B00_004",
+      "source_doc_id": "20251127_B00",
+      "speaker": "蒋苑",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-11-27",
+      "raw_text": "基于对货币政策、大类资产表现及地产风险的综合判断，我认为债券市场短期将维持震荡，但中长期存在配置机会，建议重点关注中短端利率品种并择机加仓。",
+      "summary_text": "基于对货币政策、大类资产表现及地产风险的综合判断，我认为债券市场短期将维持震荡，但中长期存在配置机会，建议重点关注中短端利率品种并择机加仓。",
+      "primary_factor": "政策面因子",
+      "secondary_factor": "PL_011",
+      "secondary_factor_label": "货币政策取向",
+      "tertiary_factor": [
+        "地产下行压力加大",
+        "离岸人民币跌破7.08",
+        "美联储转向鸽派可能",
+        "明年一季度有降息可能",
+        "权益今年涨幅较大"
+      ],
+      "claim_type": "验证指标",
+      "direction": "利多",
+      "magnitude": "不明确",
+      "time_horizon": "中期(1-3M)",
+      "confidence_score": 0.6,
+      "causal_chain_text": "地产压力加大 -> 汇率有升值压力 -> 明年一季度可能降息 -> 权益涨幅将收窄 -> 债券配置价值显现",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "地产数据",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "汇率",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "美联储政策",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "股市波动",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "大类资产比较",
+        "short_end_rates",
+        "政策推演",
+        "long_end_rates",
+        "策略导向",
+        "曲线"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.134668",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20251127_B00_005",
+      "source_doc_id": "20251127_B00",
+      "speaker": "张帆",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-11-27",
+      "raw_text": "债券市场短期受机构行为主导但存在修复可能，而中长期受基本面压力影响利率仍有下行空间，建议在控制风险的前提下逢高布局。",
+      "summary_text": "债券市场短期受机构行为主导但存在修复可能，而中长期受基本面压力影响利率仍有下行空间，建议在控制风险的前提下逢高布局。",
+      "primary_factor": "政策面因子",
+      "secondary_factor": null,
+      "secondary_factor_label": "政策协同",
+      "tertiary_factor": [
+        "利率上行源于结构性因素",
+        "非资金收紧或基本面强劲",
+        "地产进入下半场",
+        "今年房价下跌约15%",
+        "明年可能继续量价齐跌"
+      ],
+      "claim_type": "验证指标",
+      "direction": "利多",
+      "magnitude": "不明确",
+      "time_horizon": "中期(1-3M)",
+      "confidence_score": 0.6,
+      "causal_chain_text": "利率上行是结构性因素 -> 地产下行压力大 -> LPR需大幅下调 -> 政策及时调整利好债市 -> 明年一季度看好",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "房价数据",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "LPR",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "地产销量",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "政策出台",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "基本面分析",
+        "short_end_rates",
+        "政策推演",
+        "long_end_rates",
+        "策略导向",
+        "长端"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.134668",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20251127_B00_006",
+      "source_doc_id": "20251127_B00",
+      "speaker": "武玥",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-11-27",
+      "raw_text": "当前债券收益率上行更多源于短期结构性因素而非基本面转向，预计后续上行空间有限，建议不必过度恐慌。",
+      "summary_text": "当前债券收益率上行更多源于短期结构性因素而非基本面转向，预计后续上行空间有限，建议不必过度恐慌。",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": null,
+      "secondary_factor_label": "结构性因素",
+      "tertiary_factor": [
+        "收益率上行源于短期结构性因素",
+        "非基本面转向",
+        "中期风险偏好逻辑难证伪",
+        "央行处于不作为状态",
+        "12月金融机构缩表"
+      ],
+      "claim_type": "验证指标",
+      "direction": "利空",
+      "magnitude": "不明确",
+      "time_horizon": "短期(1M以内)",
+      "confidence_score": 0.6,
+      "causal_chain_text": "收益率上行是结构性因素 -> 央行不作为 -> 12月缩表缺乏做多力量 -> 接近前期高点 -> 上行空间有限",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "收益率水平",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "央行表态",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "机构持仓",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "成交量",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "政策解读",
+        "long_end_rates",
+        "行为分析",
+        "后市判断",
+        "长端"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.134668",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    },
+    {
+      "atom_id": "20251127_B00_007",
+      "source_doc_id": "20251127_B00",
+      "speaker": "高喆",
+      "speaker_institution": "",
+      "speaker_role": "",
+      "date": "2025-11-27",
+      "raw_text": "当前收益率回调属正常调整且幅度合理，尽管存在空头氛围但后市并不悲观，可把握收益率上行后的配置机会。",
+      "summary_text": "当前收益率回调属正常调整且幅度合理，尽管存在空头氛围但后市并不悲观，可把握收益率上行后的配置机会。",
+      "primary_factor": "市场情绪因子",
+      "secondary_factor": null,
+      "secondary_factor_label": "回调性质",
+      "tertiary_factor": [
+        "回调属正常调整",
+        "10月下行过急后回调正常",
+        "信用债买盘强劲",
+        "地产下行倒逼流动性宽松",
+        "万科救助案例"
+      ],
+      "claim_type": "验证指标",
+      "direction": "利多",
+      "magnitude": "不明确",
+      "time_horizon": "短期(1M以内)",
+      "confidence_score": 0.6,
+      "causal_chain_text": "回调属正常 -> 信用债买盘强 -> 地产下行利好债市 -> 对后市不悲观 -> 降低仓位等机会",
+      "causal_edge_ids": [],
+      "trade_translation": null,
+      "validation_metrics": [
+        {
+          "metric_name": "收益率回调幅度",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "信用债成交",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "地产政策",
+          "threshold_direction": ""
+        },
+        {
+          "metric_name": "万科事件",
+          "threshold_direction": ""
+        }
+      ],
+      "invalidation_condition": null,
+      "related_atom_ids": [],
+      "tags": [
+        "credit_spreads",
+        "风险意识",
+        "long_end_rates",
+        "历史类比",
+        "策略导向",
+        "信用"
+      ],
+      "review_status": "待审核",
+      "review_notes": "Phase2 v2 (rich source)",
+      "created_at": "2026-04-21T18:24:04.134668",
+      "updated_at": "2026-04-21T19:09:24.029862"
+    }
+  ],
+  "stats": {
+    "total": 7,
+    "matched": 3,
+    "unmatched": [
+      "增量信号",
+      "政策协同",
+      "结构性因素",
+      "回调性质"
+    ],
+    "skipped": 0,
+    "format": "v2"
+  }
+}

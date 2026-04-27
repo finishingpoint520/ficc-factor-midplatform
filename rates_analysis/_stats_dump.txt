@@ -1,0 +1,82 @@
+总边数: 103
+本体节点数: 51
+观点原子数: 744
+
+--- 一级因子节点分布 ---
+  市场情绪因子: 13个节点
+  机构行为因子: 12个节点
+  政策面因子: 11个节点
+  基本面因子: 8个节点
+  流动性因子: 7个节点
+
+--- 节点标签映射 ---
+  FD_001: 经济评估
+  FD_002: 通胀走势
+  FD_003: 经济修复斜率
+  FD_004: 降息预期
+  FD_005: 经济增长动能
+  FD_006: 出口数据
+  FD_007: 通胀
+  FD_008: 配置力量入场
+  PL_001: 基本面边际变化
+  PL_002: 政策博弈
+  PL_003: 政策目标函数
+  PL_004: 关税影响
+  PL_005: 利率区间管理
+  PL_006: 央行态度与信号
+  PL_007: 中美会晤
+  PL_008: 反内卷政策影响
+  PL_009: 财政节奏
+  LQ_001: 资金面判断
+  LQ_002: 央行投放节奏
+  LQ_003: 同业存单利率
+  LQ_004: 存单供需
+  LQ_005: 资金价格中枢
+  LQ_006: 配置节奏
+  MS_001: 风险偏好变化
+  PL_010: 政策预期
+  MS_002: 资金面
+  MS_003: 拥挤交易程度
+  MS_004: 久期策略
+  MS_005: 赔率与胜率判断
+  MS_006: 信用策略
+  MS_007: 机构行为分析
+  MS_008: 股债关系
+  MS_009: 信用利差
+  MS_010: 区间判断
+  MS_011: 固收加赎回风险
+  MS_012: 止盈/止损行为
+  MS_013: 费率新规预期
+  IB_001: 基金久期偏好
+  IB_002: 信用利差机会
+  IB_003: 赎回与资金流向
+  IB_004: ETF申赎行为
+  IB_005: 久期管理
+  IB_006: 存款搬家
+  IB_007: 赔率评估
+  IB_008: 信用风险
+  IB_009: 绝对收益约束
+  IB_010: 费率新规定价
+  IB_011: 长期波动预警
+  LQ_007: 杠杆策略
+  PL_011: 货币政策预期
+  IB_012: 配置盘行为
+
+--- Top 10 最高支撑边 ---
+  MS_003→MS_005: support=51 score=0.5 sign=- lag=即时 status=已审核
+  MS_014→MS_001: support=51 score=0.2 sign=+ lag=0-1M status=已审核
+  MS_008→MS_001: support=51 score=0.2 sign=? lag=即时 status=已审核
+  LQ_002→LQ_001: support=44 score=0.8 sign=+ lag=即时 status=已审核
+  FD_006→FD_001: support=27 score=0.5 sign=+ lag=0-1M status=已审核
+  PL_003→PL_006: support=19 score=0.5 sign=+ lag=即时 status=已审核
+  IB_004→IB_012: support=19 score=0.5 sign=+ lag=即时 status=已审核
+  IB_006→IB_012: support=19 score=0.5 sign=+ lag=1-3M status=已审核
+  MS_001→MS_003: support=17 score=0.5 sign=+ lag=即时 status=已审核
+  FD_002→FD_007: support=13 score=0.5 sign=+ lag=即时 status=已审核
+  PL_002→PL_010: support=13 score=0.8 sign=? lag=0-1M status=已审核
+  PL_003→PL_010: support=13 score=0.8 sign=? lag=1-3M status=已审核
+  PL_001→PL_010: support=13 score=0.8 sign=- lag=0-1M status=已审核
+  FD_001→FD_003: support=11 score=0.8 sign=+ lag=即时 status=已审核
+  MS_001→MS_004: support=11 score=0.8 sign=+ lag=即时 status=已审核
+
+--- Top 10 高频因子 ---
