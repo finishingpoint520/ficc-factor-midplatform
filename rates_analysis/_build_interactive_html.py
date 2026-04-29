@@ -1,17 +1,64 @@
 """
 构建交互式因果图 HTML（vis.js 动态网络）
-将所有数据嵌入 HTML，单文件无依赖
+将所有数据嵌入 HTML，单文件无依赖（包括 vis-network.js 也内嵌）
 """
 import json
+import urllib.request
 from pathlib import Path
 
 BASE = Path(__file__).parent
 
+VIS_NETWORK_URL = "https://unpkg.com/vis-network@9.1.6/dist/vis-network.min.js"
+VIS_NETWORK_LOCAL = BASE / "_vis_network_cache.js"
+
+
+def get_vis_network_js() -> str:
+    """获取 vis-network.min.js，优先用本地缓存，否则从 CDN 下载"""
+    if VIS_NETWORK_LOCAL.exists():
+        print(f"Using cached vis-network.js ({VIS_NETWORK_LOCAL.stat().st_size} bytes)")
+        return VIS_NETWORK_LOCAL.read_text(encoding="utf-8")
+    print(f"Downloading vis-network.min.js from {VIS_NETWORK_URL} ...")
+    try:
+        req = urllib.request.Request(VIS_NETWORK_URL, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            js = resp.read().decode("utf-8")
+        VIS_NETWORK_LOCAL.write_text(js, encoding="utf-8")
+        print(f"Downloaded and cached ({len(js)} bytes)")
+        return js
+    except Exception as e:
+        raise RuntimeError(f"Failed to download vis-network.min.js: {e}\n"
+                           "Please download manually and save to _vis_network_cache.js")
+
+
+# 预加载 vis-network.js（构建时即下载/缓存）
+VIS_JS_EMBED = get_vis_network_js()
+
+# 加载因子图谱数据
 with open(BASE / "_interactive_data.json", "r", encoding="utf-8") as f:
     data = json.load(f)
 
 nodes = data["nodes"]
 edges = data["edges"]
+
+# 加载发言人画像数据
+speaker_personas_raw = (BASE / "speaker_personas.js").read_text(encoding="utf-8").strip()
+if speaker_personas_raw.startswith("const SPEAKER_PERSONAS = "):
+    speaker_personas_raw = speaker_personas_raw[len("const SPEAKER_PERSONAS = "):]
+speaker_personas = json.loads(speaker_personas_raw.rstrip(";").strip())
+print(f"Loaded {speaker_personas['total_speakers']} speaker personas")
+
+# 加载发言人→边数据（用于按发言人高亮因果链）
+speaker_edge_raw = (BASE / "speaker_edge_data.js").read_text(encoding="utf-8").strip()
+if speaker_edge_raw.startswith("const SPEAKER_EDGE_DATA = "):
+    speaker_edge_raw = speaker_edge_raw[len("const SPEAKER_EDGE_DATA = "):]
+speaker_edge_data = json.loads(speaker_edge_raw.rstrip(";").strip())
+print(f"Loaded speaker-edge data for {len(speaker_edge_data)} speakers/groups")
+
+# 加载边→发言人原文索引
+edge_speaker_index = json.loads((BASE / "edge_speaker_index.json").read_text(encoding="utf-8"))
+print(f"Loaded edge-speaker index with {len(edge_speaker_index)} edges")
+
+# 加载因子的 visID 映射（后续填充）
 
 # 颜色方案
 COLORS = {
@@ -24,6 +71,12 @@ COLORS = {
     "未知":        {"bg": "#F5F5F5", "border": "#757575", "highlight": "#616161", "text": "#333"},
 }
 
+# 因子ID前缀 → 一级因子映射
+PREFIX_TO_PRIMARY = {
+    "FD": "基本面因子", "PL": "政策面因子", "LQ": "流动性因子",
+    "MS": "市场情绪因子", "IB": "机构行为因子", "MD": "市场数据输出",
+}
+
 # 检查哪些边引用了不存在的节点
 all_edge_nodes = set()
 for e in edges:
@@ -34,22 +87,26 @@ if missing_nodes:
     print(f"WARNING: 以下节点在边中存在但本体库中没有: {missing_nodes}")
     # 补充缺失节点
     for mn in missing_nodes:
-        # 从边数据推断一级因子
-        inferred_primary = "未知"
+        # 从因子ID前缀推断一级因子
+        prefix = mn.split("_")[0] if "_" in mn else "XX"
+        inferred_primary = PREFIX_TO_PRIMARY.get(prefix, "未知")
+        # 从边数据中获取正确的 label
+        inferred_label = mn  # 默认用 factor_id
         for e in edges:
-            if e["source"] == mn:
-                inferred_primary = e["source_primary"]
+            if e["source"] == mn and e.get("source_label"):
+                inferred_label = e["source_label"]
                 break
-            if e["target"] == mn:
-                inferred_primary = e["target_primary"]
+            if e["target"] == mn and e.get("target_label"):
+                inferred_label = e["target_label"]
                 break
         nodes[mn] = {
-            "label": mn.split("_")[-1] if "_" in mn else mn,
+            "label": inferred_label,
             "primary": inferred_primary,
             "appearance_count": 0,
             "meeting_count": 0,
             "cooccurrence_count": 0,
         }
+        print(f"  补充节点 {mn}: label={inferred_label}, primary={inferred_primary}")
     print(f"已补充 {len(missing_nodes)} 个缺失节点")
 
 # 构建 FactorID -> visID 映射
@@ -194,8 +251,10 @@ html = f"""<!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>债市五因子 - 因果图谱交互看板</title>
-<script type="text/javascript" src="https://unpkg.com/vis-network@9.1.6/dist/vis-network.min.js"></script>
-<link href="https://unpkg.com/vis-network@9.1.6/dist/dist/vis-network.min.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+// vis-network@9.1.6 (embedded for offline use, no CDN dependency)
+{VIS_JS_EMBED}
+</script>
 <style>
 * {{ margin: 0; padding: 0; box-sizing: border-box; }}
 body {{ font-family: 'Microsoft YaHei', 'PingFang SC', -apple-system, sans-serif; background: #f5f6fa; color: #333; }}
@@ -230,6 +289,15 @@ body {{ font-family: 'Microsoft YaHei', 'PingFang SC', -apple-system, sans-serif
 .badge-strong {{ background: #283593; }}
 .badge-reviewed {{ background: #2e7d32; }}
 .badge-pending {{ background: #e65100; }}
+/* 发言人画像相关 */
+.persona-card {{ background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: 14px; margin-top: 6px; font-size: 12px; line-height: 1.7; }}
+.persona-card h4 {{ font-size: 14px; font-weight: 600; margin-bottom: 8px; color: #1a237e; border-bottom: 1px solid #e8eaf6; padding-bottom: 4px; }}
+.persona-card .persona-stat {{ display: inline-block; margin-right: 12px; margin-bottom: 4px; }}
+.persona-card .persona-stat .label {{ color: #888; font-size: 11px; }}
+.persona-card .persona-stat .val {{ font-weight: 600; color: #333; }}
+.persona-bar {{ height: 8px; border-radius: 4px; background: #e8eaf6; overflow: hidden; margin: 2px 0; }}
+.persona-bar-fill {{ height: 100%; border-radius: 4px; transition: width 0.3s; }}
+.speaker-select {{ width: 100%; padding: 6px 8px; border: 1px solid #ccc; border-radius: 4px; font-size: 12px; font-family: inherit; cursor: pointer; }}
 @media (max-width: 768px) {{ .layout {{ flex-direction: column; }} .toolbar {{ width: 100%; min-width: auto; max-height: 40vh; border-right: none; border-bottom: 1px solid #e0e0e0; }} }}
 </style>
 </head>
@@ -314,6 +382,19 @@ html += """      </select>
     </div>
 
     <div class="toolbar-section">
+      <h3>发言人视角</h3>
+      <p style="font-size:12px;color:#666;margin-bottom:6px;">选择发言人，高亮其因果链条与画像</p>
+      <select id="speakerSelect" class="speaker-select" onchange="selectSpeaker(this.value)">
+        <option value="">-- 选择发言人 --</option>
+""" + "".join(
+    f'        <option value="{s["speaker"]}">{s["speaker"]} ({s["total_claims"]}条观点, {s.get("top_factor","")})</option>\n'
+    for s in sorted(speaker_personas["personas"], key=lambda x: -x["total_claims"])
+) + """      </select>
+      <button style="width:100%;margin-top:6px;" onclick="clearSpeakerView()">清除发言人筛选</button>
+      <div id="personaCardContainer"></div>
+    </div>
+
+    <div class="toolbar-section">
       <h3>图例</h3>
       <div style="font-size:12px;line-height:2;">
         <div class="row"><span class="dot" style="background:#E65100"></span> 基本面因子</div>
@@ -356,6 +437,18 @@ const EDGES = """ + json.dumps(vis_edges, ensure_ascii=False) + """;
 // 分组配置
 const GROUPS = """ + json.dumps(groups_config, ensure_ascii=False) + """;
 
+// 发言人画像数据
+const SPEAKER_PERSONAS = """ + json.dumps(speaker_personas, ensure_ascii=False) + """;
+
+// 发言人→因果边映射（visID 格式，可直接用于网络高亮）
+const SPEAKER_EDGE_DATA = """ + json.dumps(speaker_edge_data, ensure_ascii=False) + """;
+
+// 因果边→发言人原文索引（key 格式: "source_factor_id→target_factor_id"）
+const EDGE_SPEAKER_INDEX = """ + json.dumps(edge_speaker_index, ensure_ascii=False) + """;
+
+// 因子ID→visID 映射（方便查找）
+const FID_TO_VISID = """ + json.dumps(FID_TO_VISID, ensure_ascii=False) + """;
+const VISID_TO_FID = """ + json.dumps({v: k for k, v in FID_TO_VISID.items()}, ensure_ascii=False) + """;
 // ========== 初始化 ==========
 const container = document.getElementById('network');
 let currentView = 'all';
@@ -661,6 +754,378 @@ function traceForward(idx) {
   
   panel.innerHTML = html;
 }
+
+// ========== 发言人视角 ==========
+const FACTOR_COLORS = {"基本面因子":"#E65100","政策面因子":"#1565C0","流动性因子":"#2E7D32","市场情绪因子":"#C62828","机构行为因子":"#6A1B9A","市场数据输出":"#D84315"};
+let activeSpeaker = null;
+let speakerEdgeKeySet = new Set();  // 当前发言人高亮的边 key 集合 "visFrom-visTo"
+
+function selectSpeaker(speakerName) {
+  if (!speakerName) { clearSpeakerView(); return; }
+  activeSpeaker = speakerName;
+
+  // 1. 构建该发言人关联的边集合
+  const speakerEdges = SPEAKER_EDGE_DATA[speakerName] || [];
+  speakerEdgeKeySet = new Set();
+  const visibleNodeIds = new Set();
+
+  speakerEdges.forEach(se => {
+    const key = String(se.from) + '-' + String(se.to);
+    speakerEdgeKeySet.add(key);
+    visibleNodeIds.add(String(se.from));
+    visibleNodeIds.add(String(se.to));
+  });
+
+  // 2. 更新节点可见性（高亮的节点增强边框，其他隐藏）
+  nodesDataset.forEach(n => {
+    const inSet = visibleNodeIds.has(n.id);
+    nodesDataset.update({
+      id: n.id,
+      hidden: !inSet,
+      borderWidth: inSet ? 4 : 2,
+      size: inSet ? (n.size || 20) + 4 : (n.size || 20),
+    });
+  });
+
+  // 3. 更新边可见性与样式（高亮边加粗变色，其他隐藏）
+  edgesDataset.forEach(e => {
+    const key = e.from + '-' + e.to;
+    const isHighlight = speakerEdgeKeySet.has(key);
+    edgesDataset.update({
+      id: e.id,
+      hidden: !isHighlight,
+      width: isHighlight ? 5 : 2,
+      color: isHighlight ? {
+        color: '#6A1B9A',
+        opacity: 0.95,
+        highlight: '#6A1B9A',
+      } : (e.color || {}),
+    });
+  });
+
+  // 4. 渲染发言人画像卡
+  renderPersonaCard(speakerName, speakerEdges);
+
+  // 5. 更新右下角 detail panel
+  renderSpeakerSummary(speakerName, speakerEdges, visibleNodeIds);
+}
+
+function renderPersonaCard(speakerName, speakerEdges) {
+  const persona = SPEAKER_PERSONAS.personas.find(p => p.speaker === speakerName);
+  const container = document.getElementById('personaCardContainer');
+
+  if (!persona) {
+    container.innerHTML = '<div style="color:#999;font-size:12px;padding:8px;">该发言人无画像数据</div>';
+    return;
+  }
+
+  let card = '<div class="persona-card">';
+  card += '<h4>' + speakerName + '</h4>';
+
+  // 基本统计行
+  card += '<div style="display:flex;gap:12px;margin-bottom:10px;flex-wrap:wrap;">';
+  card += '<div class="persona-stat"><span class="label">观点总数</span><br><span class="val">' + persona.total_claims + '</span></div>';
+  card += '<div class="persona-stat"><span class="label">擅长因子</span><br><span class="val" style="color:' + (FACTOR_COLORS[persona.top_factor]||'#333') + ';font-size:12px;">' + persona.top_factor + '</span></div>';
+  if (persona.direction_label) {
+    const dColors = {"偏利多":"#2e7d32","偏利空":"#c62828","偏中性":"#1565c0","均衡":"#555"};
+    card += '<div class="persona-stat"><span class="label">判断倾向</span><br><span class="val" style="color:' + (dColors[persona.direction_label]||'#333') + '">' + persona.direction_label + '</span></div>';
+  }
+  card += '</div>';
+
+  // 因子偏好分布条（带点击跳转）
+  if (persona.factor_preference) {
+    card += '<div style="font-size:11px;color:#888;margin-bottom:4px;">因子偏好分布</div>';
+    const sorted = Object.entries(persona.factor_preference).sort((a,b) => b[1].count - a[1].count);
+    sorted.forEach(([factor, info]) => {
+      const color = FACTOR_COLORS[factor] || '#999';
+      const pct = info.pct || 0;
+      card += '<div style="display:flex;align-items:center;gap:6px;margin-bottom:3px;">';
+      card += '<span style="width:50px;font-size:11px;color:#555;flex-shrink:0;">' + factor.slice(0,4) + '</span>';
+      card += '<div class="persona-bar" style="flex:1;"><div class="persona-bar-fill" style="width:' + Math.min(pct, 100) + '%;background:' + color + ';"></div></div>';
+      card += '<span style="font-size:10px;color:#888;width:42px;text-align:right;">' + info.count + '(' + pct + '%)</span>';
+      card += '</div>';
+    });
+  }
+
+  // 观点类型分布
+  if (persona.claim_type_dist && persona.dominant_claim_type) {
+    card += '<div style="font-size:11px;color:#888;margin-top:8px;margin-bottom:4px;">观点类型（主打: ' + persona.dominant_claim_type + '）</div>';
+    const types = Object.entries(persona.claim_type_dist).sort((a,b) => b[1].count - a[1].count);
+    types.slice(0, 5).forEach(([type, info]) => {
+      const isDom = type === persona.dominant_claim_type;
+      card += '<span style="display:inline-block;margin-right:6px;font-size:11px;padding:1px 4px;border-radius:3px;' +
+        (isDom ? 'background:#6A1B9A;color:#fff;' : 'background:#f5f5f5;color:#555;') + '">' +
+        type + ' ' + info.count + '</span>';
+    });
+  }
+
+  // 方向判断偏好
+  if (persona.direction_dist) {
+    card += '<div style="font-size:11px;color:#888;margin-top:8px;margin-bottom:4px;">方向判断偏好</div>';
+    const dColors = {"利多":"#2e7d32","利空":"#c62828","中性":"#1565c0","不明确":"#999"};
+    card += '<div style="display:flex;gap:8px;">';
+    Object.entries(persona.direction_dist).sort((a,b) => b[1] - a[1]).forEach(([dir, cnt]) => {
+      card += '<span style="font-size:12px;font-weight:600;color:' + (dColors[dir]||'#333') + ';">' + dir + ' ' + cnt + '</span>';
+    });
+    card += '</div>';
+  }
+
+  // 因果边数量
+  if (persona.causal_edges) {
+    const ce = persona.causal_edges;
+    card += '<div style="font-size:11px;color:#888;margin-top:8px;">';
+    card += '因果链: <b>' + (ce.as_source || 0) + '</b>条作为源头 / <b>' + (ce.as_target || 0) + '</b>条作为目标</div>';
+  }
+
+  // 关联因果边列表（可点击跳转）
+  if (speakerEdges.length > 0) {
+    card += '<div style="font-size:11px;color:#888;margin-top:8px;margin-bottom:4px;">关联因果边（点击跳转）</div>';
+    card += '<div style="max-height:160px;overflow-y:auto;">';
+    speakerEdges.forEach(se => {
+      const srcFid = VISID_TO_FID[String(se.from)] || '';
+      const tgtFid = VISID_TO_FID[String(se.to)] || '';
+      const srcLabel = srcFid ? (RAW_DATA.nodes[srcFid] || {}).label || srcFid : String(se.from);
+      const tgtLabel = tgtFid ? (RAW_DATA.nodes[tgtFid] || {}).label || tgtFid : String(se.to);
+      const sLabel = se.label || (srcLabel + '→' + tgtLabel);
+      const sColor = se.strength >= 0.7 ? '#283593' : se.strength >= 0.4 ? '#e65100' : '#999';
+      card += '<div style="font-size:11px;padding:3px 4px;border-bottom:1px dashed #eee;cursor:pointer;" ' +
+        'onclick="focusOnEdge(' + se.from + ',' + se.to + ')" ' +
+        'onmouseenter="this.style.background=\'#f0e6f6\'" onmouseleave="this.style.background=\'transparent\'">' +
+        '<span style="color:' + sColor + ';font-weight:600;">' + sLabel + '</span>' +
+        '</div>';
+    });
+    card += '</div>';
+  }
+
+  // 关键观点（代表性原文）
+  if (persona.key_claims && persona.key_claims.length > 0) {
+    card += '<div style="font-size:11px;color:#888;margin-top:8px;margin-bottom:4px;">代表性观点</div>';
+    card += '<div style="max-height:120px;overflow-y:auto;">';
+    persona.key_claims.slice(0, 5).forEach(claim => {
+      const text = (claim.text || '').slice(0, 100);
+      const truncated = (claim.text || '').length > 100;
+      card += '<div style="font-size:11px;color:#444;padding:3px 0;border-bottom:1px dashed #eee;">';
+      card += text + (truncated ? '...' : '');
+      if (claim.factor) card += ' <span style="color:#888;font-size:10px;">[' + claim.factor + ']</span>';
+      if (claim.type) card += ' <span style="color:#aaa;font-size:10px;">(' + claim.type + ')</span>';
+      card += '</div>';
+    });
+    card += '</div>';
+  }
+
+  card += '</div>';
+  container.innerHTML = card;
+}
+
+function renderSpeakerSummary(speakerName, speakerEdges, visibleNodeIds) {
+  const persona = SPEAKER_PERSONAS.personas.find(p => p.speaker === speakerName);
+  const panel = document.getElementById('detailPanel');
+
+  let summary = '<div style="margin-bottom:8px;"><b style="font-size:15px;color:#6A1B9A;">' + speakerName + '</b></div>';
+  summary += '<div style="color:#666;font-size:12px;margin-bottom:6px;">高亮 <b>' + speakerEdges.length + '</b> 条因果边，涉及 <b>' + visibleNodeIds.size + '</b> 个因子节点</div>';
+
+  // 标签
+  if (persona && persona.tags && persona.tags.length > 0) {
+    summary += '<div style="font-size:12px;margin-bottom:6px;">';
+    persona.tags.forEach(t => {
+      summary += '<span class="badge" style="background:#6A1B9A;margin-right:4px;margin-bottom:2px;">' + t + '</span>';
+    });
+    summary += '</div>';
+  }
+
+  // 该发言人在哪些因子间建立了因果链（按因子分组展示）
+  const factorGroups = {};
+  speakerEdges.forEach(se => {
+    const srcFid = VISID_TO_FID[String(se.from)] || '';
+    const tgtFid = VISID_TO_FID[String(se.to)] || '';
+    if (srcFid && tgtFid) {
+      const srcPrimary = (RAW_DATA.nodes[srcFid] || {}).primary || '未知';
+      const tgtPrimary = (RAW_DATA.nodes[tgtFid] || {}).primary || '未知';
+      const pairKey = srcPrimary + ' → ' + tgtPrimary;
+      if (!factorGroups[pairKey]) factorGroups[pairKey] = 0;
+      factorGroups[pairKey]++;
+    }
+  });
+  if (Object.keys(factorGroups).length > 0) {
+    summary += '<div style="font-size:11px;color:#888;margin-bottom:4px;">跨因子因果链分布</div>';
+    const sorted = Object.entries(factorGroups).sort((a,b) => b[1] - a[1]);
+    sorted.slice(0, 6).forEach(([pair, cnt]) => {
+      summary += '<div style="font-size:11px;padding:2px 0;">' + pair + ': <b>' + cnt + '</b>条</div>';
+    });
+  }
+
+  // 发言人原文支撑（从 EDGE_SPEAKER_INDEX 中提取该发言人的原文）
+  const speakerQuotes = [];
+  for (const [edgeKey, entries] of Object.entries(EDGE_SPEAKER_INDEX)) {
+    entries.forEach(entry => {
+      if (entry.speaker === speakerName) {
+        speakerQuotes.push({ ...entry, edge: edgeKey });
+      }
+    });
+  }
+  // 去重并取最新5条
+  const uniqueQuotes = [];
+  const seenTexts = new Set();
+  speakerQuotes.sort((a,b) => (b.date || '').localeCompare(a.date || ''));
+  speakerQuotes.forEach(q => {
+    if (!seenTexts.has(q.text) && uniqueQuotes.length < 5) {
+      seenTexts.add(q.text);
+      uniqueQuotes.push(q);
+    }
+  });
+  if (uniqueQuotes.length > 0) {
+    summary += '<div style="font-size:11px;color:#888;margin-top:8px;margin-bottom:4px;">最新支撑观点</div>';
+    uniqueQuotes.forEach(q => {
+      const text = (q.text || '').slice(0, 80);
+      const truncated = (q.text || '').length > 80;
+      summary += '<div style="font-size:11px;color:#555;padding:2px 0;border-bottom:1px dashed #eee;">';
+      summary += text + (truncated ? '...' : '');
+      summary += ' <span style="color:#aaa;font-size:10px;">(' + (q.date || '') + ')</span>';
+      summary += '</div>';
+    });
+  }
+
+  summary += '<div style="font-size:11px;color:#aaa;margin-top:8px;">← 左侧工具栏查看完整画像卡</div>';
+  panel.innerHTML = summary;
+}
+
+// 点击因果边列表项，跳转并聚焦该边
+function focusOnEdge(fromId, toId) {
+  // 先选中两个端点节点，让 vis.js 高亮连边
+  network.selectNodes([String(fromId), String(toId)]);
+  // 聚焦到两点中心
+  network.focus(String(fromId), { scale: 1.5, animation: { duration: 400 } });
+  // 显示该边的详情（从 EDGE_SPEAKER_INDEX 查找）
+  const srcFid = VISID_TO_FID[String(fromId)] || '';
+  const tgtFid = VISID_TO_FID[String(toId)] || '';
+  const edgeKey = srcFid + '→' + tgtFid;
+  const entries = EDGE_SPEAKER_INDEX[edgeKey] || [];
+
+  const panel = document.getElementById('detailPanel');
+  const srcLabel = srcFid ? (RAW_DATA.nodes[srcFid] || {}).label || srcFid : '';
+  const tgtLabel = tgtFid ? (RAW_DATA.nodes[tgtFid] || {}).label || tgtFid : '';
+
+  let html = '<div style="margin-bottom:6px;"><b style="font-size:14px;">' + srcLabel + ' → ' + tgtLabel + '</b></div>';
+  html += '<div style="color:#666;font-size:12px;margin-bottom:6px;">(' + edgeKey + ')</div>';
+
+  // 原始因果边详情
+  const rawEdge = RAW_DATA.edges.find(e => e.source === srcFid && e.target === tgtFid);
+  if (rawEdge) {
+    html += '<div style="font-size:12px;margin-bottom:4px;">强度: ' + rawEdge.strength + ' (' + rawEdge.strength_score + ') | 符号: ' + rawEdge.sign + ' | 时滞: ' + rawEdge.lag + '</div>';
+    html += '<div style="font-size:12px;color:#555;margin-bottom:6px;">机制: ' + (rawEdge.mechanism || '-') + '</div>';
+  }
+
+  // 该发言人对这条边的支撑原文
+  if (activeSpeaker) {
+    const speakerEntries = entries.filter(e => e.speaker === activeSpeaker);
+    if (speakerEntries.length > 0) {
+      html += '<div style="font-size:11px;color:#6A1B9A;margin-bottom:4px;">' + activeSpeaker + ' 的支撑观点 (' + speakerEntries.length + '条)</div>';
+      speakerEntries.forEach(entry => {
+        html += '<div style="font-size:11px;color:#444;padding:3px 0;border-bottom:1px dashed #eee;">';
+        html += (entry.text || '').slice(0, 120) + ((entry.text||'').length > 120 ? '...' : '');
+        html += ' <span style="color:#aaa;font-size:10px;">(' + (entry.date || '') + ')</span>';
+        html += '</div>';
+      });
+    }
+    // 也显示其他发言人的支撑
+    const otherEntries = entries.filter(e => e.speaker !== activeSpeaker);
+    if (otherEntries.length > 0) {
+      html += '<div style="font-size:11px;color:#888;margin-top:6px;margin-bottom:4px;">其他发言人支撑 (' + otherEntries.length + '条)</div>';
+      otherEntries.slice(0, 3).forEach(entry => {
+        html += '<div style="font-size:11px;color:#888;padding:2px 0;">';
+        html += '<b>' + entry.speaker + '</b>: ' + (entry.text || '').slice(0, 60) + '...';
+        html += ' <span style="color:#aaa;font-size:10px;">(' + (entry.date || '') + ')</span>';
+        html += '</div>';
+      });
+      if (otherEntries.length > 3) {
+        html += '<div style="font-size:10px;color:#aaa;">...还有 ' + (otherEntries.length - 3) + ' 条</div>';
+      }
+    }
+  } else {
+    // 没有激活发言人，显示所有支撑
+    if (entries.length > 0) {
+      html += '<div style="font-size:11px;color:#888;margin-bottom:4px;">支撑观点 (' + entries.length + '条)</div>';
+      entries.slice(0, 5).forEach(entry => {
+        html += '<div style="font-size:11px;color:#444;padding:2px 0;border-bottom:1px dashed #eee;">';
+        html += '<b>' + entry.speaker + '</b>: ' + (entry.text || '').slice(0, 80) + '...';
+        html += '</div>';
+      });
+    }
+  }
+
+  panel.innerHTML = html;
+}
+
+function clearSpeakerView() {
+  activeSpeaker = null;
+  speakerEdgeKeySet = new Set();
+
+  // 恢复所有节点和边的可见性（重置到当前视图模式）
+  setViewMode(currentView);
+
+  // 重置发言人的样式修改（恢复节点大小和边样式）
+  nodesDataset.forEach(n => {
+    const origSize = NODES.find(nd => nd.id === n.id);
+    nodesDataset.update({
+      id: n.id,
+      borderWidth: origSize ? 2 : 2,
+    });
+  });
+  edgesDataset.forEach(e => {
+    const origEdge = EDGES.find(ed => ed.from === e.from && ed.to === e.to);
+    if (origEdge) {
+      edgesDataset.update({
+        id: e.id,
+        width: origEdge.width || 2,
+        color: origEdge.color || {},
+      });
+    }
+  });
+
+  document.getElementById('speakerSelect').value = '';
+  document.getElementById('personaCardContainer').innerHTML = '';
+  document.getElementById('detailPanel').innerHTML = '<div class="empty">点击任意节点查看详情</div>';
+}
+
+// ========== 点击节点时的增强：显示该节点的发言人维度 ==========
+const origUpdateDetail = updateDetail;
+updateDetail = function(nodeId) {
+  origUpdateDetail(nodeId);
+  if (!nodeId || !activeSpeaker) return;
+  // 如果有激活的发言人，在节点详情中追加该发言人对此节点的观点
+  const fid = NODE_ID_MAP[nodeId];
+  const panel = document.getElementById('detailPanel');
+  if (!panel) return;
+
+  // 从 EDGE_SPEAKER_INDEX 查找该发言人关于此节点的原文
+  const speakerQuotes = [];
+  for (const [edgeKey, entries] of Object.entries(EDGE_SPEAKER_INDEX)) {
+    const [src, tgt] = edgeKey.split('→');
+    if (src === fid || tgt === fid) {
+      entries.forEach(entry => {
+        if (entry.speaker === activeSpeaker) {
+          speakerQuotes.push({ ...entry, edge: edgeKey, role: src === fid ? '源头' : '目标' });
+        }
+      });
+    }
+  }
+
+  if (speakerQuotes.length > 0) {
+    speakerQuotes.sort((a,b) => (b.date || '').localeCompare(a.date || ''));
+    let extra = '<div style="margin-top:10px;padding-top:8px;border-top:1px solid #e0e0e0;">';
+    extra += '<b style="font-size:12px;color:#6A1B9A;">' + activeSpeaker + ' 的相关观点 (' + speakerQuotes.length + '条)</b>';
+    extra += '<div style="max-height:100px;overflow-y:auto;margin-top:4px;">';
+    speakerQuotes.slice(0, 4).forEach(q => {
+      extra += '<div style="font-size:11px;color:#555;padding:2px 0;border-bottom:1px dashed #eee;">';
+      extra += '<span style="color:#aaa;">[' + q.role + ' ' + q.edge + ']</span> ';
+      extra += (q.text || '').slice(0, 80) + ((q.text||'').length > 80 ? '...' : '');
+      extra += ' <span style="color:#aaa;font-size:10px;">(' + (q.date || '') + ')</span>';
+      extra += '</div>';
+    });
+    extra += '</div></div>';
+    panel.innerHTML += extra;
+  }
+};
 </script>
 </body>
 </html>
