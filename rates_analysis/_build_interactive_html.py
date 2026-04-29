@@ -250,7 +250,10 @@ html = f"""<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>债市五因子 - 因果图谱交互看板</title>
+<title>债市五因子 - 因果图谱交互看板 v2.4.1</title>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <script type="text/javascript">
 // vis-network@9.1.6 (embedded for offline use, no CDN dependency)
 {VIS_JS_EMBED}
