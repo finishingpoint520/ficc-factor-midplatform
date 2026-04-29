@@ -2,7 +2,7 @@
   "metadata": {
     "generated_at": "2026-04-26",
     "total_nodes": 55,
-    "total_edges": 128
+    "total_edges": 127
   },
   "nodes": {
     "FD_001": {
@@ -520,7 +520,7 @@
       "sign": "-",
       "lag": "0-1M",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "经济弱于预期则降息预期升温",
       "conditions": ""
@@ -539,7 +539,7 @@
       "sign": "-",
       "lag": "0-1M",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "通胀上行压制降息空间，通胀低则降息预期强",
       "conditions": ""
@@ -558,7 +558,7 @@
       "sign": "-",
       "lag": "1-3M",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "当期通胀水平影响央行降息决策预期",
       "conditions": ""
@@ -577,7 +577,7 @@
       "sign": "-",
       "lag": "1-3M",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "关税冲击下修整体经济评估",
       "conditions": ""
@@ -596,7 +596,7 @@
       "sign": "-",
       "lag": "1-3M",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "关税冲击放缓经济修复斜率",
       "conditions": ""
@@ -615,7 +615,7 @@
       "sign": "-",
       "lag": "0-1M",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "关税政策直接影响出口订单和贸易数据",
       "conditions": ""
@@ -900,7 +900,7 @@
       "sign": "+",
       "lag": "0-1M",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "资金面宽松环境有利于加杠杆套息",
       "conditions": ""
@@ -919,7 +919,7 @@
       "sign": "-",
       "lag": "0-1M",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "资金成本低于套息收益时杠杆策略可行",
       "conditions": ""
@@ -938,7 +938,7 @@
       "sign": "+",
       "lag": "0-1M",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "央行持续投放支撑杠杆套息空间",
       "conditions": ""
@@ -1020,25 +1020,6 @@
       "conditions": ""
     },
     {
-      "edge_id": "PL_006→MS_001",
-      "source": "PL_006",
-      "source_label": "央行态度与信号",
-      "target": "MS_001",
-      "target_label": "风险偏好变化",
-      "source_primary": "政策面因子",
-      "target_primary": "市场情绪因子",
-      "strength": "strong",
-      "strength_score": 0.8,
-      "cross": true,
-      "sign": "+",
-      "lag": "即时",
-      "support_count": 0,
-      "review_status": "待审核",
-      "confidence": "中",
-      "mechanism": "央行偏鸽则市场风险偏好提升，偏鹰则压制",
-      "conditions": ""
-    },
-    {
       "edge_id": "PL_006→MS_004",
       "source": "PL_006",
       "source_label": "央行态度与信号",
@@ -1052,7 +1033,7 @@
       "sign": "+",
       "lag": "即时",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "央行态度决定市场久期策略的激进程度",
       "conditions": ""
@@ -1109,7 +1090,7 @@
       "sign": "+",
       "lag": "0-1M",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "拉长久期过程中发现信用利差收窄机会",
       "conditions": ""
@@ -1128,7 +1109,7 @@
       "sign": "+",
       "lag": "0-1M",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "信用策略执行中捕捉利差交易机会",
       "conditions": ""
@@ -1166,7 +1147,7 @@
       "sign": "+",
       "lag": "即时",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "基金集体拉长久期导致交易拥挤",
       "conditions": ""
@@ -1204,7 +1185,7 @@
       "sign": "+",
       "lag": "即时",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "久期偏离基准加大风险管理需求",
       "conditions": ""
@@ -1223,7 +1204,7 @@
       "sign": "+",
       "lag": "即时",
       "support_count": 2,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "久期偏好变化驱动久期管理操作",
       "conditions": ""
@@ -1261,7 +1242,7 @@
       "sign": "+",
       "lag": "0-1M",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "配置盘集中进场推高交易拥挤度",
       "conditions": ""
@@ -1280,7 +1261,7 @@
       "sign": "+",
       "lag": "即时",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "赎回潮引发踩踏式抛售推升拥挤度",
       "conditions": ""
@@ -1318,7 +1299,7 @@
       "sign": "-",
       "lag": "即时",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "大规模赎回冲击市场风险偏好",
       "conditions": ""
@@ -1337,7 +1318,7 @@
       "sign": "+",
       "lag": "即时",
       "support_count": 2,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "风险管理约束驱动久期管理决策",
       "conditions": ""
@@ -1394,7 +1375,7 @@
       "sign": "+",
       "lag": "0-1M",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "ETF资金流向反映市场风险偏好边际变化",
       "conditions": ""
@@ -1489,7 +1470,7 @@
       "sign": "+",
       "lag": "即时",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "流动性充裕提升市场风险偏好",
       "conditions": ""
@@ -1508,7 +1489,7 @@
       "sign": "+",
       "lag": "0-1M",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "央行投放节奏影响配置盘入场时点",
       "conditions": ""
@@ -1527,7 +1508,7 @@
       "sign": "+",
       "lag": "0-1M",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "央行宽松投放鼓励基金拉长久期",
       "conditions": ""
@@ -1546,7 +1527,7 @@
       "sign": "+",
       "lag": "0-1M",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "央行持续投放可能导致一致性交易拥挤",
       "conditions": ""
@@ -1565,7 +1546,7 @@
       "sign": "?",
       "lag": "0-1M",
       "support_count": 2,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "投放节奏变化影响利率交易赔率胜率",
       "conditions": ""
@@ -1584,7 +1565,7 @@
       "sign": "+",
       "lag": "0-1M",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "流动性环境变化创造信用利差交易机会",
       "conditions": ""
@@ -1603,7 +1584,7 @@
       "sign": "+",
       "lag": "0-1M",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "投放节奏是久期策略调整的关键依据",
       "conditions": ""
@@ -1622,7 +1603,7 @@
       "sign": "-",
       "lag": "0-1M",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "资金成本低则基金倾向拉长久期",
       "conditions": ""
@@ -1660,7 +1641,7 @@
       "sign": "-",
       "lag": "0-1M",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "存单利率走高抑制基金拉长久期意愿",
       "conditions": ""
@@ -1679,7 +1660,7 @@
       "sign": "-",
       "lag": "即时",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "存单利率飙升压制市场风险偏好",
       "conditions": ""
@@ -1698,7 +1679,7 @@
       "sign": "-",
       "lag": "即时",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "资金成本上行压制市场风险偏好",
       "conditions": ""
@@ -1717,7 +1698,7 @@
       "sign": "+",
       "lag": "即时",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "资金成本影响信用利差的套息空间",
       "conditions": ""
@@ -1736,7 +1717,7 @@
       "sign": "+",
       "lag": "1-3M",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "经济修复加快推升资金价格中枢",
       "conditions": ""
@@ -1755,7 +1736,7 @@
       "sign": "?",
       "lag": "1-3M",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "经济修复斜率变化驱动政策预期调整",
       "conditions": ""
@@ -1774,7 +1755,7 @@
       "sign": "?",
       "lag": "0-1M",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "经济基本面评估影响对资金面的判断",
       "conditions": ""
@@ -1793,7 +1774,7 @@
       "sign": "+",
       "lag": "1-3M",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "通胀上行推升资金价格中枢",
       "conditions": ""
@@ -1812,7 +1793,7 @@
       "sign": "-",
       "lag": "1-3M",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "基本面走弱促使央行加大投放力度",
       "conditions": ""
@@ -1831,7 +1812,7 @@
       "sign": "+",
       "lag": "0-1M",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "基本面拐点信号改变拥挤交易方向",
       "conditions": ""
@@ -1850,7 +1831,7 @@
       "sign": "+",
       "lag": "0-1M",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "基本面边际变化预示修复斜率转折",
       "conditions": ""
@@ -1869,7 +1850,7 @@
       "sign": "-",
       "lag": "1-3M",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "基本面边际走弱压低资金价格中枢",
       "conditions": ""
@@ -1888,7 +1869,7 @@
       "sign": "?",
       "lag": "0-1M",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "基本面边际变化触发降息预期调整",
       "conditions": ""
@@ -1907,7 +1888,7 @@
       "sign": "+",
       "lag": "?",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "基金久期偏好反映市场对经济修复斜率的定价",
       "conditions": ""
@@ -1926,7 +1907,7 @@
       "sign": "+",
       "lag": "1-3M",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "基金久期极端化可能触发央行政策调整",
       "conditions": ""
@@ -1945,7 +1926,7 @@
       "sign": "+",
       "lag": "1-3M",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "央行目标函数决定投放节奏的松紧取向",
       "conditions": ""
@@ -1964,7 +1945,7 @@
       "sign": "+",
       "lag": "0-1M",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "信用利差收窄反映经济修复预期增强",
       "conditions": ""
@@ -1980,10 +1961,10 @@
       "strength": "medium",
       "strength_score": 0.5,
       "cross": true,
-      "sign": "?",
+      "sign": "+",
       "lag": "不明确",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "信用利差蕴含市场对未来通胀走势的判断",
       "conditions": ""
@@ -2002,7 +1983,7 @@
       "sign": "+",
       "lag": "即时",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "信用利差过度收窄暗示交易拥挤",
       "conditions": ""
@@ -2021,7 +2002,7 @@
       "sign": "+",
       "lag": "即时",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "宽松政策预期促使基金提前拉长久期",
       "conditions": ""
@@ -2040,7 +2021,7 @@
       "sign": "?",
       "lag": "0-1M",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "政策预期变化创造信用利差波段机会",
       "conditions": ""
@@ -2059,7 +2040,7 @@
       "sign": "+",
       "lag": "即时",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "宽松政策预期提升市场风险偏好",
       "conditions": ""
@@ -2078,7 +2059,7 @@
       "sign": "+",
       "lag": "0-1M",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "一致性政策预期推高交易拥挤度",
       "conditions": ""
@@ -2097,7 +2078,7 @@
       "sign": "+",
       "lag": "即时",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "经济评估乐观则风险偏好上行",
       "conditions": ""
@@ -2116,7 +2097,7 @@
       "sign": "-",
       "lag": "0-1M",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "经济评估结果是政策预期的重要依据",
       "conditions": ""
@@ -2135,7 +2116,7 @@
       "sign": "?",
       "lag": "0-1M",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "经济评估影响机构久期配置决策",
       "conditions": ""
@@ -2154,7 +2135,7 @@
       "sign": "-",
       "lag": "0-1M",
       "support_count": 0,
-      "review_status": "待审核",
+      "review_status": "已审核",
       "confidence": "中",
       "mechanism": "交易拥挤警示基金久期风险",
       "conditions": ""
@@ -2173,7 +2154,7 @@
       "sign": "+",
       "lag": "即时",
       "support_count": 1,
-      "review_status": "候选-待人工审核",
+      "review_status": "已审核",
       "confidence": "低",
       "mechanism": "由 claim_atom 20260403_B01_003 文本推断",
       "conditions": ""
@@ -2192,7 +2173,7 @@
       "sign": "+",
       "lag": "即时",
       "support_count": 1,
-      "review_status": "候选-待人工审核",
+      "review_status": "已审核",
       "confidence": "低",
       "mechanism": "由 claim_atom 20260403_B01_061 文本推断",
       "conditions": ""
@@ -2211,7 +2192,7 @@
       "sign": "+",
       "lag": "即时",
       "support_count": 1,
-      "review_status": "候选-待人工审核",
+      "review_status": "已审核",
       "confidence": "低",
       "mechanism": "由 claim_atom 20260403_B01_063 文本推断",
       "conditions": ""
@@ -2230,7 +2211,7 @@
       "sign": "+",
       "lag": "即时",
       "support_count": 1,
-      "review_status": "候选-待人工审核",
+      "review_status": "已审核",
       "confidence": "低",
       "mechanism": "由 claim_atom 20260403_B01_066 文本推断",
       "conditions": ""
@@ -2249,7 +2230,7 @@
       "sign": "-",
       "lag": "即时",
       "support_count": 1,
-      "review_status": "候选-待人工审核",
+      "review_status": "已审核",
       "confidence": "低",
       "mechanism": "由 claim_atom 20260403_B01_138 文本推断",
       "conditions": ""
@@ -2268,7 +2249,7 @@
       "sign": "+",
       "lag": "即时",
       "support_count": 1,
-      "review_status": "候选-待人工审核",
+      "review_status": "已审核",
       "confidence": "低",
       "mechanism": "由 claim_atom 20260410_B01_003 文本推断",
       "conditions": ""
@@ -2287,7 +2268,7 @@
       "sign": "+",
       "lag": "即时",
       "support_count": 1,
-      "review_status": "候选-待人工审核",
+      "review_status": "已审核",
       "confidence": "低",
       "mechanism": "由 claim_atom 20260410_B01_053 文本推断",
       "conditions": ""
@@ -2306,7 +2287,7 @@
       "sign": "+",
       "lag": "即时",
       "support_count": 1,
-      "review_status": "候选-待人工审核",
+      "review_status": "已审核",
       "confidence": "低",
       "mechanism": "由 claim_atom 20260417_B01_002 文本推断",
       "conditions": ""
@@ -2325,7 +2306,7 @@
       "sign": "+",
       "lag": "即时",
       "support_count": 1,
-      "review_status": "候选-待人工审核",
+      "review_status": "已审核",
       "confidence": "低",
       "mechanism": "由 claim_atom 20260417_B01_020 文本推断",
       "conditions": ""
@@ -2344,7 +2325,7 @@
       "sign": "+",
       "lag": "即时",
       "support_count": 1,
-      "review_status": "候选-待人工审核",
+      "review_status": "已审核",
       "confidence": "低",
       "mechanism": "由 claim_atom 20260417_B01_057 文本推断",
       "conditions": ""

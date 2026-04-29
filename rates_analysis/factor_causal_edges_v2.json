@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "description": "MD输出层审核完成：25条已审核，3条已删除",
+    "description": "全量审核完成: 58接受 + 7修改 + 1拒绝 (含候选边10条); 待审核剩余0条",
     "version": "v2.3.0",
     "date": "2026-04-26",
     "note": "v2.2.0: 新增 MD 输出层节点 (10Y/30Y国债/同业存单/资金利率)，28 条新边",
-    "total_edges": 131,
+    "total_edges": 127,
     "source_file": "factor_causal_edges.json (v1, 96 edges)",
     "ontology_file": "factor_ontology.json (51 nodes)",
     "atoms_file": "all_claim_atoms.json (744 atoms)",
     "unmatched_nodes": [],
-    "updated_at": "2026-04-26T11:40"
+    "updated_at": "2026-04-29T10:47"
   },
   "edges": [
     {
@@ -262,9 +262,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "FD_002→FD_004",
@@ -286,9 +286,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "FD_007→FD_004",
@@ -310,9 +310,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "PL_004→FD_001",
@@ -334,9 +334,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "PL_004→FD_003",
@@ -358,9 +358,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "PL_004→FD_006",
@@ -382,9 +382,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "PL_002→PL_010",
@@ -933,9 +933,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "LQ_005→LQ_007",
@@ -957,9 +957,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "LQ_002→LQ_007",
@@ -981,9 +981,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "MS_001→MS_004",
@@ -1172,30 +1172,6 @@
       "updated_at": "2026-04-22"
     },
     {
-      "edge_id": "PL_006→MS_001",
-      "source_factor_id": "PL_006",
-      "source_factor_label": "央行态度与信号",
-      "target_factor_id": "MS_001",
-      "target_factor_label": "风险偏好变化",
-      "sign": "+",
-      "strength_score": 0.8,
-      "lag": "即时",
-      "conditions": "",
-      "mechanism": "央行偏鸽则市场风险偏好提升，偏鹰则压制",
-      "edge_type": "hierarchical",
-      "internal_support_count": 0,
-      "recent_strength_delta": 0.0,
-      "supporting_atom_ids": [],
-      "conflicting_atom_ids": [],
-      "period_validity": [
-        "普遍成立"
-      ],
-      "confidence": "中",
-      "review_status": "待审核",
-      "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
-    },
-    {
       "edge_id": "PL_006→MS_004",
       "source_factor_id": "PL_006",
       "source_factor_label": "央行态度与信号",
@@ -1215,9 +1191,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "MS_014→MS_001",
@@ -1395,9 +1371,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "MS_006→IB_002",
@@ -1419,9 +1395,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "MS_005→MS_004",
@@ -1479,9 +1455,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "IB_001→IB_002",
@@ -1531,9 +1507,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "IB_001→IB_005",
@@ -1558,9 +1534,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "IB_012→IB_002",
@@ -1610,9 +1586,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "IB_003→MS_003",
@@ -1634,9 +1610,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "IB_003→IB_001",
@@ -1690,9 +1666,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "IB_013→IB_005",
@@ -1717,9 +1693,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "IB_013→IB_001",
@@ -1817,9 +1793,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "IB_006→IB_012",
@@ -1972,9 +1948,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "LQ_002→IB_012",
@@ -1996,9 +1972,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "LQ_002→IB_001",
@@ -2020,9 +1996,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "LQ_002→MS_003",
@@ -2044,9 +2020,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "LQ_002→MS_005",
@@ -2071,9 +2047,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "LQ_002→IB_002",
@@ -2095,9 +2071,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "LQ_002→MS_004",
@@ -2119,9 +2095,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "LQ_005→IB_001",
@@ -2143,9 +2119,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "LQ_005→LQ_003",
@@ -2200,9 +2176,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "LQ_003→MS_001",
@@ -2224,9 +2200,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "LQ_005→MS_001",
@@ -2248,9 +2224,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "LQ_005→IB_002",
@@ -2272,9 +2248,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "FD_003→LQ_005",
@@ -2296,9 +2272,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "FD_003→PL_010",
@@ -2320,9 +2296,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "FD_001→LQ_001",
@@ -2344,9 +2320,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "FD_002→LQ_005",
@@ -2368,9 +2344,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "PL_001→LQ_002",
@@ -2392,9 +2368,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "PL_001→MS_003",
@@ -2416,9 +2392,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "PL_001→FD_003",
@@ -2440,9 +2416,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "PL_001→LQ_005",
@@ -2464,9 +2440,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "PL_001→FD_004",
@@ -2488,9 +2464,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "IB_001→FD_003",
@@ -2512,9 +2488,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "IB_001→PL_003",
@@ -2536,9 +2512,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "PL_003→LQ_002",
@@ -2560,9 +2536,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "IB_002→FD_003",
@@ -2584,9 +2560,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "IB_002→FD_002",
@@ -2594,7 +2570,7 @@
       "source_factor_label": "信用利差机会",
       "target_factor_id": "FD_002",
       "target_factor_label": "通胀走势",
-      "sign": "?",
+      "sign": "+",
       "strength_score": 0.5,
       "lag": "不明确",
       "conditions": "",
@@ -2608,9 +2584,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "IB_002→MS_003",
@@ -2632,9 +2608,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "PL_010→IB_001",
@@ -2656,9 +2632,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "PL_010→IB_002",
@@ -2680,9 +2656,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "PL_010→MS_001",
@@ -2704,9 +2680,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "PL_010→MS_003",
@@ -2728,9 +2704,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "FD_001→MS_001",
@@ -2752,9 +2728,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "FD_001→PL_010",
@@ -2776,9 +2752,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "FD_001→IB_001",
@@ -2800,9 +2776,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "MS_003→IB_001",
@@ -2824,9 +2800,9 @@
         "普遍成立"
       ],
       "confidence": "中",
-      "review_status": "待审核",
+      "review_status": "已审核",
       "created_at": "2026-04-21",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "FD_005→MS_001",
@@ -2850,9 +2826,9 @@
         "2026-04-03"
       ],
       "confidence": "低",
-      "review_status": "候选-待人工审核",
+      "review_status": "已审核",
       "created_at": "2026-04-22",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "LQ_001→IB_012",
@@ -2876,9 +2852,9 @@
         "2026-04-03"
       ],
       "confidence": "低",
-      "review_status": "候选-待人工审核",
+      "review_status": "已审核",
       "created_at": "2026-04-22",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "FD_005→IB_012",
@@ -2902,9 +2878,9 @@
         "2026-04-03"
       ],
       "confidence": "低",
-      "review_status": "候选-待人工审核",
+      "review_status": "已审核",
       "created_at": "2026-04-22",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "FD_005→MS_003",
@@ -2928,9 +2904,9 @@
         "2026-04-03"
       ],
       "confidence": "低",
-      "review_status": "候选-待人工审核",
+      "review_status": "已审核",
       "created_at": "2026-04-22",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "LQ_002→PL_006",
@@ -2954,9 +2930,9 @@
         "2026-04-03"
       ],
       "confidence": "低",
-      "review_status": "候选-待人工审核",
+      "review_status": "已审核",
       "created_at": "2026-04-22",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "LQ_001→MS_001",
@@ -2980,9 +2956,9 @@
         "2026-04-10"
       ],
       "confidence": "低",
-      "review_status": "候选-待人工审核",
+      "review_status": "已审核",
       "created_at": "2026-04-22",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "IB_012→LQ_001",
@@ -3006,9 +2982,9 @@
         "2026-04-10"
       ],
       "confidence": "低",
-      "review_status": "候选-待人工审核",
+      "review_status": "已审核",
       "created_at": "2026-04-22",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "FD_007→PL_011",
@@ -3032,9 +3008,9 @@
         "2026-04-17"
       ],
       "confidence": "低",
-      "review_status": "候选-待人工审核",
+      "review_status": "已审核",
       "created_at": "2026-04-22",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "PL_006→LQ_001",
@@ -3058,9 +3034,9 @@
         "2026-04-17"
       ],
       "confidence": "低",
-      "review_status": "候选-待人工审核",
+      "review_status": "已审核",
       "created_at": "2026-04-22",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "FD_005→PL_006",
@@ -3084,9 +3060,9 @@
         "2026-04-17"
       ],
       "confidence": "低",
-      "review_status": "候选-待人工审核",
+      "review_status": "已审核",
       "created_at": "2026-04-22",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-29T10:47"
     },
     {
       "edge_id": "FD_002→MD_001",
