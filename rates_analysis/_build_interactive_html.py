@@ -250,7 +250,7 @@ html = f"""<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>债市五因子 - 因果图谱交互看板 v2.4.1</title>
+<title>债市五因子 - 因果图谱交互看板 v2.4.2</title>
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
@@ -265,8 +265,8 @@ body {{ font-family: 'Microsoft YaHei', 'PingFang SC', -apple-system, sans-serif
 .header h1 {{ font-size: 20px; font-weight: 600; letter-spacing: 1px; }}
 .header .stats {{ font-size: 13px; opacity: 0.85; }}
 .header .stats span {{ display: inline-block; margin-left: 16px; }}
-.layout {{ display: flex; height: calc(100vh - 60px); }}
-.toolbar {{ width: 300px; min-width: 300px; background: white; border-right: 1px solid #e0e0e0; padding: 16px; overflow-y: auto; display: flex; flex-direction: column; gap: 12px; }}
+.layout {{ display: flex; height: calc(100vh - 60px); min-height: 500px; }}
+.toolbar {{ width: 300px; min-width: 300px; max-width: 300px; background: white; border-right: 1px solid #e0e0e0; padding: 16px; overflow-y: auto; display: flex; flex-direction: column; gap: 12px; }}
 .toolbar-section {{ background: #fafafa; border-radius: 8px; padding: 14px; }}
 .toolbar-section h3 {{ font-size: 14px; font-weight: 600; margin-bottom: 10px; color: #333; border-bottom: 2px solid #e8eaf6; padding-bottom: 6px; }}
 .toolbar-section .btn-group {{ display: flex; gap: 6px; flex-wrap: wrap; }}
@@ -282,7 +282,7 @@ body {{ font-family: 'Microsoft YaHei', 'PingFang SC', -apple-system, sans-serif
 .detail-panel .item .label {{ color: #666; font-size: 11px; }}
 .detail-panel .item .val {{ color: #333; font-weight: 500; }}
 .graph-container {{ flex: 1; position: relative; background: #fafbfc; }}
-#network {{ width: 100%; height: 100%; }}
+#network {{ width: 100%; height: 100%; min-height: 400px; }}
 .legend {{ position: absolute; bottom: 16px; left: 16px; background: rgba(255,255,255,0.95); border-radius: 8px; padding: 10px 14px; font-size: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); line-height: 1.8; }}
 .legend .row {{ display: flex; align-items: center; gap: 8px; }}
 .legend .dot {{ width: 12px; height: 12px; border-radius: 50%; display: inline-block; }}
@@ -452,55 +452,106 @@ const EDGE_SPEAKER_INDEX = """ + json.dumps(edge_speaker_index, ensure_ascii=Fal
 // 因子ID→visID 映射（方便查找）
 const FID_TO_VISID = """ + json.dumps(FID_TO_VISID, ensure_ascii=False) + """;
 const VISID_TO_FID = """ + json.dumps({v: k for k, v in FID_TO_VISID.items()}, ensure_ascii=False) + """;
-// ========== 初始化 ==========
-const container = document.getElementById('network');
+// ========== 初始化（延迟到 DOM 就绪后执行，避免容器尺寸为0） ==========
 let currentView = 'all';
+let nodesDataset, edgesDataset, network;
 
-// 创建数据集
-let nodesDataset = new vis.DataSet(NODES);
-let edgesDataset = new vis.DataSet(EDGES);
+function initGraph() {{
+  // 检查容器尺寸
+  const container = document.getElementById('network');
+  if (!container) {{
+    console.error('[五因子] #network div not found!');
+    return;
+  }}
+  const rect = container.getBoundingClientRect();
+  console.log('[五因子] Container size:', rect.width, 'x', rect.height);
+  if (rect.width < 10 || rect.height < 10) {{
+    console.warn('[五因子] Container too small, waiting...');
+    setTimeout(initGraph, 100);
+    return;
+  }}
 
-const options = {
-  nodes: {
-    shape: 'dot',
-    size: 20,
-    font: { size: 11, face: 'Microsoft YaHei, SimHei, sans-serif' },
-    borderWidth: 2,
-    shadow: { enabled: true, size: 4 }
-  },
-  edges: {
-    width: 2,
-    shadow: { enabled: true, size: 2 },
-    smooth: { type: 'curvedCW', roundness: 0.15 }
-  },
-  physics: {
-    enabled: true,
-    solver: 'barnesHut',
-    barnesHut: {
-      gravitationalConstant: -6000,
-      centralGravity: 0.3,
-      springLength: 200,
-      springConstant: 0.04,
-      damping: 0.5
-    },
-    stabilization: { iterations: 200 }
-  },
-  groups: GROUPS,
-  interaction: {
-    hover: true,
-    tooltipDelay: 200,
-    navigationButtons: true,
-    keyboard: true
-  },
-  layout: {
-    improvedLayout: true
-  },
-  manipulation: {
-    enabled: false
-  }
-};
+  // 检查 vis-network 是否可用
+  if (typeof vis === 'undefined' || !vis.Network || !vis.DataSet) {{
+    console.error('[五因子] vis-network.js not loaded! vis =', typeof vis);
+    const errDiv = document.createElement('div');
+    errDiv.style.cssText = 'position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:#fff3e0;padding:20px;border-radius:8px;border:2px solid #e65100;text-align:center;font-size:14px;z-index:100;';
+    errDiv.innerHTML = '<b style="color:#e65100">vis-network.js 加载失败</b><br><span style="color:#666">请尝试：<br>1. Ctrl+Shift+R 强制刷新<br>2. 使用无痕模式<br>3. 关闭广告拦截扩展</span>';
+    container.parentElement.appendChild(errDiv);
+    return;
+  }}
 
-const network = new vis.Network(container, { nodes: nodesDataset, edges: edgesDataset }, options);
+  try {{
+    // 创建数据集
+    nodesDataset = new vis.DataSet(NODES);
+    edgesDataset = new vis.DataSet(EDGES);
+
+    const options = {{
+      nodes: {{
+        shape: 'dot',
+        size: 20,
+        font: {{ size: 11, face: 'Microsoft YaHei, SimHei, sans-serif' }},
+        borderWidth: 2,
+        shadow: {{ enabled: true, size: 4 }}
+      }},
+      edges: {{
+        width: 2,
+        shadow: {{ enabled: true, size: 2 }},
+        smooth: {{ type: 'curvedCW', roundness: 0.15 }}
+      }},
+      physics: {{
+        enabled: true,
+        solver: 'barnesHut',
+        barnesHut: {{
+          gravitationalConstant: -6000,
+          centralGravity: 0.3,
+          springLength: 200,
+          springConstant: 0.04,
+          damping: 0.5
+        }},
+        stabilization: {{ iterations: 200 }}
+      }},
+      groups: GROUPS,
+      interaction: {{
+        hover: true,
+        tooltipDelay: 200,
+        navigationButtons: true,
+        keyboard: true
+      }},
+      layout: {{
+        improvedLayout: true
+      }},
+      manipulation: {{
+        enabled: false
+      }}
+    }};
+
+    network = new vis.Network(container, {{ nodes: nodesDataset, edges: edgesDataset }}, options);
+    console.log('[五因子] Graph initialized successfully with', NODES.length, 'nodes and', EDGES.length, 'edges');
+
+    // 绑定交互事件（必须在 network 创建后）
+    network.on('click', function(params) {{
+      if (params.nodes.length > 0) {{
+        updateDetail(params.nodes[0]);
+      }} else {{
+        updateDetail(null);
+      }}
+    }});
+  }} catch(e) {{
+    console.error('[五因子] Graph init error:', e);
+    const errDiv = document.createElement('div');
+    errDiv.style.cssText = 'position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:#ffebee;padding:20px;border-radius:8px;border:2px solid #c62828;text-align:center;font-size:14px;z-index:100;max-width:500px;';
+    errDiv.innerHTML = '<b style="color:#c62828">图谱初始化失败</b><br><span style="color:#666">' + e.message + '</span>';
+    container.parentElement.appendChild(errDiv);
+  }}
+}}
+
+// 等待 DOM 完全就绪后再初始化
+if (document.readyState === 'loading') {{
+  document.addEventListener('DOMContentLoaded', initGraph);
+}} else {{
+  initGraph();
+}}
 
 // ========== 交互事件 ==========
 function updateDetail(nodeId) {
@@ -548,25 +599,18 @@ function updateDetail(nodeId) {
   panel.innerHTML = html;
 }
 
-network.on('click', function(params) {
-  if (params.nodes.length > 0) {
-    updateDetail(params.nodes[0]);
-  } else {
-    updateDetail(null);
-  }
-});
-
 // ========== 跳转 ==========
-function focusNode(idx) {
-  if (!idx) return;
+function focusNode(idx) {{
+  if (!idx || !network) return;
   network.focus(idx, { scale: 1.8, animation: { duration: 500, easingFunction: 'easeInOutQuad' } });
   network.selectNodes([idx]);
   updateDetail(idx);
 }
 
 // ========== 搜索 ==========
-function searchNode(keyword) {
-  if (!keyword.trim()) {
+function searchNode(keyword) {{
+  if (!nodesDataset) return;
+  if (!keyword.trim()) {{
     nodesDataset.forEach(function(n) { nodesDataset.update({ id: n.id, hidden: false }); });
     return;
   }
@@ -582,7 +626,8 @@ function searchNode(keyword) {
 }
 
 // ========== 视图模式 ==========
-function setViewMode(mode) {
+function setViewMode(mode) {{
+  if (!nodesDataset || !edgesDataset) return;
   currentView = mode;
   document.querySelectorAll('.btn-group button').forEach(b => b.classList.remove('active'));
   document.getElementById('view' + mode.charAt(0).toUpperCase() + mode.slice(1)).classList.add('active');
@@ -632,8 +677,8 @@ function setViewMode(mode) {
 }
 
 // ========== 反向溯源 ==========
-function traceBackward(idx) {
-  if (!idx) return;
+function traceBackward(idx) {{
+  if (!idx || !network) return;
   const fid = NODE_ID_MAP[idx];
   const targetLabel = RAW_DATA.nodes[fid].label;
   
@@ -698,8 +743,8 @@ function traceBackward(idx) {
 }
 
 // ========== 正向传导 ==========
-function traceForward(idx) {
-  if (!idx) return;
+function traceForward(idx) {{
+  if (!idx || !network) return;
   const fid = NODE_ID_MAP[idx];
   const sourceLabel = RAW_DATA.nodes[fid].label;
   
