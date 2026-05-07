@@ -653,7 +653,7 @@
       "conditions": "",
       "mechanism": "央行OMO/MLF投放节奏直接决定资金面松紧判断",
       "edge_type": "hierarchical",
-      "internal_support_count": 44,
+      "internal_support_count": 46,
       "recent_strength_delta": 0.0,
       "supporting_atom_ids": [
         "20260403_B01_009",
@@ -858,7 +858,7 @@
       "conditions": "",
       "mechanism": "存单利率是资金价格中枢的重要参考锚",
       "edge_type": "hierarchical",
-      "internal_support_count": 9,
+      "internal_support_count": 10,
       "recent_strength_delta": 0.0,
       "supporting_atom_ids": [
         "20260417_B01_023",
@@ -1105,7 +1105,7 @@
       "conditions": "",
       "mechanism": "交易越拥挤赔率越低，胜率也受影响",
       "edge_type": "hierarchical",
-      "internal_support_count": 51,
+      "internal_support_count": 52,
       "recent_strength_delta": 0.0,
       "supporting_atom_ids": [
         "20260410_B01_002",
@@ -1285,7 +1285,7 @@
       "conditions": "",
       "mechanism": "股债跷跷板反映风险偏好在股债间切换",
       "edge_type": "hierarchical",
-      "internal_support_count": 51,
+      "internal_support_count": 55,
       "recent_strength_delta": 0.0,
       "supporting_atom_ids": [
         "20260403_B01_001",
@@ -1940,7 +1940,7 @@
       "conditions": "",
       "mechanism": "流动性充裕提升市场风险偏好",
       "edge_type": "cross_factor",
-      "internal_support_count": 0,
+      "internal_support_count": 1,
       "recent_strength_delta": 0.0,
       "supporting_atom_ids": [],
       "conflicting_atom_ids": [],
@@ -2600,7 +2600,7 @@
       "conditions": "",
       "mechanism": "信用利差过度收窄暗示交易拥挤",
       "edge_type": "cross_factor",
-      "internal_support_count": 0,
+      "internal_support_count": 1,
       "recent_strength_delta": 0.0,
       "supporting_atom_ids": [],
       "conflicting_atom_ids": [],
@@ -2672,7 +2672,7 @@
       "conditions": "",
       "mechanism": "宽松政策预期提升市场风险偏好",
       "edge_type": "hierarchical",
-      "internal_support_count": 0,
+      "internal_support_count": 1,
       "recent_strength_delta": 0.0,
       "supporting_atom_ids": [],
       "conflicting_atom_ids": [],
@@ -2720,7 +2720,7 @@
       "conditions": "",
       "mechanism": "经济评估乐观则风险偏好上行",
       "edge_type": "cross_factor",
-      "internal_support_count": 0,
+      "internal_support_count": 2,
       "recent_strength_delta": 0.0,
       "supporting_atom_ids": [],
       "conflicting_atom_ids": [],
@@ -2946,7 +2946,7 @@
       "conditions": "",
       "mechanism": "由 claim_atom 20260410_B01_003 文本推断",
       "edge_type": "cross_factor",
-      "internal_support_count": 1,
+      "internal_support_count": 4,
       "recent_strength_delta": 0.0,
       "supporting_atom_ids": [
         "20260410_B01_003"
@@ -3024,7 +3024,7 @@
       "conditions": "",
       "mechanism": "由 claim_atom 20260417_B01_020 文本推断",
       "edge_type": "cross_factor",
-      "internal_support_count": 1,
+      "internal_support_count": 3,
       "recent_strength_delta": 0.0,
       "supporting_atom_ids": [
         "20260417_B01_020"

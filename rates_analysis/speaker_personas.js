@@ -1,82 +1,82 @@
 const SPEAKER_PERSONAS = {
   "version": "1.0.0",
-  "generated_at": "2026-04-29T08:21:34.475020",
-  "total_speakers": 31,
-  "source_atoms": 744,
+  "generated_at": "2026-05-07T17:31:57.735310",
+  "total_speakers": 32,
+  "source_atoms": 849,
   "personas": [
     {
       "speaker": "杨义山",
-      "total_claims": 67,
+      "total_claims": 71,
       "factor_preference": {
         "政策面因子": {
           "short": "PL",
-          "count": 35,
-          "pct": 52.2
+          "count": 38,
+          "pct": 53.5
         },
         "基本面因子": {
           "short": "FD",
           "count": 12,
-          "pct": 17.9
+          "pct": 16.9
         },
         "市场情绪因子": {
           "short": "MS",
           "count": 10,
-          "pct": 14.9
+          "pct": 14.1
         },
         "流动性因子": {
           "short": "LQ",
-          "count": 6,
-          "pct": 9.0
+          "count": 7,
+          "pct": 9.9
         },
         "机构行为因子": {
           "short": "IB",
           "count": 3,
-          "pct": 4.5
+          "pct": 4.2
         },
         "机构行为": {
           "short": "机构",
           "count": 1,
-          "pct": 1.5
+          "pct": 1.4
         }
       },
       "top_factor": "政策面因子",
       "claim_type_dist": {
         "方向判断": {
-          "count": 27,
-          "pct": 40.3
+          "count": 30,
+          "pct": 42.3
         },
         "验证指标": {
-          "count": 18,
-          "pct": 26.9
+          "count": 19,
+          "pct": 26.8
         },
         "事实判断": {
           "count": 10,
-          "pct": 14.9
+          "pct": 14.1
         },
         "风险提示": {
           "count": 5,
-          "pct": 7.5
+          "pct": 7.0
         },
         "交易表达": {
           "count": 2,
-          "pct": 3.0
+          "pct": 2.8
         },
         "因果链条": {
           "count": 2,
-          "pct": 3.0
+          "pct": 2.8
         },
         "条件触发判断": {
           "count": 2,
-          "pct": 3.0
+          "pct": 2.8
         },
         "反例/冲突观点": {
           "count": 1,
-          "pct": 1.5
+          "pct": 1.4
         }
       },
       "dominant_claim_type": "方向判断",
       "direction_dist": {
-        "中性": 27,
+        "中性": 31,
         "利多": 23,
         "不明确": 11,
         "利空": 6
@@ -86,7 +86,7 @@ const SPEAKER_PERSONAS = {
       "date_range": {
         "earliest": "2025-03-10",
         "latest": "unknown",
-        "active_days": 35
+        "active_days": 37
       },
       "timeline": {
         "2025-03-10": 3,
@@ -123,16 +123,19 @@ const SPEAKER_PERSONAS = {
         "2026-04-03": 12,
         "2026-04-10": 11,
         "2026-04-17": 5,
+        "2026-04-24": 1,
+        "2026-04-30": 3,
         "unknown": 1
       },
       "causal_edges": {
-        "count": 19,
+        "count": 22,
         "edges": [
           "FD_001→FD_005",
           "FD_002→FD_007",
           "FD_003→FD_005",
           "FD_006→FD_001",
           "FD_006→FD_005",
+          "LQ_001→IB_001",
           "LQ_001→LQ_005",
           "LQ_002→LQ_001",
           "LQ_002→LQ_005",
@@ -146,7 +149,9 @@ const SPEAKER_PERSONAS = {
           "PL_002→PL_010",
           "PL_003→PL_006",
           "PL_003→PL_010",
-          "PL_006→PL_005"
+          "PL_006→MS_010",
+          "PL_006→PL_005",
+          "PL_010→FD_001"
         ]
       },
       "key_claims": [
@@ -187,87 +192,89 @@ const SPEAKER_PERSONAS = {
     },
     {
       "speaker": "李博良",
-      "total_claims": 64,
+      "total_claims": 68,
       "factor_preference": {
         "市场情绪因子": {
           "short": "MS",
-          "count": 24,
-          "pct": 37.5
+          "count": 26,
+          "pct": 38.2
         },
         "机构行为因子": {
           "short": "IB",
           "count": 18,
-          "pct": 28.1
+          "pct": 26.5
         },
         "流动性因子": {
           "short": "LQ",
-          "count": 12,
-          "pct": 18.8
+          "count": 14,
+          "pct": 20.6
         },
         "政策面因子": {
           "short": "PL",
           "count": 5,
-          "pct": 7.8
+          "pct": 7.4
         },
         "基本面因子": {
           "short": "FD",
           "count": 4,
-          "pct": 6.2
+          "pct": 5.9
         },
         "政策面": {
           "short": "政策",
           "count": 1,
-          "pct": 1.6
+          "pct": 1.5
         }
       },
       "top_factor": "市场情绪因子",
       "claim_type_dist": {
         "方向判断": {
-          "count": 25,
-          "pct": 39.1
+          "count": 27,
+          "pct": 39.7
         },
         "交易表达": {
           "count": 11,
-          "pct": 17.2
+          "pct": 16.2
         },
         "验证指标": {
           "count": 11,
-          "pct": 17.2
+          "pct": 16.2
         },
         "事实判断": {
           "count": 8,
-          "pct": 12.5
+          "pct": 11.8
+        },
+        "风险提示": {
+          "count": 5,
+          "pct": 7.4
         },
         "因果链条": {
           "count": 3,
-          "pct": 4.7
-        },
-        "风险提示": {
-          "count": 3,
-          "pct": 4.7
+          "pct": 4.4
         },
         "条件触发判断": {
           "count": 2,
-          "pct": 3.1
+          "pct": 2.9
         },
         "反例/冲突观点": {
           "count": 1,
-          "pct": 1.6
+          "pct": 1.5
         }
       },
       "dominant_claim_type": "方向判断",
       "direction_dist": {
         "利多": 34,
-        "中性": 16,
+        "中性": 17,
         "利空": 7,
-        "不明确": 7
+        "不明确": 7,
+        "偏空": 2,
+        "偏多": 1
       },
-      "direction_score": 0.0,
+      "direction_score": -0.007,
       "direction_label": "中性/均衡",
       "date_range": {
         "earliest": "2025-03-10",
         "latest": "unknown",
-        "active_days": 28
+        "active_days": 30
       },
       "timeline": {
         "2025-03-10": 3,
@@ -297,10 +304,12 @@ const SPEAKER_PERSONAS = {
         "2026-04-03": 12,
         "2026-04-10": 13,
         "2026-04-17": 10,
+        "2026-04-24": 3,
+        "2026-04-30": 1,
         "unknown": 1
       },
       "causal_edges": {
-        "count": 21,
+        "count": 22,
         "edges": [
           "FD_001→FD_003",
           "FD_002→FD_007",
@@ -310,6 +319,7 @@ const SPEAKER_PERSONAS = {
           "IB_006→IB_012",
           "IB_013→IB_001",
           "LQ_001→LQ_005",
+          "LQ_001→MS_007",
           "LQ_002→LQ_001",
           "LQ_002→LQ_003",
           "LQ_002→LQ_005",
@@ -363,64 +373,68 @@ const SPEAKER_PERSONAS = {
     },
     {
       "speaker": "武玥",
-      "total_claims": 57,
+      "total_claims": 62,
       "factor_preference": {
         "市场情绪因子": {
           "short": "MS",
-          "count": 42,
-          "pct": 73.7
+          "count": 45,
+          "pct": 72.6
         },
         "流动性因子": {
           "short": "LQ",
-          "count": 7,
-          "pct": 12.3
+          "count": 9,
+          "pct": 14.5
         },
         "政策面因子": {
           "short": "PL",
           "count": 4,
-          "pct": 7.0
+          "pct": 6.5
         },
         "机构行为因子": {
           "short": "IB",
           "count": 2,
-          "pct": 3.5
+          "pct": 3.2
         },
         "基本面因子": {
           "short": "FD",
           "count": 1,
-          "pct": 1.8
+          "pct": 1.6
         },
         "市场情绪": {
           "short": "市场",
           "count": 1,
-          "pct": 1.8
+          "pct": 1.6
         }
       },
       "top_factor": "市场情绪因子",
       "claim_type_dist": {
         "方向判断": {
-          "count": 33,
-          "pct": 57.9
+          "count": 35,
+          "pct": 56.5
         },
         "验证指标": {
           "count": 12,
-          "pct": 21.1
+          "pct": 19.4
+        },
+        "交易表达": {
+          "count": 6,
+          "pct": 9.7
         },
         "事实判断": {
           "count": 4,
-          "pct": 7.0
-        },
-        "交易表达": {
-          "count": 4,
-          "pct": 7.0
+          "pct": 6.5
         },
         "条件触发判断": {
           "count": 2,
-          "pct": 3.5
+          "pct": 3.2
         },
         "因果链条": {
           "count": 2,
-          "pct": 3.5
+          "pct": 3.2
+        },
+        "风险提示": {
+          "count": 1,
+          "pct": 1.6
         }
       },
       "dominant_claim_type": "方向判断",
@@ -428,14 +442,15 @@ const SPEAKER_PERSONAS = {
         "利多": 38,
         "不明确": 7,
         "中性": 6,
-        "利空": 6
+        "利空": 6,
+        "偏多": 5
       },
-      "direction_score": 0.0,
+      "direction_score": 0.04,
       "direction_label": "中性/均衡",
       "date_range": {
         "earliest": "2025-03-10",
         "latest": "unknown",
-        "active_days": 30
+        "active_days": 32
       },
       "timeline": {
         "2025-03-10": 2,
@@ -467,22 +482,28 @@ const SPEAKER_PERSONAS = {
         "2026-04-03": 7,
         "2026-04-10": 11,
         "2026-04-17": 8,
+        "2026-04-24": 3,
+        "2026-04-30": 2,
         "unknown": 1
       },
       "causal_edges": {
-        "count": 15,
+        "count": 19,
         "edges": [
           "FD_006→FD_001",
           "IB_004→IB_012",
           "IB_006→IB_012",
           "LQ_001→IB_012",
           "LQ_002→LQ_001",
+          "LQ_002→MS_001",
+          "LQ_006→MS_003",
           "MS_001→MS_003",
           "MS_001→MS_004",
           "MS_001→MS_006",
           "MS_003→MS_005",
+          "MS_005→IB_007",
           "MS_005→MS_004",
           "MS_008→MS_001",
+          "MS_010→MS_003",
           "MS_014→MS_001",
           "PL_002→PL_005",
           "PL_003→PL_006",
@@ -526,68 +547,233 @@ const SPEAKER_PERSONAS = {
       ]
     },
     {
+      "speaker": "姜之媛",
+      "total_claims": 60,
+      "factor_preference": {
+        "市场情绪因子": {
+          "short": "MS",
+          "count": 33,
+          "pct": 55.0
+        },
+        "机构行为因子": {
+          "short": "IB",
+          "count": 14,
+          "pct": 23.3
+        },
+        "政策面因子": {
+          "short": "PL",
+          "count": 8,
+          "pct": 13.3
+        },
+        "流动性因子": {
+          "short": "LQ",
+          "count": 4,
+          "pct": 6.7
+        },
+        "市场情绪": {
+          "short": "市场",
+          "count": 1,
+          "pct": 1.7
+        }
+      },
+      "top_factor": "市场情绪因子",
+      "claim_type_dist": {
+        "方向判断": {
+          "count": 22,
+          "pct": 36.7
+        },
+        "验证指标": {
+          "count": 9,
+          "pct": 15.0
+        },
+        "交易表达": {
+          "count": 8,
+          "pct": 13.3
+        },
+        "风险提示": {
+          "count": 6,
+          "pct": 10.0
+        },
+        "因果链条": {
+          "count": 5,
+          "pct": 8.3
+        },
+        "事实判断": {
+          "count": 5,
+          "pct": 8.3
+        },
+        "条件触发判断": {
+          "count": 5,
+          "pct": 8.3
+        }
+      },
+      "dominant_claim_type": "方向判断",
+      "direction_dist": {
+        "中性": 22,
+        "利多": 16,
+        "偏多": 8,
+        "利空": 7,
+        "不明确": 6,
+        "偏空": 1
+      },
+      "direction_score": 0.058,
+      "direction_label": "中性/均衡",
+      "date_range": {
+        "earliest": "2025-03-14",
+        "latest": "unknown",
+        "active_days": 25
+      },
+      "timeline": {
+        "2025-03-14": 1,
+        "2025-03-21": 1,
+        "2025-03-28": 1,
+        "2025-04-03": 1,
+        "2025-04-18": 1,
+        "2025-04-25": 1,
+        "2025-05-09": 1,
+        "2025-05-19": 1,
+        "2025-05-23": 1,
+        "2025-05-30": 1,
+        "2025-06-06": 1,
+        "2025-07-04": 1,
+        "2025-07-18": 1,
+        "2025-07-29": 1,
+        "2025-09-19": 1,
+        "2025-09-25": 1,
+        "2025-10-17": 1,
+        "2025-11-07": 1,
+        "2025-11-21": 1,
+        "2026-04-03": 11,
+        "2026-04-10": 12,
+        "2026-04-17": 7,
+        "2026-04-24": 2,
+        "2026-04-30": 8,
+        "unknown": 1
+      },
+      "causal_edges": {
+        "count": 20,
+        "edges": [
+          "IB_003→IB_001",
+          "IB_004→IB_012",
+          "IB_006→IB_003",
+          "IB_006→IB_012",
+          "IB_007→LQ_001",
+          "IB_012→MS_009",
+          "IB_013→IB_001",
+          "LQ_001→MS_010",
+          "LQ_001→PL_006",
+          "MS_001→MS_003",
+          "MS_001→MS_004",
+          "MS_003→MS_005",
+          "MS_005→MS_004",
+          "MS_007→IB_005",
+          "MS_008→MS_001",
+          "MS_010→LQ_001",
+          "MS_014→MS_001",
+          "PL_001→PL_002",
+          "PL_003→PL_006",
+          "PL_010→MS_001"
+        ]
+      },
+      "key_claims": [
+        {
+          "atom_id": "20250704_B00_005",
+          "summary": "7月行情整体偏乐观但赔率不足。1.6%为短期市场底难突破。跨季后银行配置力量回归。操作更考验择券细节和交易心态。已从防守调整到积极，从短久期高杠杆转向长久期低杠",
+          "claim_type": "验证指标",
+          "direction": "不明确",
+          "confidence": 0.85,
+          "date": "2025-07-04",
+          "factor": "机构行为因子"
+        },
+        {
+          "atom_id": "20250718_B00_003",
+          "summary": "债市最缺乏内生稳定性，走势完全依赖权益市场。超长债交易面临多重困境：换券频繁、期现背离、行情碎片化。基于五因子模型评估，基本面利多已被充分定价，风险偏好成核心风",
+          "claim_type": "验证指标",
+          "direction": "利空",
+          "confidence": 0.85,
+          "date": "2025-07-18",
+          "factor": "市场情绪因子"
+        },
+        {
+          "atom_id": "20250729_B00_001",
+          "summary": "今天市场非理性下跌由未经证实的消息引发黑色系暴涨所致。市场情绪过度聚焦政治局会议预期。固收+底层逻辑未动摇，但若有效需求刺激超预期将果断降久期。ETF大额净流入",
+          "claim_type": "验证指标",
+          "direction": "不明确",
+          "confidence": 0.85,
+          "date": "2025-07-29",
+          "factor": "市场情绪因子"
+        }
+      ],
+      "tags": [
+        "MS专精",
+        "观点类型丰富",
+        "持续活跃",
+        "传导贡献突出"
+      ]
+    },
+    {
       "speaker": "张迪",
-      "total_claims": 56,
+      "total_claims": 59,
       "factor_preference": {
         "流动性因子": {
           "short": "LQ",
-          "count": 43,
-          "pct": 76.8
+          "count": 45,
+          "pct": 76.3
         },
         "市场情绪因子": {
           "short": "MS",
-          "count": 7,
-          "pct": 12.5
+          "count": 8,
+          "pct": 13.6
         },
         "机构行为因子": {
           "short": "IB",
           "count": 3,
-          "pct": 5.4
+          "pct": 5.1
         },
         "基本面因子": {
           "short": "FD",
           "count": 2,
-          "pct": 3.6
+          "pct": 3.4
         },
         "流动性": {
           "short": "流动",
           "count": 1,
-          "pct": 1.8
+          "pct": 1.7
         }
       },
       "top_factor": "流动性因子",
       "claim_type_dist": {
         "方向判断": {
-          "count": 21,
-          "pct": 37.5
+          "count": 22,
+          "pct": 37.3
         },
         "事实判断": {
           "count": 13,
-          "pct": 23.2
+          "pct": 22.0
         },
         "验证指标": {
-          "count": 11,
-          "pct": 19.6
+          "count": 12,
+          "pct": 20.3
         },
         "交易表达": {
           "count": 5,
-          "pct": 8.9
+          "pct": 8.5
         },
         "条件触发判断": {
           "count": 2,
-          "pct": 3.6
+          "pct": 3.4
         },
         "因果链条": {
           "count": 2,
-          "pct": 3.6
+          "pct": 3.4
         },
         "风险提示": {
-          "count": 1,
-          "pct": 1.8
+          "count": 2,
+          "pct": 3.4
         },
         "反例/冲突观点": {
           "count": 1,
-          "pct": 1.8
+          "pct": 1.7
         }
       },
       "dominant_claim_type": "方向判断",
@@ -595,14 +781,15 @@ const SPEAKER_PERSONAS = {
         "利多": 32,
         "中性": 16,
         "利空": 4,
-        "不明确": 4
+        "不明确": 4,
+        "偏多": 3
       },
-      "direction_score": 0.0,
+      "direction_score": 0.025,
       "direction_label": "中性/均衡",
       "date_range": {
         "earliest": "2025-03-10",
         "latest": "unknown",
-        "active_days": 27
+        "active_days": 29
       },
       "timeline": {
         "2025-03-10": 3,
@@ -631,16 +818,19 @@ const SPEAKER_PERSONAS = {
         "2026-04-03": 10,
         "2026-04-10": 9,
         "2026-04-17": 5,
+        "2026-04-24": 2,
+        "2026-04-30": 1,
         "unknown": 1
       },
       "causal_edges": {
-        "count": 14,
+        "count": 16,
         "edges": [
           "FD_002→FD_007",
           "FD_006→FD_001",
           "IB_004→IB_012",
           "IB_006→IB_012",
           "LQ_001→LQ_005",
+          "LQ_001→MS_005",
           "LQ_002→LQ_001",
           "LQ_002→LQ_003",
           "LQ_002→LQ_005",
@@ -649,7 +839,8 @@ const SPEAKER_PERSONAS = {
           "LQ_004→LQ_003",
           "LQ_005→LQ_003",
           "MS_001→MS_003",
-          "MS_003→MS_005"
+          "MS_003→MS_005",
+          "MS_010→FD_002"
         ]
       },
       "key_claims": [
@@ -689,88 +880,239 @@ const SPEAKER_PERSONAS = {
       ]
     },
     {
-      "speaker": "赵骥",
-      "total_claims": 50,
+      "speaker": "沈文思",
+      "total_claims": 56,
       "factor_preference": {
-        "机构行为因子": {
-          "short": "IB",
-          "count": 25,
-          "pct": 50.0
+        "基本面因子": {
+          "short": "FD",
+          "count": 33,
+          "pct": 58.9
         },
         "市场情绪因子": {
           "short": "MS",
-          "count": 9,
-          "pct": 18.0
+          "count": 11,
+          "pct": 19.6
         },
         "流动性因子": {
           "short": "LQ",
           "count": 6,
-          "pct": 12.0
+          "pct": 10.7
+        },
+        "机构行为因子": {
+          "short": "IB",
+          "count": 3,
+          "pct": 5.4
+        },
+        "政策面因子": {
+          "short": "PL",
+          "count": 2,
+          "pct": 3.6
+        },
+        "基本面": {
+          "short": "基本",
+          "count": 1,
+          "pct": 1.8
+        }
+      },
+      "top_factor": "基本面因子",
+      "claim_type_dist": {
+        "方向判断": {
+          "count": 19,
+          "pct": 33.9
+        },
+        "验证指标": {
+          "count": 13,
+          "pct": 23.2
+        },
+        "事实判断": {
+          "count": 9,
+          "pct": 16.1
+        },
+        "交易表达": {
+          "count": 7,
+          "pct": 12.5
+        },
+        "风险提示": {
+          "count": 4,
+          "pct": 7.1
+        },
+        "因果链条": {
+          "count": 4,
+          "pct": 7.1
+        }
+      },
+      "dominant_claim_type": "方向判断",
+      "direction_dist": {
+        "利多": 16,
+        "中性": 16,
+        "利空": 9,
+        "偏多": 8,
+        "不明确": 4,
+        "偏空": 3
+      },
+      "direction_score": 0.045,
+      "direction_label": "中性/均衡",
+      "date_range": {
+        "earliest": "2025-07-29",
+        "latest": "unknown",
+        "active_days": 14
+      },
+      "timeline": {
+        "2025-07-29": 1,
+        "2025-08-15": 1,
+        "2025-09-12": 1,
+        "2025-09-19": 1,
+        "2025-10-10": 1,
+        "2025-10-17": 1,
+        "2025-11-14": 1,
+        "2025-11-21": 1,
+        "2026-04-03": 13,
+        "2026-04-10": 9,
+        "2026-04-17": 10,
+        "2026-04-24": 8,
+        "2026-04-30": 7,
+        "unknown": 1
+      },
+      "causal_edges": {
+        "count": 15,
+        "edges": [
+          "FD_001→FD_003",
+          "FD_001→FD_005",
+          "FD_002→FD_007",
+          "FD_003→FD_005",
+          "FD_006→FD_001",
+          "FD_006→FD_005",
+          "IB_005→IB_009",
+          "LQ_001→PL_006",
+          "LQ_002→LQ_001",
+          "LQ_005→PL_006",
+          "MS_008→MS_001",
+          "MS_010→LQ_001",
+          "MS_010→MS_003",
+          "MS_010→MS_005",
+          "PL_006→LQ_001"
+        ]
+      },
+      "key_claims": [
+        {
+          "atom_id": "20250815_B00_005",
+          "summary": "7月数据全面不及预期但债市钝化。地产拖累减弱、出口未证伪、PPI触底。流动性宽松+情绪支撑利好股市风险偏好。股债跷跷板逻辑未变，利率易上难下。",
+          "claim_type": "验证指标",
+          "direction": "利多",
+          "confidence": 0.85,
+          "date": "2025-08-15",
+          "factor": "基本面因子"
+        },
+        {
+          "atom_id": "20250912_B00_009",
+          "summary": "基本面疲弱不支持政策转向，利率上行有上限（1.85%）。央行呵护明确9-10月是买债窗口。短端更确定曲线陡峭化。",
+          "claim_type": "验证指标",
+          "direction": "利空",
+          "confidence": 0.85,
+          "date": "2025-09-12",
+          "factor": "基本面因子"
+        },
+        {
+          "atom_id": "20250919_B00_007",
+          "summary": "Q3 GDP或回落至4.8%，内需疲软。银行净息差压力制约降息，利率上有顶1.85%。",
+          "claim_type": "验证指标",
+          "direction": "利多",
+          "confidence": 0.85,
+          "date": "2025-09-19",
+          "factor": "基本面因子"
+        }
+      ],
+      "tags": [
+        "FD专精",
+        "观点类型丰富",
+        "持续活跃",
+        "传导贡献突出"
+      ]
+    },
+    {
+      "speaker": "赵骥",
+      "total_claims": 54,
+      "factor_preference": {
+        "机构行为因子": {
+          "short": "IB",
+          "count": 27,
+          "pct": 50.0
+        },
+        "市场情绪因子": {
+          "short": "MS",
+          "count": 10,
+          "pct": 18.5
+        },
+        "流动性因子": {
+          "short": "LQ",
+          "count": 7,
+          "pct": 13.0
         },
         "基本面因子": {
           "short": "FD",
           "count": 6,
-          "pct": 12.0
+          "pct": 11.1
         },
         "政策面因子": {
           "short": "PL",
           "count": 3,
-          "pct": 6.0
+          "pct": 5.6
         },
         "市场情绪": {
           "short": "市场",
           "count": 1,
-          "pct": 2.0
+          "pct": 1.9
         }
       },
       "top_factor": "机构行为因子",
       "claim_type_dist": {
         "方向判断": {
-          "count": 18,
-          "pct": 36.0
+          "count": 20,
+          "pct": 37.0
         },
         "验证指标": {
           "count": 15,
-          "pct": 30.0
+          "pct": 27.8
+        },
+        "风险提示": {
+          "count": 5,
+          "pct": 9.3
         },
         "因果链条": {
           "count": 4,
-          "pct": 8.0
+          "pct": 7.4
         },
         "条件触发判断": {
           "count": 4,
-          "pct": 8.0
-        },
-        "风险提示": {
-          "count": 3,
-          "pct": 6.0
+          "pct": 7.4
         },
         "事实判断": {
           "count": 2,
-          "pct": 4.0
+          "pct": 3.7
         },
         "交易表达": {
           "count": 2,
-          "pct": 4.0
+          "pct": 3.7
         },
         "反例/冲突观点": {
           "count": 2,
-          "pct": 4.0
+          "pct": 3.7
         }
       },
       "dominant_claim_type": "方向判断",
       "direction_dist": {
-        "中性": 25,
+        "中性": 26,
         "利多": 16,
         "不明确": 5,
-        "利空": 4
+        "利空": 4,
+        "偏多": 3
       },
-      "direction_score": 0.0,
+      "direction_score": 0.028,
       "direction_label": "中性/均衡",
       "date_range": {
         "earliest": "2025-03-21",
         "latest": "unknown",
-        "active_days": 26
+        "active_days": 28
       },
       "timeline": {
         "2025-03-21": 1,
@@ -798,16 +1140,20 @@ const SPEAKER_PERSONAS = {
         "2026-04-03": 6,
         "2026-04-10": 9,
         "2026-04-17": 5,
+        "2026-04-24": 2,
+        "2026-04-30": 2,
         "unknown": 1
       },
       "causal_edges": {
-        "count": 12,
+        "count": 14,
         "edges": [
           "FD_006→FD_001",
+          "IB_001→LQ_001",
           "IB_003→IB_001",
           "IB_004→IB_012",
           "IB_006→IB_003",
           "IB_006→IB_012",
+          "IB_012→IB_007",
           "IB_013→IB_001",
           "LQ_002→LQ_001",
           "MS_003→MS_005",
@@ -853,228 +1199,75 @@ const SPEAKER_PERSONAS = {
       ]
     },
     {
-      "speaker": "姜之媛",
-      "total_claims": 50,
-      "factor_preference": {
-        "市场情绪因子": {
-          "short": "MS",
-          "count": 29,
-          "pct": 58.0
-        },
-        "机构行为因子": {
-          "short": "IB",
-          "count": 12,
-          "pct": 24.0
-        },
-        "政策面因子": {
-          "short": "PL",
-          "count": 7,
-          "pct": 14.0
-        },
-        "流动性因子": {
-          "short": "LQ",
-          "count": 1,
-          "pct": 2.0
-        },
-        "市场情绪": {
-          "short": "市场",
-          "count": 1,
-          "pct": 2.0
-        }
-      },
-      "top_factor": "市场情绪因子",
-      "claim_type_dist": {
-        "方向判断": {
-          "count": 19,
-          "pct": 38.0
-        },
-        "验证指标": {
-          "count": 8,
-          "pct": 16.0
-        },
-        "交易表达": {
-          "count": 7,
-          "pct": 14.0
-        },
-        "风险提示": {
-          "count": 6,
-          "pct": 12.0
-        },
-        "事实判断": {
-          "count": 4,
-          "pct": 8.0
-        },
-        "因果链条": {
-          "count": 3,
-          "pct": 6.0
-        },
-        "条件触发判断": {
-          "count": 3,
-          "pct": 6.0
-        }
-      },
-      "dominant_claim_type": "方向判断",
-      "direction_dist": {
-        "中性": 21,
-        "利多": 16,
-        "利空": 7,
-        "不明确": 6
-      },
-      "direction_score": 0.0,
-      "direction_label": "中性/均衡",
-      "date_range": {
-        "earliest": "2025-03-14",
-        "latest": "unknown",
-        "active_days": 23
-      },
-      "timeline": {
-        "2025-03-14": 1,
-        "2025-03-21": 1,
-        "2025-03-28": 1,
-        "2025-04-03": 1,
-        "2025-04-18": 1,
-        "2025-04-25": 1,
-        "2025-05-09": 1,
-        "2025-05-19": 1,
-        "2025-05-23": 1,
-        "2025-05-30": 1,
-        "2025-06-06": 1,
-        "2025-07-04": 1,
-        "2025-07-18": 1,
-        "2025-07-29": 1,
-        "2025-09-19": 1,
-        "2025-09-25": 1,
-        "2025-10-17": 1,
-        "2025-11-07": 1,
-        "2025-11-21": 1,
-        "2026-04-03": 11,
-        "2026-04-10": 12,
-        "2026-04-17": 7,
-        "unknown": 1
-      },
-      "causal_edges": {
-        "count": 13,
-        "edges": [
-          "IB_003→IB_001",
-          "IB_004→IB_012",
-          "IB_006→IB_003",
-          "IB_006→IB_012",
-          "IB_013→IB_001",
-          "MS_001→MS_003",
-          "MS_001→MS_004",
-          "MS_003→MS_005",
-          "MS_005→MS_004",
-          "MS_008→MS_001",
-          "MS_014→MS_001",
-          "PL_001→PL_002",
-          "PL_003→PL_006"
-        ]
-      },
-      "key_claims": [
-        {
-          "atom_id": "20250704_B00_005",
-          "summary": "7月行情整体偏乐观但赔率不足。1.6%为短期市场底难突破。跨季后银行配置力量回归。操作更考验择券细节和交易心态。已从防守调整到积极，从短久期高杠杆转向长久期低杠",
-          "claim_type": "验证指标",
-          "direction": "不明确",
-          "confidence": 0.85,
-          "date": "2025-07-04",
-          "factor": "机构行为因子"
-        },
-        {
-          "atom_id": "20250718_B00_003",
-          "summary": "债市最缺乏内生稳定性，走势完全依赖权益市场。超长债交易面临多重困境：换券频繁、期现背离、行情碎片化。基于五因子模型评估，基本面利多已被充分定价，风险偏好成核心风",
-          "claim_type": "验证指标",
-          "direction": "利空",
-          "confidence": 0.85,
-          "date": "2025-07-18",
-          "factor": "市场情绪因子"
-        },
-        {
-          "atom_id": "20250729_B00_001",
-          "summary": "今天市场非理性下跌由未经证实的消息引发黑色系暴涨所致。市场情绪过度聚焦政治局会议预期。固收+底层逻辑未动摇，但若有效需求刺激超预期将果断降久期。ETF大额净流入",
-          "claim_type": "验证指标",
-          "direction": "不明确",
-          "confidence": 0.85,
-          "date": "2025-07-29",
-          "factor": "市场情绪因子"
-        }
-      ],
-      "tags": [
-        "MS专精",
-        "观点类型丰富",
-        "持续活跃",
-        "传导贡献突出"
-      ]
-    },
-    {
       "speaker": "张帆",
-      "total_claims": 50,
+      "total_claims": 54,
       "factor_preference": {
         "市场情绪因子": {
           "short": "MS",
-          "count": 31,
-          "pct": 62.0
+          "count": 34,
+          "pct": 63.0
         },
         "机构行为因子": {
           "short": "IB",
           "count": 13,
-          "pct": 26.0
+          "pct": 24.1
         },
         "流动性因子": {
           "short": "LQ",
-          "count": 4,
-          "pct": 8.0
+          "count": 5,
+          "pct": 9.3
         },
         "政策面因子": {
           "short": "PL",
           "count": 2,
-          "pct": 4.0
+          "pct": 3.7
         }
       },
       "top_factor": "市场情绪因子",
       "claim_type_dist": {
         "方向判断": {
-          "count": 21,
-          "pct": 42.0
+          "count": 24,
+          "pct": 44.4
         },
         "验证指标": {
           "count": 12,
-          "pct": 24.0
+          "pct": 22.2
         },
         "交易表达": {
           "count": 10,
-          "pct": 20.0
+          "pct": 18.5
         },
         "事实判断": {
-          "count": 4,
-          "pct": 8.0
+          "count": 5,
+          "pct": 9.3
         },
         "风险提示": {
           "count": 1,
-          "pct": 2.0
+          "pct": 1.9
         },
         "因果链条": {
           "count": 1,
-          "pct": 2.0
+          "pct": 1.9
         },
         "条件触发判断": {
           "count": 1,
-          "pct": 2.0
+          "pct": 1.9
         }
       },
       "dominant_claim_type": "方向判断",
       "direction_dist": {
         "利多": 30,
-        "中性": 7,
+        "中性": 8,
         "不明确": 7,
-        "利空": 6
+        "利空": 6,
+        "偏多": 3
       },
-      "direction_score": 0.0,
+      "direction_score": 0.028,
       "direction_label": "中性/均衡",
       "date_range": {
         "earliest": "2025-03-14",
-        "latest": "2026-04-17",
-        "active_days": 29
+        "latest": "2026-04-30",
+        "active_days": 31
       },
       "timeline": {
         "2025-03-14": 1,
@@ -1105,10 +1298,12 @@ const SPEAKER_PERSONAS = {
         "2025-11-27": 1,
         "2026-04-03": 10,
         "2026-04-10": 9,
-        "2026-04-17": 5
+        "2026-04-17": 5,
+        "2026-04-24": 2,
+        "2026-04-30": 2
       },
       "causal_edges": {
-        "count": 15,
+        "count": 17,
         "edges": [
           "IB_001→IB_002",
           "IB_004→IB_012",
@@ -1117,6 +1312,7 @@ const SPEAKER_PERSONAS = {
           "IB_012→IB_002",
           "LQ_002→LQ_001",
           "LQ_002→LQ_003",
+          "LQ_003→LQ_005",
           "LQ_004→LQ_003",
           "LQ_005→LQ_003",
           "MS_001→MS_004",
@@ -1124,6 +1320,7 @@ const SPEAKER_PERSONAS = {
           "MS_003→MS_005",
           "MS_005→MS_004",
           "MS_008→MS_001",
+          "MS_010→MS_012",
           "MS_014→MS_001"
         ]
       },
@@ -1166,78 +1363,80 @@ const SPEAKER_PERSONAS = {
     },
     {
       "speaker": "徐天彤",
-      "total_claims": 43,
+      "total_claims": 50,
       "factor_preference": {
         "流动性因子": {
           "short": "LQ",
-          "count": 23,
-          "pct": 53.5
+          "count": 26,
+          "pct": 52.0
         },
         "机构行为因子": {
           "short": "IB",
-          "count": 10,
-          "pct": 23.3
+          "count": 12,
+          "pct": 24.0
         },
         "市场情绪因子": {
           "short": "MS",
-          "count": 5,
-          "pct": 11.6
+          "count": 7,
+          "pct": 14.0
         },
         "政策面因子": {
           "short": "PL",
           "count": 4,
-          "pct": 9.3
+          "pct": 8.0
         },
         "流动性": {
           "short": "流动",
           "count": 1,
-          "pct": 2.3
+          "pct": 2.0
         }
       },
       "top_factor": "流动性因子",
       "claim_type_dist": {
         "事实判断": {
-          "count": 16,
-          "pct": 37.2
+          "count": 19,
+          "pct": 38.0
         },
         "方向判断": {
-          "count": 14,
-          "pct": 32.6
+          "count": 15,
+          "pct": 30.0
         },
         "验证指标": {
-          "count": 6,
+          "count": 7,
           "pct": 14.0
         },
         "交易表达": {
           "count": 3,
-          "pct": 7.0
+          "pct": 6.0
         },
         "风险提示": {
-          "count": 2,
-          "pct": 4.7
+          "count": 3,
+          "pct": 6.0
         },
         "条件触发判断": {
-          "count": 1,
-          "pct": 2.3
+          "count": 2,
+          "pct": 4.0
         },
         "因果链条": {
           "count": 1,
-          "pct": 2.3
+          "pct": 2.0
         }
       },
       "dominant_claim_type": "事实判断",
       "direction_dist": {
         "利多": 22,
-        "中性": 15,
+        "中性": 16,
         "利空": 5,
-        "不明确": 1
+        "偏多": 5,
+        "不明确": 1,
+        "偏空": 1
       },
-      "direction_score": 0.0,
+      "direction_score": 0.04,
       "direction_label": "中性/均衡",
       "date_range": {
         "earliest": "2025-07-29",
         "latest": "unknown",
-        "active_days": 8
+        "active_days": 9
       },
       "timeline": {
         "2025-07-29": 1,
@@ -1247,11 +1446,13 @@ const SPEAKER_PERSONAS = {
         "2026-04-03": 14,
         "2026-04-10": 14,
         "2026-04-17": 10,
+        "2026-04-24": 7,
         "unknown": 1
       },
       "causal_edges": {
-        "count": 11,
+        "count": 14,
         "edges": [
+          "IB_002→MS_003",
           "IB_006→IB_003",
           "LQ_001→LQ_005",
           "LQ_002→LQ_001",
@@ -1261,6 +1462,8 @@ const SPEAKER_PERSONAS = {
           "LQ_004→LQ_003",
           "LQ_005→LQ_003",
           "MS_008→MS_001",
+          "MS_010→MS_005",
+          "MS_012→MS_001",
           "MS_014→MS_001",
           "PL_003→PL_006"
         ]
@@ -1302,223 +1505,90 @@ const SPEAKER_PERSONAS = {
       ]
     },
     {
-      "speaker": "沈文思",
-      "total_claims": 41,
-      "factor_preference": {
-        "基本面因子": {
-          "short": "FD",
-          "count": 28,
-          "pct": 68.3
-        },
-        "市场情绪因子": {
-          "short": "MS",
-          "count": 6,
-          "pct": 14.6
-        },
-        "流动性因子": {
-          "short": "LQ",
-          "count": 3,
-          "pct": 7.3
-        },
-        "机构行为因子": {
-          "short": "IB",
-          "count": 2,
-          "pct": 4.9
-        },
-        "政策面因子": {
-          "short": "PL",
-          "count": 1,
-          "pct": 2.4
-        },
-        "基本面": {
-          "short": "基本",
-          "count": 1,
-          "pct": 2.4
-        }
-      },
-      "top_factor": "基本面因子",
-      "claim_type_dist": {
-        "方向判断": {
-          "count": 13,
-          "pct": 31.7
-        },
-        "验证指标": {
-          "count": 11,
-          "pct": 26.8
-        },
-        "事实判断": {
-          "count": 7,
-          "pct": 17.1
-        },
-        "交易表达": {
-          "count": 6,
-          "pct": 14.6
-        },
-        "风险提示": {
-          "count": 3,
-          "pct": 7.3
-        },
-        "因果链条": {
-          "count": 1,
-          "pct": 2.4
-        }
-      },
-      "dominant_claim_type": "方向判断",
-      "direction_dist": {
-        "利多": 16,
-        "中性": 12,
-        "利空": 9,
-        "不明确": 4
-      },
-      "direction_score": 0.0,
-      "direction_label": "中性/均衡",
-      "date_range": {
-        "earliest": "2025-07-29",
-        "latest": "unknown",
-        "active_days": 12
-      },
-      "timeline": {
-        "2025-07-29": 1,
-        "2025-08-15": 1,
-        "2025-09-12": 1,
-        "2025-09-19": 1,
-        "2025-10-10": 1,
-        "2025-10-17": 1,
-        "2025-11-14": 1,
-        "2025-11-21": 1,
-        "2026-04-03": 13,
-        "2026-04-10": 9,
-        "2026-04-17": 10,
-        "unknown": 1
-      },
-      "causal_edges": {
-        "count": 8,
-        "edges": [
-          "FD_001→FD_003",
-          "FD_001→FD_005",
-          "FD_002→FD_007",
-          "FD_003→FD_005",
-          "FD_006→FD_001",
-          "FD_006→FD_005",
-          "LQ_002→LQ_001",
-          "PL_006→LQ_001"
-        ]
-      },
-      "key_claims": [
-        {
-          "atom_id": "20250815_B00_005",
-          "summary": "7月数据全面不及预期但债市钝化。地产拖累减弱、出口未证伪、PPI触底。流动性宽松+情绪支撑利好股市风险偏好。股债跷跷板逻辑未变，利率易上难下。",
-          "claim_type": "验证指标",
-          "direction": "利多",
-          "confidence": 0.85,
-          "date": "2025-08-15",
-          "factor": "基本面因子"
-        },
-        {
-          "atom_id": "20250912_B00_009",
-          "summary": "基本面疲弱不支持政策转向，利率上行有上限（1.85%）。央行呵护明确9-10月是买债窗口。短端更确定曲线陡峭化。",
-          "claim_type": "验证指标",
-          "direction": "利空",
-          "confidence": 0.85,
-          "date": "2025-09-12",
-          "factor": "基本面因子"
-        },
-        {
-          "atom_id": "20250919_B00_007",
-          "summary": "Q3 GDP或回落至4.8%，内需疲软。银行净息差压力制约降息，利率上有顶1.85%。",
-          "claim_type": "验证指标",
-          "direction": "利多",
-          "confidence": 0.85,
-          "date": "2025-09-19",
-          "factor": "基本面因子"
-        }
-      ],
-      "tags": [
-        "FD专精",
-        "观点类型丰富",
-        "持续活跃",
-        "传导贡献突出"
-      ]
-    },
-    {
       "speaker": "张晶",
-      "total_claims": 39,
+      "total_claims": 46,
       "factor_preference": {
         "基本面因子": {
           "short": "FD",
           "count": 17,
-          "pct": 43.6
+          "pct": 37.0
         },
         "政策面因子": {
           "short": "PL",
           "count": 11,
-          "pct": 28.2
+          "pct": 23.9
         },
         "市场情绪因子": {
           "short": "MS",
-          "count": 5,
-          "pct": 12.8
+          "count": 11,
+          "pct": 23.9
         },
         "机构行为因子": {
           "short": "IB",
           "count": 3,
-          "pct": 7.7
+          "pct": 6.5
         },
         "流动性因子": {
           "short": "LQ",
-          "count": 2,
-          "pct": 5.1
+          "count": 3,
+          "pct": 6.5
         },
         "政策面": {
           "short": "政策",
           "count": 1,
-          "pct": 2.6
+          "pct": 2.2
         }
       },
       "top_factor": "基本面因子",
       "claim_type_dist": {
         "方向判断": {
-          "count": 18,
-          "pct": 46.2
+          "count": 20,
+          "pct": 43.5
         },
         "事实判断": {
-          "count": 8,
-          "pct": 20.5
+          "count": 9,
+          "pct": 19.6
         },
         "验证指标": {
           "count": 7,
-          "pct": 17.9
+          "pct": 15.2
         },
         "风险提示": {
+          "count": 4,
+          "pct": 8.7
+        },
+        "因果链条": {
           "count": 3,
-          "pct": 7.7
+          "pct": 6.5
         },
         "交易表达": {
           "count": 1,
-          "pct": 2.6
+          "pct": 2.2
         },
         "反例/冲突观点": {
           "count": 1,
-          "pct": 2.6
+          "pct": 2.2
         },
         "条件触发判断": {
           "count": 1,
-          "pct": 2.6
+          "pct": 2.2
         }
       },
       "dominant_claim_type": "方向判断",
       "direction_dist": {
-        "中性": 16,
+        "中性": 18,
         "利多": 9,
         "利空": 7,
-        "不明确": 7
+        "不明确": 7,
+        "偏空": 3,
+        "偏多": 2
       },
-      "direction_score": 0.0,
+      "direction_score": -0.011,
       "direction_label": "中性/均衡",
       "date_range": {
         "earliest": "2025-03-21",
         "latest": "unknown",
-        "active_days": 23
+        "active_days": 25
       },
       "timeline": {
         "2025-03-21": 1,
@@ -1543,18 +1613,24 @@ const SPEAKER_PERSONAS = {
         "2026-04-03": 7,
         "2026-04-10": 7,
         "2026-04-17": 3,
+        "2026-04-24": 3,
+        "2026-04-30": 4,
         "unknown": 1
       },
       "causal_edges": {
-        "count": 12,
+        "count": 16,
         "edges": [
           "FD_001→FD_003",
           "FD_002→FD_007",
           "FD_006→FD_001",
           "IB_004→IB_012",
           "IB_006→IB_012",
+          "LQ_001→MS_005",
           "LQ_002→LQ_001",
+          "MS_001→MS_010",
+          "MS_008→FD_002",
           "MS_008→MS_001",
+          "MS_009→MS_001",
           "MS_014→MS_001",
           "PL_001→PL_002",
           "PL_001→PL_010",
@@ -1582,12 +1658,12 @@ const SPEAKER_PERSONAS = {
           "factor": "政策面因子"
         },
         {
-          "atom_id": "20260403_B01_018",
-          "summary": "全球资产已进入贝叶斯定价模式，各类资产波动率大幅攀升、相关性紊乱",
+          "atom_id": "internal_2026-04-24_050",
+          "summary": "多头因素：资金面宽松、配置需求释放、长端性价比；空头：通胀预期、经济修复、股市走强、供给压力",
           "claim_type": "方向判断",
           "direction": "中性",
-          "confidence": 0.75,
-          "date": "2026-04-03",
+          "confidence": 0.85,
+          "date": "2026-04-24",
           "factor": "市场情绪因子"
         }
       ],
@@ -1599,73 +1675,78 @@ const SPEAKER_PERSONAS = {
     },
     {
       "speaker": "刘曼沁",
-      "total_claims": 35,
+      "total_claims": 39,
       "factor_preference": {
+        "基本面因子": {
+          "short": "FD",
+          "count": 12,
+          "pct": 30.8
+        },
         "市场情绪因子": {
           "short": "MS",
           "count": 12,
-          "pct": 34.3
-        },
-        "基本面因子": {
-          "short": "FD",
-          "count": 10,
-          "pct": 28.6
+          "pct": 30.8
         },
         "流动性因子": {
           "short": "LQ",
+          "count": 6,
+          "pct": 15.4
+        },
+        "政策面因子": {
+          "short": "PL",
           "count": 5,
-          "pct": 14.3
+          "pct": 12.8
         },
         "机构行为因子": {
           "short": "IB",
           "count": 4,
-          "pct": 11.4
-        },
-        "政策面因子": {
-          "short": "PL",
-          "count": 4,
-          "pct": 11.4
+          "pct": 10.3
         }
       },
-      "top_factor": "市场情绪因子",
+      "top_factor": "基本面因子",
       "claim_type_dist": {
         "方向判断": {
-          "count": 23,
-          "pct": 65.7
+          "count": 24,
+          "pct": 61.5
         },
         "事实判断": {
           "count": 4,
-          "pct": 11.4
+          "pct": 10.3
         },
         "交易表达": {
           "count": 3,
-          "pct": 8.6
+          "pct": 7.7
         },
         "风险提示": {
           "count": 3,
-          "pct": 8.6
+          "pct": 7.7
         },
         "因果链条": {
-          "count": 1,
-          "pct": 2.9
+          "count": 2,
+          "pct": 5.1
+        },
+        "条件触发判断": {
+          "count": 2,
+          "pct": 5.1
         },
         "验证指标": {
           "count": 1,
-          "pct": 2.9
+          "pct": 2.6
         }
       },
       "dominant_claim_type": "方向判断",
       "direction_dist": {
         "中性": 18,
         "利多": 13,
-        "利空": 4
+        "利空": 4,
+        "偏多": 4
       },
-      "direction_score": 0.0,
+      "direction_score": 0.051,
       "direction_label": "中性/均衡",
       "date_range": {
         "earliest": "2025-03-28",
-        "latest": "2026-04-10",
-        "active_days": 10
+        "latest": "2026-04-30",
+        "active_days": 12
       },
       "timeline": {
         "2025-03-28": 1,
@@ -1677,12 +1758,15 @@ const SPEAKER_PERSONAS = {
         "2025-06-26": 1,
         "2025-08-08": 1,
         "2026-04-03": 14,
-        "2026-04-10": 13
+        "2026-04-10": 13,
+        "2026-04-24": 3,
+        "2026-04-30": 1
       },
       "causal_edges": {
-        "count": 18,
+        "count": 21,
         "edges": [
           "FD_001→FD_005",
+          "FD_001→MS_001",
           "FD_002→FD_007",
           "FD_003→FD_005",
           "FD_006→FD_001",
@@ -1691,6 +1775,7 @@ const SPEAKER_PERSONAS = {
           "IB_006→IB_003",
           "IB_006→IB_012",
           "LQ_002→LQ_001",
+          "LQ_005→MS_010",
           "MS_001→MS_003",
           "MS_001→MS_004",
           "MS_005→MS_004",
@@ -1699,10 +1784,29 @@ const SPEAKER_PERSONAS = {
           "PL_001→PL_010",
           "PL_002→PL_010",
           "PL_003→PL_006",
-          "PL_003→PL_010"
+          "PL_003→PL_010",
+          "PL_009→FD_001"
         ]
       },
       "key_claims": [
+        {
+          "atom_id": "internal_2026-04-24_001",
+          "summary": "资金利率中枢变化是当前核心关注点",
+          "claim_type": "方向判断",
+          "direction": "偏多",
+          "confidence": 0.85,
+          "date": "2026-04-24",
+          "factor": "流动性因子"
+        },
+        {
+          "atom_id": "internal_2026-04-30_091",
+          "summary": "债市利多核心逻辑仍是信贷偏弱、财政和地方投资动能不足",
+          "claim_type": "因果链条",
+          "direction": "偏多",
+          "confidence": 0.85,
+          "date": "2026-04-30",
+          "factor": "基本面因子"
+        },
         {
           "atom_id": "20260410_B01_156",
           "summary": "央行仍处支持性框架下边际纠偏阶段，意在避免资金和短端过度偏离政策利率非系统性收紧",
@@ -1711,24 +1815,6 @@ const SPEAKER_PERSONAS = {
           "confidence": 0.8,
           "date": "2026-04-10",
           "factor": "政策面因子"
-        },
-        {
-          "atom_id": "20260410_B01_157",
-          "summary": "中小行净融出维持高位，DR001一度下探1.23%，短端宽松已接近边界",
-          "claim_type": "事实判断",
-          "direction": "利多",
-          "confidence": 0.8,
-          "date": "2026-04-10",
-          "factor": "流动性因子"
-        },
-        {
-          "atom_id": "20260403_B01_109",
-          "summary": "信用债聚焦3-5年期高等级票息资产",
-          "claim_type": "交易表达",
-          "direction": "利多",
-          "confidence": 0.75,
-          "date": "2026-04-03",
-          "factor": "机构行为因子"
         }
       ],
       "tags": [
@@ -1739,55 +1825,55 @@ const SPEAKER_PERSONAS = {
     },
     {
       "speaker": "孔祥雨",
-      "total_claims": 33,
+      "total_claims": 38,
       "factor_preference": {
         "市场情绪因子": {
           "short": "MS",
-          "count": 21,
-          "pct": 63.6
+          "count": 24,
+          "pct": 63.2
         },
         "机构行为因子": {
           "short": "IB",
-          "count": 7,
-          "pct": 21.2
+          "count": 8,
+          "pct": 21.1
         },
         "政策面因子": {
           "short": "PL",
           "count": 2,
-          "pct": 6.1
+          "pct": 5.3
+        },
+        "流动性因子": {
+          "short": "LQ",
+          "count": 2,
+          "pct": 5.3
         },
         "机构行为": {
           "short": "机构",
           "count": 2,
-          "pct": 6.1
-        },
-        "流动性因子": {
-          "short": "LQ",
-          "count": 1,
-          "pct": 3.0
+          "pct": 5.3
         }
       },
       "top_factor": "市场情绪因子",
       "claim_type_dist": {
         "方向判断": {
-          "count": 15,
-          "pct": 45.5
+          "count": 18,
+          "pct": 47.4
         },
         "验证指标": {
           "count": 10,
-          "pct": 30.3
+          "pct": 26.3
         },
         "交易表达": {
-          "count": 3,
-          "pct": 9.1
+          "count": 5,
+          "pct": 13.2
         },
         "事实判断": {
           "count": 3,
-          "pct": 9.1
+          "pct": 7.9
         },
         "条件触发判断": {
           "count": 2,
-          "pct": 6.1
+          "pct": 5.3
         }
       },
       "dominant_claim_type": "方向判断",
@@ -1795,14 +1881,16 @@ const SPEAKER_PERSONAS = {
         "利多": 13,
         "中性": 10,
         "利空": 7,
-        "不明确": 3
+        "偏多": 4,
+        "不明确": 3,
+        "偏空": 1
       },
-      "direction_score": 0.0,
+      "direction_score": 0.039,
       "direction_label": "中性/均衡",
       "date_range": {
         "earliest": "2025-04-11",
         "latest": "unknown",
-        "active_days": 19
+        "active_days": 21
       },
       "timeline": {
         "2025-04-11": 1,
@@ -1823,14 +1911,18 @@ const SPEAKER_PERSONAS = {
         "2025-11-21": 1,
         "2026-04-10": 10,
         "2026-04-17": 4,
+        "2026-04-24": 3,
+        "2026-04-30": 2,
         "unknown": 2
       },
       "causal_edges": {
-        "count": 12,
+        "count": 15,
         "edges": [
           "IB_003→IB_001",
+          "IB_008→MS_006",
           "IB_013→IB_001",
           "LQ_001→LQ_005",
+          "LQ_001→MS_012",
           "LQ_002→LQ_005",
           "LQ_003→LQ_005",
           "MS_001→MS_003",
@@ -1839,6 +1931,7 @@ const SPEAKER_PERSONAS = {
           "MS_003→MS_005",
           "MS_005→MS_004",
           "MS_008→MS_001",
+          "MS_010→IB_005",
           "MS_014→MS_001"
         ]
       },
@@ -1879,60 +1972,60 @@ const SPEAKER_PERSONAS = {
     },
     {
       "speaker": "柴颖颖",
-      "total_claims": 32,
+      "total_claims": 34,
       "factor_preference": {
         "市场情绪因子": {
           "short": "MS",
           "count": 17,
-          "pct": 53.1
+          "pct": 50.0
         },
         "机构行为因子": {
           "short": "IB",
-          "count": 7,
-          "pct": 21.9
+          "count": 8,
+          "pct": 23.5
         },
         "基本面因子": {
           "short": "FD",
           "count": 4,
-          "pct": 12.5
+          "pct": 11.8
         },
         "政策面因子": {
           "short": "PL",
           "count": 3,
-          "pct": 9.4
+          "pct": 8.8
         },
         "流动性因子": {
           "short": "LQ",
-          "count": 1,
-          "pct": 3.1
+          "count": 2,
+          "pct": 5.9
         }
       },
       "top_factor": "市场情绪因子",
       "claim_type_dist": {
         "方向判断": {
-          "count": 18,
-          "pct": 56.2
+          "count": 20,
+          "pct": 58.8
         },
         "验证指标": {
           "count": 6,
-          "pct": 18.8
+          "pct": 17.6
         },
         "因果链条": {
           "count": 3,
-          "pct": 9.4
+          "pct": 8.8
         },
         "风险提示": {
           "count": 3,
-          "pct": 9.4
+          "pct": 8.8
         },
         "事实判断": {
           "count": 2,
-          "pct": 6.2
+          "pct": 5.9
         }
       },
       "dominant_claim_type": "方向判断",
       "direction_dist": {
-        "中性": 15,
+        "中性": 17,
         "利空": 9,
         "利多": 6,
         "不明确": 2
@@ -1941,8 +2034,8 @@ const SPEAKER_PERSONAS = {
       "direction_label": "中性/均衡",
       "date_range": {
         "earliest": "2025-03-14",
-        "latest": "2026-04-10",
-        "active_days": 17
+        "latest": "2026-04-24",
+        "active_days": 18
       },
       "timeline": {
         "2025-03-14": 2,
@@ -1961,7 +2054,8 @@ const SPEAKER_PERSONAS = {
         "2025-11-07": 1,
         "2025-11-21": 1,
         "2026-04-03": 7,
-        "2026-04-10": 9
+        "2026-04-10": 9,
+        "2026-04-24": 2
       },
       "causal_edges": {
         "count": 15,
@@ -2013,7 +2107,6 @@ const SPEAKER_PERSONAS = {
         }
       ],
       "tags": [
-        "MS专精",
         "持续活跃",
         "传导贡献突出"
       ]
@@ -2398,6 +2491,128 @@ const SPEAKER_PERSONAS = {
       ]
     },
     {
+      "speaker": "项敏伟",
+      "total_claims": 17,
+      "factor_preference": {
+        "市场情绪因子": {
+          "short": "MS",
+          "count": 5,
+          "pct": 29.4
+        },
+        "流动性因子": {
+          "short": "LQ",
+          "count": 5,
+          "pct": 29.4
+        },
+        "政策面因子": {
+          "short": "PL",
+          "count": 4,
+          "pct": 23.5
+        },
+        "机构行为因子": {
+          "short": "IB",
+          "count": 3,
+          "pct": 17.6
+        }
+      },
+      "top_factor": "市场情绪因子",
+      "claim_type_dist": {
+        "事实判断": {
+          "count": 5,
+          "pct": 29.4
+        },
+        "方向判断": {
+          "count": 4,
+          "pct": 23.5
+        },
+        "因果链条": {
+          "count": 4,
+          "pct": 23.5
+        },
+        "交易表达": {
+          "count": 2,
+          "pct": 11.8
+        },
+        "风险提示": {
+          "count": 1,
+          "pct": 5.9
+        },
+        "条件触发判断": {
+          "count": 1,
+          "pct": 5.9
+        }
+      },
+      "dominant_claim_type": "事实判断",
+      "direction_dist": {
+        "偏多": 12,
+        "中性": 5
+      },
+      "direction_score": 0.353,
+      "direction_label": "偏鹰/看多",
+      "date_range": {
+        "earliest": "2026-04-24",
+        "latest": "2026-04-30",
+        "active_days": 2
+      },
+      "timeline": {
+        "2026-04-24": 7,
+        "2026-04-30": 10
+      },
+      "causal_edges": {
+        "count": 13,
+        "edges": [
+          "IB_008→MS_006",
+          "IB_008→MS_009",
+          "IB_009→IB_005",
+          "LQ_001→MS_001",
+          "LQ_002→MS_010",
+          "LQ_005→LQ_001",
+          "LQ_006→MS_010",
+          "MS_001→MS_012",
+          "MS_006→MS_012",
+          "PL_006→LQ_001",
+          "PL_010→FD_001",
+          "PL_010→LQ_001",
+          "PL_010→MS_010"
+        ]
+      },
+      "key_claims": [
+        {
+          "atom_id": "internal_2026-04-24_023",
+          "summary": "本周债市整体偏强，曲线震荡走平",
+          "claim_type": "事实判断",
+          "direction": "中性",
+          "confidence": 0.85,
+          "date": "2026-04-24",
+          "factor": "市场情绪因子"
+        },
+        {
+          "atom_id": "internal_2026-04-24_024",
+          "summary": "10Y二永继续领涨，临近2.2%关键点位左溢诉求增强",
+          "claim_type": "方向判断",
+          "direction": "偏多",
+          "confidence": 0.85,
+          "date": "2026-04-24",
+          "factor": "市场情绪因子"
+        },
+        {
+          "atom_id": "internal_2026-04-24_025",
+          "summary": "1Y中高等级信处于近一年40%-50%分位数，低等级30%分位",
+          "claim_type": "事实判断",
+          "direction": "中性",
+          "confidence": 0.85,
+          "date": "2026-04-24",
+          "factor": "市场情绪因子"
+        }
+      ],
+      "tags": [
+        "观点类型丰富",
+        "偏鹰/看多",
+        "传导贡献突出",
+        "擅长因果推演"
+      ]
+    },
+    {
       "speaker": "王本浩",
       "total_claims": 10,
       "factor_preference": {
@@ -2492,6 +2707,112 @@ const SPEAKER_PERSONAS = {
       "tags": [
         "IB专精",
         "单次发言",
+        "偏交易导向"
+      ]
+    },
+    {
+      "speaker": "谢秋平",
+      "total_claims": 9,
+      "factor_preference": {
+        "机构行为因子": {
+          "short": "IB",
+          "count": 3,
+          "pct": 33.3
+        },
+        "市场情绪因子": {
+          "short": "MS",
+          "count": 3,
+          "pct": 33.3
+        },
+        "流动性因子": {
+          "short": "LQ",
+          "count": 2,
+          "pct": 22.2
+        },
+        "政策面因子": {
+          "short": "PL",
+          "count": 1,
+          "pct": 11.1
+        }
+      },
+      "top_factor": "机构行为因子",
+      "claim_type_dist": {
+        "方向判断": {
+          "count": 5,
+          "pct": 55.6
+        },
+        "交易表达": {
+          "count": 3,
+          "pct": 33.3
+        },
+        "风险提示": {
+          "count": 1,
+          "pct": 11.1
+        }
+      },
+      "dominant_claim_type": "方向判断",
+      "direction_dist": {
+        "偏多": 5,
+        "利空": 1,
+        "利多": 1,
+        "偏空": 1,
+        "中性": 1
+      },
+      "direction_score": 0.222,
+      "direction_label": "偏鹰/看多",
+      "date_range": {
+        "earliest": "2025-06-13",
+        "latest": "2026-04-30",
+        "active_days": 4
+      },
+      "timeline": {
+        "2025-06-13": 1,
+        "2025-06-20": 1,
+        "2026-04-24": 3,
+        "2026-04-30": 4
+      },
+      "causal_edges": {
+        "count": 5,
+        "edges": [
+          "IB_005→IB_007",
+          "LQ_001→MS_001",
+          "LQ_001→PL_006",
+          "MS_003→MS_005",
+          "MS_007→MS_006"
+        ]
+      },
+      "key_claims": [
+        {
+          "atom_id": "internal_2026-04-24_037",
+          "summary": "长端交易拥挤度高，30-10利差压缩临近43bp，博收益概率下降",
+          "claim_type": "风险提示",
+          "direction": "偏空",
+          "confidence": 0.85,
+          "date": "2026-04-24",
+          "factor": "市场情绪因子"
+        },
+        {
+          "atom_id": "internal_2026-04-30_059",
+          "summary": "10Y国债1.75附近震荡，下行空间有限",
+          "claim_type": "方向判断",
+          "direction": "中性",
+          "confidence": 0.85,
+          "date": "2026-04-30",
+          "factor": "市场情绪因子"
+        },
+        {
+          "atom_id": "internal_2026-04-30_060",
+          "summary": "操作上以绝对收益思维为主，不宜过度激进拉久期和加杠杆",
+          "claim_type": "交易表达",
+          "direction": "偏多",
+          "confidence": 0.85,
+          "date": "2026-04-30",
+          "factor": "机构行为因子"
+        }
+      ],
+      "tags": [
+        "持续活跃",
+        "传导贡献突出",
         "偏交易导向"
       ]
     },
@@ -2600,6 +2921,199 @@ const SPEAKER_PERSONAS = {
         "MS专精",
         "单次发言",
         "偏交易导向"
+      ]
+    },
+    {
+      "speaker": "朱年军",
+      "total_claims": 4,
+      "factor_preference": {
+        "市场情绪因子": {
+          "short": "MS",
+          "count": 2,
+          "pct": 50.0
+        },
+        "机构行为因子": {
+          "short": "IB",
+          "count": 1,
+          "pct": 25.0
+        },
+        "流动性因子": {
+          "short": "LQ",
+          "count": 1,
+          "pct": 25.0
+        }
+      },
+      "top_factor": "市场情绪因子",
+      "claim_type_dist": {
+        "反例/冲突观点": {
+          "count": 1,
+          "pct": 25.0
+        },
+        "交易表达": {
+          "count": 1,
+          "pct": 25.0
+        },
+        "风险提示": {
+          "count": 1,
+          "pct": 25.0
+        },
+        "方向判断": {
+          "count": 1,
+          "pct": 25.0
+        }
+      },
+      "dominant_claim_type": "反例/冲突观点",
+      "direction_dist": {
+        "偏多": 2,
+        "中性": 1,
+        "偏空": 1
+      },
+      "direction_score": 0.125,
+      "direction_label": "中性/均衡",
+      "date_range": {
+        "earliest": "2025-06-20",
+        "latest": "2026-04-30",
+        "active_days": 3
+      },
+      "timeline": {
+        "2025-06-20": 1,
+        "2026-04-24": 2,
+        "2026-04-30": 1
+      },
+      "causal_edges": {
+        "count": 1,
+        "edges": [
+          "MS_008→LQ_001"
+        ]
+      },
+      "key_claims": [
+        {
+          "atom_id": "internal_2026-04-24_052",
+          "summary": "高等级长久期信用债补涨",
+          "claim_type": "交易表达",
+          "direction": "偏多",
+          "confidence": 0.65,
+          "date": "2026-04-24",
+          "factor": "市场情绪因子"
+        },
+        {
+          "atom_id": "internal_2026-04-24_053",
+          "summary": "风险为央行资金面的略收紧",
+          "claim_type": "风险提示",
+          "direction": "偏空",
+          "confidence": 0.65,
+          "date": "2026-04-24",
+          "factor": "流动性因子"
+        },
+        {
+          "atom_id": "internal_2026-04-30_080",
+          "summary": "权益高位后正常配置行情，关注资金面是否边际收紧",
+          "claim_type": "方向判断",
+          "direction": "偏多",
+          "confidence": 0.65,
+          "date": "2026-04-30",
+          "factor": "市场情绪因子"
+        }
+      ],
+      "tags": [
+        "持续活跃",
+        "偏交易导向",
+        "偏风险提示"
+      ]
+    },
+    {
+      "speaker": "李云增",
+      "total_claims": 3,
+      "factor_preference": {
+        "机构行为因子": {
+          "short": "IB",
+          "count": 1,
+          "pct": 33.3
+        },
+        "流动性因子": {
+          "short": "LQ",
+          "count": 1,
+          "pct": 33.3
+        },
+        "市场情绪因子": {
+          "short": "MS",
+          "count": 1,
+          "pct": 33.3
+        }
+      },
+      "top_factor": "机构行为因子",
+      "claim_type_dist": {
+        "条件触发判断": {
+          "count": 1,
+          "pct": 33.3
+        },
+        "风险提示": {
+          "count": 1,
+          "pct": 33.3
+        },
+        "方向判断": {
+          "count": 1,
+          "pct": 33.3
+        }
+      },
+      "dominant_claim_type": "条件触发判断",
+      "direction_dist": {
+        "中性": 2,
+        "偏空": 1
+      },
+      "direction_score": -0.167,
+      "direction_label": "中性/均衡",
+      "date_range": {
+        "earliest": "2025-05-09",
+        "latest": "2026-04-30",
+        "active_days": 3
+      },
+      "timeline": {
+        "2025-05-09": 1,
+        "2026-04-24": 1,
+        "2026-04-30": 1
+      },
+      "causal_edges": {
+        "count": 4,
+        "edges": [
+          "IB_001→IB_005",
+          "IB_013→IB_005",
+          "LQ_001→MS_001",
+          "MS_008→MS_010"
+        ]
+      },
+      "key_claims": [
+        {
+          "atom_id": "internal_2026-04-24_006",
+          "summary": "可能的流动性收紧风险",
+          "claim_type": "风险提示",
+          "direction": "偏空",
+          "confidence": 0.65,
+          "date": "2026-04-24",
+          "factor": "流动性因子"
+        },
+        {
+          "atom_id": "internal_2026-04-30_096",
+          "summary": "外围市场平淡，不改节前行情",
+          "claim_type": "方向判断",
+          "direction": "中性",
+          "confidence": 0.65,
+          "date": "2026-04-30",
+          "factor": "市场情绪因子"
+        },
+        {
+          "atom_id": "20250509_B02_012",
+          "summary": "当前市场环境复杂，交易行为面临诸多挑战。第一阶段的重点是如何在低利率环境下通过系统建设落实绝对收益诉求下的风险预算机制。",
+          "claim_type": "条件触发判断",
+          "direction": "中性",
+          "confidence": 0.5,
+          "date": "2025-05-09",
+          "factor": "机构行为因子"
+        }
+      ],
+      "tags": [
+        "持续活跃",
+        "偏风险提示"
       ]
     },
     {
@@ -2766,69 +3280,96 @@ const SPEAKER_PERSONAS = {
       ]
     },
     {
-      "speaker": "谢秋平",
-      "total_claims": 2,
+      "speaker": "吴舒扬",
+      "total_claims": 3,
       "factor_preference": {
-        "政策面因子": {
-          "short": "PL",
-          "count": 1,
-          "pct": 50.0
-        },
         "机构行为因子": {
           "short": "IB",
           "count": 1,
-          "pct": 50.0
+          "pct": 33.3
+        },
+        "流动性因子": {
+          "short": "LQ",
+          "count": 1,
+          "pct": 33.3
+        },
+        "市场情绪因子": {
+          "short": "MS",
+          "count": 1,
+          "pct": 33.3
         }
       },
-      "top_factor": "政策面因子",
+      "top_factor": "机构行为因子",
       "claim_type_dist": {
+        "验证指标": {
+          "count": 1,
+          "pct": 33.3
+        },
+        "风险提示": {
+          "count": 1,
+          "pct": 33.3
+        },
         "方向判断": {
-          "count": 2,
-          "pct": 100.0
+          "count": 1,
+          "pct": 33.3
         }
       },
-      "dominant_claim_type": "方向判断",
+      "dominant_claim_type": "验证指标",
       "direction_dist": {
         "利空": 1,
-        "利多": 1
+        "偏空": 1,
+        "中性": 1
       },
-      "direction_score": 0.0,
+      "direction_score": -0.167,
       "direction_label": "中性/均衡",
       "date_range": {
-        "earliest": "2025-06-13",
-        "latest": "2025-06-20",
-        "active_days": 2
+        "earliest": "2025-11-27",
+        "latest": "2026-04-30",
+        "active_days": 3
       },
       "timeline": {
-        "2025-06-13": 1,
-        "2025-06-20": 1
+        "2025-11-27": 1,
+        "2026-04-24": 1,
+        "2026-04-30": 1
       },
       "causal_edges": {
-        "count": 0,
-        "edges": []
+        "count": 1,
+        "edges": [
+          "MS_008→LQ_001"
+        ]
       },
       "key_claims": [
         {
-          "atom_id": "20250613_B02_004",
-          "summary": "财政部近日要求各地加快地方债发行进度，预计6月份会有所体现。今年所有批次的额度已下达完毕，预计7月可能出现发行提速的情况。",
-          "claim_type": "方向判断",
-          "direction": "利空",
-          "confidence": 0.5,
-          "date": "2025-06-13",
-          "factor": "政策面因子"
+          "atom_id": "internal_2026-04-24_040",
+          "summary": "资金面收敛风险",
+          "claim_type": "风险提示",
+          "direction": "偏空",
+          "confidence": 0.65,
+          "date": "2026-04-24",
+          "factor": "流动性因子"
         },
         {
-          "atom_id": "20250620_B02_009",
-          "summary": "从数据回溯分析可见，7年以上信用债行情启动于5月16日左右，期间信用利差快速下行约17-20个基点。此轮行情突破原有逻辑的核心在于信用债ETF规模激增和保险机构",
+          "atom_id": "internal_2026-04-30_085",
+          "summary": "关注地缘形式变化和资金面情况",
           "claim_type": "方向判断",
-          "direction": "利多",
-          "confidence": 0.5,
-          "date": "2025-06-20",
+          "direction": "中性",
+          "confidence": 0.65,
+          "date": "2026-04-30",
+          "factor": "市场情绪因子"
+        },
+        {
+          "atom_id": "20251127_B00_003",
+          "summary": "我对当前长端利率预计维持震荡格局，需关注增量政策信号打破平衡，同时在信用债投资中应规避尾部风险、注重利差保护。",
+          "claim_type": "验证指标",
+          "direction": "利空",
+          "confidence": 0.6,
+          "date": "2025-11-27",
           "factor": "机构行为因子"
         }
       ],
       "tags": [
-        "观点类型集中"
+        "持续活跃",
+        "偏风险提示"
       ]
     },
     {
@@ -3063,113 +3604,6 @@ const SPEAKER_PERSONAS = {
       ]
     },
     {
-      "speaker": "李云增",
-      "total_claims": 1,
-      "factor_preference": {
-        "机构行为因子": {
-          "short": "IB",
-          "count": 1,
-          "pct": 100.0
-        }
-      },
-      "top_factor": "机构行为因子",
-      "claim_type_dist": {
-        "条件触发判断": {
-          "count": 1,
-          "pct": 100.0
-        }
-      },
-      "dominant_claim_type": "条件触发判断",
-      "direction_dist": {
-        "中性": 1
-      },
-      "direction_score": 0.0,
-      "direction_label": "中性/均衡",
-      "date_range": {
-        "earliest": "2025-05-09",
-        "latest": "2025-05-09",
-        "active_days": 1
-      },
-      "timeline": {
-        "2025-05-09": 1
-      },
-      "causal_edges": {
-        "count": 2,
-        "edges": [
-          "IB_001→IB_005",
-          "IB_013→IB_005"
-        ]
-      },
-      "key_claims": [
-        {
-          "atom_id": "20250509_B02_012",
-          "summary": "当前市场环境复杂，交易行为面临诸多挑战。第一阶段的重点是如何在低利率环境下通过系统建设落实绝对收益诉求下的风险预算机制。",
-          "claim_type": "条件触发判断",
-          "direction": "中性",
-          "confidence": 0.5,
-          "date": "2025-05-09",
-          "factor": "机构行为因子"
-        }
-      ],
-      "tags": [
-        "IB专精",
-        "观点类型集中",
-        "单次发言"
-      ]
-    },
-    {
-      "speaker": "朱年军",
-      "total_claims": 1,
-      "factor_preference": {
-        "机构行为因子": {
-          "short": "IB",
-          "count": 1,
-          "pct": 100.0
-        }
-      },
-      "top_factor": "机构行为因子",
-      "claim_type_dist": {
-        "反例/冲突观点": {
-          "count": 1,
-          "pct": 100.0
-        }
-      },
-      "dominant_claim_type": "反例/冲突观点",
-      "direction_dist": {
-        "中性": 1
-      },
-      "direction_score": 0.0,
-      "direction_label": "中性/均衡",
-      "date_range": {
-        "earliest": "2025-06-20",
-        "latest": "2025-06-20",
-        "active_days": 1
-      },
-      "timeline": {
-        "2025-06-20": 1
-      },
-      "causal_edges": {
-        "count": 0,
-        "edges": []
-      },
-      "key_claims": [
-        {
-          "atom_id": "20250620_B02_010",
-          "summary": "4月7日以来市场表现略显疲软，但整体仍偏向乐观。5年以下品种表现优异，而10年及30年品种则持续小幅调整，交易难度较大。",
-          "claim_type": "反例/冲突观点",
-          "direction": "中性",
-          "confidence": 0.5,
-          "date": "2025-06-20",
-          "factor": "机构行为因子"
-        }
-      ],
-      "tags": [
-        "IB专精",
-        "观点类型集中",
-        "单次发言"
-      ]
-    },
-    {
       "speaker": "项敦伟",
       "total_claims": 1,
       "factor_preference": {
@@ -3215,58 +3649,6 @@ const SPEAKER_PERSONAS = {
           "direction": "不明确",
           "confidence": 0.85,
           "date": "2025-07-29",
-          "factor": "机构行为因子"
-        }
-      ],
-      "tags": [
-        "IB专精",
-        "观点类型集中",
-        "单次发言"
-      ]
-    },
-    {
-      "speaker": "吴舒扬",
-      "total_claims": 1,
-      "factor_preference": {
-        "机构行为因子": {
-          "short": "IB",
-          "count": 1,
-          "pct": 100.0
-        }
-      },
-      "top_factor": "机构行为因子",
-      "claim_type_dist": {
-        "验证指标": {
-          "count": 1,
-          "pct": 100.0
-        }
-      },
-      "dominant_claim_type": "验证指标",
-      "direction_dist": {
-        "利空": 1
-      },
-      "direction_score": 0.0,
-      "direction_label": "中性/均衡",
-      "date_range": {
-        "earliest": "2025-11-27",
-        "latest": "2025-11-27",
-        "active_days": 1
-      },
-      "timeline": {
-        "2025-11-27": 1
-      },
-      "causal_edges": {
-        "count": 0,
-        "edges": []
-      },
-      "key_claims": [
-        {
-          "atom_id": "20251127_B00_003",
-          "summary": "我对当前长端利率预计维持震荡格局，需关注增量政策信号打破平衡，同时在信用债投资中应规避尾部风险、注重利差保护。",
-          "claim_type": "验证指标",
-          "direction": "利空",
-          "confidence": 0.6,
-          "date": "2025-11-27",
           "factor": "机构行为因子"
         }
       ],
