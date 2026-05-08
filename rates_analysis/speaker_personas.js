@@ -1,8 +1,8 @@
 const SPEAKER_PERSONAS = {
   "version": "1.0.0",
-  "generated_at": "2026-05-07T17:31:57.735310",
-  "total_speakers": 32,
-  "source_atoms": 849,
+  "generated_at": "2026-05-08T13:24:27.765198",
+  "total_speakers": 43,
+  "source_atoms": 885,
   "personas": [
     {
       "speaker": "杨义山",
@@ -2367,6 +2367,123 @@ const SPEAKER_PERSONAS = {
       ]
     },
     {
+      "speaker": "外部共识",
+      "total_claims": 19,
+      "factor_preference": {
+        "市场情绪因子": {
+          "short": "MS",
+          "count": 5,
+          "pct": 26.3
+        },
+        "流动性因子": {
+          "short": "LQ",
+          "count": 4,
+          "pct": 21.1
+        },
+        "机构行为因子": {
+          "short": "IB",
+          "count": 4,
+          "pct": 21.1
+        },
+        "基本面因子": {
+          "short": "FD",
+          "count": 3,
+          "pct": 15.8
+        },
+        "政策面因子": {
+          "short": "PL",
+          "count": 3,
+          "pct": 15.8
+        }
+      },
+      "top_factor": "市场情绪因子",
+      "claim_type_dist": {
+        "方向判断": {
+          "count": 9,
+          "pct": 47.4
+        },
+        "事实判断": {
+          "count": 7,
+          "pct": 36.8
+        },
+        "因果链条": {
+          "count": 2,
+          "pct": 10.5
+        },
+        "交易表达": {
+          "count": 1,
+          "pct": 5.3
+        }
+      },
+      "dominant_claim_type": "方向判断",
+      "direction_dist": {
+        "中性": 9,
+        "偏多": 9,
+        "偏空": 1
+      },
+      "direction_score": 0.211,
+      "direction_label": "偏鹰/看多",
+      "date_range": {
+        "earliest": "2026-05-08",
+        "latest": "2026-05-08",
+        "active_days": 1
+      },
+      "timeline": {
+        "2026-05-08": 19
+      },
+      "causal_edges": {
+        "count": 13,
+        "edges": [
+          "FD_001→MS_001",
+          "FD_001→MS_010",
+          "IB_001→MS_007",
+          "IB_001→MS_012",
+          "IB_012→MS_007",
+          "LQ_001→LQ_005",
+          "LQ_001→MS_010",
+          "LQ_006→LQ_005",
+          "MS_005→IB_007",
+          "MS_007→MS_001",
+          "MS_010→MS_005",
+          "PL_010→PL_006",
+          "PL_011→PL_006"
+        ]
+      },
+      "key_claims": [
+        {
+          "atom_id": "external_固收策略组_2026-05-08_001",
+          "summary": "经济温和修复不构成债市立即转向压力，但需关注通胀数据扰动",
+          "claim_type": "方向判断",
+          "direction": "中性",
+          "confidence": 0.85,
+          "date": "2026-05-08",
+          "factor": "基本面因子"
+        },
+        {
+          "atom_id": "external_固收策略组_2026-05-08_002",
+          "summary": "4月政治局会议增量有限，货币政策短期进一步宽松概率低，影响偏中性",
+          "claim_type": "方向判断",
+          "direction": "中性",
+          "confidence": 0.85,
+          "date": "2026-05-08",
+          "factor": "政策面因子"
+        },
+        {
+          "atom_id": "external_固收策略组_2026-05-08_003",
+          "summary": "当前资金面宽松是核心支撑，但5月资金利率可能小幅回升、波动加大",
+          "claim_type": "方向判断",
+          "direction": "偏多",
+          "confidence": 0.85,
+          "date": "2026-05-08",
+          "factor": "流动性因子"
+        }
+      ],
+      "tags": [
+        "单次发言",
+        "传导贡献突出"
+      ]
+    },
+    {
       "speaker": "共识",
       "total_claims": 17,
       "factor_preference": {
@@ -3022,6 +3139,88 @@ const SPEAKER_PERSONAS = {
       ]
     },
     {
+      "speaker": "外部机构-央行分析",
+      "total_claims": 4,
+      "factor_preference": {
+        "政策面因子": {
+          "short": "PL",
+          "count": 4,
+          "pct": 100.0
+        }
+      },
+      "top_factor": "政策面因子",
+      "claim_type_dist": {
+        "方向判断": {
+          "count": 2,
+          "pct": 50.0
+        },
+        "事实判断": {
+          "count": 1,
+          "pct": 25.0
+        },
+        "因果链条": {
+          "count": 1,
+          "pct": 25.0
+        }
+      },
+      "dominant_claim_type": "方向判断",
+      "direction_dist": {
+        "中性": 3,
+        "偏多": 1
+      },
+      "direction_score": 0.125,
+      "direction_label": "中性/均衡",
+      "date_range": {
+        "earliest": "2026-05-08",
+        "latest": "2026-05-08",
+        "active_days": 1
+      },
+      "timeline": {
+        "2026-05-08": 4
+      },
+      "causal_edges": {
+        "count": 2,
+        "edges": [
+          "PL_006→LQ_001",
+          "PL_006→LQ_002"
+        ]
+      },
+      "key_claims": [
+        {
+          "atom_id": "external_固收策略组_2026-05-08_018",
+          "summary": "央行防资金空转信号是预防性引导而非紧缩宣言，旨在纠偏过度定价偏离",
+          "claim_type": "事实判断",
+          "direction": "中性",
+          "confidence": 0.85,
+          "date": "2026-05-08",
+          "factor": "政策面因子"
+        },
+        {
+          "atom_id": "external_固收策略组_2026-05-08_019",
+          "summary": "削峰填谷操作与防空转警示是同一政策逻辑下的连续动作",
+          "claim_type": "因果链条",
+          "direction": "偏多",
+          "confidence": 0.85,
+          "date": "2026-05-08",
+          "factor": "政策面因子"
+        },
+        {
+          "atom_id": "external_固收策略组_2026-05-08_020",
+          "summary": "央行立即大幅收紧流动性、开启紧缩周期的可能性极低",
+          "claim_type": "方向判断",
+          "direction": "中性",
+          "confidence": 0.85,
+          "date": "2026-05-08",
+          "factor": "政策面因子"
+        }
+      ],
+      "tags": [
+        "PL专精",
+        "单次发言",
+        "擅长因果推演"
+      ]
+    },
+    {
       "speaker": "李云增",
       "total_claims": 3,
       "factor_preference": {
@@ -3498,6 +3697,292 @@ const SPEAKER_PERSONAS = {
       ]
     },
     {
+      "speaker": "外部机构-多数观点",
+      "total_claims": 2,
+      "factor_preference": {
+        "流动性因子": {
+          "short": "LQ",
+          "count": 1,
+          "pct": 50.0
+        },
+        "政策面因子": {
+          "short": "PL",
+          "count": 1,
+          "pct": 50.0
+        }
+      },
+      "top_factor": "流动性因子",
+      "claim_type_dist": {
+        "方向判断": {
+          "count": 2,
+          "pct": 100.0
+        }
+      },
+      "dominant_claim_type": "方向判断",
+      "direction_dist": {
+        "偏多": 1,
+        "中性": 1
+      },
+      "direction_score": 0.25,
+      "direction_label": "偏鹰/看多",
+      "date_range": {
+        "earliest": "2026-05-08",
+        "latest": "2026-05-08",
+        "active_days": 1
+      },
+      "timeline": {
+        "2026-05-08": 2
+      },
+      "causal_edges": {
+        "count": 2,
+        "edges": [
+          "LQ_001→MS_001",
+          "PL_006→LQ_005"
+        ]
+      },
+      "key_claims": [
+        {
+          "atom_id": "external_固收策略组_2026-05-08_006",
+          "summary": "央行削峰填谷下资金面风险可控，利率回升幅度有限",
+          "claim_type": "方向判断",
+          "direction": "偏多",
+          "confidence": 0.65,
+          "date": "2026-05-08",
+          "factor": "流动性因子"
+        },
+        {
+          "atom_id": "external_固收策略组_2026-05-08_024",
+          "summary": "央行回笼意在约束资金价格下限而非价格显著上升，5月资金价格或低位稳定",
+          "claim_type": "方向判断",
+          "direction": "中性",
+          "confidence": 0.65,
+          "date": "2026-05-08",
+          "factor": "政策面因子"
+        }
+      ],
+      "tags": [
+        "观点类型集中",
+        "单次发言"
+      ]
+    },
+    {
+      "speaker": "外部机构-谨慎派",
+      "total_claims": 2,
+      "factor_preference": {
+        "流动性因子": {
+          "short": "LQ",
+          "count": 1,
+          "pct": 50.0
+        },
+        "政策面因子": {
+          "short": "PL",
+          "count": 1,
+          "pct": 50.0
+        }
+      },
+      "top_factor": "流动性因子",
+      "claim_type_dist": {
+        "风险提示": {
+          "count": 1,
+          "pct": 50.0
+        },
+        "方向判断": {
+          "count": 1,
+          "pct": 50.0
+        }
+      },
+      "dominant_claim_type": "风险提示",
+      "direction_dist": {
+        "偏空": 1,
+        "中性": 1
+      },
+      "direction_score": -0.25,
+      "direction_label": "偏鸽/看空",
+      "date_range": {
+        "earliest": "2026-05-08",
+        "latest": "2026-05-08",
+        "active_days": 1
+      },
+      "timeline": {
+        "2026-05-08": 2
+      },
+      "causal_edges": {
+        "count": 2,
+        "edges": [
+          "LQ_002→MS_001",
+          "PL_010→LQ_001"
+        ]
+      },
+      "key_claims": [
+        {
+          "atom_id": "external_固收策略组_2026-05-08_007",
+          "summary": "央行持续回笼释放明确信号，资金面超预期收紧可能触发债市调整",
+          "claim_type": "风险提示",
+          "direction": "偏空",
+          "confidence": 0.65,
+          "date": "2026-05-08",
+          "factor": "流动性因子"
+        },
+        {
+          "atom_id": "external_固收策略组_2026-05-08_017",
+          "summary": "政策协同更可能体现在结构性工具和精准滴灌，而非总量大水漫灌",
+          "claim_type": "方向判断",
+          "direction": "中性",
+          "confidence": 0.65,
+          "date": "2026-05-08",
+          "factor": "政策面因子"
+        }
+      ],
+      "tags": [
+        "观点类型集中",
+        "单次发言",
+        "偏风险提示"
+      ]
+    },
+    {
+      "speaker": "外部机构-偏多观点",
+      "total_claims": 2,
+      "factor_preference": {
+        "流动性因子": {
+          "short": "LQ",
+          "count": 1,
+          "pct": 50.0
+        },
+        "市场情绪因子": {
+          "short": "MS",
+          "count": 1,
+          "pct": 50.0
+        }
+      },
+      "top_factor": "流动性因子",
+      "claim_type_dist": {
+        "方向判断": {
+          "count": 1,
+          "pct": 50.0
+        },
+        "条件触发判断": {
+          "count": 1,
+          "pct": 50.0
+        }
+      },
+      "dominant_claim_type": "方向判断",
+      "direction_dist": {
+        "偏多": 2
+      },
+      "direction_score": 0.5,
+      "direction_label": "偏鹰/看多",
+      "date_range": {
+        "earliest": "2026-05-08",
+        "latest": "2026-05-08",
+        "active_days": 1
+      },
+      "timeline": {
+        "2026-05-08": 2
+      },
+      "causal_edges": {
+        "count": 2,
+        "edges": [
+          "LQ_001→MS_001",
+          "MS_009→MS_010"
+        ]
+      },
+      "key_claims": [
+        {
+          "atom_id": "external_固收策略组_2026-05-08_008",
+          "summary": "资产荒逻辑依然坚实，看资金做债的上涨逻辑未被破坏",
+          "claim_type": "方向判断",
+          "direction": "偏多",
+          "confidence": 0.65,
+          "date": "2026-05-08",
+          "factor": "流动性因子"
+        },
+        {
+          "atom_id": "external_固收策略组_2026-05-08_032",
+          "summary": "若利差回到2021年以来均值，10Y国债收益率有望下行至1.7%左右",
+          "claim_type": "条件触发判断",
+          "direction": "偏多",
+          "confidence": 0.65,
+          "date": "2026-05-08",
+          "factor": "市场情绪因子"
+        }
+      ],
+      "tags": [
+        "观点类型集中",
+        "偏鹰/看多",
+        "单次发言"
+      ]
+    },
+    {
+      "speaker": "外部机构-通胀关注派",
+      "total_claims": 2,
+      "factor_preference": {
+        "基本面因子": {
+          "short": "FD",
+          "count": 2,
+          "pct": 100.0
+        }
+      },
+      "top_factor": "基本面因子",
+      "claim_type_dist": {
+        "风险提示": {
+          "count": 1,
+          "pct": 50.0
+        },
+        "条件触发判断": {
+          "count": 1,
+          "pct": 50.0
+        }
+      },
+      "dominant_claim_type": "风险提示",
+      "direction_dist": {
+        "偏空": 1,
+        "偏多": 1
+      },
+      "direction_score": 0.0,
+      "direction_label": "中性/均衡",
+      "date_range": {
+        "earliest": "2026-05-08",
+        "latest": "2026-05-08",
+        "active_days": 1
+      },
+      "timeline": {
+        "2026-05-08": 2
+      },
+      "causal_edges": {
+        "count": 2,
+        "edges": [
+          "FD_002→FD_003",
+          "FD_002→MS_001"
+        ]
+      },
+      "key_claims": [
+        {
+          "atom_id": "external_固收策略组_2026-05-08_012",
+          "summary": "国际原油高位推动PPI持续回升，可能引发输入性通胀及再通胀担忧",
+          "claim_type": "风险提示",
+          "direction": "偏空",
+          "confidence": 0.65,
+          "date": "2026-05-08",
+          "factor": "基本面因子"
+        },
+        {
+          "atom_id": "external_固收策略组_2026-05-08_013",
+          "summary": "PPI与CPI同步修复可能改变市场对经济修复斜率的预期",
+          "claim_type": "条件触发判断",
+          "direction": "偏多",
+          "confidence": 0.65,
+          "date": "2026-05-08",
+          "factor": "基本面因子"
+        }
+      ],
+      "tags": [
+        "FD专精",
+        "观点类型集中",
+        "单次发言",
+        "偏风险提示"
+      ]
+    },
+    {
       "speaker": "研究员-宏观",
       "total_claims": 1,
       "factor_preference": {
@@ -3760,6 +4245,283 @@ const SPEAKER_PERSONAS = {
         "政策专精",
         "观点类型集中",
         "单次发言"
+      ]
+    },
+    {
+      "speaker": "外部机构-偏空/中性观点",
+      "total_claims": 1,
+      "factor_preference": {
+        "市场情绪因子": {
+          "short": "MS",
+          "count": 1,
+          "pct": 100.0
+        }
+      },
+      "top_factor": "市场情绪因子",
+      "claim_type_dist": {
+        "风险提示": {
+          "count": 1,
+          "pct": 100.0
+        }
+      },
+      "dominant_claim_type": "风险提示",
+      "direction_dist": {
+        "偏空": 1
+      },
+      "direction_score": -0.5,
+      "direction_label": "偏鸽/看空",
+      "date_range": {
+        "earliest": "2026-05-08",
+        "latest": "2026-05-08",
+        "active_days": 1
+      },
+      "timeline": {
+        "2026-05-08": 1
+      },
+      "causal_edges": {
+        "count": 1,
+        "edges": [
+          "MS_003→MS_012"
+        ]
+      },
+      "key_claims": [
+        {
+          "atom_id": "external_固收策略组_2026-05-08_009",
+          "summary": "交易拥挤度上升带来风险，非银追买长债导致市场结构脆弱",
+          "claim_type": "风险提示",
+          "direction": "偏空",
+          "confidence": 0.65,
+          "date": "2026-05-08",
+          "factor": "市场情绪因子"
+        }
+      ],
+      "tags": [
+        "MS专精",
+        "观点类型集中",
+        "偏鸽/看空",
+        "单次发言",
+        "偏风险提示"
+      ]
+    },
+    {
+      "speaker": "外部机构-乐观派",
+      "total_claims": 1,
+      "factor_preference": {
+        "政策面因子": {
+          "short": "PL",
+          "count": 1,
+          "pct": 100.0
+        }
+      },
+      "top_factor": "政策面因子",
+      "claim_type_dist": {
+        "方向判断": {
+          "count": 1,
+          "pct": 100.0
+        }
+      },
+      "dominant_claim_type": "方向判断",
+      "direction_dist": {
+        "偏多": 1
+      },
+      "direction_score": 0.5,
+      "direction_label": "偏鹰/看多",
+      "date_range": {
+        "earliest": "2026-05-08",
+        "latest": "2026-05-08",
+        "active_days": 1
+      },
+      "timeline": {
+        "2026-05-08": 1
+      },
+      "causal_edges": {
+        "count": 1,
+        "edges": [
+          "PL_006→LQ_001"
+        ]
+      },
+      "key_claims": [
+        {
+          "atom_id": "external_固收策略组_2026-05-08_016",
+          "summary": "央行有充足动力维持流动性充裕以配合财政靠前发力，构成债安全垫",
+          "claim_type": "方向判断",
+          "direction": "偏多",
+          "confidence": 0.65,
+          "date": "2026-05-08",
+          "factor": "政策面因子"
+        }
+      ],
+      "tags": [
+        "PL专精",
+        "观点类型集中",
+        "偏鹰/看多",
+        "单次发言"
+      ]
+    },
+    {
+      "speaker": "外部机构-预期切换派",
+      "total_claims": 1,
+      "factor_preference": {
+        "机构行为因子": {
+          "short": "IB",
+          "count": 1,
+          "pct": 100.0
+        }
+      },
+      "top_factor": "机构行为因子",
+      "claim_type_dist": {
+        "条件触发判断": {
+          "count": 1,
+          "pct": 100.0
+        }
+      },
+      "dominant_claim_type": "条件触发判断",
+      "direction_dist": {
+        "偏多": 1
+      },
+      "direction_score": 0.5,
+      "direction_label": "偏鹰/看多",
+      "date_range": {
+        "earliest": "2026-05-08",
+        "latest": "2026-05-08",
+        "active_days": 1
+      },
+      "timeline": {
+        "2026-05-08": 1
+      },
+      "causal_edges": {
+        "count": 1,
+        "edges": [
+          "IB_012→MS_009"
+        ]
+      },
+      "key_claims": [
+        {
+          "atom_id": "external_固收策略组_2026-05-08_027",
+          "summary": "超长端调整后利差保护增厚，保险等配置型机构可能加大配置力度",
+          "claim_type": "条件触发判断",
+          "direction": "偏多",
+          "confidence": 0.65,
+          "date": "2026-05-08",
+          "factor": "机构行为因子"
+        }
+      ],
+      "tags": [
+        "IB专精",
+        "观点类型集中",
+        "偏鹰/看多",
+        "单次发言"
+      ]
+    },
+    {
+      "speaker": "外部机构-交易延续派",
+      "total_claims": 1,
+      "factor_preference": {
+        "市场情绪因子": {
+          "short": "MS",
+          "count": 1,
+          "pct": 100.0
+        }
+      },
+      "top_factor": "市场情绪因子",
+      "claim_type_dist": {
+        "方向判断": {
+          "count": 1,
+          "pct": 100.0
+        }
+      },
+      "dominant_claim_type": "方向判断",
+      "direction_dist": {
+        "偏多": 1
+      },
+      "direction_score": 0.5,
+      "direction_label": "偏鹰/看多",
+      "date_range": {
+        "earliest": "2026-05-08",
+        "latest": "2026-05-08",
+        "active_days": 1
+      },
+      "timeline": {
+        "2026-05-08": 1
+      },
+      "causal_edges": {
+        "count": 1,
+        "edges": [
+          "MS_001→IB_001"
+        ]
+      },
+      "key_claims": [
+        {
+          "atom_id": "external_固收策略组_2026-05-08_028",
+          "summary": "资产荒背景下交易盘仍有博弈动力，钱多逻辑未破",
+          "claim_type": "方向判断",
+          "direction": "偏多",
+          "confidence": 0.65,
+          "date": "2026-05-08",
+          "factor": "市场情绪因子"
+        }
+      ],
+      "tags": [
+        "MS专精",
+        "观点类型集中",
+        "偏鹰/看多",
+        "单次发言"
+      ]
+    },
+    {
+      "speaker": "外部机构",
+      "total_claims": 1,
+      "factor_preference": {
+        "市场情绪因子": {
+          "short": "MS",
+          "count": 1,
+          "pct": 100.0
+        }
+      },
+      "top_factor": "市场情绪因子",
+      "claim_type_dist": {
+        "风险提示": {
+          "count": 1,
+          "pct": 100.0
+        }
+      },
+      "dominant_claim_type": "风险提示",
+      "direction_dist": {
+        "偏多": 1
+      },
+      "direction_score": 0.5,
+      "direction_label": "偏鹰/看多",
+      "date_range": {
+        "earliest": "2026-05-08",
+        "latest": "2026-05-08",
+        "active_days": 1
+      },
+      "timeline": {
+        "2026-05-08": 1
+      },
+      "causal_edges": {
+        "count": 1,
+        "edges": [
+          "MS_003→MS_012"
+        ]
+      },
+      "key_claims": [
+        {
+          "atom_id": "external_固收策略组_2026-05-08_030",
+          "summary": "需警惕若超长端出现情绪过热加速补涨，应及时止盈防范回撤风险",
+          "claim_type": "风险提示",
+          "direction": "偏多",
+          "confidence": 0.65,
+          "date": "2026-05-08",
+          "factor": "市场情绪因子"
+        }
+      ],
+      "tags": [
+        "MS专精",
+        "观点类型集中",
+        "偏鹰/看多",
+        "单次发言",
+        "偏风险提示"
       ]
     }
   ]
