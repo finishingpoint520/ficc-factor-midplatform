@@ -431,7 +431,7 @@ html += """      </select>
     </div>
   </div>
 
-    <div class="toolbar-section" style="flex-grow:1;">
+    <div class="toolbar-section" style="flex-grow:1;max-width:200px;min-width:160px;">
       <h3>节点详情</h3>
       <div id="detailPanel" class="detail-panel">
         <div class="empty">点击任意节点查看详情</div>
