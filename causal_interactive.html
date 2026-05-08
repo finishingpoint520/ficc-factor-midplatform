@@ -886,9 +886,7 @@ function renderPersonaCard(speakerName, speakerEdges) {
       const tgtLabel = tgtFid ? (RAW_DATA.nodes[tgtFid] || {}).label || tgtFid : String(se.to);
       const sLabel = se.label || (srcLabel + '→' + tgtLabel);
       const sColor = se.strength >= 0.7 ? '#283593' : se.strength >= 0.4 ? '#e65100' : '#999';
-      card += '<div style="font-size:11px;padding:3px 4px;border-bottom:1px dashed #eee;cursor:pointer;" ' +
-        'onclick="focusOnEdge(' + se.from + ',' + se.to + ')" ' +
-        'onmouseenter="this.style.background='#f0e6f6'" onmouseleave="this.style.background='transparent'">' +
+      card += '<div style="font-size:11px;padding:3px 4px;border-bottom:1px dashed #eee;cursor:pointer;" onclick="focusOnEdge(' + se.from + ',' + se.to + ')">' +
         '<span style="color:' + sColor + ';font-weight:600;">' + sLabel + '</span>' +
         '</div>';
     });
